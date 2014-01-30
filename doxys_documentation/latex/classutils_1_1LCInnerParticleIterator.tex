@@ -1,0 +1,215 @@
+\hypertarget{classutils_1_1LCInnerParticleIterator}{\section{utils\-:\-:L\-C\-Inner\-Particle\-Iterator Class Reference}
+\label{classutils_1_1LCInnerParticleIterator}\index{utils\-::\-L\-C\-Inner\-Particle\-Iterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}}
+}
+
+
+{\ttfamily \#include $<$L\-C\-Inner\-Particle\-Iterator.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classutils_1_1LCInnerParticleIterator_a97ed0538282db641bccd20e2700c1b49}{L\-C\-Inner\-Particle\-Iterator} ()
+\item 
+\hyperlink{classutils_1_1LCInnerParticleIterator_aad380c74a45caefe96d125ccb02b7ecf}{L\-C\-Inner\-Particle\-Iterator} (int index\-\_\-arg, int original\-\_\-index\-\_\-arg, int cell\-\_\-size\-\_\-arg, int width\-\_\-arg, int height\-\_\-arg, int depth\-\_\-arg, std\-::list$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$\-::\hyperlink{classutils_1_1LCInnerParticleIterator_a556926724858f489ff82ba151748bd4d}{iterator} iterator\-\_\-arg, std\-::vector$<$ std\-::list$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ $\ast$cells\-\_\-arg)
+\item 
+virtual \hyperlink{classutils_1_1LCInnerParticleIterator_aeb7069368fc24e7c765348aa2b9cefc9}{$\sim$\-L\-C\-Inner\-Particle\-Iterator} ()
+\item 
+\hyperlink{classParticle}{Particle} \& \hyperlink{classutils_1_1LCInnerParticleIterator_a3b1af69d0bfe72d9e2c3d59f8735d765}{operator$\ast$} () const 
+\item 
+void \hyperlink{classutils_1_1LCInnerParticleIterator_a617483a82dcbc3e47da991a6c1c628df}{operator++} ()
+\item 
+bool \hyperlink{classutils_1_1LCInnerParticleIterator_ac924555155c3d389612b8cf2ed1ce7af}{operator!=} (const \hyperlink{classutils_1_1LCInnerParticleIterator}{L\-C\-Inner\-Particle\-Iterator} b)
+\item 
+\hyperlink{classutils_1_1LCInnerParticleIterator}{L\-C\-Inner\-Particle\-Iterator} \& \hyperlink{classutils_1_1LCInnerParticleIterator_a23019e15648c8aff3f4f210d09bd3e1d}{operator=} (const \hyperlink{classutils_1_1LCInnerParticleIterator}{L\-C\-Inner\-Particle\-Iterator} \&cpy)
+\item 
+int \hyperlink{classutils_1_1LCInnerParticleIterator_aac709e0bd8324335cf5e261abcc462d5}{get\-Cell\-Number} ()
+\item 
+bool \hyperlink{classutils_1_1LCInnerParticleIterator_a3351f46c7b9cc23b8c7cfaed21a3ab21}{check\-Left} ()
+\item 
+bool \hyperlink{classutils_1_1LCInnerParticleIterator_a9b7095262c5822b79f2fe5b9c864bc5c}{check\-Right} ()
+\item 
+bool \hyperlink{classutils_1_1LCInnerParticleIterator_ac0a650efc58403e2acbf191ee25f99d5}{check\-Bottom} ()
+\item 
+bool \hyperlink{classutils_1_1LCInnerParticleIterator_af014915da19b22640850eb676b8e0ab0}{check\-Back} ()
+\item 
+bool \hyperlink{classutils_1_1LCInnerParticleIterator_a079d0a446521b35730ca4f3d6204f5e7}{check\-Top} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ $\ast$ \hyperlink{classutils_1_1LCInnerParticleIterator_a421358a111515986b506391956873ca8}{cells}
+\item 
+int \hyperlink{classutils_1_1LCInnerParticleIterator_a12d1e7f0dcc83d5ec4e09819b9e8f083}{cell\-\_\-size}
+\item 
+int \hyperlink{classutils_1_1LCInnerParticleIterator_a84770d6e782309bfc11ba2f965cb8f5c}{width}
+\item 
+int \hyperlink{classutils_1_1LCInnerParticleIterator_a1c2df47ebcba8c8c3d75ae2b7a136d7c}{height}
+\item 
+int \hyperlink{classutils_1_1LCInnerParticleIterator_a2a6d53e94efa6547736f66a6b0713c29}{depth}
+\item 
+int \hyperlink{classutils_1_1LCInnerParticleIterator_a27c807948fc9bfd2a30c94847530c39a}{index}
+\item 
+int \hyperlink{classutils_1_1LCInnerParticleIterator_a78f4884749444bd1ee25d874167dd582}{original\-\_\-index}
+\item 
+std\-::list$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$\-::iterator \hyperlink{classutils_1_1LCInnerParticleIterator_a556926724858f489ff82ba151748bd4d}{iterator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classutils_1_1LCInnerParticleIterator_a97ed0538282db641bccd20e2700c1b49}{\index{utils\-::\-L\-C\-Inner\-Particle\-Iterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}!L\-C\-Inner\-Particle\-Iterator@{L\-C\-Inner\-Particle\-Iterator}}
+\index{L\-C\-Inner\-Particle\-Iterator@{L\-C\-Inner\-Particle\-Iterator}!utils::LCInnerParticleIterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}}
+\subsubsection[{L\-C\-Inner\-Particle\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}utils\-::\-L\-C\-Inner\-Particle\-Iterator\-::\-L\-C\-Inner\-Particle\-Iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCInnerParticleIterator_a97ed0538282db641bccd20e2700c1b49}
+\hypertarget{classutils_1_1LCInnerParticleIterator_aad380c74a45caefe96d125ccb02b7ecf}{\index{utils\-::\-L\-C\-Inner\-Particle\-Iterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}!L\-C\-Inner\-Particle\-Iterator@{L\-C\-Inner\-Particle\-Iterator}}
+\index{L\-C\-Inner\-Particle\-Iterator@{L\-C\-Inner\-Particle\-Iterator}!utils::LCInnerParticleIterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}}
+\subsubsection[{L\-C\-Inner\-Particle\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}utils\-::\-L\-C\-Inner\-Particle\-Iterator\-::\-L\-C\-Inner\-Particle\-Iterator (
+\begin{DoxyParamCaption}
+\item[{int}]{index\-\_\-arg, }
+\item[{int}]{original\-\_\-index\-\_\-arg, }
+\item[{int}]{cell\-\_\-size\-\_\-arg, }
+\item[{int}]{width\-\_\-arg, }
+\item[{int}]{height\-\_\-arg, }
+\item[{int}]{depth\-\_\-arg, }
+\item[{std\-::list$<$ {\bf Particle} $\ast$ $>$\-::{\bf iterator}}]{iterator\-\_\-arg, }
+\item[{std\-::vector$<$ std\-::list$<$ {\bf Particle} $\ast$ $>$ $\ast$ $>$ $\ast$}]{cells\-\_\-arg}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCInnerParticleIterator_aad380c74a45caefe96d125ccb02b7ecf}
+\hypertarget{classutils_1_1LCInnerParticleIterator_aeb7069368fc24e7c765348aa2b9cefc9}{\index{utils\-::\-L\-C\-Inner\-Particle\-Iterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}!$\sim$\-L\-C\-Inner\-Particle\-Iterator@{$\sim$\-L\-C\-Inner\-Particle\-Iterator}}
+\index{$\sim$\-L\-C\-Inner\-Particle\-Iterator@{$\sim$\-L\-C\-Inner\-Particle\-Iterator}!utils::LCInnerParticleIterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}}
+\subsubsection[{$\sim$\-L\-C\-Inner\-Particle\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}utils\-::\-L\-C\-Inner\-Particle\-Iterator\-::$\sim$\-L\-C\-Inner\-Particle\-Iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classutils_1_1LCInnerParticleIterator_aeb7069368fc24e7c765348aa2b9cefc9}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classutils_1_1LCInnerParticleIterator_af014915da19b22640850eb676b8e0ab0}{\index{utils\-::\-L\-C\-Inner\-Particle\-Iterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}!check\-Back@{check\-Back}}
+\index{check\-Back@{check\-Back}!utils::LCInnerParticleIterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}}
+\subsubsection[{check\-Back}]{\setlength{\rightskip}{0pt plus 5cm}bool utils\-::\-L\-C\-Inner\-Particle\-Iterator\-::check\-Back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCInnerParticleIterator_af014915da19b22640850eb676b8e0ab0}
+checks whether the inner iterator may go to a deeper layer \hypertarget{classutils_1_1LCInnerParticleIterator_ac0a650efc58403e2acbf191ee25f99d5}{\index{utils\-::\-L\-C\-Inner\-Particle\-Iterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}!check\-Bottom@{check\-Bottom}}
+\index{check\-Bottom@{check\-Bottom}!utils::LCInnerParticleIterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}}
+\subsubsection[{check\-Bottom}]{\setlength{\rightskip}{0pt plus 5cm}bool utils\-::\-L\-C\-Inner\-Particle\-Iterator\-::check\-Bottom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCInnerParticleIterator_ac0a650efc58403e2acbf191ee25f99d5}
+checks whether the inner iterator may go to a lower layer \hypertarget{classutils_1_1LCInnerParticleIterator_a3351f46c7b9cc23b8c7cfaed21a3ab21}{\index{utils\-::\-L\-C\-Inner\-Particle\-Iterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}!check\-Left@{check\-Left}}
+\index{check\-Left@{check\-Left}!utils::LCInnerParticleIterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}}
+\subsubsection[{check\-Left}]{\setlength{\rightskip}{0pt plus 5cm}bool utils\-::\-L\-C\-Inner\-Particle\-Iterator\-::check\-Left (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCInnerParticleIterator_a3351f46c7b9cc23b8c7cfaed21a3ab21}
+checks whether the inner iterator may go left \hypertarget{classutils_1_1LCInnerParticleIterator_a9b7095262c5822b79f2fe5b9c864bc5c}{\index{utils\-::\-L\-C\-Inner\-Particle\-Iterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}!check\-Right@{check\-Right}}
+\index{check\-Right@{check\-Right}!utils::LCInnerParticleIterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}}
+\subsubsection[{check\-Right}]{\setlength{\rightskip}{0pt plus 5cm}bool utils\-::\-L\-C\-Inner\-Particle\-Iterator\-::check\-Right (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCInnerParticleIterator_a9b7095262c5822b79f2fe5b9c864bc5c}
+checks whether the inner iterator may go right \hypertarget{classutils_1_1LCInnerParticleIterator_a079d0a446521b35730ca4f3d6204f5e7}{\index{utils\-::\-L\-C\-Inner\-Particle\-Iterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}!check\-Top@{check\-Top}}
+\index{check\-Top@{check\-Top}!utils::LCInnerParticleIterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}}
+\subsubsection[{check\-Top}]{\setlength{\rightskip}{0pt plus 5cm}bool utils\-::\-L\-C\-Inner\-Particle\-Iterator\-::check\-Top (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCInnerParticleIterator_a079d0a446521b35730ca4f3d6204f5e7}
+checks whether the inner iterator may go to a higher layer \hypertarget{classutils_1_1LCInnerParticleIterator_aac709e0bd8324335cf5e261abcc462d5}{\index{utils\-::\-L\-C\-Inner\-Particle\-Iterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}!get\-Cell\-Number@{get\-Cell\-Number}}
+\index{get\-Cell\-Number@{get\-Cell\-Number}!utils::LCInnerParticleIterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}}
+\subsubsection[{get\-Cell\-Number}]{\setlength{\rightskip}{0pt plus 5cm}int utils\-::\-L\-C\-Inner\-Particle\-Iterator\-::get\-Cell\-Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCInnerParticleIterator_aac709e0bd8324335cf5e261abcc462d5}
+\begin{DoxyReturn}{Returns}
+the index 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCInnerParticleIterator_ac924555155c3d389612b8cf2ed1ce7af}{\index{utils\-::\-L\-C\-Inner\-Particle\-Iterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!utils::LCInnerParticleIterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool utils\-::\-L\-C\-Inner\-Particle\-Iterator\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf L\-C\-Inner\-Particle\-Iterator}}]{b}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCInnerParticleIterator_ac924555155c3d389612b8cf2ed1ce7af}
+checks on inequality 
+\begin{DoxyParams}{Parameters}
+{\em b} & the Iterator to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns true, if the two iterators do not match 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCInnerParticleIterator_a3b1af69d0bfe72d9e2c3d59f8735d765}{\index{utils\-::\-L\-C\-Inner\-Particle\-Iterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!utils::LCInnerParticleIterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Particle} \& utils\-::\-L\-C\-Inner\-Particle\-Iterator\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classutils_1_1LCInnerParticleIterator_a3b1af69d0bfe72d9e2c3d59f8735d765}
+\begin{DoxyReturn}{Returns}
+returns the reference to the momentary particle 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCInnerParticleIterator_a617483a82dcbc3e47da991a6c1c628df}{\index{utils\-::\-L\-C\-Inner\-Particle\-Iterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!utils::LCInnerParticleIterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}}
+\subsubsection[{operator++}]{\setlength{\rightskip}{0pt plus 5cm}void utils\-::\-L\-C\-Inner\-Particle\-Iterator\-::operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCInnerParticleIterator_a617483a82dcbc3e47da991a6c1c628df}
+iterates to the next element \begin{DoxyReturn}{Returns}
+the next particle in the neighborhood of the outer particle 
+\end{DoxyReturn}
+Checks whether the outer particle was already the last \hyperlink{classParticle}{Particle} in its cell which would mean iterator were now on the dummy end of the list.
+
+Checks the neighoring cells of the outer particle in a predetermined order\-: right, top left, top, top right \mbox{[}for both dimensional cases\mbox{]}, Back bottom left, back bottom, back bottom right, back left, back, back right, back top left, back top and back top right \mbox{[}for the 3-\/dimensional case\mbox{]}\hypertarget{classutils_1_1LCInnerParticleIterator_a23019e15648c8aff3f4f210d09bd3e1d}{\index{utils\-::\-L\-C\-Inner\-Particle\-Iterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}!operator=@{operator=}}
+\index{operator=@{operator=}!utils::LCInnerParticleIterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Inner\-Particle\-Iterator} \& utils\-::\-L\-C\-Inner\-Particle\-Iterator\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf L\-C\-Inner\-Particle\-Iterator} \&}]{cpy}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCInnerParticleIterator_a23019e15648c8aff3f4f210d09bd3e1d}
+\begin{DoxyReturn}{Returns}
+assignes an inner iterator with the attributes of cpy 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classutils_1_1LCInnerParticleIterator_a12d1e7f0dcc83d5ec4e09819b9e8f083}{\index{utils\-::\-L\-C\-Inner\-Particle\-Iterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}!cell\-\_\-size@{cell\-\_\-size}}
+\index{cell\-\_\-size@{cell\-\_\-size}!utils::LCInnerParticleIterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}}
+\subsubsection[{cell\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}int utils\-::\-L\-C\-Inner\-Particle\-Iterator\-::cell\-\_\-size\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCInnerParticleIterator_a12d1e7f0dcc83d5ec4e09819b9e8f083}
+the total number of cells \hypertarget{classutils_1_1LCInnerParticleIterator_a421358a111515986b506391956873ca8}{\index{utils\-::\-L\-C\-Inner\-Particle\-Iterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}!cells@{cells}}
+\index{cells@{cells}!utils::LCInnerParticleIterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}}
+\subsubsection[{cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::list$<${\bf Particle} $\ast$$>$ $\ast$$>$$\ast$ utils\-::\-L\-C\-Inner\-Particle\-Iterator\-::cells\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCInnerParticleIterator_a421358a111515986b506391956873ca8}
+the pointers to the cells with the particles inside \hypertarget{classutils_1_1LCInnerParticleIterator_a2a6d53e94efa6547736f66a6b0713c29}{\index{utils\-::\-L\-C\-Inner\-Particle\-Iterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}!depth@{depth}}
+\index{depth@{depth}!utils::LCInnerParticleIterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}}
+\subsubsection[{depth}]{\setlength{\rightskip}{0pt plus 5cm}int utils\-::\-L\-C\-Inner\-Particle\-Iterator\-::depth\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCInnerParticleIterator_a2a6d53e94efa6547736f66a6b0713c29}
+\hypertarget{classutils_1_1LCInnerParticleIterator_a1c2df47ebcba8c8c3d75ae2b7a136d7c}{\index{utils\-::\-L\-C\-Inner\-Particle\-Iterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}!height@{height}}
+\index{height@{height}!utils::LCInnerParticleIterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}}
+\subsubsection[{height}]{\setlength{\rightskip}{0pt plus 5cm}int utils\-::\-L\-C\-Inner\-Particle\-Iterator\-::height\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCInnerParticleIterator_a1c2df47ebcba8c8c3d75ae2b7a136d7c}
+\hypertarget{classutils_1_1LCInnerParticleIterator_a27c807948fc9bfd2a30c94847530c39a}{\index{utils\-::\-L\-C\-Inner\-Particle\-Iterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}!index@{index}}
+\index{index@{index}!utils::LCInnerParticleIterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}}
+\subsubsection[{index}]{\setlength{\rightskip}{0pt plus 5cm}int utils\-::\-L\-C\-Inner\-Particle\-Iterator\-::index\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCInnerParticleIterator_a27c807948fc9bfd2a30c94847530c39a}
+the cell number of the inner iterator \hypertarget{classutils_1_1LCInnerParticleIterator_a556926724858f489ff82ba151748bd4d}{\index{utils\-::\-L\-C\-Inner\-Particle\-Iterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}!iterator@{iterator}}
+\index{iterator@{iterator}!utils::LCInnerParticleIterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}}
+\subsubsection[{iterator}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Particle} $\ast$$>$\-::iterator utils\-::\-L\-C\-Inner\-Particle\-Iterator\-::iterator\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCInnerParticleIterator_a556926724858f489ff82ba151748bd4d}
+the iterator \hypertarget{classutils_1_1LCInnerParticleIterator_a78f4884749444bd1ee25d874167dd582}{\index{utils\-::\-L\-C\-Inner\-Particle\-Iterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}!original\-\_\-index@{original\-\_\-index}}
+\index{original\-\_\-index@{original\-\_\-index}!utils::LCInnerParticleIterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}}
+\subsubsection[{original\-\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}int utils\-::\-L\-C\-Inner\-Particle\-Iterator\-::original\-\_\-index\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCInnerParticleIterator_a78f4884749444bd1ee25d874167dd582}
+the cell number of the outer iterator where the inneriterator was called from \hypertarget{classutils_1_1LCInnerParticleIterator_a84770d6e782309bfc11ba2f965cb8f5c}{\index{utils\-::\-L\-C\-Inner\-Particle\-Iterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}!width@{width}}
+\index{width@{width}!utils::LCInnerParticleIterator@{utils\-::\-L\-C\-Inner\-Particle\-Iterator}}
+\subsubsection[{width}]{\setlength{\rightskip}{0pt plus 5cm}int utils\-::\-L\-C\-Inner\-Particle\-Iterator\-::width\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCInnerParticleIterator_a84770d6e782309bfc11ba2f965cb8f5c}
+the number of cells in x, y and z direction 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/utils/\hyperlink{LCInnerParticleIterator_8h}{L\-C\-Inner\-Particle\-Iterator.\-h}\item 
+src/utils/\hyperlink{LCInnerParticleIterator_8cpp}{L\-C\-Inner\-Particle\-Iterator.\-cpp}\end{DoxyCompactItemize}

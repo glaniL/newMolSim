@@ -1,0 +1,557 @@
+\hypertarget{classcuboid__t}{\section{cuboid\-\_\-t Class Reference}
+\label{classcuboid__t}\index{cuboid\-\_\-t@{cuboid\-\_\-t}}
+}
+
+
+{\ttfamily \#include $<$Input\-Cuboids.\-h$>$}
+
+Inheritance diagram for cuboid\-\_\-t\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcuboid__t}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \-::\hyperlink{namespacexml__schema_a69bfaf24f63a8c18ebd8e21db6b343df}{xml\-\_\-schema\-::decimal} \hyperlink{classcuboid__t_a5759759b1b9e3029ff36c7f20d9213dc}{mesh\-Width\-\_\-type}
+\item 
+typedef \\*
+\-::xsd\-::cxx\-::tree\-::traits\\*
+$<$ \hyperlink{classcuboid__t_a5759759b1b9e3029ff36c7f20d9213dc}{mesh\-Width\-\_\-type}, char,\-::xsd\-::cxx\-::tree\-::schema\-\_\-type\-::decimal $>$ \hyperlink{classcuboid__t_a7407ec25461e872616716771073fdd6b}{mesh\-Width\-\_\-traits}
+\item 
+typedef \-::\hyperlink{namespacexml__schema_a69bfaf24f63a8c18ebd8e21db6b343df}{xml\-\_\-schema\-::decimal} \hyperlink{classcuboid__t_a365536fb1db29c6ef0da234297763d61}{mass\-\_\-type}
+\item 
+typedef \\*
+\-::xsd\-::cxx\-::tree\-::traits\\*
+$<$ \hyperlink{classcuboid__t_a365536fb1db29c6ef0da234297763d61}{mass\-\_\-type}, char,\-::xsd\-::cxx\-::tree\-::schema\-\_\-type\-::decimal $>$ \hyperlink{classcuboid__t_a3414ba3ff63f2e3abac4ec2f5ff7932d}{mass\-\_\-traits}
+\item 
+typedef \-::\hyperlink{namespacexml__schema_a69bfaf24f63a8c18ebd8e21db6b343df}{xml\-\_\-schema\-::decimal} \hyperlink{classcuboid__t_aea1381b8b1cca3f677ae4a28b29cbe2a}{mean\-V\-\_\-type}
+\item 
+typedef \\*
+\-::xsd\-::cxx\-::tree\-::traits\\*
+$<$ \hyperlink{classcuboid__t_aea1381b8b1cca3f677ae4a28b29cbe2a}{mean\-V\-\_\-type}, char,\-::xsd\-::cxx\-::tree\-::schema\-\_\-type\-::decimal $>$ \hyperlink{classcuboid__t_ad39df1b8bcb315153993a8993dc0828c}{mean\-V\-\_\-traits}
+\item 
+typedef \-::\hyperlink{namespacexml__schema_acfa24ac68e1a188e7f44c36f7a158bf4}{xml\-\_\-schema\-::int\-\_\-} \hyperlink{classcuboid__t_a162caafd069fa127809bb2d573c752c5}{par\-Type\-C\-\_\-type}
+\item 
+typedef \\*
+\-::xsd\-::cxx\-::tree\-::traits\\*
+$<$ \hyperlink{classcuboid__t_a162caafd069fa127809bb2d573c752c5}{par\-Type\-C\-\_\-type}, char $>$ \hyperlink{classcuboid__t_adc1cedef5964dbd3021fa55ee6271554}{par\-Type\-C\-\_\-traits}
+\item 
+typedef \-::\hyperlink{namespacexml__schema_a69bfaf24f63a8c18ebd8e21db6b343df}{xml\-\_\-schema\-::decimal} \hyperlink{classcuboid__t_ac4a981a7963b1b2105d448cf42ab1230}{epsilon\-\_\-type}
+\item 
+typedef \\*
+\-::xsd\-::cxx\-::tree\-::traits\\*
+$<$ \hyperlink{classcuboid__t_ac4a981a7963b1b2105d448cf42ab1230}{epsilon\-\_\-type}, char,\-::xsd\-::cxx\-::tree\-::schema\-\_\-type\-::decimal $>$ \hyperlink{classcuboid__t_a909ff9ef57adeb2edaa27cda6e531c44}{epsilon\-\_\-traits}
+\item 
+typedef \-::\hyperlink{namespacexml__schema_a69bfaf24f63a8c18ebd8e21db6b343df}{xml\-\_\-schema\-::decimal} \hyperlink{classcuboid__t_ae1de9c7b1d2b2a9098de31c546c0ff83}{sigma\-\_\-type}
+\item 
+typedef \\*
+\-::xsd\-::cxx\-::tree\-::traits\\*
+$<$ \hyperlink{classcuboid__t_ae1de9c7b1d2b2a9098de31c546c0ff83}{sigma\-\_\-type}, char,\-::xsd\-::cxx\-::tree\-::schema\-\_\-type\-::decimal $>$ \hyperlink{classcuboid__t_a40e03084467dcf27dc74ece86086b047}{sigma\-\_\-traits}
+\item 
+typedef \-::\hyperlink{classori__t}{ori\-\_\-t} \hyperlink{classcuboid__t_a20d67505efc00dc82947ce881aec1e76}{origin\-Vector\-\_\-type}
+\item 
+typedef \\*
+\-::xsd\-::cxx\-::tree\-::traits\\*
+$<$ \hyperlink{classcuboid__t_a20d67505efc00dc82947ce881aec1e76}{origin\-Vector\-\_\-type}, char $>$ \hyperlink{classcuboid__t_a88fa351b02759f012d3dc7cabd2097b8}{origin\-Vector\-\_\-traits}
+\item 
+typedef \-::\hyperlink{classstartV__t}{start\-V\-\_\-t} \hyperlink{classcuboid__t_a7b9bd2a7888abc4b08f6f4e91ac9a81f}{start\-Velocity\-\_\-type}
+\item 
+typedef \\*
+\-::xsd\-::cxx\-::tree\-::traits\\*
+$<$ \hyperlink{classcuboid__t_a7b9bd2a7888abc4b08f6f4e91ac9a81f}{start\-Velocity\-\_\-type}, char $>$ \hyperlink{classcuboid__t_a0d43837eb6423a21e59b6f36012b244a}{start\-Velocity\-\_\-traits}
+\item 
+typedef \-::\hyperlink{classsize3D__t}{size3\-D\-\_\-t} \hyperlink{classcuboid__t_abf130ab4ed6d70047bb193a41283ec28}{size3\-D\-\_\-type}
+\item 
+typedef \\*
+\-::xsd\-::cxx\-::tree\-::traits\\*
+$<$ \hyperlink{classcuboid__t_abf130ab4ed6d70047bb193a41283ec28}{size3\-D\-\_\-type}, char $>$ \hyperlink{classcuboid__t_a8f449274f0802c092d0abd4f45ea1cdc}{size3\-D\-\_\-traits}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classcuboid__t_a5759759b1b9e3029ff36c7f20d9213dc}{mesh\-Width\-\_\-type} \& \hyperlink{classcuboid__t_ad2dc45a3a6fe778095f17a48afe33dd2}{mesh\-Width} () const 
+\item 
+\hyperlink{classcuboid__t_a5759759b1b9e3029ff36c7f20d9213dc}{mesh\-Width\-\_\-type} \& \hyperlink{classcuboid__t_aa3f7e2375cf92229b67e10134034201d}{mesh\-Width} ()
+\item 
+void \hyperlink{classcuboid__t_a18109f7e2b099c9e965b8d78f02a9e02}{mesh\-Width} (const \hyperlink{classcuboid__t_a5759759b1b9e3029ff36c7f20d9213dc}{mesh\-Width\-\_\-type} \&x)
+\item 
+const \hyperlink{classcuboid__t_a365536fb1db29c6ef0da234297763d61}{mass\-\_\-type} \& \hyperlink{classcuboid__t_ad3c09a2fd500ca03fa5bd0a8e70de5bf}{mass} () const 
+\item 
+\hyperlink{classcuboid__t_a365536fb1db29c6ef0da234297763d61}{mass\-\_\-type} \& \hyperlink{classcuboid__t_a886b32175330faa8cf5b3b4a6d5f962b}{mass} ()
+\item 
+void \hyperlink{classcuboid__t_a819aa170a5430d8e58e8c8bd21690655}{mass} (const \hyperlink{classcuboid__t_a365536fb1db29c6ef0da234297763d61}{mass\-\_\-type} \&x)
+\item 
+const \hyperlink{classcuboid__t_aea1381b8b1cca3f677ae4a28b29cbe2a}{mean\-V\-\_\-type} \& \hyperlink{classcuboid__t_a91b634b6561023a36e4da1957394c3fb}{mean\-V} () const 
+\item 
+\hyperlink{classcuboid__t_aea1381b8b1cca3f677ae4a28b29cbe2a}{mean\-V\-\_\-type} \& \hyperlink{classcuboid__t_aa4d3de66ea96cd11a2402e8d68b49b98}{mean\-V} ()
+\item 
+void \hyperlink{classcuboid__t_a58ad62869916aaef7c04fe400b39e4c0}{mean\-V} (const \hyperlink{classcuboid__t_aea1381b8b1cca3f677ae4a28b29cbe2a}{mean\-V\-\_\-type} \&x)
+\item 
+const \hyperlink{classcuboid__t_a162caafd069fa127809bb2d573c752c5}{par\-Type\-C\-\_\-type} \& \hyperlink{classcuboid__t_a923b33f2683e0df94603c429547be912}{par\-Type\-C} () const 
+\item 
+\hyperlink{classcuboid__t_a162caafd069fa127809bb2d573c752c5}{par\-Type\-C\-\_\-type} \& \hyperlink{classcuboid__t_aa70a57aa669fdf89f3ed1d464c9c9cf7}{par\-Type\-C} ()
+\item 
+void \hyperlink{classcuboid__t_a7eac87c8db11eb19bc4873220d366831}{par\-Type\-C} (const \hyperlink{classcuboid__t_a162caafd069fa127809bb2d573c752c5}{par\-Type\-C\-\_\-type} \&x)
+\item 
+const \hyperlink{classcuboid__t_ac4a981a7963b1b2105d448cf42ab1230}{epsilon\-\_\-type} \& \hyperlink{classcuboid__t_acd8d400db715227486dd790cd6d94b6e}{epsilon} () const 
+\item 
+\hyperlink{classcuboid__t_ac4a981a7963b1b2105d448cf42ab1230}{epsilon\-\_\-type} \& \hyperlink{classcuboid__t_af1d9a282a756b593b4fa62beb59fdc82}{epsilon} ()
+\item 
+void \hyperlink{classcuboid__t_acdacc4d702d49a86c06cc2b1578d8bab}{epsilon} (const \hyperlink{classcuboid__t_ac4a981a7963b1b2105d448cf42ab1230}{epsilon\-\_\-type} \&x)
+\item 
+const \hyperlink{classcuboid__t_ae1de9c7b1d2b2a9098de31c546c0ff83}{sigma\-\_\-type} \& \hyperlink{classcuboid__t_ae13a7e732dc3c3ae94d8aaffba7ee617}{sigma} () const 
+\item 
+\hyperlink{classcuboid__t_ae1de9c7b1d2b2a9098de31c546c0ff83}{sigma\-\_\-type} \& \hyperlink{classcuboid__t_a0a25741d3a40cffb89c4b8f62fd5b302}{sigma} ()
+\item 
+void \hyperlink{classcuboid__t_aa8ad42d35fb7d27f8e3a476e75e02b40}{sigma} (const \hyperlink{classcuboid__t_ae1de9c7b1d2b2a9098de31c546c0ff83}{sigma\-\_\-type} \&x)
+\item 
+const \hyperlink{classcuboid__t_a20d67505efc00dc82947ce881aec1e76}{origin\-Vector\-\_\-type} \& \hyperlink{classcuboid__t_afe1995f8cfc6ba9a2297f40ff819cbf4}{origin\-Vector} () const 
+\item 
+\hyperlink{classcuboid__t_a20d67505efc00dc82947ce881aec1e76}{origin\-Vector\-\_\-type} \& \hyperlink{classcuboid__t_a4694704c1be9385729b17f5c5ab76c4d}{origin\-Vector} ()
+\item 
+void \hyperlink{classcuboid__t_a4e4a379837eb1a37609203e890977a60}{origin\-Vector} (const \hyperlink{classcuboid__t_a20d67505efc00dc82947ce881aec1e76}{origin\-Vector\-\_\-type} \&x)
+\item 
+void \hyperlink{classcuboid__t_a202c8b82852eed4c25905e251105079d}{origin\-Vector} (\-::std\-::auto\-\_\-ptr$<$ \hyperlink{classcuboid__t_a20d67505efc00dc82947ce881aec1e76}{origin\-Vector\-\_\-type} $>$ p)
+\item 
+const \hyperlink{classcuboid__t_a7b9bd2a7888abc4b08f6f4e91ac9a81f}{start\-Velocity\-\_\-type} \& \hyperlink{classcuboid__t_aa2d8956335c51c61b3d24655faaef8e9}{start\-Velocity} () const 
+\item 
+\hyperlink{classcuboid__t_a7b9bd2a7888abc4b08f6f4e91ac9a81f}{start\-Velocity\-\_\-type} \& \hyperlink{classcuboid__t_a985354621466cf976351d5ae91c8e54d}{start\-Velocity} ()
+\item 
+void \hyperlink{classcuboid__t_a7fd31641814ea206932d025a8b1c30ca}{start\-Velocity} (const \hyperlink{classcuboid__t_a7b9bd2a7888abc4b08f6f4e91ac9a81f}{start\-Velocity\-\_\-type} \&x)
+\item 
+void \hyperlink{classcuboid__t_a7cacb68eea7d510a128dc8428a11c13b}{start\-Velocity} (\-::std\-::auto\-\_\-ptr$<$ \hyperlink{classcuboid__t_a7b9bd2a7888abc4b08f6f4e91ac9a81f}{start\-Velocity\-\_\-type} $>$ p)
+\item 
+const \hyperlink{classcuboid__t_abf130ab4ed6d70047bb193a41283ec28}{size3\-D\-\_\-type} \& \hyperlink{classcuboid__t_ad814d59fb91adb1c63a17c41bd37abce}{size3\-D} () const 
+\item 
+\hyperlink{classcuboid__t_abf130ab4ed6d70047bb193a41283ec28}{size3\-D\-\_\-type} \& \hyperlink{classcuboid__t_ac8a91327ce480ee6c17408cced64cceb}{size3\-D} ()
+\item 
+void \hyperlink{classcuboid__t_a9a87bc74d77d5acb4d47993fd26bdcc2}{size3\-D} (const \hyperlink{classcuboid__t_abf130ab4ed6d70047bb193a41283ec28}{size3\-D\-\_\-type} \&x)
+\item 
+void \hyperlink{classcuboid__t_aa26d6df9982c5fa7ca418f577e4e8730}{size3\-D} (\-::std\-::auto\-\_\-ptr$<$ \hyperlink{classcuboid__t_abf130ab4ed6d70047bb193a41283ec28}{size3\-D\-\_\-type} $>$ p)
+\item 
+\hyperlink{classcuboid__t_addac6142a0729945fd67babbcac59aec}{cuboid\-\_\-t} (const \hyperlink{classcuboid__t_a5759759b1b9e3029ff36c7f20d9213dc}{mesh\-Width\-\_\-type} \&, const \hyperlink{classcuboid__t_a365536fb1db29c6ef0da234297763d61}{mass\-\_\-type} \&, const \hyperlink{classcuboid__t_aea1381b8b1cca3f677ae4a28b29cbe2a}{mean\-V\-\_\-type} \&, const \hyperlink{classcuboid__t_a162caafd069fa127809bb2d573c752c5}{par\-Type\-C\-\_\-type} \&, const \hyperlink{classcuboid__t_ac4a981a7963b1b2105d448cf42ab1230}{epsilon\-\_\-type} \&, const \hyperlink{classcuboid__t_ae1de9c7b1d2b2a9098de31c546c0ff83}{sigma\-\_\-type} \&, const \hyperlink{classcuboid__t_a20d67505efc00dc82947ce881aec1e76}{origin\-Vector\-\_\-type} \&, const \hyperlink{classcuboid__t_a7b9bd2a7888abc4b08f6f4e91ac9a81f}{start\-Velocity\-\_\-type} \&, const \hyperlink{classcuboid__t_abf130ab4ed6d70047bb193a41283ec28}{size3\-D\-\_\-type} \&)
+\item 
+\hyperlink{classcuboid__t_a862bcca4943b2c27a5f5edfd361bb4a1}{cuboid\-\_\-t} (const \hyperlink{classcuboid__t_a5759759b1b9e3029ff36c7f20d9213dc}{mesh\-Width\-\_\-type} \&, const \hyperlink{classcuboid__t_a365536fb1db29c6ef0da234297763d61}{mass\-\_\-type} \&, const \hyperlink{classcuboid__t_aea1381b8b1cca3f677ae4a28b29cbe2a}{mean\-V\-\_\-type} \&, const \hyperlink{classcuboid__t_a162caafd069fa127809bb2d573c752c5}{par\-Type\-C\-\_\-type} \&, const \hyperlink{classcuboid__t_ac4a981a7963b1b2105d448cf42ab1230}{epsilon\-\_\-type} \&, const \hyperlink{classcuboid__t_ae1de9c7b1d2b2a9098de31c546c0ff83}{sigma\-\_\-type} \&,\-::std\-::auto\-\_\-ptr$<$ \hyperlink{classcuboid__t_a20d67505efc00dc82947ce881aec1e76}{origin\-Vector\-\_\-type} $>$ \&,\-::std\-::auto\-\_\-ptr$<$ \hyperlink{classcuboid__t_a7b9bd2a7888abc4b08f6f4e91ac9a81f}{start\-Velocity\-\_\-type} $>$ \&,\-::std\-::auto\-\_\-ptr$<$ \hyperlink{classcuboid__t_abf130ab4ed6d70047bb193a41283ec28}{size3\-D\-\_\-type} $>$ \&)
+\item 
+\hyperlink{classcuboid__t_afa1b7588ca19d8c5d00fb8c5dcf92bc8}{cuboid\-\_\-t} (const \-::xercesc\-::\-D\-O\-M\-Element \&e,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0,\-::\hyperlink{namespacexml__schema_ada9aa30dc722e93ee2ed7243085402a5}{xml\-\_\-schema\-::container} $\ast$c=0)
+\item 
+\hyperlink{classcuboid__t_a1574d539277176b5fff09a374c142c90}{cuboid\-\_\-t} (const \hyperlink{classcuboid__t}{cuboid\-\_\-t} \&x,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0,\-::\hyperlink{namespacexml__schema_ada9aa30dc722e93ee2ed7243085402a5}{xml\-\_\-schema\-::container} $\ast$c=0)
+\item 
+virtual \hyperlink{classcuboid__t}{cuboid\-\_\-t} $\ast$ \hyperlink{classcuboid__t_aa31bc17c300c78f7c15b08d60bbdefbf}{\-\_\-clone} (\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0,\-::\hyperlink{namespacexml__schema_ada9aa30dc722e93ee2ed7243085402a5}{xml\-\_\-schema\-::container} $\ast$c=0) const 
+\item 
+virtual \hyperlink{classcuboid__t_ad45791533f3643e2e2f565801c0ca20a}{$\sim$cuboid\-\_\-t} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcuboid__t_ab79e4219bf9a205aff7cbbda1207d138}{parse} (\-::xsd\-::cxx\-::xml\-::dom\-::parser$<$ char $>$ \&,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\-::xsd\-::cxx\-::tree\-::one\\*
+$<$ \hyperlink{classcuboid__t_a5759759b1b9e3029ff36c7f20d9213dc}{mesh\-Width\-\_\-type} $>$ \hyperlink{classcuboid__t_af31779bcbd1ff3844623c658f633a8aa}{mesh\-Width\-\_\-}
+\item 
+\-::xsd\-::cxx\-::tree\-::one$<$ \hyperlink{classcuboid__t_a365536fb1db29c6ef0da234297763d61}{mass\-\_\-type} $>$ \hyperlink{classcuboid__t_a9c7dd176b3732eb61362f104fe51e4b8}{mass\-\_\-}
+\item 
+\-::xsd\-::cxx\-::tree\-::one$<$ \hyperlink{classcuboid__t_aea1381b8b1cca3f677ae4a28b29cbe2a}{mean\-V\-\_\-type} $>$ \hyperlink{classcuboid__t_a3d83a46d242a523fb10095e9025abddf}{mean\-V\-\_\-}
+\item 
+\-::xsd\-::cxx\-::tree\-::one\\*
+$<$ \hyperlink{classcuboid__t_a162caafd069fa127809bb2d573c752c5}{par\-Type\-C\-\_\-type} $>$ \hyperlink{classcuboid__t_a0ce3a150a7054afaab0b4cfb600b5920}{par\-Type\-C\-\_\-}
+\item 
+\-::xsd\-::cxx\-::tree\-::one\\*
+$<$ \hyperlink{classcuboid__t_ac4a981a7963b1b2105d448cf42ab1230}{epsilon\-\_\-type} $>$ \hyperlink{classcuboid__t_a89f568a5a27be873e0f482d708e31e3d}{epsilon\-\_\-}
+\item 
+\-::xsd\-::cxx\-::tree\-::one$<$ \hyperlink{classcuboid__t_ae1de9c7b1d2b2a9098de31c546c0ff83}{sigma\-\_\-type} $>$ \hyperlink{classcuboid__t_ad68ee2b884c2bdec543177f9b2027021}{sigma\-\_\-}
+\item 
+\-::xsd\-::cxx\-::tree\-::one\\*
+$<$ \hyperlink{classcuboid__t_a20d67505efc00dc82947ce881aec1e76}{origin\-Vector\-\_\-type} $>$ \hyperlink{classcuboid__t_aa74b198d17ccc0d095655adf9cfa312b}{origin\-Vector\-\_\-}
+\item 
+\-::xsd\-::cxx\-::tree\-::one\\*
+$<$ \hyperlink{classcuboid__t_a7b9bd2a7888abc4b08f6f4e91ac9a81f}{start\-Velocity\-\_\-type} $>$ \hyperlink{classcuboid__t_a0720684b94609a0c60088e2535cc2c67}{start\-Velocity\-\_\-}
+\item 
+\-::xsd\-::cxx\-::tree\-::one\\*
+$<$ \hyperlink{classcuboid__t_abf130ab4ed6d70047bb193a41283ec28}{size3\-D\-\_\-type} $>$ \hyperlink{classcuboid__t_afccbf21e84c29d7cc05cadf8d5945856}{size3\-D\-\_\-}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classcuboid__t_a909ff9ef57adeb2edaa27cda6e531c44}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!epsilon\-\_\-traits@{epsilon\-\_\-traits}}
+\index{epsilon\-\_\-traits@{epsilon\-\_\-traits}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{epsilon\-\_\-traits}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::xsd\-::cxx\-::tree\-::traits$<$ {\bf epsilon\-\_\-type}, char, \-::xsd\-::cxx\-::tree\-::schema\-\_\-type\-::decimal $>$ {\bf cuboid\-\_\-t\-::epsilon\-\_\-traits}}}\label{classcuboid__t_a909ff9ef57adeb2edaa27cda6e531c44}
+\hypertarget{classcuboid__t_ac4a981a7963b1b2105d448cf42ab1230}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!epsilon\-\_\-type@{epsilon\-\_\-type}}
+\index{epsilon\-\_\-type@{epsilon\-\_\-type}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{epsilon\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::{\bf xml\-\_\-schema\-::decimal} {\bf cuboid\-\_\-t\-::epsilon\-\_\-type}}}\label{classcuboid__t_ac4a981a7963b1b2105d448cf42ab1230}
+\hypertarget{classcuboid__t_a3414ba3ff63f2e3abac4ec2f5ff7932d}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!mass\-\_\-traits@{mass\-\_\-traits}}
+\index{mass\-\_\-traits@{mass\-\_\-traits}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{mass\-\_\-traits}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::xsd\-::cxx\-::tree\-::traits$<$ {\bf mass\-\_\-type}, char, \-::xsd\-::cxx\-::tree\-::schema\-\_\-type\-::decimal $>$ {\bf cuboid\-\_\-t\-::mass\-\_\-traits}}}\label{classcuboid__t_a3414ba3ff63f2e3abac4ec2f5ff7932d}
+\hypertarget{classcuboid__t_a365536fb1db29c6ef0da234297763d61}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!mass\-\_\-type@{mass\-\_\-type}}
+\index{mass\-\_\-type@{mass\-\_\-type}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{mass\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::{\bf xml\-\_\-schema\-::decimal} {\bf cuboid\-\_\-t\-::mass\-\_\-type}}}\label{classcuboid__t_a365536fb1db29c6ef0da234297763d61}
+\hypertarget{classcuboid__t_ad39df1b8bcb315153993a8993dc0828c}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!mean\-V\-\_\-traits@{mean\-V\-\_\-traits}}
+\index{mean\-V\-\_\-traits@{mean\-V\-\_\-traits}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{mean\-V\-\_\-traits}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::xsd\-::cxx\-::tree\-::traits$<$ {\bf mean\-V\-\_\-type}, char, \-::xsd\-::cxx\-::tree\-::schema\-\_\-type\-::decimal $>$ {\bf cuboid\-\_\-t\-::mean\-V\-\_\-traits}}}\label{classcuboid__t_ad39df1b8bcb315153993a8993dc0828c}
+\hypertarget{classcuboid__t_aea1381b8b1cca3f677ae4a28b29cbe2a}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!mean\-V\-\_\-type@{mean\-V\-\_\-type}}
+\index{mean\-V\-\_\-type@{mean\-V\-\_\-type}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{mean\-V\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::{\bf xml\-\_\-schema\-::decimal} {\bf cuboid\-\_\-t\-::mean\-V\-\_\-type}}}\label{classcuboid__t_aea1381b8b1cca3f677ae4a28b29cbe2a}
+\hypertarget{classcuboid__t_a7407ec25461e872616716771073fdd6b}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!mesh\-Width\-\_\-traits@{mesh\-Width\-\_\-traits}}
+\index{mesh\-Width\-\_\-traits@{mesh\-Width\-\_\-traits}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{mesh\-Width\-\_\-traits}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::xsd\-::cxx\-::tree\-::traits$<$ {\bf mesh\-Width\-\_\-type}, char, \-::xsd\-::cxx\-::tree\-::schema\-\_\-type\-::decimal $>$ {\bf cuboid\-\_\-t\-::mesh\-Width\-\_\-traits}}}\label{classcuboid__t_a7407ec25461e872616716771073fdd6b}
+\hypertarget{classcuboid__t_a5759759b1b9e3029ff36c7f20d9213dc}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!mesh\-Width\-\_\-type@{mesh\-Width\-\_\-type}}
+\index{mesh\-Width\-\_\-type@{mesh\-Width\-\_\-type}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{mesh\-Width\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::{\bf xml\-\_\-schema\-::decimal} {\bf cuboid\-\_\-t\-::mesh\-Width\-\_\-type}}}\label{classcuboid__t_a5759759b1b9e3029ff36c7f20d9213dc}
+\hypertarget{classcuboid__t_a88fa351b02759f012d3dc7cabd2097b8}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!origin\-Vector\-\_\-traits@{origin\-Vector\-\_\-traits}}
+\index{origin\-Vector\-\_\-traits@{origin\-Vector\-\_\-traits}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{origin\-Vector\-\_\-traits}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::xsd\-::cxx\-::tree\-::traits$<$ {\bf origin\-Vector\-\_\-type}, char $>$ {\bf cuboid\-\_\-t\-::origin\-Vector\-\_\-traits}}}\label{classcuboid__t_a88fa351b02759f012d3dc7cabd2097b8}
+\hypertarget{classcuboid__t_a20d67505efc00dc82947ce881aec1e76}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!origin\-Vector\-\_\-type@{origin\-Vector\-\_\-type}}
+\index{origin\-Vector\-\_\-type@{origin\-Vector\-\_\-type}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{origin\-Vector\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::{\bf ori\-\_\-t} {\bf cuboid\-\_\-t\-::origin\-Vector\-\_\-type}}}\label{classcuboid__t_a20d67505efc00dc82947ce881aec1e76}
+\hypertarget{classcuboid__t_adc1cedef5964dbd3021fa55ee6271554}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!par\-Type\-C\-\_\-traits@{par\-Type\-C\-\_\-traits}}
+\index{par\-Type\-C\-\_\-traits@{par\-Type\-C\-\_\-traits}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{par\-Type\-C\-\_\-traits}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::xsd\-::cxx\-::tree\-::traits$<$ {\bf par\-Type\-C\-\_\-type}, char $>$ {\bf cuboid\-\_\-t\-::par\-Type\-C\-\_\-traits}}}\label{classcuboid__t_adc1cedef5964dbd3021fa55ee6271554}
+\hypertarget{classcuboid__t_a162caafd069fa127809bb2d573c752c5}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!par\-Type\-C\-\_\-type@{par\-Type\-C\-\_\-type}}
+\index{par\-Type\-C\-\_\-type@{par\-Type\-C\-\_\-type}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{par\-Type\-C\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::{\bf xml\-\_\-schema\-::int\-\_\-} {\bf cuboid\-\_\-t\-::par\-Type\-C\-\_\-type}}}\label{classcuboid__t_a162caafd069fa127809bb2d573c752c5}
+\hypertarget{classcuboid__t_a40e03084467dcf27dc74ece86086b047}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!sigma\-\_\-traits@{sigma\-\_\-traits}}
+\index{sigma\-\_\-traits@{sigma\-\_\-traits}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{sigma\-\_\-traits}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::xsd\-::cxx\-::tree\-::traits$<$ {\bf sigma\-\_\-type}, char, \-::xsd\-::cxx\-::tree\-::schema\-\_\-type\-::decimal $>$ {\bf cuboid\-\_\-t\-::sigma\-\_\-traits}}}\label{classcuboid__t_a40e03084467dcf27dc74ece86086b047}
+\hypertarget{classcuboid__t_ae1de9c7b1d2b2a9098de31c546c0ff83}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!sigma\-\_\-type@{sigma\-\_\-type}}
+\index{sigma\-\_\-type@{sigma\-\_\-type}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{sigma\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::{\bf xml\-\_\-schema\-::decimal} {\bf cuboid\-\_\-t\-::sigma\-\_\-type}}}\label{classcuboid__t_ae1de9c7b1d2b2a9098de31c546c0ff83}
+\hypertarget{classcuboid__t_a8f449274f0802c092d0abd4f45ea1cdc}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!size3\-D\-\_\-traits@{size3\-D\-\_\-traits}}
+\index{size3\-D\-\_\-traits@{size3\-D\-\_\-traits}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{size3\-D\-\_\-traits}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::xsd\-::cxx\-::tree\-::traits$<$ {\bf size3\-D\-\_\-type}, char $>$ {\bf cuboid\-\_\-t\-::size3\-D\-\_\-traits}}}\label{classcuboid__t_a8f449274f0802c092d0abd4f45ea1cdc}
+\hypertarget{classcuboid__t_abf130ab4ed6d70047bb193a41283ec28}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!size3\-D\-\_\-type@{size3\-D\-\_\-type}}
+\index{size3\-D\-\_\-type@{size3\-D\-\_\-type}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{size3\-D\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::{\bf size3\-D\-\_\-t} {\bf cuboid\-\_\-t\-::size3\-D\-\_\-type}}}\label{classcuboid__t_abf130ab4ed6d70047bb193a41283ec28}
+\hypertarget{classcuboid__t_a0d43837eb6423a21e59b6f36012b244a}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!start\-Velocity\-\_\-traits@{start\-Velocity\-\_\-traits}}
+\index{start\-Velocity\-\_\-traits@{start\-Velocity\-\_\-traits}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{start\-Velocity\-\_\-traits}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::xsd\-::cxx\-::tree\-::traits$<$ {\bf start\-Velocity\-\_\-type}, char $>$ {\bf cuboid\-\_\-t\-::start\-Velocity\-\_\-traits}}}\label{classcuboid__t_a0d43837eb6423a21e59b6f36012b244a}
+\hypertarget{classcuboid__t_a7b9bd2a7888abc4b08f6f4e91ac9a81f}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!start\-Velocity\-\_\-type@{start\-Velocity\-\_\-type}}
+\index{start\-Velocity\-\_\-type@{start\-Velocity\-\_\-type}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{start\-Velocity\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::{\bf start\-V\-\_\-t} {\bf cuboid\-\_\-t\-::start\-Velocity\-\_\-type}}}\label{classcuboid__t_a7b9bd2a7888abc4b08f6f4e91ac9a81f}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcuboid__t_addac6142a0729945fd67babbcac59aec}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!cuboid\-\_\-t@{cuboid\-\_\-t}}
+\index{cuboid\-\_\-t@{cuboid\-\_\-t}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{cuboid\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}cuboid\-\_\-t\-::cuboid\-\_\-t (
+\begin{DoxyParamCaption}
+\item[{const {\bf mesh\-Width\-\_\-type} \&}]{mesh\-Width, }
+\item[{const {\bf mass\-\_\-type} \&}]{mass, }
+\item[{const {\bf mean\-V\-\_\-type} \&}]{mean\-V, }
+\item[{const {\bf par\-Type\-C\-\_\-type} \&}]{par\-Type\-C, }
+\item[{const {\bf epsilon\-\_\-type} \&}]{epsilon, }
+\item[{const {\bf sigma\-\_\-type} \&}]{sigma, }
+\item[{const {\bf origin\-Vector\-\_\-type} \&}]{origin\-Vector, }
+\item[{const {\bf start\-Velocity\-\_\-type} \&}]{start\-Velocity, }
+\item[{const {\bf size3\-D\-\_\-type} \&}]{size3\-D}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_addac6142a0729945fd67babbcac59aec}
+\hypertarget{classcuboid__t_a862bcca4943b2c27a5f5edfd361bb4a1}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!cuboid\-\_\-t@{cuboid\-\_\-t}}
+\index{cuboid\-\_\-t@{cuboid\-\_\-t}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{cuboid\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}cuboid\-\_\-t\-::cuboid\-\_\-t (
+\begin{DoxyParamCaption}
+\item[{const {\bf mesh\-Width\-\_\-type} \&}]{mesh\-Width, }
+\item[{const {\bf mass\-\_\-type} \&}]{mass, }
+\item[{const {\bf mean\-V\-\_\-type} \&}]{mean\-V, }
+\item[{const {\bf par\-Type\-C\-\_\-type} \&}]{par\-Type\-C, }
+\item[{const {\bf epsilon\-\_\-type} \&}]{epsilon, }
+\item[{const {\bf sigma\-\_\-type} \&}]{sigma, }
+\item[{\-::std\-::auto\-\_\-ptr$<$ {\bf origin\-Vector\-\_\-type} $>$ \&}]{origin\-Vector, }
+\item[{\-::std\-::auto\-\_\-ptr$<$ {\bf start\-Velocity\-\_\-type} $>$ \&}]{start\-Velocity, }
+\item[{\-::std\-::auto\-\_\-ptr$<$ {\bf size3\-D\-\_\-type} $>$ \&}]{size3\-D}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_a862bcca4943b2c27a5f5edfd361bb4a1}
+\hypertarget{classcuboid__t_afa1b7588ca19d8c5d00fb8c5dcf92bc8}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!cuboid\-\_\-t@{cuboid\-\_\-t}}
+\index{cuboid\-\_\-t@{cuboid\-\_\-t}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{cuboid\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}cuboid\-\_\-t\-::cuboid\-\_\-t (
+\begin{DoxyParamCaption}
+\item[{const \-::xercesc\-::\-D\-O\-M\-Element \&}]{e, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{\-::{\bf xml\-\_\-schema\-::container} $\ast$}]{c = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_afa1b7588ca19d8c5d00fb8c5dcf92bc8}
+\hypertarget{classcuboid__t_a1574d539277176b5fff09a374c142c90}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!cuboid\-\_\-t@{cuboid\-\_\-t}}
+\index{cuboid\-\_\-t@{cuboid\-\_\-t}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{cuboid\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}cuboid\-\_\-t\-::cuboid\-\_\-t (
+\begin{DoxyParamCaption}
+\item[{const {\bf cuboid\-\_\-t} \&}]{x, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{\-::{\bf xml\-\_\-schema\-::container} $\ast$}]{c = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_a1574d539277176b5fff09a374c142c90}
+\hypertarget{classcuboid__t_ad45791533f3643e2e2f565801c0ca20a}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!$\sim$cuboid\-\_\-t@{$\sim$cuboid\-\_\-t}}
+\index{$\sim$cuboid\-\_\-t@{$\sim$cuboid\-\_\-t}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{$\sim$cuboid\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}cuboid\-\_\-t\-::$\sim$cuboid\-\_\-t (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcuboid__t_ad45791533f3643e2e2f565801c0ca20a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcuboid__t_aa31bc17c300c78f7c15b08d60bbdefbf}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!\-\_\-clone@{\-\_\-clone}}
+\index{\-\_\-clone@{\-\_\-clone}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{\-\_\-clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cuboid\-\_\-t} $\ast$ cuboid\-\_\-t\-::\-\_\-clone (
+\begin{DoxyParamCaption}
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{\-::{\bf xml\-\_\-schema\-::container} $\ast$}]{c = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcuboid__t_aa31bc17c300c78f7c15b08d60bbdefbf}
+\hypertarget{classcuboid__t_acd8d400db715227486dd790cd6d94b6e}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!epsilon@{epsilon}}
+\index{epsilon@{epsilon}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{epsilon}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf cuboid\-\_\-t\-::epsilon\-\_\-type} \& cuboid\-\_\-t\-::epsilon (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcuboid__t_acd8d400db715227486dd790cd6d94b6e}
+\hypertarget{classcuboid__t_af1d9a282a756b593b4fa62beb59fdc82}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!epsilon@{epsilon}}
+\index{epsilon@{epsilon}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{epsilon}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cuboid\-\_\-t\-::epsilon\-\_\-type} \& cuboid\-\_\-t\-::epsilon (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_af1d9a282a756b593b4fa62beb59fdc82}
+\hypertarget{classcuboid__t_acdacc4d702d49a86c06cc2b1578d8bab}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!epsilon@{epsilon}}
+\index{epsilon@{epsilon}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{epsilon}]{\setlength{\rightskip}{0pt plus 5cm}void cuboid\-\_\-t\-::epsilon (
+\begin{DoxyParamCaption}
+\item[{const {\bf epsilon\-\_\-type} \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_acdacc4d702d49a86c06cc2b1578d8bab}
+\hypertarget{classcuboid__t_ad3c09a2fd500ca03fa5bd0a8e70de5bf}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!mass@{mass}}
+\index{mass@{mass}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{mass}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf cuboid\-\_\-t\-::mass\-\_\-type} \& cuboid\-\_\-t\-::mass (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcuboid__t_ad3c09a2fd500ca03fa5bd0a8e70de5bf}
+\hypertarget{classcuboid__t_a886b32175330faa8cf5b3b4a6d5f962b}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!mass@{mass}}
+\index{mass@{mass}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{mass}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cuboid\-\_\-t\-::mass\-\_\-type} \& cuboid\-\_\-t\-::mass (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_a886b32175330faa8cf5b3b4a6d5f962b}
+\hypertarget{classcuboid__t_a819aa170a5430d8e58e8c8bd21690655}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!mass@{mass}}
+\index{mass@{mass}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{mass}]{\setlength{\rightskip}{0pt plus 5cm}void cuboid\-\_\-t\-::mass (
+\begin{DoxyParamCaption}
+\item[{const {\bf mass\-\_\-type} \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_a819aa170a5430d8e58e8c8bd21690655}
+\hypertarget{classcuboid__t_a91b634b6561023a36e4da1957394c3fb}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!mean\-V@{mean\-V}}
+\index{mean\-V@{mean\-V}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{mean\-V}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf cuboid\-\_\-t\-::mean\-V\-\_\-type} \& cuboid\-\_\-t\-::mean\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcuboid__t_a91b634b6561023a36e4da1957394c3fb}
+\hypertarget{classcuboid__t_aa4d3de66ea96cd11a2402e8d68b49b98}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!mean\-V@{mean\-V}}
+\index{mean\-V@{mean\-V}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{mean\-V}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cuboid\-\_\-t\-::mean\-V\-\_\-type} \& cuboid\-\_\-t\-::mean\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_aa4d3de66ea96cd11a2402e8d68b49b98}
+\hypertarget{classcuboid__t_a58ad62869916aaef7c04fe400b39e4c0}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!mean\-V@{mean\-V}}
+\index{mean\-V@{mean\-V}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{mean\-V}]{\setlength{\rightskip}{0pt plus 5cm}void cuboid\-\_\-t\-::mean\-V (
+\begin{DoxyParamCaption}
+\item[{const {\bf mean\-V\-\_\-type} \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_a58ad62869916aaef7c04fe400b39e4c0}
+\hypertarget{classcuboid__t_ad2dc45a3a6fe778095f17a48afe33dd2}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!mesh\-Width@{mesh\-Width}}
+\index{mesh\-Width@{mesh\-Width}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{mesh\-Width}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf cuboid\-\_\-t\-::mesh\-Width\-\_\-type} \& cuboid\-\_\-t\-::mesh\-Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcuboid__t_ad2dc45a3a6fe778095f17a48afe33dd2}
+\hypertarget{classcuboid__t_aa3f7e2375cf92229b67e10134034201d}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!mesh\-Width@{mesh\-Width}}
+\index{mesh\-Width@{mesh\-Width}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{mesh\-Width}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cuboid\-\_\-t\-::mesh\-Width\-\_\-type} \& cuboid\-\_\-t\-::mesh\-Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_aa3f7e2375cf92229b67e10134034201d}
+\hypertarget{classcuboid__t_a18109f7e2b099c9e965b8d78f02a9e02}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!mesh\-Width@{mesh\-Width}}
+\index{mesh\-Width@{mesh\-Width}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{mesh\-Width}]{\setlength{\rightskip}{0pt plus 5cm}void cuboid\-\_\-t\-::mesh\-Width (
+\begin{DoxyParamCaption}
+\item[{const {\bf mesh\-Width\-\_\-type} \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_a18109f7e2b099c9e965b8d78f02a9e02}
+\hypertarget{classcuboid__t_afe1995f8cfc6ba9a2297f40ff819cbf4}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!origin\-Vector@{origin\-Vector}}
+\index{origin\-Vector@{origin\-Vector}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{origin\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf cuboid\-\_\-t\-::origin\-Vector\-\_\-type} \& cuboid\-\_\-t\-::origin\-Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcuboid__t_afe1995f8cfc6ba9a2297f40ff819cbf4}
+\hypertarget{classcuboid__t_a4694704c1be9385729b17f5c5ab76c4d}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!origin\-Vector@{origin\-Vector}}
+\index{origin\-Vector@{origin\-Vector}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{origin\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cuboid\-\_\-t\-::origin\-Vector\-\_\-type} \& cuboid\-\_\-t\-::origin\-Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_a4694704c1be9385729b17f5c5ab76c4d}
+\hypertarget{classcuboid__t_a4e4a379837eb1a37609203e890977a60}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!origin\-Vector@{origin\-Vector}}
+\index{origin\-Vector@{origin\-Vector}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{origin\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}void cuboid\-\_\-t\-::origin\-Vector (
+\begin{DoxyParamCaption}
+\item[{const {\bf origin\-Vector\-\_\-type} \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_a4e4a379837eb1a37609203e890977a60}
+\hypertarget{classcuboid__t_a202c8b82852eed4c25905e251105079d}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!origin\-Vector@{origin\-Vector}}
+\index{origin\-Vector@{origin\-Vector}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{origin\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}void cuboid\-\_\-t\-::origin\-Vector (
+\begin{DoxyParamCaption}
+\item[{\-::std\-::auto\-\_\-ptr$<$ {\bf origin\-Vector\-\_\-type} $>$}]{p}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_a202c8b82852eed4c25905e251105079d}
+\hypertarget{classcuboid__t_ab79e4219bf9a205aff7cbbda1207d138}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!parse@{parse}}
+\index{parse@{parse}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}void cuboid\-\_\-t\-::parse (
+\begin{DoxyParamCaption}
+\item[{\-::xsd\-::cxx\-::xml\-::dom\-::parser$<$ char $>$ \&}]{p, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcuboid__t_ab79e4219bf9a205aff7cbbda1207d138}
+\hypertarget{classcuboid__t_a923b33f2683e0df94603c429547be912}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!par\-Type\-C@{par\-Type\-C}}
+\index{par\-Type\-C@{par\-Type\-C}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{par\-Type\-C}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf cuboid\-\_\-t\-::par\-Type\-C\-\_\-type} \& cuboid\-\_\-t\-::par\-Type\-C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcuboid__t_a923b33f2683e0df94603c429547be912}
+\hypertarget{classcuboid__t_aa70a57aa669fdf89f3ed1d464c9c9cf7}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!par\-Type\-C@{par\-Type\-C}}
+\index{par\-Type\-C@{par\-Type\-C}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{par\-Type\-C}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cuboid\-\_\-t\-::par\-Type\-C\-\_\-type} \& cuboid\-\_\-t\-::par\-Type\-C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_aa70a57aa669fdf89f3ed1d464c9c9cf7}
+\hypertarget{classcuboid__t_a7eac87c8db11eb19bc4873220d366831}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!par\-Type\-C@{par\-Type\-C}}
+\index{par\-Type\-C@{par\-Type\-C}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{par\-Type\-C}]{\setlength{\rightskip}{0pt plus 5cm}void cuboid\-\_\-t\-::par\-Type\-C (
+\begin{DoxyParamCaption}
+\item[{const {\bf par\-Type\-C\-\_\-type} \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_a7eac87c8db11eb19bc4873220d366831}
+\hypertarget{classcuboid__t_ae13a7e732dc3c3ae94d8aaffba7ee617}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!sigma@{sigma}}
+\index{sigma@{sigma}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{sigma}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf cuboid\-\_\-t\-::sigma\-\_\-type} \& cuboid\-\_\-t\-::sigma (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcuboid__t_ae13a7e732dc3c3ae94d8aaffba7ee617}
+\hypertarget{classcuboid__t_a0a25741d3a40cffb89c4b8f62fd5b302}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!sigma@{sigma}}
+\index{sigma@{sigma}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{sigma}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cuboid\-\_\-t\-::sigma\-\_\-type} \& cuboid\-\_\-t\-::sigma (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_a0a25741d3a40cffb89c4b8f62fd5b302}
+\hypertarget{classcuboid__t_aa8ad42d35fb7d27f8e3a476e75e02b40}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!sigma@{sigma}}
+\index{sigma@{sigma}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{sigma}]{\setlength{\rightskip}{0pt plus 5cm}void cuboid\-\_\-t\-::sigma (
+\begin{DoxyParamCaption}
+\item[{const {\bf sigma\-\_\-type} \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_aa8ad42d35fb7d27f8e3a476e75e02b40}
+\hypertarget{classcuboid__t_ad814d59fb91adb1c63a17c41bd37abce}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!size3\-D@{size3\-D}}
+\index{size3\-D@{size3\-D}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{size3\-D}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf cuboid\-\_\-t\-::size3\-D\-\_\-type} \& cuboid\-\_\-t\-::size3\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcuboid__t_ad814d59fb91adb1c63a17c41bd37abce}
+\hypertarget{classcuboid__t_ac8a91327ce480ee6c17408cced64cceb}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!size3\-D@{size3\-D}}
+\index{size3\-D@{size3\-D}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{size3\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cuboid\-\_\-t\-::size3\-D\-\_\-type} \& cuboid\-\_\-t\-::size3\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_ac8a91327ce480ee6c17408cced64cceb}
+\hypertarget{classcuboid__t_a9a87bc74d77d5acb4d47993fd26bdcc2}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!size3\-D@{size3\-D}}
+\index{size3\-D@{size3\-D}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{size3\-D}]{\setlength{\rightskip}{0pt plus 5cm}void cuboid\-\_\-t\-::size3\-D (
+\begin{DoxyParamCaption}
+\item[{const {\bf size3\-D\-\_\-type} \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_a9a87bc74d77d5acb4d47993fd26bdcc2}
+\hypertarget{classcuboid__t_aa26d6df9982c5fa7ca418f577e4e8730}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!size3\-D@{size3\-D}}
+\index{size3\-D@{size3\-D}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{size3\-D}]{\setlength{\rightskip}{0pt plus 5cm}void cuboid\-\_\-t\-::size3\-D (
+\begin{DoxyParamCaption}
+\item[{\-::std\-::auto\-\_\-ptr$<$ {\bf size3\-D\-\_\-type} $>$}]{p}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_aa26d6df9982c5fa7ca418f577e4e8730}
+\hypertarget{classcuboid__t_aa2d8956335c51c61b3d24655faaef8e9}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!start\-Velocity@{start\-Velocity}}
+\index{start\-Velocity@{start\-Velocity}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{start\-Velocity}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf cuboid\-\_\-t\-::start\-Velocity\-\_\-type} \& cuboid\-\_\-t\-::start\-Velocity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classcuboid__t_aa2d8956335c51c61b3d24655faaef8e9}
+\hypertarget{classcuboid__t_a985354621466cf976351d5ae91c8e54d}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!start\-Velocity@{start\-Velocity}}
+\index{start\-Velocity@{start\-Velocity}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{start\-Velocity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cuboid\-\_\-t\-::start\-Velocity\-\_\-type} \& cuboid\-\_\-t\-::start\-Velocity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_a985354621466cf976351d5ae91c8e54d}
+\hypertarget{classcuboid__t_a7fd31641814ea206932d025a8b1c30ca}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!start\-Velocity@{start\-Velocity}}
+\index{start\-Velocity@{start\-Velocity}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{start\-Velocity}]{\setlength{\rightskip}{0pt plus 5cm}void cuboid\-\_\-t\-::start\-Velocity (
+\begin{DoxyParamCaption}
+\item[{const {\bf start\-Velocity\-\_\-type} \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_a7fd31641814ea206932d025a8b1c30ca}
+\hypertarget{classcuboid__t_a7cacb68eea7d510a128dc8428a11c13b}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!start\-Velocity@{start\-Velocity}}
+\index{start\-Velocity@{start\-Velocity}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{start\-Velocity}]{\setlength{\rightskip}{0pt plus 5cm}void cuboid\-\_\-t\-::start\-Velocity (
+\begin{DoxyParamCaption}
+\item[{\-::std\-::auto\-\_\-ptr$<$ {\bf start\-Velocity\-\_\-type} $>$}]{p}
+\end{DoxyParamCaption}
+)}}\label{classcuboid__t_a7cacb68eea7d510a128dc8428a11c13b}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcuboid__t_a89f568a5a27be873e0f482d708e31e3d}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!epsilon\-\_\-@{epsilon\-\_\-}}
+\index{epsilon\-\_\-@{epsilon\-\_\-}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{epsilon\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\-::xsd\-::cxx\-::tree\-::one$<$ {\bf epsilon\-\_\-type} $>$ cuboid\-\_\-t\-::epsilon\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcuboid__t_a89f568a5a27be873e0f482d708e31e3d}
+\hypertarget{classcuboid__t_a9c7dd176b3732eb61362f104fe51e4b8}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!mass\-\_\-@{mass\-\_\-}}
+\index{mass\-\_\-@{mass\-\_\-}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{mass\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\-::xsd\-::cxx\-::tree\-::one$<$ {\bf mass\-\_\-type} $>$ cuboid\-\_\-t\-::mass\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcuboid__t_a9c7dd176b3732eb61362f104fe51e4b8}
+\hypertarget{classcuboid__t_a3d83a46d242a523fb10095e9025abddf}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!mean\-V\-\_\-@{mean\-V\-\_\-}}
+\index{mean\-V\-\_\-@{mean\-V\-\_\-}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{mean\-V\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\-::xsd\-::cxx\-::tree\-::one$<$ {\bf mean\-V\-\_\-type} $>$ cuboid\-\_\-t\-::mean\-V\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcuboid__t_a3d83a46d242a523fb10095e9025abddf}
+\hypertarget{classcuboid__t_af31779bcbd1ff3844623c658f633a8aa}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!mesh\-Width\-\_\-@{mesh\-Width\-\_\-}}
+\index{mesh\-Width\-\_\-@{mesh\-Width\-\_\-}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{mesh\-Width\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\-::xsd\-::cxx\-::tree\-::one$<$ {\bf mesh\-Width\-\_\-type} $>$ cuboid\-\_\-t\-::mesh\-Width\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcuboid__t_af31779bcbd1ff3844623c658f633a8aa}
+\hypertarget{classcuboid__t_aa74b198d17ccc0d095655adf9cfa312b}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!origin\-Vector\-\_\-@{origin\-Vector\-\_\-}}
+\index{origin\-Vector\-\_\-@{origin\-Vector\-\_\-}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{origin\-Vector\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\-::xsd\-::cxx\-::tree\-::one$<$ {\bf origin\-Vector\-\_\-type} $>$ cuboid\-\_\-t\-::origin\-Vector\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcuboid__t_aa74b198d17ccc0d095655adf9cfa312b}
+\hypertarget{classcuboid__t_a0ce3a150a7054afaab0b4cfb600b5920}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!par\-Type\-C\-\_\-@{par\-Type\-C\-\_\-}}
+\index{par\-Type\-C\-\_\-@{par\-Type\-C\-\_\-}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{par\-Type\-C\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\-::xsd\-::cxx\-::tree\-::one$<$ {\bf par\-Type\-C\-\_\-type} $>$ cuboid\-\_\-t\-::par\-Type\-C\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcuboid__t_a0ce3a150a7054afaab0b4cfb600b5920}
+\hypertarget{classcuboid__t_ad68ee2b884c2bdec543177f9b2027021}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!sigma\-\_\-@{sigma\-\_\-}}
+\index{sigma\-\_\-@{sigma\-\_\-}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{sigma\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\-::xsd\-::cxx\-::tree\-::one$<$ {\bf sigma\-\_\-type} $>$ cuboid\-\_\-t\-::sigma\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcuboid__t_ad68ee2b884c2bdec543177f9b2027021}
+\hypertarget{classcuboid__t_afccbf21e84c29d7cc05cadf8d5945856}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!size3\-D\-\_\-@{size3\-D\-\_\-}}
+\index{size3\-D\-\_\-@{size3\-D\-\_\-}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{size3\-D\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\-::xsd\-::cxx\-::tree\-::one$<$ {\bf size3\-D\-\_\-type} $>$ cuboid\-\_\-t\-::size3\-D\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcuboid__t_afccbf21e84c29d7cc05cadf8d5945856}
+\hypertarget{classcuboid__t_a0720684b94609a0c60088e2535cc2c67}{\index{cuboid\-\_\-t@{cuboid\-\_\-t}!start\-Velocity\-\_\-@{start\-Velocity\-\_\-}}
+\index{start\-Velocity\-\_\-@{start\-Velocity\-\_\-}!cuboid_t@{cuboid\-\_\-t}}
+\subsubsection[{start\-Velocity\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\-::xsd\-::cxx\-::tree\-::one$<$ {\bf start\-Velocity\-\_\-type} $>$ cuboid\-\_\-t\-::start\-Velocity\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcuboid__t_a0720684b94609a0c60088e2535cc2c67}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/utils/\hyperlink{InputCuboids_8h}{Input\-Cuboids.\-h}\item 
+src/utils/\hyperlink{InputCuboids_8cpp}{Input\-Cuboids.\-cpp}\end{DoxyCompactItemize}

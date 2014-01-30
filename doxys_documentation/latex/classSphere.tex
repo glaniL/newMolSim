@@ -1,0 +1,369 @@
+\hypertarget{classSphere}{\section{Sphere Class Reference}
+\label{classSphere}\index{Sphere@{Sphere}}
+}
+
+
+This is a class representing a 3\-D sphere of particles.  
+
+
+
+
+{\ttfamily \#include $<$Sphere.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSphere_a890a63ff583cb88e7ec4e840b4ef5eb9}{Sphere} ()
+\item 
+\hyperlink{classSphere_a9644e05e957d1e94c6b49c791ced6af5}{Sphere} (\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \hyperlink{classSphere_a23d3e7709e2cabae2608d470a1edcece}{center}, \hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \hyperlink{classSphere_a93f232ff2747403c36fbe0513155da89}{start\-V}, double \hyperlink{classSphere_a2cd2b54a44a8c48132a37bc99e9540a3}{mean\-V}, double \hyperlink{classSphere_aa98b073187155748b82f6675aa65a2d3}{m}, int \hyperlink{classSphere_ab4adc2969e56bb99f4a88fac7a390313}{radius}, double \hyperlink{classSphere_a0e2523061bbf7ebef88534efeefe91f9}{mesh\-Width}, int \hyperlink{classSphere_ae52652f5262aa5268f2442a0c598917e}{par\-Type}, double \hyperlink{classSphere_ada633ebd567ecc2c88b9e31d7de8fc31}{E\-P\-S\-I\-L\-O\-N}, double \hyperlink{classSphere_a1515a874e99244d9c4bc2bd782a4eb7f}{S\-I\-G\-M\-A})
+\item 
+\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \& \hyperlink{classSphere_ae6672bb1f28f220707e0733fcd861683}{get\-Center} ()
+\item 
+\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \& \hyperlink{classSphere_aff78cca177f74fb8f2d8bff01ae29ca8}{get\-Start\-V} ()
+\item 
+double \& \hyperlink{classSphere_ae491e83c8253a9ef35f2be41be191757}{get\-Mean\-V} ()
+\item 
+double \& \hyperlink{classSphere_a7364ad539afc14bea43529e6cbb5ea45}{get\-M} ()
+\item 
+int \& \hyperlink{classSphere_a8a7b55dc6859aeb70405176ad2669ee8}{get\-Radius} ()
+\item 
+double \& \hyperlink{classSphere_a8796dba65ece80813b560fefdebf3ed0}{get\-Mesh\-Width} ()
+\item 
+std\-::list$<$ \hyperlink{classParticle}{Particle} $>$ \& \hyperlink{classSphere_a8d8082fba50dadba0afc58877d126603}{get\-Sphere} ()
+\item 
+int \& \hyperlink{classSphere_a5023edd8787a02cb96bfc4ce9d6f3335}{get\-Type} ()
+\item 
+double \hyperlink{classSphere_a647815fa5959a710a15b3b58b1748326}{get\-Epsilon} ()
+\item 
+double \hyperlink{classSphere_ade101a82ae3fa2c93969f0316dc8ec9c}{get\-Sigma} ()
+\item 
+virtual \hyperlink{classSphere_a569c071e50a3e11f678630ee1a17737e}{$\sim$\-Sphere} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classSphere_a0c92cd51e271f64c97c96fc5f4d775a8}{init\-List\-Of\-Centers} ()
+\item 
+void \hyperlink{classSphere_acbe46e167b61e7b1d1fb4b80ad45f386}{init\-List\-Of\-Radii} ()
+\item 
+void \hyperlink{classSphere_add9cb3b5fc594012c8e0f64556db02f9}{plot} (\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ temp\-Center, int x, int y)
+\item 
+void \hyperlink{classSphere_a7069d3583fbb47c93d825306df9f2f4c}{draw\-Vertical\-Line} (\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ temp\-Center, int upper\-Height)
+\item 
+void \hyperlink{classSphere_ac81f8d066b948468d700047994934eda}{draw\-Circle\-Area} (\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ temp\-Center, int rad)
+\item 
+void \hyperlink{classSphere_a208034eeb2308ab02ca8ea36d23f45af}{draw\-Biggest\-Circle\-Area} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \hyperlink{classSphere_a23d3e7709e2cabae2608d470a1edcece}{center}
+\item 
+\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \hyperlink{classSphere_a93f232ff2747403c36fbe0513155da89}{start\-V}
+\item 
+double \hyperlink{classSphere_a2cd2b54a44a8c48132a37bc99e9540a3}{mean\-V}
+\item 
+double \hyperlink{classSphere_aa98b073187155748b82f6675aa65a2d3}{m}
+\item 
+int \hyperlink{classSphere_ab4adc2969e56bb99f4a88fac7a390313}{radius}
+\item 
+double \hyperlink{classSphere_a0e2523061bbf7ebef88534efeefe91f9}{mesh\-Width}
+\item 
+int \hyperlink{classSphere_ae52652f5262aa5268f2442a0c598917e}{par\-Type}
+\item 
+double \hyperlink{classSphere_ada633ebd567ecc2c88b9e31d7de8fc31}{E\-P\-S\-I\-L\-O\-N}
+\item 
+double \hyperlink{classSphere_a1515a874e99244d9c4bc2bd782a4eb7f}{S\-I\-G\-M\-A}
+\item 
+std\-::list$<$ \hyperlink{classParticle}{Particle} $>$ \hyperlink{classSphere_a0f3aa4c3e86814bb8f7061dc83fc992c}{sph}
+\item 
+std\-::vector$<$ \hyperlink{classutils_1_1Vector}{utils\-::\-Vector}\\*
+$<$ double, 3 $>$ $>$ \hyperlink{classSphere_a9c74234600792e31954bcbf58e692b95}{list\-Of\-Centers}
+\item 
+std\-::vector$<$ int $>$ \hyperlink{classSphere_a97986825b799049cdc4ffbe535e23200}{list\-Of\-Radii}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a class representing a 3\-D sphere of particles. 
+
+One sphere can save a 3\-D set of particles, which are located next to each other. There is no isolated particle in one sphere. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSphere_a890a63ff583cb88e7ec4e840b4ef5eb9}{\index{Sphere@{Sphere}!Sphere@{Sphere}}
+\index{Sphere@{Sphere}!Sphere@{Sphere}}
+\subsubsection[{Sphere}]{\setlength{\rightskip}{0pt plus 5cm}Sphere\-::\-Sphere (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSphere_a890a63ff583cb88e7ec4e840b4ef5eb9}
+Default constructor. \hypertarget{classSphere_a9644e05e957d1e94c6b49c791ced6af5}{\index{Sphere@{Sphere}!Sphere@{Sphere}}
+\index{Sphere@{Sphere}!Sphere@{Sphere}}
+\subsubsection[{Sphere}]{\setlength{\rightskip}{0pt plus 5cm}Sphere\-::\-Sphere (
+\begin{DoxyParamCaption}
+\item[{{\bf utils\-::\-Vector}$<$ double, 3 $>$}]{center, }
+\item[{{\bf utils\-::\-Vector}$<$ double, 3 $>$}]{start\-V, }
+\item[{double}]{mean\-V, }
+\item[{double}]{m, }
+\item[{int}]{radius, }
+\item[{double}]{mesh\-Width, }
+\item[{int}]{par\-Type, }
+\item[{double}]{E\-P\-S\-I\-L\-O\-N, }
+\item[{double}]{S\-I\-G\-M\-A}
+\end{DoxyParamCaption}
+)}}\label{classSphere_a9644e05e957d1e94c6b49c791ced6af5}
+The main constructor.
+
+Constructs a new sphere with all information needed. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em center} & \hyperlink{classSphere}{Sphere}'s center's location. \\
+\hline
+\mbox{\tt in}  & {\em start\-V} & Start velocity of all particles in the beginning. \\
+\hline
+\mbox{\tt in}  & {\em mean\-V} & Mean velocity (aka. brownian factor) of each partcile in sphere. \\
+\hline
+\mbox{\tt in}  & {\em m} & Mass of each particle in sphere. \\
+\hline
+\mbox{\tt in}  & {\em radius} & Radius of the sphere in particles (int not double!). \\
+\hline
+\mbox{\tt in}  & {\em mesh\-Width} & The mesh distance between every 2 nearest particles of sphere. \\
+\hline
+\mbox{\tt in}  & {\em par\-Type} & \hyperlink{classParticle}{Particle} type of sphere. \\
+\hline
+\mbox{\tt in}  & {\em E\-P\-S\-I\-L\-O\-N} & For Lennard Jones Force. \\
+\hline
+\mbox{\tt in}  & {\em S\-I\-G\-M\-A} & For Lennard Jones Force. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSphere_a569c071e50a3e11f678630ee1a17737e}{\index{Sphere@{Sphere}!$\sim$\-Sphere@{$\sim$\-Sphere}}
+\index{$\sim$\-Sphere@{$\sim$\-Sphere}!Sphere@{Sphere}}
+\subsubsection[{$\sim$\-Sphere}]{\setlength{\rightskip}{0pt plus 5cm}Sphere\-::$\sim$\-Sphere (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSphere_a569c071e50a3e11f678630ee1a17737e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSphere_a208034eeb2308ab02ca8ea36d23f45af}{\index{Sphere@{Sphere}!draw\-Biggest\-Circle\-Area@{draw\-Biggest\-Circle\-Area}}
+\index{draw\-Biggest\-Circle\-Area@{draw\-Biggest\-Circle\-Area}!Sphere@{Sphere}}
+\subsubsection[{draw\-Biggest\-Circle\-Area}]{\setlength{\rightskip}{0pt plus 5cm}void Sphere\-::draw\-Biggest\-Circle\-Area (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classSphere_a208034eeb2308ab02ca8ea36d23f45af}
+Draw the biggest circle of the sphere. Also fills list\-Of\-Centers and list\-Of\-Radii Is private and needed for building the sphere (Alternative 2\-: Bresenham). \hypertarget{classSphere_ac81f8d066b948468d700047994934eda}{\index{Sphere@{Sphere}!draw\-Circle\-Area@{draw\-Circle\-Area}}
+\index{draw\-Circle\-Area@{draw\-Circle\-Area}!Sphere@{Sphere}}
+\subsubsection[{draw\-Circle\-Area}]{\setlength{\rightskip}{0pt plus 5cm}void Sphere\-::draw\-Circle\-Area (
+\begin{DoxyParamCaption}
+\item[{{\bf utils\-::\-Vector}$<$ double, 3 $>$}]{temp\-Center, }
+\item[{int}]{rad}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classSphere_ac81f8d066b948468d700047994934eda}
+Draw a circle with given radius and center. Is private and needed for building the sphere (Alternative 2\-: Bresenham). To build a sphere we have to make (2$\ast$radius + 1) circles.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em temp\-Center,\-:} & the coordinates of the center of the C\-U\-R\-R\-E\-N\-T circle. \\
+\hline
+\mbox{\tt in}  & {\em rad,\-:} & radius of the current circle. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSphere_a7069d3583fbb47c93d825306df9f2f4c}{\index{Sphere@{Sphere}!draw\-Vertical\-Line@{draw\-Vertical\-Line}}
+\index{draw\-Vertical\-Line@{draw\-Vertical\-Line}!Sphere@{Sphere}}
+\subsubsection[{draw\-Vertical\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void Sphere\-::draw\-Vertical\-Line (
+\begin{DoxyParamCaption}
+\item[{{\bf utils\-::\-Vector}$<$ double, 3 $>$}]{temp\-Center, }
+\item[{int}]{upper\-Height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classSphere_a7069d3583fbb47c93d825306df9f2f4c}
+Draw a single vertical line in the current circle. Length = 2$\ast$upper\-Height + 1 Is private and needed for building the sphere (Alternative 2\-: Bresenham).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em temp\-Center,\-:} & the coordinates of the center of the C\-U\-R\-R\-E\-N\-T vertical line. \\
+\hline
+\mbox{\tt in}  & {\em upper\-Height,\-:} & Since every line is symmetric, only the upper length is needed. \\
+\hline
+\mbox{\tt out}  & {\em sph,\-:} & the new particle will be stored here. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSphere_ae6672bb1f28f220707e0733fcd861683}{\index{Sphere@{Sphere}!get\-Center@{get\-Center}}
+\index{get\-Center@{get\-Center}!Sphere@{Sphere}}
+\subsubsection[{get\-Center}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-Vector}$<$ double, 3 $>$ \& Sphere\-::get\-Center (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSphere_ae6672bb1f28f220707e0733fcd861683}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classSphere}{Sphere}'s center's location. 
+\end{DoxyReturn}
+\hypertarget{classSphere_a647815fa5959a710a15b3b58b1748326}{\index{Sphere@{Sphere}!get\-Epsilon@{get\-Epsilon}}
+\index{get\-Epsilon@{get\-Epsilon}!Sphere@{Sphere}}
+\subsubsection[{get\-Epsilon}]{\setlength{\rightskip}{0pt plus 5cm}double Sphere\-::get\-Epsilon (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSphere_a647815fa5959a710a15b3b58b1748326}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCuboid}{Cuboid}'s epsilon for Lennard Jones Force. 
+\end{DoxyReturn}
+\hypertarget{classSphere_a7364ad539afc14bea43529e6cbb5ea45}{\index{Sphere@{Sphere}!get\-M@{get\-M}}
+\index{get\-M@{get\-M}!Sphere@{Sphere}}
+\subsubsection[{get\-M}]{\setlength{\rightskip}{0pt plus 5cm}double \& Sphere\-::get\-M (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSphere_a7364ad539afc14bea43529e6cbb5ea45}
+\begin{DoxyReturn}{Returns}
+Mass of each particle. 
+\end{DoxyReturn}
+\hypertarget{classSphere_ae491e83c8253a9ef35f2be41be191757}{\index{Sphere@{Sphere}!get\-Mean\-V@{get\-Mean\-V}}
+\index{get\-Mean\-V@{get\-Mean\-V}!Sphere@{Sphere}}
+\subsubsection[{get\-Mean\-V}]{\setlength{\rightskip}{0pt plus 5cm}double \& Sphere\-::get\-Mean\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSphere_ae491e83c8253a9ef35f2be41be191757}
+\begin{DoxyReturn}{Returns}
+Mean velocity of particles. 
+\end{DoxyReturn}
+\hypertarget{classSphere_a8796dba65ece80813b560fefdebf3ed0}{\index{Sphere@{Sphere}!get\-Mesh\-Width@{get\-Mesh\-Width}}
+\index{get\-Mesh\-Width@{get\-Mesh\-Width}!Sphere@{Sphere}}
+\subsubsection[{get\-Mesh\-Width}]{\setlength{\rightskip}{0pt plus 5cm}double \& Sphere\-::get\-Mesh\-Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSphere_a8796dba65ece80813b560fefdebf3ed0}
+\begin{DoxyReturn}{Returns}
+Mesh distance between every 2 nearest particles. 
+\end{DoxyReturn}
+\hypertarget{classSphere_a8a7b55dc6859aeb70405176ad2669ee8}{\index{Sphere@{Sphere}!get\-Radius@{get\-Radius}}
+\index{get\-Radius@{get\-Radius}!Sphere@{Sphere}}
+\subsubsection[{get\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}int \& Sphere\-::get\-Radius (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSphere_a8a7b55dc6859aeb70405176ad2669ee8}
+\begin{DoxyReturn}{Returns}
+Radius of the sphere. 
+\end{DoxyReturn}
+\hypertarget{classSphere_ade101a82ae3fa2c93969f0316dc8ec9c}{\index{Sphere@{Sphere}!get\-Sigma@{get\-Sigma}}
+\index{get\-Sigma@{get\-Sigma}!Sphere@{Sphere}}
+\subsubsection[{get\-Sigma}]{\setlength{\rightskip}{0pt plus 5cm}double Sphere\-::get\-Sigma (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSphere_ade101a82ae3fa2c93969f0316dc8ec9c}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCuboid}{Cuboid}'s sigma for Lennard Jones Force. 
+\end{DoxyReturn}
+\hypertarget{classSphere_a8d8082fba50dadba0afc58877d126603}{\index{Sphere@{Sphere}!get\-Sphere@{get\-Sphere}}
+\index{get\-Sphere@{get\-Sphere}!Sphere@{Sphere}}
+\subsubsection[{get\-Sphere}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<$ {\bf Particle} $>$ \& Sphere\-::get\-Sphere (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSphere_a8d8082fba50dadba0afc58877d126603}
+\begin{DoxyReturn}{Returns}
+List of stored particles in the sphere. 
+\end{DoxyReturn}
+\hypertarget{classSphere_aff78cca177f74fb8f2d8bff01ae29ca8}{\index{Sphere@{Sphere}!get\-Start\-V@{get\-Start\-V}}
+\index{get\-Start\-V@{get\-Start\-V}!Sphere@{Sphere}}
+\subsubsection[{get\-Start\-V}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-Vector}$<$ double, 3 $>$ \& Sphere\-::get\-Start\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSphere_aff78cca177f74fb8f2d8bff01ae29ca8}
+\begin{DoxyReturn}{Returns}
+Velocity at the beginning of each particle in sphere. 
+\end{DoxyReturn}
+\hypertarget{classSphere_a5023edd8787a02cb96bfc4ce9d6f3335}{\index{Sphere@{Sphere}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!Sphere@{Sphere}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int \& Sphere\-::get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSphere_a5023edd8787a02cb96bfc4ce9d6f3335}
+\begin{DoxyReturn}{Returns}
+particle type of the sphere. 
+\end{DoxyReturn}
+\hypertarget{classSphere_a0c92cd51e271f64c97c96fc5f4d775a8}{\index{Sphere@{Sphere}!init\-List\-Of\-Centers@{init\-List\-Of\-Centers}}
+\index{init\-List\-Of\-Centers@{init\-List\-Of\-Centers}!Sphere@{Sphere}}
+\subsubsection[{init\-List\-Of\-Centers}]{\setlength{\rightskip}{0pt plus 5cm}void Sphere\-::init\-List\-Of\-Centers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classSphere_a0c92cd51e271f64c97c96fc5f4d775a8}
+Initializes list\-Of\-Centers\-: list\-Of\-Centers\mbox{[}radius\mbox{]} = center (the biggest circle) Is private and needed for building the sphere (Alternative 2\-: Bresenham). Must be called before \hyperlink{classSphere_a208034eeb2308ab02ca8ea36d23f45af}{draw\-Biggest\-Circle\-Area()}. \hypertarget{classSphere_acbe46e167b61e7b1d1fb4b80ad45f386}{\index{Sphere@{Sphere}!init\-List\-Of\-Radii@{init\-List\-Of\-Radii}}
+\index{init\-List\-Of\-Radii@{init\-List\-Of\-Radii}!Sphere@{Sphere}}
+\subsubsection[{init\-List\-Of\-Radii}]{\setlength{\rightskip}{0pt plus 5cm}void Sphere\-::init\-List\-Of\-Radii (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classSphere_acbe46e167b61e7b1d1fb4b80ad45f386}
+Initializes list\-Of\-Radii\-: list\-Of\-Radii\mbox{[}radius\mbox{]} = radius (the biggest circle) Is private and needed for building the sphere (Alternative 2\-: Bresenham). Must be called before \hyperlink{classSphere_a208034eeb2308ab02ca8ea36d23f45af}{draw\-Biggest\-Circle\-Area()}. \hypertarget{classSphere_add9cb3b5fc594012c8e0f64556db02f9}{\index{Sphere@{Sphere}!plot@{plot}}
+\index{plot@{plot}!Sphere@{Sphere}}
+\subsubsection[{plot}]{\setlength{\rightskip}{0pt plus 5cm}void Sphere\-::plot (
+\begin{DoxyParamCaption}
+\item[{{\bf utils\-::\-Vector}$<$ double, 3 $>$}]{temp\-Center, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classSphere_add9cb3b5fc594012c8e0f64556db02f9}
+Push a single particle with the given coordinates into sph\-: Its coordinates are\-: (x$\ast$mesh\-Width, y$\ast$mesh\-Width, temp\-Center\mbox{[}2\mbox{]}) Is private and needed for building the sphere (Alternative 2\-: Bresenham). Is elementary function for building the sphere.
+
+
+\begin{DoxyParams}{Parameters}
+{\em temp\-Center,\-:} & the coordinates of the center of the C\-U\-R\-R\-E\-N\-T circle. \\
+\hline
+{\em x,\-:} & the horizontal value in the current circle. \\
+\hline
+{\em y,\-:} & the vertical value in the current circle. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSphere_a23d3e7709e2cabae2608d470a1edcece}{\index{Sphere@{Sphere}!center@{center}}
+\index{center@{center}!Sphere@{Sphere}}
+\subsubsection[{center}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-Vector}$<$double, 3$>$ Sphere\-::center\hspace{0.3cm}{\ttfamily [private]}}}\label{classSphere_a23d3e7709e2cabae2608d470a1edcece}
+A 3\-D vector indicating the location of the center. \hypertarget{classSphere_ada633ebd567ecc2c88b9e31d7de8fc31}{\index{Sphere@{Sphere}!E\-P\-S\-I\-L\-O\-N@{E\-P\-S\-I\-L\-O\-N}}
+\index{E\-P\-S\-I\-L\-O\-N@{E\-P\-S\-I\-L\-O\-N}!Sphere@{Sphere}}
+\subsubsection[{E\-P\-S\-I\-L\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}double Sphere\-::\-E\-P\-S\-I\-L\-O\-N\hspace{0.3cm}{\ttfamily [private]}}}\label{classSphere_ada633ebd567ecc2c88b9e31d7de8fc31}
+For Lennard Jones Force. \hypertarget{classSphere_a9c74234600792e31954bcbf58e692b95}{\index{Sphere@{Sphere}!list\-Of\-Centers@{list\-Of\-Centers}}
+\index{list\-Of\-Centers@{list\-Of\-Centers}!Sphere@{Sphere}}
+\subsubsection[{list\-Of\-Centers}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf utils\-::\-Vector}$<$double, 3$>$ $>$ Sphere\-::list\-Of\-Centers\hspace{0.3cm}{\ttfamily [private]}}}\label{classSphere_a9c74234600792e31954bcbf58e692b95}
+A list of centers of parallel circles along the Oz axis. The distance between 2 nearest circles is mesh\-Width. There are (2$\ast$radius + 1) elements in this list. Is private and needed for building the sphere (Alternative 2\-: Bresenham). \hypertarget{classSphere_a97986825b799049cdc4ffbe535e23200}{\index{Sphere@{Sphere}!list\-Of\-Radii@{list\-Of\-Radii}}
+\index{list\-Of\-Radii@{list\-Of\-Radii}!Sphere@{Sphere}}
+\subsubsection[{list\-Of\-Radii}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ Sphere\-::list\-Of\-Radii\hspace{0.3cm}{\ttfamily [private]}}}\label{classSphere_a97986825b799049cdc4ffbe535e23200}
+A list of radii of parallel circles along the Oz axis, whose centers are stored in list\-Of\-Centers. Both list\-Of\-Centers and list\-Of\-Radii synchronize with eachother. For example\-: The circle with list\-Of\-Centers\mbox{[}i\mbox{]} has radius list\-Of\-Radii\mbox{[}i\mbox{]}. There are (2$\ast$radius + 1) elements in this list. Is private and needed for building the sphere (Alternative 2\-: Bresenham). \hypertarget{classSphere_aa98b073187155748b82f6675aa65a2d3}{\index{Sphere@{Sphere}!m@{m}}
+\index{m@{m}!Sphere@{Sphere}}
+\subsubsection[{m}]{\setlength{\rightskip}{0pt plus 5cm}double Sphere\-::m\hspace{0.3cm}{\ttfamily [private]}}}\label{classSphere_aa98b073187155748b82f6675aa65a2d3}
+Mass of each particle in the sphere. \hypertarget{classSphere_a2cd2b54a44a8c48132a37bc99e9540a3}{\index{Sphere@{Sphere}!mean\-V@{mean\-V}}
+\index{mean\-V@{mean\-V}!Sphere@{Sphere}}
+\subsubsection[{mean\-V}]{\setlength{\rightskip}{0pt plus 5cm}double Sphere\-::mean\-V\hspace{0.3cm}{\ttfamily [private]}}}\label{classSphere_a2cd2b54a44a8c48132a37bc99e9540a3}
+Mean velocity. Used for brownian motion (aka. Brownian Factor). \hypertarget{classSphere_a0e2523061bbf7ebef88534efeefe91f9}{\index{Sphere@{Sphere}!mesh\-Width@{mesh\-Width}}
+\index{mesh\-Width@{mesh\-Width}!Sphere@{Sphere}}
+\subsubsection[{mesh\-Width}]{\setlength{\rightskip}{0pt plus 5cm}double Sphere\-::mesh\-Width\hspace{0.3cm}{\ttfamily [private]}}}\label{classSphere_a0e2523061bbf7ebef88534efeefe91f9}
+The mesh distance between 2 particles. \hypertarget{classSphere_ae52652f5262aa5268f2442a0c598917e}{\index{Sphere@{Sphere}!par\-Type@{par\-Type}}
+\index{par\-Type@{par\-Type}!Sphere@{Sphere}}
+\subsubsection[{par\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int Sphere\-::par\-Type\hspace{0.3cm}{\ttfamily [private]}}}\label{classSphere_ae52652f5262aa5268f2442a0c598917e}
+Type of particles in sphere. \hypertarget{classSphere_ab4adc2969e56bb99f4a88fac7a390313}{\index{Sphere@{Sphere}!radius@{radius}}
+\index{radius@{radius}!Sphere@{Sphere}}
+\subsubsection[{radius}]{\setlength{\rightskip}{0pt plus 5cm}int Sphere\-::radius\hspace{0.3cm}{\ttfamily [private]}}}\label{classSphere_ab4adc2969e56bb99f4a88fac7a390313}
+The sphere's radius in particles (an int number!). The real double radius is radius$\ast$mesh\-Width. \hypertarget{classSphere_a1515a874e99244d9c4bc2bd782a4eb7f}{\index{Sphere@{Sphere}!S\-I\-G\-M\-A@{S\-I\-G\-M\-A}}
+\index{S\-I\-G\-M\-A@{S\-I\-G\-M\-A}!Sphere@{Sphere}}
+\subsubsection[{S\-I\-G\-M\-A}]{\setlength{\rightskip}{0pt plus 5cm}double Sphere\-::\-S\-I\-G\-M\-A\hspace{0.3cm}{\ttfamily [private]}}}\label{classSphere_a1515a874e99244d9c4bc2bd782a4eb7f}
+For Lennard Jones Force. \hypertarget{classSphere_a0f3aa4c3e86814bb8f7061dc83fc992c}{\index{Sphere@{Sphere}!sph@{sph}}
+\index{sph@{sph}!Sphere@{Sphere}}
+\subsubsection[{sph}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Particle}$>$ Sphere\-::sph\hspace{0.3cm}{\ttfamily [private]}}}\label{classSphere_a0f3aa4c3e86814bb8f7061dc83fc992c}
+The list of particles stored in this sphere. \hypertarget{classSphere_a93f232ff2747403c36fbe0513155da89}{\index{Sphere@{Sphere}!start\-V@{start\-V}}
+\index{start\-V@{start\-V}!Sphere@{Sphere}}
+\subsubsection[{start\-V}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-Vector}$<$double, 3$>$ Sphere\-::start\-V\hspace{0.3cm}{\ttfamily [private]}}}\label{classSphere_a93f232ff2747403c36fbe0513155da89}
+A 3\-D vector indicating the start velocity. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{Sphere_8h}{Sphere.\-h}\item 
+src/\hyperlink{Sphere_8cpp}{Sphere.\-cpp}\end{DoxyCompactItemize}

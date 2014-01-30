@@ -1,0 +1,215 @@
+\hypertarget{classLCInnerParticleIteratorTest}{\section{L\-C\-Inner\-Particle\-Iterator\-Test Class Reference}
+\label{classLCInnerParticleIteratorTest}\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+}
+
+
+{\ttfamily \#include $<$L\-C\-Inner\-Particle\-Iterator\-Test.\-h$>$}
+
+Inheritance diagram for L\-C\-Inner\-Particle\-Iterator\-Test\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classLCInnerParticleIteratorTest}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLCInnerParticleIteratorTest_ad3c783a3578588b75d6c973c428c84a3}{L\-C\-Inner\-Particle\-Iterator\-Test} ()
+\item 
+virtual \hyperlink{classLCInnerParticleIteratorTest_a4504aad35671ecb106c0987989dc8569}{$\sim$\-L\-C\-Inner\-Particle\-Iterator\-Test} ()
+\item 
+void \hyperlink{classLCInnerParticleIteratorTest_a1270bd9ac6d8d565b80576a21cb29787}{set\-Up} ()
+\item 
+void \hyperlink{classLCInnerParticleIteratorTest_a5e91e56ad97f4e9ff31a8c19192e88e0}{tear\-Down} ()
+\item 
+void \hyperlink{classLCInnerParticleIteratorTest_a691ec0fa8f46c909392b98bb90ded764}{test\-Particle\-Reference} ()
+\item 
+void \hyperlink{classLCInnerParticleIteratorTest_a36498adcccd66229a40b54acfa20ecca}{test\-Get\-Cell\-Number} ()
+\item 
+void \hyperlink{classLCInnerParticleIteratorTest_afd8b3239c190ef845b608d1d1ceb108c}{test\-Assignment} ()
+\item 
+void \hyperlink{classLCInnerParticleIteratorTest_af02554b593671d412559db8ff73ee19e}{test\-Inequality} ()
+\item 
+void \hyperlink{classLCInnerParticleIteratorTest_a6d1d41829ec37d5003b2cfcc48f475de}{test\-Iteration} ()
+\item 
+void \hyperlink{classLCInnerParticleIteratorTest_a201b0e7c640fdca8328f78ddc012abed}{test\-Check\-Left} ()
+\item 
+void \hyperlink{classLCInnerParticleIteratorTest_a25571212771d23d26a28028f5b643979}{test\-Check\-Right} ()
+\item 
+void \hyperlink{classLCInnerParticleIteratorTest_a8b2389225007973776f08a63b919653c}{test\-Check\-Bottom} ()
+\item 
+void \hyperlink{classLCInnerParticleIteratorTest_a23a5b0bd727f9056f764f9a548ca7916}{test\-Check\-Back} ()
+\item 
+void \hyperlink{classLCInnerParticleIteratorTest_ae0e5a407185c43795ca65f9f58e3a31d}{test\-Check\-Top} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Test $\ast$ \hyperlink{classLCInnerParticleIteratorTest_a9426f3086943850f1b7c12d5f5276557}{suite} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classutils_1_1LCParticleContainer}{utils\-::\-L\-C\-Particle\-Container} \hyperlink{classLCInnerParticleIteratorTest_a8f9c568f79dbbe24bbd49a7cb5bea7f1}{container}
+\item 
+int \hyperlink{classLCInnerParticleIteratorTest_a05fd0158904ae918a9fa58d22fadfe98}{width}
+\item 
+int \hyperlink{classLCInnerParticleIteratorTest_a31a40948facb70846156b5c374e3465b}{height}
+\item 
+int \hyperlink{classLCInnerParticleIteratorTest_a154bfbcc8fbcaebb1a1e4a6139a0e822}{depth}
+\item 
+int \hyperlink{classLCInnerParticleIteratorTest_a0e1dbc80d10588e1089c689310dc6789}{num\-\_\-of\-\_\-cells}
+\item 
+double \hyperlink{classLCInnerParticleIteratorTest_a791b6f201aef3f978e65056980828704}{cutoff\-\_\-radius}
+\item 
+\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \hyperlink{classLCInnerParticleIteratorTest_a9899df5843acade8a21c9f1b50a19fef}{domain\-\_\-size}
+\item 
+std\-::list$<$ \hyperlink{classParticle}{Particle} $>$ \hyperlink{classLCInnerParticleIteratorTest_a06041919ff77a8f00537ee269be27f25}{particles}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classLCInnerParticleIteratorTest_ad3c783a3578588b75d6c973c428c84a3}{\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!LCInnerParticleIteratorTest@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\subsubsection[{L\-C\-Inner\-Particle\-Iterator\-Test}]{\setlength{\rightskip}{0pt plus 5cm}L\-C\-Inner\-Particle\-Iterator\-Test\-::\-L\-C\-Inner\-Particle\-Iterator\-Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLCInnerParticleIteratorTest_ad3c783a3578588b75d6c973c428c84a3}
+\hypertarget{classLCInnerParticleIteratorTest_a4504aad35671ecb106c0987989dc8569}{\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!$\sim$\-L\-C\-Inner\-Particle\-Iterator\-Test@{$\sim$\-L\-C\-Inner\-Particle\-Iterator\-Test}}
+\index{$\sim$\-L\-C\-Inner\-Particle\-Iterator\-Test@{$\sim$\-L\-C\-Inner\-Particle\-Iterator\-Test}!LCInnerParticleIteratorTest@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\subsubsection[{$\sim$\-L\-C\-Inner\-Particle\-Iterator\-Test}]{\setlength{\rightskip}{0pt plus 5cm}L\-C\-Inner\-Particle\-Iterator\-Test\-::$\sim$\-L\-C\-Inner\-Particle\-Iterator\-Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classLCInnerParticleIteratorTest_a4504aad35671ecb106c0987989dc8569}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classLCInnerParticleIteratorTest_a1270bd9ac6d8d565b80576a21cb29787}{\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!set\-Up@{set\-Up}}
+\index{set\-Up@{set\-Up}!LCInnerParticleIteratorTest@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\subsubsection[{set\-Up}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-Inner\-Particle\-Iterator\-Test\-::set\-Up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLCInnerParticleIteratorTest_a1270bd9ac6d8d565b80576a21cb29787}
+process\-: Set up the test variables \hypertarget{classLCInnerParticleIteratorTest_a9426f3086943850f1b7c12d5f5276557}{\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!suite@{suite}}
+\index{suite@{suite}!LCInnerParticleIteratorTest@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\subsubsection[{suite}]{\setlength{\rightskip}{0pt plus 5cm}Cpp\-Unit\-::\-Test $\ast$ L\-C\-Inner\-Particle\-Iterator\-Test\-::suite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classLCInnerParticleIteratorTest_a9426f3086943850f1b7c12d5f5276557}
+\begin{DoxyReturn}{Returns}
+the Test\-Suite for the tested methods of Particle\-Iterator 
+\end{DoxyReturn}
+\hypertarget{classLCInnerParticleIteratorTest_a5e91e56ad97f4e9ff31a8c19192e88e0}{\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!tear\-Down@{tear\-Down}}
+\index{tear\-Down@{tear\-Down}!LCInnerParticleIteratorTest@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\subsubsection[{tear\-Down}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-Inner\-Particle\-Iterator\-Test\-::tear\-Down (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLCInnerParticleIteratorTest_a5e91e56ad97f4e9ff31a8c19192e88e0}
+Delete the variables \hypertarget{classLCInnerParticleIteratorTest_afd8b3239c190ef845b608d1d1ceb108c}{\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!test\-Assignment@{test\-Assignment}}
+\index{test\-Assignment@{test\-Assignment}!LCInnerParticleIteratorTest@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\subsubsection[{test\-Assignment}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-Inner\-Particle\-Iterator\-Test\-::test\-Assignment (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLCInnerParticleIteratorTest_afd8b3239c190ef845b608d1d1ceb108c}
+\hypertarget{classLCInnerParticleIteratorTest_a23a5b0bd727f9056f764f9a548ca7916}{\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!test\-Check\-Back@{test\-Check\-Back}}
+\index{test\-Check\-Back@{test\-Check\-Back}!LCInnerParticleIteratorTest@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\subsubsection[{test\-Check\-Back}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-Inner\-Particle\-Iterator\-Test\-::test\-Check\-Back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLCInnerParticleIteratorTest_a23a5b0bd727f9056f764f9a548ca7916}
+\hypertarget{classLCInnerParticleIteratorTest_a8b2389225007973776f08a63b919653c}{\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!test\-Check\-Bottom@{test\-Check\-Bottom}}
+\index{test\-Check\-Bottom@{test\-Check\-Bottom}!LCInnerParticleIteratorTest@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\subsubsection[{test\-Check\-Bottom}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-Inner\-Particle\-Iterator\-Test\-::test\-Check\-Bottom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLCInnerParticleIteratorTest_a8b2389225007973776f08a63b919653c}
+\hypertarget{classLCInnerParticleIteratorTest_a201b0e7c640fdca8328f78ddc012abed}{\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!test\-Check\-Left@{test\-Check\-Left}}
+\index{test\-Check\-Left@{test\-Check\-Left}!LCInnerParticleIteratorTest@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\subsubsection[{test\-Check\-Left}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-Inner\-Particle\-Iterator\-Test\-::test\-Check\-Left (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLCInnerParticleIteratorTest_a201b0e7c640fdca8328f78ddc012abed}
+\hypertarget{classLCInnerParticleIteratorTest_a25571212771d23d26a28028f5b643979}{\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!test\-Check\-Right@{test\-Check\-Right}}
+\index{test\-Check\-Right@{test\-Check\-Right}!LCInnerParticleIteratorTest@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\subsubsection[{test\-Check\-Right}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-Inner\-Particle\-Iterator\-Test\-::test\-Check\-Right (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLCInnerParticleIteratorTest_a25571212771d23d26a28028f5b643979}
+\hypertarget{classLCInnerParticleIteratorTest_ae0e5a407185c43795ca65f9f58e3a31d}{\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!test\-Check\-Top@{test\-Check\-Top}}
+\index{test\-Check\-Top@{test\-Check\-Top}!LCInnerParticleIteratorTest@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\subsubsection[{test\-Check\-Top}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-Inner\-Particle\-Iterator\-Test\-::test\-Check\-Top (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLCInnerParticleIteratorTest_ae0e5a407185c43795ca65f9f58e3a31d}
+\hypertarget{classLCInnerParticleIteratorTest_a36498adcccd66229a40b54acfa20ecca}{\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!test\-Get\-Cell\-Number@{test\-Get\-Cell\-Number}}
+\index{test\-Get\-Cell\-Number@{test\-Get\-Cell\-Number}!LCInnerParticleIteratorTest@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\subsubsection[{test\-Get\-Cell\-Number}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-Inner\-Particle\-Iterator\-Test\-::test\-Get\-Cell\-Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLCInnerParticleIteratorTest_a36498adcccd66229a40b54acfa20ecca}
+\hypertarget{classLCInnerParticleIteratorTest_af02554b593671d412559db8ff73ee19e}{\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!test\-Inequality@{test\-Inequality}}
+\index{test\-Inequality@{test\-Inequality}!LCInnerParticleIteratorTest@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\subsubsection[{test\-Inequality}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-Inner\-Particle\-Iterator\-Test\-::test\-Inequality (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLCInnerParticleIteratorTest_af02554b593671d412559db8ff73ee19e}
+Check the \char`\"{}!=\char`\"{} operator of the iterator \hypertarget{classLCInnerParticleIteratorTest_a6d1d41829ec37d5003b2cfcc48f475de}{\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!test\-Iteration@{test\-Iteration}}
+\index{test\-Iteration@{test\-Iteration}!LCInnerParticleIteratorTest@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\subsubsection[{test\-Iteration}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-Inner\-Particle\-Iterator\-Test\-::test\-Iteration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLCInnerParticleIteratorTest_a6d1d41829ec37d5003b2cfcc48f475de}
+Check the \char`\"{}++\char`\"{} operator of the iterator \hypertarget{classLCInnerParticleIteratorTest_a691ec0fa8f46c909392b98bb90ded764}{\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!test\-Particle\-Reference@{test\-Particle\-Reference}}
+\index{test\-Particle\-Reference@{test\-Particle\-Reference}!LCInnerParticleIteratorTest@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\subsubsection[{test\-Particle\-Reference}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-Inner\-Particle\-Iterator\-Test\-::test\-Particle\-Reference (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLCInnerParticleIteratorTest_a691ec0fa8f46c909392b98bb90ded764}
+Check the \char`\"{}$\ast$\char`\"{} operator of the iterator 
+
+\subsection{Member Data Documentation}
+\hypertarget{classLCInnerParticleIteratorTest_a8f9c568f79dbbe24bbd49a7cb5bea7f1}{\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!container@{container}}
+\index{container@{container}!LCInnerParticleIteratorTest@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\subsubsection[{container}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-L\-C\-Particle\-Container} L\-C\-Inner\-Particle\-Iterator\-Test\-::container\hspace{0.3cm}{\ttfamily [private]}}}\label{classLCInnerParticleIteratorTest_a8f9c568f79dbbe24bbd49a7cb5bea7f1}
+The particle container to check the Iterator \hypertarget{classLCInnerParticleIteratorTest_a791b6f201aef3f978e65056980828704}{\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!cutoff\-\_\-radius@{cutoff\-\_\-radius}}
+\index{cutoff\-\_\-radius@{cutoff\-\_\-radius}!LCInnerParticleIteratorTest@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\subsubsection[{cutoff\-\_\-radius}]{\setlength{\rightskip}{0pt plus 5cm}double L\-C\-Inner\-Particle\-Iterator\-Test\-::cutoff\-\_\-radius\hspace{0.3cm}{\ttfamily [private]}}}\label{classLCInnerParticleIteratorTest_a791b6f201aef3f978e65056980828704}
+\hypertarget{classLCInnerParticleIteratorTest_a154bfbcc8fbcaebb1a1e4a6139a0e822}{\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!depth@{depth}}
+\index{depth@{depth}!LCInnerParticleIteratorTest@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\subsubsection[{depth}]{\setlength{\rightskip}{0pt plus 5cm}int L\-C\-Inner\-Particle\-Iterator\-Test\-::depth\hspace{0.3cm}{\ttfamily [private]}}}\label{classLCInnerParticleIteratorTest_a154bfbcc8fbcaebb1a1e4a6139a0e822}
+\hypertarget{classLCInnerParticleIteratorTest_a9899df5843acade8a21c9f1b50a19fef}{\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!domain\-\_\-size@{domain\-\_\-size}}
+\index{domain\-\_\-size@{domain\-\_\-size}!LCInnerParticleIteratorTest@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\subsubsection[{domain\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-Vector}$<$double, 3$>$ L\-C\-Inner\-Particle\-Iterator\-Test\-::domain\-\_\-size\hspace{0.3cm}{\ttfamily [private]}}}\label{classLCInnerParticleIteratorTest_a9899df5843acade8a21c9f1b50a19fef}
+\hypertarget{classLCInnerParticleIteratorTest_a31a40948facb70846156b5c374e3465b}{\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!height@{height}}
+\index{height@{height}!LCInnerParticleIteratorTest@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\subsubsection[{height}]{\setlength{\rightskip}{0pt plus 5cm}int L\-C\-Inner\-Particle\-Iterator\-Test\-::height\hspace{0.3cm}{\ttfamily [private]}}}\label{classLCInnerParticleIteratorTest_a31a40948facb70846156b5c374e3465b}
+\hypertarget{classLCInnerParticleIteratorTest_a0e1dbc80d10588e1089c689310dc6789}{\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!num\-\_\-of\-\_\-cells@{num\-\_\-of\-\_\-cells}}
+\index{num\-\_\-of\-\_\-cells@{num\-\_\-of\-\_\-cells}!LCInnerParticleIteratorTest@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\subsubsection[{num\-\_\-of\-\_\-cells}]{\setlength{\rightskip}{0pt plus 5cm}int L\-C\-Inner\-Particle\-Iterator\-Test\-::num\-\_\-of\-\_\-cells\hspace{0.3cm}{\ttfamily [private]}}}\label{classLCInnerParticleIteratorTest_a0e1dbc80d10588e1089c689310dc6789}
+\hypertarget{classLCInnerParticleIteratorTest_a06041919ff77a8f00537ee269be27f25}{\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!particles@{particles}}
+\index{particles@{particles}!LCInnerParticleIteratorTest@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\subsubsection[{particles}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Particle}$>$ L\-C\-Inner\-Particle\-Iterator\-Test\-::particles\hspace{0.3cm}{\ttfamily [private]}}}\label{classLCInnerParticleIteratorTest_a06041919ff77a8f00537ee269be27f25}
+The particle list, which will be used to compare to the container \hypertarget{classLCInnerParticleIteratorTest_a05fd0158904ae918a9fa58d22fadfe98}{\index{L\-C\-Inner\-Particle\-Iterator\-Test@{L\-C\-Inner\-Particle\-Iterator\-Test}!width@{width}}
+\index{width@{width}!LCInnerParticleIteratorTest@{L\-C\-Inner\-Particle\-Iterator\-Test}}
+\subsubsection[{width}]{\setlength{\rightskip}{0pt plus 5cm}int L\-C\-Inner\-Particle\-Iterator\-Test\-::width\hspace{0.3cm}{\ttfamily [private]}}}\label{classLCInnerParticleIteratorTest_a05fd0158904ae918a9fa58d22fadfe98}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/tests/\hyperlink{LCInnerParticleIteratorTest_8h}{L\-C\-Inner\-Particle\-Iterator\-Test.\-h}\item 
+src/tests/\hyperlink{LCInnerParticleIteratorTest_8cpp}{L\-C\-Inner\-Particle\-Iterator\-Test.\-cpp}\end{DoxyCompactItemize}

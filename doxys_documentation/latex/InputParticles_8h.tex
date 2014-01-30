@@ -1,0 +1,245 @@
+\hypertarget{InputParticles_8h}{\section{src/utils/\-Input\-Particles.h File Reference}
+\label{InputParticles_8h}\index{src/utils/\-Input\-Particles.\-h@{src/utils/\-Input\-Particles.\-h}}
+}
+{\ttfamily \#include $<$xsd/cxx/config.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/pre.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/xml/char-\/utf8.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/exceptions.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/elements.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/types.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/xml/error-\/handler.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/xml/dom/auto-\/ptr.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/byte.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/unsigned-\/byte.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/short.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/unsigned-\/short.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/int.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/unsigned-\/int.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/long.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/unsigned-\/long.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/boolean.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/float.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/double.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/decimal.\-hxx$>$}\\*
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include $<$limits$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/containers.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/list.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/xml/dom/parsing-\/header.\-hxx$>$}\\*
+{\ttfamily \#include $<$iosfwd$>$}\\*
+{\ttfamily \#include $<$xercesc/sax/\-Input\-Source.\-hpp$>$}\\*
+{\ttfamily \#include $<$xercesc/dom/\-D\-O\-M\-Document.\-hpp$>$}\\*
+{\ttfamily \#include $<$xercesc/dom/\-D\-O\-M\-Error\-Handler.\-hpp$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/post.\-hxx$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classposition__t}{position\-\_\-t}
+\item 
+class \hyperlink{classvelocity__t}{velocity\-\_\-t}
+\item 
+class \hyperlink{classparticle__t}{particle\-\_\-t}
+\item 
+class \hyperlink{classparticles__t}{particles\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespacexml__schema}{xml\-\_\-schema}
+\begin{DoxyCompactList}\small\item\em C++ namespace for the http\-://www.w3.\-org/2001/\-X\-M\-L\-Schema schema namespace. \end{DoxyCompactList}\item 
+namespace \hyperlink{namespacexml__schema_1_1dom}{xml\-\_\-schema\-::dom}
+\begin{DoxyCompactList}\small\item\em D\-O\-M interaction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{InputParticles_8h_aee0a950eb1ff2461391d858c0cd254b7}{X\-S\-D\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}
+\item 
+\#define \hyperlink{InputParticles_8h_acef724a52414642ad3c9b7209702daf5}{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}
+\item 
+\#define \hyperlink{InputParticles_8h_ab727c6f10de580ac0bb8f7395fa68895}{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-T\-R\-E\-E\-\_\-\-N\-O\-D\-E\-\_\-\-K\-E\-Y\-\_\-\-\_\-\-X\-M\-L\-\_\-\-S\-C\-H\-E\-M\-A}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classparticles__t}{particles\-\_\-t} $>$ \hyperlink{InputParticles_8h_a8c8f3ace8e109ece1b93a6e0165cc97b}{particles} (const \-::std\-::string \&uri,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classparticles__t}{particles\-\_\-t} $>$ \hyperlink{InputParticles_8h_a46660b091cf31a8c7108fa5201de7e65}{particles} (const \-::std\-::string \&uri,\-::\hyperlink{namespacexml__schema_a0a5d9528e9175cedf199984a8bb64d62}{xml\-\_\-schema\-::error\-\_\-handler} \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classparticles__t}{particles\-\_\-t} $>$ \hyperlink{InputParticles_8h_ae6a1ef8e51f0b38f10dededd4e651945}{particles} (const \-::std\-::string \&uri,\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classparticles__t}{particles\-\_\-t} $>$ \hyperlink{InputParticles_8h_a14a18d075d6def10e8865880c281e931}{particles} (\-::std\-::istream \&is,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classparticles__t}{particles\-\_\-t} $>$ \hyperlink{InputParticles_8h_a995a4ef3d75cf0692c12cd7ab20134f7}{particles} (\-::std\-::istream \&is,\-::\hyperlink{namespacexml__schema_a0a5d9528e9175cedf199984a8bb64d62}{xml\-\_\-schema\-::error\-\_\-handler} \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classparticles__t}{particles\-\_\-t} $>$ \hyperlink{InputParticles_8h_a85c3d2765f5d06bb138d28de1d884867}{particles} (\-::std\-::istream \&is,\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classparticles__t}{particles\-\_\-t} $>$ \hyperlink{InputParticles_8h_a1707ac4f833fc770e41b8719a7433ada}{particles} (\-::std\-::istream \&is, const \-::std\-::string \&id,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classparticles__t}{particles\-\_\-t} $>$ \hyperlink{InputParticles_8h_aaa2f63697fa5766310d94a6891a3b66c}{particles} (\-::std\-::istream \&is, const \-::std\-::string \&id,\-::\hyperlink{namespacexml__schema_a0a5d9528e9175cedf199984a8bb64d62}{xml\-\_\-schema\-::error\-\_\-handler} \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classparticles__t}{particles\-\_\-t} $>$ \hyperlink{InputParticles_8h_af23040506f1f569adf38c6b1829d6490}{particles} (\-::std\-::istream \&is, const \-::std\-::string \&id,\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classparticles__t}{particles\-\_\-t} $>$ \hyperlink{InputParticles_8h_a7562acdfbce3d3a5363de666b3b8ec0d}{particles} (\-::xercesc\-::\-Input\-Source \&is,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classparticles__t}{particles\-\_\-t} $>$ \hyperlink{InputParticles_8h_a907211c5fb56e419169d04ec8f7b5ee1}{particles} (\-::xercesc\-::\-Input\-Source \&is,\-::\hyperlink{namespacexml__schema_a0a5d9528e9175cedf199984a8bb64d62}{xml\-\_\-schema\-::error\-\_\-handler} \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classparticles__t}{particles\-\_\-t} $>$ \hyperlink{InputParticles_8h_a38de77eeca9ea93251304e50f5144eed}{particles} (\-::xercesc\-::\-Input\-Source \&is,\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classparticles__t}{particles\-\_\-t} $>$ \hyperlink{InputParticles_8h_a7caeb9e7119d4e84cf544b24d5b8c468}{particles} (const \-::xercesc\-::\-D\-O\-M\-Document \&d,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classparticles__t}{particles\-\_\-t} $>$ \hyperlink{InputParticles_8h_acc42f43077e01f03478dad72f0e59107}{particles} (\-::xml\-\_\-schema\-::dom\-::auto\-\_\-ptr$<$ \-::xercesc\-::\-D\-O\-M\-Document $>$ \&d,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{InputParticles_8h_ab727c6f10de580ac0bb8f7395fa68895}{\index{Input\-Particles.\-h@{Input\-Particles.\-h}!X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-T\-R\-E\-E\-\_\-\-N\-O\-D\-E\-\_\-\-K\-E\-Y\-\_\-\-\_\-\-X\-M\-L\-\_\-\-S\-C\-H\-E\-M\-A@{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-T\-R\-E\-E\-\_\-\-N\-O\-D\-E\-\_\-\-K\-E\-Y\-\_\-\-\_\-\-X\-M\-L\-\_\-\-S\-C\-H\-E\-M\-A}}
+\index{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-T\-R\-E\-E\-\_\-\-N\-O\-D\-E\-\_\-\-K\-E\-Y\-\_\-\-\_\-\-X\-M\-L\-\_\-\-S\-C\-H\-E\-M\-A@{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-T\-R\-E\-E\-\_\-\-N\-O\-D\-E\-\_\-\-K\-E\-Y\-\_\-\-\_\-\-X\-M\-L\-\_\-\-S\-C\-H\-E\-M\-A}!InputParticles.h@{Input\-Particles.\-h}}
+\subsubsection[{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-T\-R\-E\-E\-\_\-\-N\-O\-D\-E\-\_\-\-K\-E\-Y\-\_\-\-\_\-\-X\-M\-L\-\_\-\-S\-C\-H\-E\-M\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-T\-R\-E\-E\-\_\-\-N\-O\-D\-E\-\_\-\-K\-E\-Y\-\_\-\-\_\-\-X\-M\-L\-\_\-\-S\-C\-H\-E\-M\-A}}\label{InputParticles_8h_ab727c6f10de580ac0bb8f7395fa68895}
+\hypertarget{InputParticles_8h_acef724a52414642ad3c9b7209702daf5}{\index{Input\-Particles.\-h@{Input\-Particles.\-h}!X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R@{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}}
+\index{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R@{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}!InputParticles.h@{Input\-Particles.\-h}}
+\subsubsection[{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}}\label{InputParticles_8h_acef724a52414642ad3c9b7209702daf5}
+\hypertarget{InputParticles_8h_aee0a950eb1ff2461391d858c0cd254b7}{\index{Input\-Particles.\-h@{Input\-Particles.\-h}!X\-S\-D\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R@{X\-S\-D\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}}
+\index{X\-S\-D\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R@{X\-S\-D\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}!InputParticles.h@{Input\-Particles.\-h}}
+\subsubsection[{X\-S\-D\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-S\-D\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}}\label{InputParticles_8h_aee0a950eb1ff2461391d858c0cd254b7}
+
+
+\subsection{Function Documentation}
+\hypertarget{InputParticles_8h_a8c8f3ace8e109ece1b93a6e0165cc97b}{\index{Input\-Particles.\-h@{Input\-Particles.\-h}!particles@{particles}}
+\index{particles@{particles}!InputParticles.h@{Input\-Particles.\-h}}
+\subsubsection[{particles}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf particles\-\_\-t} $>$ particles (
+\begin{DoxyParamCaption}
+\item[{const \-::std\-::string \&}]{uri, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputParticles_8h_a8c8f3ace8e109ece1b93a6e0165cc97b}
+\hypertarget{InputParticles_8h_a46660b091cf31a8c7108fa5201de7e65}{\index{Input\-Particles.\-h@{Input\-Particles.\-h}!particles@{particles}}
+\index{particles@{particles}!InputParticles.h@{Input\-Particles.\-h}}
+\subsubsection[{particles}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf particles\-\_\-t} $>$ particles (
+\begin{DoxyParamCaption}
+\item[{const \-::std\-::string \&}]{uri, }
+\item[{\-::{\bf xml\-\_\-schema\-::error\-\_\-handler} \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputParticles_8h_a46660b091cf31a8c7108fa5201de7e65}
+\hypertarget{InputParticles_8h_ae6a1ef8e51f0b38f10dededd4e651945}{\index{Input\-Particles.\-h@{Input\-Particles.\-h}!particles@{particles}}
+\index{particles@{particles}!InputParticles.h@{Input\-Particles.\-h}}
+\subsubsection[{particles}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf particles\-\_\-t} $>$ particles (
+\begin{DoxyParamCaption}
+\item[{const \-::std\-::string \&}]{uri, }
+\item[{\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputParticles_8h_ae6a1ef8e51f0b38f10dededd4e651945}
+\hypertarget{InputParticles_8h_a14a18d075d6def10e8865880c281e931}{\index{Input\-Particles.\-h@{Input\-Particles.\-h}!particles@{particles}}
+\index{particles@{particles}!InputParticles.h@{Input\-Particles.\-h}}
+\subsubsection[{particles}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf particles\-\_\-t} $>$ particles (
+\begin{DoxyParamCaption}
+\item[{\-::std\-::istream \&}]{is, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputParticles_8h_a14a18d075d6def10e8865880c281e931}
+\hypertarget{InputParticles_8h_a995a4ef3d75cf0692c12cd7ab20134f7}{\index{Input\-Particles.\-h@{Input\-Particles.\-h}!particles@{particles}}
+\index{particles@{particles}!InputParticles.h@{Input\-Particles.\-h}}
+\subsubsection[{particles}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf particles\-\_\-t} $>$ particles (
+\begin{DoxyParamCaption}
+\item[{\-::std\-::istream \&}]{is, }
+\item[{\-::{\bf xml\-\_\-schema\-::error\-\_\-handler} \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputParticles_8h_a995a4ef3d75cf0692c12cd7ab20134f7}
+\hypertarget{InputParticles_8h_a85c3d2765f5d06bb138d28de1d884867}{\index{Input\-Particles.\-h@{Input\-Particles.\-h}!particles@{particles}}
+\index{particles@{particles}!InputParticles.h@{Input\-Particles.\-h}}
+\subsubsection[{particles}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf particles\-\_\-t} $>$ particles (
+\begin{DoxyParamCaption}
+\item[{\-::std\-::istream \&}]{is, }
+\item[{\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputParticles_8h_a85c3d2765f5d06bb138d28de1d884867}
+\hypertarget{InputParticles_8h_a1707ac4f833fc770e41b8719a7433ada}{\index{Input\-Particles.\-h@{Input\-Particles.\-h}!particles@{particles}}
+\index{particles@{particles}!InputParticles.h@{Input\-Particles.\-h}}
+\subsubsection[{particles}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf particles\-\_\-t} $>$ particles (
+\begin{DoxyParamCaption}
+\item[{\-::std\-::istream \&}]{is, }
+\item[{const \-::std\-::string \&}]{id, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputParticles_8h_a1707ac4f833fc770e41b8719a7433ada}
+\hypertarget{InputParticles_8h_aaa2f63697fa5766310d94a6891a3b66c}{\index{Input\-Particles.\-h@{Input\-Particles.\-h}!particles@{particles}}
+\index{particles@{particles}!InputParticles.h@{Input\-Particles.\-h}}
+\subsubsection[{particles}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf particles\-\_\-t} $>$ particles (
+\begin{DoxyParamCaption}
+\item[{\-::std\-::istream \&}]{is, }
+\item[{const \-::std\-::string \&}]{id, }
+\item[{\-::{\bf xml\-\_\-schema\-::error\-\_\-handler} \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputParticles_8h_aaa2f63697fa5766310d94a6891a3b66c}
+\hypertarget{InputParticles_8h_af23040506f1f569adf38c6b1829d6490}{\index{Input\-Particles.\-h@{Input\-Particles.\-h}!particles@{particles}}
+\index{particles@{particles}!InputParticles.h@{Input\-Particles.\-h}}
+\subsubsection[{particles}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf particles\-\_\-t} $>$ particles (
+\begin{DoxyParamCaption}
+\item[{\-::std\-::istream \&}]{is, }
+\item[{const \-::std\-::string \&}]{id, }
+\item[{\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputParticles_8h_af23040506f1f569adf38c6b1829d6490}
+\hypertarget{InputParticles_8h_a7562acdfbce3d3a5363de666b3b8ec0d}{\index{Input\-Particles.\-h@{Input\-Particles.\-h}!particles@{particles}}
+\index{particles@{particles}!InputParticles.h@{Input\-Particles.\-h}}
+\subsubsection[{particles}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf particles\-\_\-t} $>$ particles (
+\begin{DoxyParamCaption}
+\item[{\-::xercesc\-::\-Input\-Source \&}]{is, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputParticles_8h_a7562acdfbce3d3a5363de666b3b8ec0d}
+\hypertarget{InputParticles_8h_a907211c5fb56e419169d04ec8f7b5ee1}{\index{Input\-Particles.\-h@{Input\-Particles.\-h}!particles@{particles}}
+\index{particles@{particles}!InputParticles.h@{Input\-Particles.\-h}}
+\subsubsection[{particles}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf particles\-\_\-t} $>$ particles (
+\begin{DoxyParamCaption}
+\item[{\-::xercesc\-::\-Input\-Source \&}]{is, }
+\item[{\-::{\bf xml\-\_\-schema\-::error\-\_\-handler} \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputParticles_8h_a907211c5fb56e419169d04ec8f7b5ee1}
+\hypertarget{InputParticles_8h_a38de77eeca9ea93251304e50f5144eed}{\index{Input\-Particles.\-h@{Input\-Particles.\-h}!particles@{particles}}
+\index{particles@{particles}!InputParticles.h@{Input\-Particles.\-h}}
+\subsubsection[{particles}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf particles\-\_\-t} $>$ particles (
+\begin{DoxyParamCaption}
+\item[{\-::xercesc\-::\-Input\-Source \&}]{is, }
+\item[{\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputParticles_8h_a38de77eeca9ea93251304e50f5144eed}
+\hypertarget{InputParticles_8h_a7caeb9e7119d4e84cf544b24d5b8c468}{\index{Input\-Particles.\-h@{Input\-Particles.\-h}!particles@{particles}}
+\index{particles@{particles}!InputParticles.h@{Input\-Particles.\-h}}
+\subsubsection[{particles}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf particles\-\_\-t} $>$ particles (
+\begin{DoxyParamCaption}
+\item[{const \-::xercesc\-::\-D\-O\-M\-Document \&}]{d, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputParticles_8h_a7caeb9e7119d4e84cf544b24d5b8c468}
+\hypertarget{InputParticles_8h_acc42f43077e01f03478dad72f0e59107}{\index{Input\-Particles.\-h@{Input\-Particles.\-h}!particles@{particles}}
+\index{particles@{particles}!InputParticles.h@{Input\-Particles.\-h}}
+\subsubsection[{particles}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf particles\-\_\-t} $>$ particles (
+\begin{DoxyParamCaption}
+\item[{\-::xml\-\_\-schema\-::dom\-::auto\-\_\-ptr$<$ \-::xercesc\-::\-D\-O\-M\-Document $>$ \&}]{d, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputParticles_8h_acc42f43077e01f03478dad72f0e59107}

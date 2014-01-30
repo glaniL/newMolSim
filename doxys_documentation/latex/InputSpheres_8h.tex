@@ -1,0 +1,245 @@
+\hypertarget{InputSpheres_8h}{\section{src/utils/\-Input\-Spheres.h File Reference}
+\label{InputSpheres_8h}\index{src/utils/\-Input\-Spheres.\-h@{src/utils/\-Input\-Spheres.\-h}}
+}
+{\ttfamily \#include $<$xsd/cxx/config.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/pre.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/xml/char-\/utf8.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/exceptions.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/elements.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/types.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/xml/error-\/handler.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/xml/dom/auto-\/ptr.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/byte.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/unsigned-\/byte.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/short.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/unsigned-\/short.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/int.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/unsigned-\/int.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/long.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/unsigned-\/long.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/boolean.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/float.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/double.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/decimal.\-hxx$>$}\\*
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include $<$limits$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/containers.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/list.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/xml/dom/parsing-\/header.\-hxx$>$}\\*
+{\ttfamily \#include $<$iosfwd$>$}\\*
+{\ttfamily \#include $<$xercesc/sax/\-Input\-Source.\-hpp$>$}\\*
+{\ttfamily \#include $<$xercesc/dom/\-D\-O\-M\-Document.\-hpp$>$}\\*
+{\ttfamily \#include $<$xercesc/dom/\-D\-O\-M\-Error\-Handler.\-hpp$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/post.\-hxx$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcenterPos__t}{center\-Pos\-\_\-t}
+\item 
+class \hyperlink{classstartVel__t}{start\-Vel\-\_\-t}
+\item 
+class \hyperlink{classsphere__t}{sphere\-\_\-t}
+\item 
+class \hyperlink{classspheres__t}{spheres\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespacexml__schema}{xml\-\_\-schema}
+\begin{DoxyCompactList}\small\item\em C++ namespace for the http\-://www.w3.\-org/2001/\-X\-M\-L\-Schema schema namespace. \end{DoxyCompactList}\item 
+namespace \hyperlink{namespacexml__schema_1_1dom}{xml\-\_\-schema\-::dom}
+\begin{DoxyCompactList}\small\item\em D\-O\-M interaction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{InputSpheres_8h_aee0a950eb1ff2461391d858c0cd254b7}{X\-S\-D\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}
+\item 
+\#define \hyperlink{InputSpheres_8h_acef724a52414642ad3c9b7209702daf5}{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}
+\item 
+\#define \hyperlink{InputSpheres_8h_ab727c6f10de580ac0bb8f7395fa68895}{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-T\-R\-E\-E\-\_\-\-N\-O\-D\-E\-\_\-\-K\-E\-Y\-\_\-\-\_\-\-X\-M\-L\-\_\-\-S\-C\-H\-E\-M\-A}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classspheres__t}{spheres\-\_\-t} $>$ \hyperlink{InputSpheres_8h_a9abdf38d62f167eb43b803bbabb98640}{spheres} (const \-::std\-::string \&uri,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classspheres__t}{spheres\-\_\-t} $>$ \hyperlink{InputSpheres_8h_aa9a22366938014eed95e3d6fed03577f}{spheres} (const \-::std\-::string \&uri,\-::\hyperlink{namespacexml__schema_a0a5d9528e9175cedf199984a8bb64d62}{xml\-\_\-schema\-::error\-\_\-handler} \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classspheres__t}{spheres\-\_\-t} $>$ \hyperlink{InputSpheres_8h_a4846281aa77c6a674a1c445d83cc1d69}{spheres} (const \-::std\-::string \&uri,\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classspheres__t}{spheres\-\_\-t} $>$ \hyperlink{InputSpheres_8h_a2d1c3f081157773eca33ec4f4aa48c55}{spheres} (\-::std\-::istream \&is,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classspheres__t}{spheres\-\_\-t} $>$ \hyperlink{InputSpheres_8h_aa15cbc9c0aa9d8df8191f48b7351c290}{spheres} (\-::std\-::istream \&is,\-::\hyperlink{namespacexml__schema_a0a5d9528e9175cedf199984a8bb64d62}{xml\-\_\-schema\-::error\-\_\-handler} \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classspheres__t}{spheres\-\_\-t} $>$ \hyperlink{InputSpheres_8h_a33bb29e998a73da42b4b5620409e013c}{spheres} (\-::std\-::istream \&is,\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classspheres__t}{spheres\-\_\-t} $>$ \hyperlink{InputSpheres_8h_a8cd9bca1edb9ccc15780620d7c1b85f0}{spheres} (\-::std\-::istream \&is, const \-::std\-::string \&id,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classspheres__t}{spheres\-\_\-t} $>$ \hyperlink{InputSpheres_8h_ada8300d7c477dd68d370ad1b8c823e29}{spheres} (\-::std\-::istream \&is, const \-::std\-::string \&id,\-::\hyperlink{namespacexml__schema_a0a5d9528e9175cedf199984a8bb64d62}{xml\-\_\-schema\-::error\-\_\-handler} \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classspheres__t}{spheres\-\_\-t} $>$ \hyperlink{InputSpheres_8h_aae5cc137a8c15885d796417e67ae4e20}{spheres} (\-::std\-::istream \&is, const \-::std\-::string \&id,\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classspheres__t}{spheres\-\_\-t} $>$ \hyperlink{InputSpheres_8h_a217336f14e9669dd99f15ed388cd004f}{spheres} (\-::xercesc\-::\-Input\-Source \&is,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classspheres__t}{spheres\-\_\-t} $>$ \hyperlink{InputSpheres_8h_aecbd5e90910fd3c82cc6777398869b46}{spheres} (\-::xercesc\-::\-Input\-Source \&is,\-::\hyperlink{namespacexml__schema_a0a5d9528e9175cedf199984a8bb64d62}{xml\-\_\-schema\-::error\-\_\-handler} \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classspheres__t}{spheres\-\_\-t} $>$ \hyperlink{InputSpheres_8h_a9d57737834bd71332ebe3ba8d3ae9d66}{spheres} (\-::xercesc\-::\-Input\-Source \&is,\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classspheres__t}{spheres\-\_\-t} $>$ \hyperlink{InputSpheres_8h_a1b2c933fcbf28c5a27ab71cc46b0ac61}{spheres} (const \-::xercesc\-::\-D\-O\-M\-Document \&d,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classspheres__t}{spheres\-\_\-t} $>$ \hyperlink{InputSpheres_8h_ac063f883bd9dc1de409aa0b2741e92b9}{spheres} (\-::xml\-\_\-schema\-::dom\-::auto\-\_\-ptr$<$ \-::xercesc\-::\-D\-O\-M\-Document $>$ \&d,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{InputSpheres_8h_ab727c6f10de580ac0bb8f7395fa68895}{\index{Input\-Spheres.\-h@{Input\-Spheres.\-h}!X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-T\-R\-E\-E\-\_\-\-N\-O\-D\-E\-\_\-\-K\-E\-Y\-\_\-\-\_\-\-X\-M\-L\-\_\-\-S\-C\-H\-E\-M\-A@{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-T\-R\-E\-E\-\_\-\-N\-O\-D\-E\-\_\-\-K\-E\-Y\-\_\-\-\_\-\-X\-M\-L\-\_\-\-S\-C\-H\-E\-M\-A}}
+\index{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-T\-R\-E\-E\-\_\-\-N\-O\-D\-E\-\_\-\-K\-E\-Y\-\_\-\-\_\-\-X\-M\-L\-\_\-\-S\-C\-H\-E\-M\-A@{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-T\-R\-E\-E\-\_\-\-N\-O\-D\-E\-\_\-\-K\-E\-Y\-\_\-\-\_\-\-X\-M\-L\-\_\-\-S\-C\-H\-E\-M\-A}!InputSpheres.h@{Input\-Spheres.\-h}}
+\subsubsection[{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-T\-R\-E\-E\-\_\-\-N\-O\-D\-E\-\_\-\-K\-E\-Y\-\_\-\-\_\-\-X\-M\-L\-\_\-\-S\-C\-H\-E\-M\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-T\-R\-E\-E\-\_\-\-N\-O\-D\-E\-\_\-\-K\-E\-Y\-\_\-\-\_\-\-X\-M\-L\-\_\-\-S\-C\-H\-E\-M\-A}}\label{InputSpheres_8h_ab727c6f10de580ac0bb8f7395fa68895}
+\hypertarget{InputSpheres_8h_acef724a52414642ad3c9b7209702daf5}{\index{Input\-Spheres.\-h@{Input\-Spheres.\-h}!X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R@{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}}
+\index{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R@{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}!InputSpheres.h@{Input\-Spheres.\-h}}
+\subsubsection[{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}}\label{InputSpheres_8h_acef724a52414642ad3c9b7209702daf5}
+\hypertarget{InputSpheres_8h_aee0a950eb1ff2461391d858c0cd254b7}{\index{Input\-Spheres.\-h@{Input\-Spheres.\-h}!X\-S\-D\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R@{X\-S\-D\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}}
+\index{X\-S\-D\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R@{X\-S\-D\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}!InputSpheres.h@{Input\-Spheres.\-h}}
+\subsubsection[{X\-S\-D\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-S\-D\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}}\label{InputSpheres_8h_aee0a950eb1ff2461391d858c0cd254b7}
+
+
+\subsection{Function Documentation}
+\hypertarget{InputSpheres_8h_a9abdf38d62f167eb43b803bbabb98640}{\index{Input\-Spheres.\-h@{Input\-Spheres.\-h}!spheres@{spheres}}
+\index{spheres@{spheres}!InputSpheres.h@{Input\-Spheres.\-h}}
+\subsubsection[{spheres}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf spheres\-\_\-t} $>$ spheres (
+\begin{DoxyParamCaption}
+\item[{const \-::std\-::string \&}]{uri, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputSpheres_8h_a9abdf38d62f167eb43b803bbabb98640}
+\hypertarget{InputSpheres_8h_aa9a22366938014eed95e3d6fed03577f}{\index{Input\-Spheres.\-h@{Input\-Spheres.\-h}!spheres@{spheres}}
+\index{spheres@{spheres}!InputSpheres.h@{Input\-Spheres.\-h}}
+\subsubsection[{spheres}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf spheres\-\_\-t} $>$ spheres (
+\begin{DoxyParamCaption}
+\item[{const \-::std\-::string \&}]{uri, }
+\item[{\-::{\bf xml\-\_\-schema\-::error\-\_\-handler} \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputSpheres_8h_aa9a22366938014eed95e3d6fed03577f}
+\hypertarget{InputSpheres_8h_a4846281aa77c6a674a1c445d83cc1d69}{\index{Input\-Spheres.\-h@{Input\-Spheres.\-h}!spheres@{spheres}}
+\index{spheres@{spheres}!InputSpheres.h@{Input\-Spheres.\-h}}
+\subsubsection[{spheres}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf spheres\-\_\-t} $>$ spheres (
+\begin{DoxyParamCaption}
+\item[{const \-::std\-::string \&}]{uri, }
+\item[{\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputSpheres_8h_a4846281aa77c6a674a1c445d83cc1d69}
+\hypertarget{InputSpheres_8h_a2d1c3f081157773eca33ec4f4aa48c55}{\index{Input\-Spheres.\-h@{Input\-Spheres.\-h}!spheres@{spheres}}
+\index{spheres@{spheres}!InputSpheres.h@{Input\-Spheres.\-h}}
+\subsubsection[{spheres}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf spheres\-\_\-t} $>$ spheres (
+\begin{DoxyParamCaption}
+\item[{\-::std\-::istream \&}]{is, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputSpheres_8h_a2d1c3f081157773eca33ec4f4aa48c55}
+\hypertarget{InputSpheres_8h_aa15cbc9c0aa9d8df8191f48b7351c290}{\index{Input\-Spheres.\-h@{Input\-Spheres.\-h}!spheres@{spheres}}
+\index{spheres@{spheres}!InputSpheres.h@{Input\-Spheres.\-h}}
+\subsubsection[{spheres}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf spheres\-\_\-t} $>$ spheres (
+\begin{DoxyParamCaption}
+\item[{\-::std\-::istream \&}]{is, }
+\item[{\-::{\bf xml\-\_\-schema\-::error\-\_\-handler} \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputSpheres_8h_aa15cbc9c0aa9d8df8191f48b7351c290}
+\hypertarget{InputSpheres_8h_a33bb29e998a73da42b4b5620409e013c}{\index{Input\-Spheres.\-h@{Input\-Spheres.\-h}!spheres@{spheres}}
+\index{spheres@{spheres}!InputSpheres.h@{Input\-Spheres.\-h}}
+\subsubsection[{spheres}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf spheres\-\_\-t} $>$ spheres (
+\begin{DoxyParamCaption}
+\item[{\-::std\-::istream \&}]{is, }
+\item[{\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputSpheres_8h_a33bb29e998a73da42b4b5620409e013c}
+\hypertarget{InputSpheres_8h_a8cd9bca1edb9ccc15780620d7c1b85f0}{\index{Input\-Spheres.\-h@{Input\-Spheres.\-h}!spheres@{spheres}}
+\index{spheres@{spheres}!InputSpheres.h@{Input\-Spheres.\-h}}
+\subsubsection[{spheres}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf spheres\-\_\-t} $>$ spheres (
+\begin{DoxyParamCaption}
+\item[{\-::std\-::istream \&}]{is, }
+\item[{const \-::std\-::string \&}]{id, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputSpheres_8h_a8cd9bca1edb9ccc15780620d7c1b85f0}
+\hypertarget{InputSpheres_8h_ada8300d7c477dd68d370ad1b8c823e29}{\index{Input\-Spheres.\-h@{Input\-Spheres.\-h}!spheres@{spheres}}
+\index{spheres@{spheres}!InputSpheres.h@{Input\-Spheres.\-h}}
+\subsubsection[{spheres}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf spheres\-\_\-t} $>$ spheres (
+\begin{DoxyParamCaption}
+\item[{\-::std\-::istream \&}]{is, }
+\item[{const \-::std\-::string \&}]{id, }
+\item[{\-::{\bf xml\-\_\-schema\-::error\-\_\-handler} \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputSpheres_8h_ada8300d7c477dd68d370ad1b8c823e29}
+\hypertarget{InputSpheres_8h_aae5cc137a8c15885d796417e67ae4e20}{\index{Input\-Spheres.\-h@{Input\-Spheres.\-h}!spheres@{spheres}}
+\index{spheres@{spheres}!InputSpheres.h@{Input\-Spheres.\-h}}
+\subsubsection[{spheres}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf spheres\-\_\-t} $>$ spheres (
+\begin{DoxyParamCaption}
+\item[{\-::std\-::istream \&}]{is, }
+\item[{const \-::std\-::string \&}]{id, }
+\item[{\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputSpheres_8h_aae5cc137a8c15885d796417e67ae4e20}
+\hypertarget{InputSpheres_8h_a217336f14e9669dd99f15ed388cd004f}{\index{Input\-Spheres.\-h@{Input\-Spheres.\-h}!spheres@{spheres}}
+\index{spheres@{spheres}!InputSpheres.h@{Input\-Spheres.\-h}}
+\subsubsection[{spheres}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf spheres\-\_\-t} $>$ spheres (
+\begin{DoxyParamCaption}
+\item[{\-::xercesc\-::\-Input\-Source \&}]{is, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputSpheres_8h_a217336f14e9669dd99f15ed388cd004f}
+\hypertarget{InputSpheres_8h_aecbd5e90910fd3c82cc6777398869b46}{\index{Input\-Spheres.\-h@{Input\-Spheres.\-h}!spheres@{spheres}}
+\index{spheres@{spheres}!InputSpheres.h@{Input\-Spheres.\-h}}
+\subsubsection[{spheres}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf spheres\-\_\-t} $>$ spheres (
+\begin{DoxyParamCaption}
+\item[{\-::xercesc\-::\-Input\-Source \&}]{is, }
+\item[{\-::{\bf xml\-\_\-schema\-::error\-\_\-handler} \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputSpheres_8h_aecbd5e90910fd3c82cc6777398869b46}
+\hypertarget{InputSpheres_8h_a9d57737834bd71332ebe3ba8d3ae9d66}{\index{Input\-Spheres.\-h@{Input\-Spheres.\-h}!spheres@{spheres}}
+\index{spheres@{spheres}!InputSpheres.h@{Input\-Spheres.\-h}}
+\subsubsection[{spheres}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf spheres\-\_\-t} $>$ spheres (
+\begin{DoxyParamCaption}
+\item[{\-::xercesc\-::\-Input\-Source \&}]{is, }
+\item[{\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputSpheres_8h_a9d57737834bd71332ebe3ba8d3ae9d66}
+\hypertarget{InputSpheres_8h_a1b2c933fcbf28c5a27ab71cc46b0ac61}{\index{Input\-Spheres.\-h@{Input\-Spheres.\-h}!spheres@{spheres}}
+\index{spheres@{spheres}!InputSpheres.h@{Input\-Spheres.\-h}}
+\subsubsection[{spheres}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf spheres\-\_\-t} $>$ spheres (
+\begin{DoxyParamCaption}
+\item[{const \-::xercesc\-::\-D\-O\-M\-Document \&}]{d, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputSpheres_8h_a1b2c933fcbf28c5a27ab71cc46b0ac61}
+\hypertarget{InputSpheres_8h_ac063f883bd9dc1de409aa0b2741e92b9}{\index{Input\-Spheres.\-h@{Input\-Spheres.\-h}!spheres@{spheres}}
+\index{spheres@{spheres}!InputSpheres.h@{Input\-Spheres.\-h}}
+\subsubsection[{spheres}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf spheres\-\_\-t} $>$ spheres (
+\begin{DoxyParamCaption}
+\item[{\-::xml\-\_\-schema\-::dom\-::auto\-\_\-ptr$<$ \-::xercesc\-::\-D\-O\-M\-Document $>$ \&}]{d, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputSpheres_8h_ac063f883bd9dc1de409aa0b2741e92b9}

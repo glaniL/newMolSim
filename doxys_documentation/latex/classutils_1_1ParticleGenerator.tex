@@ -1,0 +1,319 @@
+\hypertarget{classutils_1_1ParticleGenerator}{\section{utils\-:\-:Particle\-Generator Class Reference}
+\label{classutils_1_1ParticleGenerator}\index{utils\-::\-Particle\-Generator@{utils\-::\-Particle\-Generator}}
+}
+
+
+This is a class capsulating (almost) all work related to cuboids and spheres.  
+
+
+
+
+{\ttfamily \#include $<$Particle\-Generator.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classutils_1_1ParticleGenerator_a66cee361b12e3294bc7a2259d401fe02}{Particle\-Generator} ()
+\item 
+\hyperlink{classutils_1_1ParticleGenerator_a1c12068bec5fd0df8d9a34d4bfb7f726}{Particle\-Generator} (std\-::list$<$ \hyperlink{classCuboid}{Cuboid} $>$ \&cub\-List)
+\item 
+\hyperlink{classutils_1_1ParticleGenerator_a0eba44befd40227a167f9f562d718515}{Particle\-Generator} (std\-::list$<$ \hyperlink{classParticle}{Particle} $>$ \&par\-List)
+\item 
+\hyperlink{classutils_1_1ParticleGenerator_ac9560217a90a901d9a65247028468106}{Particle\-Generator} (std\-::list$<$ \hyperlink{classSphere}{Sphere} $>$ \&sph\-List)
+\item 
+void \hyperlink{classutils_1_1ParticleGenerator_a405c1b60bfbd08c2c31fefb927290945}{read\-Cuboids} (char $\ast$filename)
+\item 
+void \hyperlink{classutils_1_1ParticleGenerator_a47095ba94d78941e9ce4f08b25fccc33}{extract\-Setting} (std\-::string filename, double \&\hyperlink{MolSim_8cpp_a00b0c9b1c3ea8bb73a7fc8b53a3961fd}{start\-\_\-time}, double \&\hyperlink{MolSim_8cpp_a8c7ea5e69ce954c1d81db1732f9f426a}{end\-\_\-time}, double \&\hyperlink{MolSim_8cpp_a4cfc079302fe9a34fe24637c4e44303a}{delta\-\_\-t}, std\-::list$<$ string $>$ \&\hyperlink{MolSim_8cpp_a448cf355949f9675fa5f3d5599923d75}{input\-Names}, std\-::list$<$ string $>$ \&\hyperlink{MolSim_8cpp_ad5280d724148f1f34eb9e36fba1e9bf1}{input\-Types}, string \&\hyperlink{MolSim_8cpp_ac7d2734291385dce3211bcb0884021c1}{output\-Mask}, int \&output\-Freq, \hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \&\hyperlink{MolSim_8cpp_a62ca172a74e96becbd5ebbae3052bbd3}{domain\-Size}, double \&r\-\_\-cutoff, std\-::vector$<$ int $>$ \&domain\-Bound\-Cond, double \&g\-\_\-const, int \&\hyperlink{MolSim_8cpp_ad255f675bdb1dcbda2160670f9912985}{input\-Size})
+\item 
+void \hyperlink{classutils_1_1ParticleGenerator_a5b99fee3ef17845bff2ef6ed4e8f9d04}{extract\-Particles} (const string filename)
+\item 
+void \hyperlink{classutils_1_1ParticleGenerator_addad87e40dc0c5d49e5df4533121771d}{extract\-Cuboids} (const string filename)
+\item 
+void \hyperlink{classutils_1_1ParticleGenerator_a93d2efd2781548606dc52f4a6ab3ca57}{extract\-Spheres} (const string filename)
+\item 
+void \hyperlink{classutils_1_1ParticleGenerator_a89a4177490575ae9486e0eaecdb52dfd}{cuboids\-To\-List} ()
+\item 
+void \hyperlink{classutils_1_1ParticleGenerator_a2ea629339cda550d6daae10ec339296e}{spheres\-To\-List} ()
+\item 
+void \hyperlink{classutils_1_1ParticleGenerator_a7048e1fc122f6e5e962f23071031a0e0}{merge\-With\-Particle\-List} (std\-::list$<$ \hyperlink{classParticle}{Particle} $>$ \&before)
+\item 
+std\-::list$<$ \hyperlink{classCuboid}{Cuboid} $>$ \& \hyperlink{classutils_1_1ParticleGenerator_ad8da4620c020650970252213333b939e}{get\-Cuboid\-List} ()
+\item 
+std\-::list$<$ \hyperlink{classSphere}{Sphere} $>$ \& \hyperlink{classutils_1_1ParticleGenerator_a50edacf6ec960526e5182aaa5e62a192}{get\-Sphere\-List} ()
+\item 
+std\-::list$<$ \hyperlink{classParticle}{Particle} $>$ \& \hyperlink{classutils_1_1ParticleGenerator_a59ad1749a839f3e89e58d3f92ec94b4f}{get\-Particle\-List} ()
+\item 
+virtual \hyperlink{classutils_1_1ParticleGenerator_a37a629906f87d7200989d6bb2dff796d}{$\sim$\-Particle\-Generator} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::list$<$ \hyperlink{classCuboid}{Cuboid} $>$ \hyperlink{classutils_1_1ParticleGenerator_a2b4d4491fa74e20a23f7affc96de834a}{cuboid\-List}
+\item 
+std\-::list$<$ \hyperlink{classSphere}{Sphere} $>$ \hyperlink{classutils_1_1ParticleGenerator_a51b9b7685b429b44bd889a9b62b25ec2}{sphere\-List}
+\item 
+std\-::list$<$ \hyperlink{classParticle}{Particle} $>$ \hyperlink{classutils_1_1ParticleGenerator_a83e8886303b0e6d0e1b269cb54e7d04b}{particle\-List}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a class capsulating (almost) all work related to cuboids and spheres. 
+
+A particle generator contains a list of cuboids/spheres and is therefore able to initialize a set of particles into cuboids/spheres. Extracting needed information from an output file into cuboids/spheres and converting cuboids/spheres into one single list of particles are possible in this class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classutils_1_1ParticleGenerator_a66cee361b12e3294bc7a2259d401fe02}{\index{utils\-::\-Particle\-Generator@{utils\-::\-Particle\-Generator}!Particle\-Generator@{Particle\-Generator}}
+\index{Particle\-Generator@{Particle\-Generator}!utils::ParticleGenerator@{utils\-::\-Particle\-Generator}}
+\subsubsection[{Particle\-Generator}]{\setlength{\rightskip}{0pt plus 5cm}Particle\-Generator\-::\-Particle\-Generator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleGenerator_a66cee361b12e3294bc7a2259d401fe02}
+Default constructor. \hypertarget{classutils_1_1ParticleGenerator_a1c12068bec5fd0df8d9a34d4bfb7f726}{\index{utils\-::\-Particle\-Generator@{utils\-::\-Particle\-Generator}!Particle\-Generator@{Particle\-Generator}}
+\index{Particle\-Generator@{Particle\-Generator}!utils::ParticleGenerator@{utils\-::\-Particle\-Generator}}
+\subsubsection[{Particle\-Generator}]{\setlength{\rightskip}{0pt plus 5cm}Particle\-Generator\-::\-Particle\-Generator (
+\begin{DoxyParamCaption}
+\item[{std\-::list$<$ {\bf Cuboid} $>$ \&}]{cub\-List}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleGenerator_a1c12068bec5fd0df8d9a34d4bfb7f726}
+Main cuboid constructor, which creates a particle generator from a list of cuboids. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em cub\-List} & A list of cuboids. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classutils_1_1ParticleGenerator_a0eba44befd40227a167f9f562d718515}{\index{utils\-::\-Particle\-Generator@{utils\-::\-Particle\-Generator}!Particle\-Generator@{Particle\-Generator}}
+\index{Particle\-Generator@{Particle\-Generator}!utils::ParticleGenerator@{utils\-::\-Particle\-Generator}}
+\subsubsection[{Particle\-Generator}]{\setlength{\rightskip}{0pt plus 5cm}Particle\-Generator\-::\-Particle\-Generator (
+\begin{DoxyParamCaption}
+\item[{std\-::list$<$ {\bf Particle} $>$ \&}]{par\-List}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleGenerator_a0eba44befd40227a167f9f562d718515}
+Main particle constructor, which creates a particle generator from a list of untructered particles. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em par\-List} & A list of particles. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classutils_1_1ParticleGenerator_ac9560217a90a901d9a65247028468106}{\index{utils\-::\-Particle\-Generator@{utils\-::\-Particle\-Generator}!Particle\-Generator@{Particle\-Generator}}
+\index{Particle\-Generator@{Particle\-Generator}!utils::ParticleGenerator@{utils\-::\-Particle\-Generator}}
+\subsubsection[{Particle\-Generator}]{\setlength{\rightskip}{0pt plus 5cm}Particle\-Generator\-::\-Particle\-Generator (
+\begin{DoxyParamCaption}
+\item[{std\-::list$<$ {\bf Sphere} $>$ \&}]{sph\-List}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleGenerator_ac9560217a90a901d9a65247028468106}
+Main sphere constructor, which creates a particle generator from a list of spheres. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sph\-List} & A list of spheres. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classutils_1_1ParticleGenerator_a37a629906f87d7200989d6bb2dff796d}{\index{utils\-::\-Particle\-Generator@{utils\-::\-Particle\-Generator}!$\sim$\-Particle\-Generator@{$\sim$\-Particle\-Generator}}
+\index{$\sim$\-Particle\-Generator@{$\sim$\-Particle\-Generator}!utils::ParticleGenerator@{utils\-::\-Particle\-Generator}}
+\subsubsection[{$\sim$\-Particle\-Generator}]{\setlength{\rightskip}{0pt plus 5cm}Particle\-Generator\-::$\sim$\-Particle\-Generator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classutils_1_1ParticleGenerator_a37a629906f87d7200989d6bb2dff796d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classutils_1_1ParticleGenerator_a89a4177490575ae9486e0eaecdb52dfd}{\index{utils\-::\-Particle\-Generator@{utils\-::\-Particle\-Generator}!cuboids\-To\-List@{cuboids\-To\-List}}
+\index{cuboids\-To\-List@{cuboids\-To\-List}!utils::ParticleGenerator@{utils\-::\-Particle\-Generator}}
+\subsubsection[{cuboids\-To\-List}]{\setlength{\rightskip}{0pt plus 5cm}void Particle\-Generator\-::cuboids\-To\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleGenerator_a89a4177490575ae9486e0eaecdb52dfd}
+Converts particle generator's list of cuboids into one single list of particles. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em particle\-List} & The result will be stored here. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classutils_1_1ParticleGenerator_addad87e40dc0c5d49e5df4533121771d}{\index{utils\-::\-Particle\-Generator@{utils\-::\-Particle\-Generator}!extract\-Cuboids@{extract\-Cuboids}}
+\index{extract\-Cuboids@{extract\-Cuboids}!utils::ParticleGenerator@{utils\-::\-Particle\-Generator}}
+\subsubsection[{extract\-Cuboids}]{\setlength{\rightskip}{0pt plus 5cm}void Particle\-Generator\-::extract\-Cuboids (
+\begin{DoxyParamCaption}
+\item[{const string}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleGenerator_addad87e40dc0c5d49e5df4533121771d}
+The reading procedure, which can convert information from a given X\-M\-L input file into particle generator's list of cuboids.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em filename} & Name of the input file (e.\-g\-: \char`\"{}\-Input\-Cuboids.\-xml\char`\"{}). \\
+\hline
+\mbox{\tt out}  & {\em cub\-List} & The cuboids will be stored here. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classutils_1_1ParticleGenerator_a5b99fee3ef17845bff2ef6ed4e8f9d04}{\index{utils\-::\-Particle\-Generator@{utils\-::\-Particle\-Generator}!extract\-Particles@{extract\-Particles}}
+\index{extract\-Particles@{extract\-Particles}!utils::ParticleGenerator@{utils\-::\-Particle\-Generator}}
+\subsubsection[{extract\-Particles}]{\setlength{\rightskip}{0pt plus 5cm}void Particle\-Generator\-::extract\-Particles (
+\begin{DoxyParamCaption}
+\item[{const string}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleGenerator_a5b99fee3ef17845bff2ef6ed4e8f9d04}
+The reading procedure, which can convert information from a given X\-M\-L input file into particle generator's list of unstructered particles.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em filename} & Name of the input file (e.\-g\-: \char`\"{}\-Input\-Particles.\-xml\char`\"{}). \\
+\hline
+\mbox{\tt out}  & {\em particle\-List} & The particles will be stored here. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classutils_1_1ParticleGenerator_a47095ba94d78941e9ce4f08b25fccc33}{\index{utils\-::\-Particle\-Generator@{utils\-::\-Particle\-Generator}!extract\-Setting@{extract\-Setting}}
+\index{extract\-Setting@{extract\-Setting}!utils::ParticleGenerator@{utils\-::\-Particle\-Generator}}
+\subsubsection[{extract\-Setting}]{\setlength{\rightskip}{0pt plus 5cm}void Particle\-Generator\-::extract\-Setting (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{filename, }
+\item[{double \&}]{start\-\_\-time, }
+\item[{double \&}]{end\-\_\-time, }
+\item[{double \&}]{delta\-\_\-t, }
+\item[{std\-::list$<$ string $>$ \&}]{input\-Names, }
+\item[{std\-::list$<$ string $>$ \&}]{input\-Types, }
+\item[{string \&}]{output\-Mask, }
+\item[{int \&}]{output\-Freq, }
+\item[{{\bf utils\-::\-Vector}$<$ double, 3 $>$ \&}]{domain\-Size, }
+\item[{double \&}]{r\-\_\-cutoff, }
+\item[{std\-::vector$<$ int $>$ \&}]{domain\-Bound\-Cond, }
+\item[{double \&}]{g\-\_\-const, }
+\item[{int \&}]{input\-Size}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleGenerator_a47095ba94d78941e9ce4f08b25fccc33}
+The reading procedure, which can extract all information needed for configuring the simulation from a given X\-M\-L input file .
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em filename} & Input file name. \\
+\hline
+\mbox{\tt out}  & {\em start\-\_\-time} & Start time of simulation will be stored here. \\
+\hline
+\mbox{\tt out}  & {\em end\-\_\-time} & End time of simulation will be stored here. \\
+\hline
+\mbox{\tt out}  & {\em delta\-\_\-t} & Delta time (between 2 iterations) of simulation will be stored here. \\
+\hline
+\mbox{\tt out}  & {\em input\-Names} & A list of X\-M\-L input names, which will be extracted. \\
+\hline
+\mbox{\tt out}  & {\em input\-Types} & A list of types each X\-M\-L input name has (\char`\"{}cuboids\char`\"{}/\char`\"{}spheres\char`\"{}). \\
+\hline
+\mbox{\tt out}  & {\em output\-Mask} & Output files will named after this mask. \\
+\hline
+\mbox{\tt out}  & {\em output\-Freq} & How many iterations it takes to write an output file. \\
+\hline
+\mbox{\tt out}  & {\em domain\-Size} & A 3\-D vector indicating size of the domain (Linked Cell Algorithm). \\
+\hline
+\mbox{\tt out}  & {\em r\-\_\-cutoff} & Cutoff radius (Short Range Algorithm). \\
+\hline
+\mbox{\tt out}  & {\em domain\-Bound\-Cond} & Saves boundary conditions (\char`\"{}outflow\char`\"{}/\char`\"{}reflecting\char`\"{}) for 6 sides of domain. \\
+\hline
+\mbox{\tt out}  & {\em g\-\_\-const} & The constant g of gravitational force \\
+\hline
+\mbox{\tt out}  & {\em input\-Size} & Number of particle types \\
+\hline
+\end{DoxyParams}
+\hypertarget{classutils_1_1ParticleGenerator_a93d2efd2781548606dc52f4a6ab3ca57}{\index{utils\-::\-Particle\-Generator@{utils\-::\-Particle\-Generator}!extract\-Spheres@{extract\-Spheres}}
+\index{extract\-Spheres@{extract\-Spheres}!utils::ParticleGenerator@{utils\-::\-Particle\-Generator}}
+\subsubsection[{extract\-Spheres}]{\setlength{\rightskip}{0pt plus 5cm}void Particle\-Generator\-::extract\-Spheres (
+\begin{DoxyParamCaption}
+\item[{const string}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleGenerator_a93d2efd2781548606dc52f4a6ab3ca57}
+The reading procedure, which can convert information from a given X\-M\-L input file into particle generator's list of spheres.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em filename} & Name of the input file (e.\-g\-: \char`\"{}\-Input\-Spheres.\-xml\char`\"{}). \\
+\hline
+\mbox{\tt out}  & {\em sph\-List} & The spheres will be stored here. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classutils_1_1ParticleGenerator_ad8da4620c020650970252213333b939e}{\index{utils\-::\-Particle\-Generator@{utils\-::\-Particle\-Generator}!get\-Cuboid\-List@{get\-Cuboid\-List}}
+\index{get\-Cuboid\-List@{get\-Cuboid\-List}!utils::ParticleGenerator@{utils\-::\-Particle\-Generator}}
+\subsubsection[{get\-Cuboid\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<$ {\bf Cuboid} $>$ \& Particle\-Generator\-::get\-Cuboid\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleGenerator_ad8da4620c020650970252213333b939e}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParticle}{Particle} generator's list of cuboids. 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1ParticleGenerator_a59ad1749a839f3e89e58d3f92ec94b4f}{\index{utils\-::\-Particle\-Generator@{utils\-::\-Particle\-Generator}!get\-Particle\-List@{get\-Particle\-List}}
+\index{get\-Particle\-List@{get\-Particle\-List}!utils::ParticleGenerator@{utils\-::\-Particle\-Generator}}
+\subsubsection[{get\-Particle\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<$ {\bf Particle} $>$ \& Particle\-Generator\-::get\-Particle\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleGenerator_a59ad1749a839f3e89e58d3f92ec94b4f}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParticle}{Particle} generator's list of particles. 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1ParticleGenerator_a50edacf6ec960526e5182aaa5e62a192}{\index{utils\-::\-Particle\-Generator@{utils\-::\-Particle\-Generator}!get\-Sphere\-List@{get\-Sphere\-List}}
+\index{get\-Sphere\-List@{get\-Sphere\-List}!utils::ParticleGenerator@{utils\-::\-Particle\-Generator}}
+\subsubsection[{get\-Sphere\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<$ {\bf Sphere} $>$ \& Particle\-Generator\-::get\-Sphere\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleGenerator_a50edacf6ec960526e5182aaa5e62a192}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParticle}{Particle} generator's list of spheres. 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1ParticleGenerator_a7048e1fc122f6e5e962f23071031a0e0}{\index{utils\-::\-Particle\-Generator@{utils\-::\-Particle\-Generator}!merge\-With\-Particle\-List@{merge\-With\-Particle\-List}}
+\index{merge\-With\-Particle\-List@{merge\-With\-Particle\-List}!utils::ParticleGenerator@{utils\-::\-Particle\-Generator}}
+\subsubsection[{merge\-With\-Particle\-List}]{\setlength{\rightskip}{0pt plus 5cm}void Particle\-Generator\-::merge\-With\-Particle\-List (
+\begin{DoxyParamCaption}
+\item[{std\-::list$<$ {\bf Particle} $>$ \&}]{before}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleGenerator_a7048e1fc122f6e5e962f23071031a0e0}
+Merge with a given list, which will stand B\-E\-F\-O\-R\-E particle\-List. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em before} & This list will be merged. \\
+\hline
+\mbox{\tt in}  & {\em particle\-List} & All elements of this list will be added into the gear side of before. \\
+\hline
+\mbox{\tt out}  & {\em before} & The new elements will be pushed into before's back. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classutils_1_1ParticleGenerator_a405c1b60bfbd08c2c31fefb927290945}{\index{utils\-::\-Particle\-Generator@{utils\-::\-Particle\-Generator}!read\-Cuboids@{read\-Cuboids}}
+\index{read\-Cuboids@{read\-Cuboids}!utils::ParticleGenerator@{utils\-::\-Particle\-Generator}}
+\subsubsection[{read\-Cuboids}]{\setlength{\rightskip}{0pt plus 5cm}void Particle\-Generator\-::read\-Cuboids (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleGenerator_a405c1b60bfbd08c2c31fefb927290945}
+The reading procedure, which can convert information from a given T\-X\-T input file into particle generator's list of cuboids.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em filename} & Name of the input file (e.\-g\-: \char`\"{}eingabe-\/brownian.\-txt\char`\"{}). \\
+\hline
+\mbox{\tt out}  & {\em cub\-List} & The cuboids will be stored here. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classutils_1_1ParticleGenerator_a2ea629339cda550d6daae10ec339296e}{\index{utils\-::\-Particle\-Generator@{utils\-::\-Particle\-Generator}!spheres\-To\-List@{spheres\-To\-List}}
+\index{spheres\-To\-List@{spheres\-To\-List}!utils::ParticleGenerator@{utils\-::\-Particle\-Generator}}
+\subsubsection[{spheres\-To\-List}]{\setlength{\rightskip}{0pt plus 5cm}void Particle\-Generator\-::spheres\-To\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleGenerator_a2ea629339cda550d6daae10ec339296e}
+Converts particle generator's list of spheres into one single list of particles. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em particle\-List} & The result will be stored here. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classutils_1_1ParticleGenerator_a2b4d4491fa74e20a23f7affc96de834a}{\index{utils\-::\-Particle\-Generator@{utils\-::\-Particle\-Generator}!cuboid\-List@{cuboid\-List}}
+\index{cuboid\-List@{cuboid\-List}!utils::ParticleGenerator@{utils\-::\-Particle\-Generator}}
+\subsubsection[{cuboid\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Cuboid}$>$ utils\-::\-Particle\-Generator\-::cuboid\-List\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1ParticleGenerator_a2b4d4491fa74e20a23f7affc96de834a}
+A list of cuboids, each cuboid is an instance of class \hyperlink{classCuboid}{Cuboid}. \hypertarget{classutils_1_1ParticleGenerator_a83e8886303b0e6d0e1b269cb54e7d04b}{\index{utils\-::\-Particle\-Generator@{utils\-::\-Particle\-Generator}!particle\-List@{particle\-List}}
+\index{particle\-List@{particle\-List}!utils::ParticleGenerator@{utils\-::\-Particle\-Generator}}
+\subsubsection[{particle\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Particle}$>$ utils\-::\-Particle\-Generator\-::particle\-List\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1ParticleGenerator_a83e8886303b0e6d0e1b269cb54e7d04b}
+The particles of either cuboids or spheres will be stored here. \hypertarget{classutils_1_1ParticleGenerator_a51b9b7685b429b44bd889a9b62b25ec2}{\index{utils\-::\-Particle\-Generator@{utils\-::\-Particle\-Generator}!sphere\-List@{sphere\-List}}
+\index{sphere\-List@{sphere\-List}!utils::ParticleGenerator@{utils\-::\-Particle\-Generator}}
+\subsubsection[{sphere\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Sphere}$>$ utils\-::\-Particle\-Generator\-::sphere\-List\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1ParticleGenerator_a51b9b7685b429b44bd889a9b62b25ec2}
+A list of spheres, each sphere is an instance of class \hyperlink{classSphere}{Sphere}. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/utils/\hyperlink{ParticleGenerator_8h}{Particle\-Generator.\-h}\item 
+src/utils/\hyperlink{ParticleGenerator_8cpp}{Particle\-Generator.\-cpp}\end{DoxyCompactItemize}

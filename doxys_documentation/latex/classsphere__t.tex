@@ -1,0 +1,549 @@
+\hypertarget{classsphere__t}{\section{sphere\-\_\-t Class Reference}
+\label{classsphere__t}\index{sphere\-\_\-t@{sphere\-\_\-t}}
+}
+
+
+{\ttfamily \#include $<$Input\-Spheres.\-h$>$}
+
+Inheritance diagram for sphere\-\_\-t\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classsphere__t}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \-::\hyperlink{namespacexml__schema_a69bfaf24f63a8c18ebd8e21db6b343df}{xml\-\_\-schema\-::decimal} \hyperlink{classsphere__t_a82740a9c5aa0437d973ee3e3caad09ea}{mesh\-Width\-S\-\_\-type}
+\item 
+typedef \\*
+\-::xsd\-::cxx\-::tree\-::traits\\*
+$<$ \hyperlink{classsphere__t_a82740a9c5aa0437d973ee3e3caad09ea}{mesh\-Width\-S\-\_\-type}, char,\-::xsd\-::cxx\-::tree\-::schema\-\_\-type\-::decimal $>$ \hyperlink{classsphere__t_a2efcf8f1a1ebfa301c88d3ffa429d1cd}{mesh\-Width\-S\-\_\-traits}
+\item 
+typedef \-::\hyperlink{namespacexml__schema_a69bfaf24f63a8c18ebd8e21db6b343df}{xml\-\_\-schema\-::decimal} \hyperlink{classsphere__t_a317ddc20b1a4fa225c55721bf12c67b2}{mass\-S\-\_\-type}
+\item 
+typedef \\*
+\-::xsd\-::cxx\-::tree\-::traits\\*
+$<$ \hyperlink{classsphere__t_a317ddc20b1a4fa225c55721bf12c67b2}{mass\-S\-\_\-type}, char,\-::xsd\-::cxx\-::tree\-::schema\-\_\-type\-::decimal $>$ \hyperlink{classsphere__t_a7cab3fa5c1e9b5a04581b0262c9f5e5d}{mass\-S\-\_\-traits}
+\item 
+typedef \-::\hyperlink{namespacexml__schema_a69bfaf24f63a8c18ebd8e21db6b343df}{xml\-\_\-schema\-::decimal} \hyperlink{classsphere__t_a351152e9b83bac409a627037b99a209b}{mean\-V\-S\-\_\-type}
+\item 
+typedef \\*
+\-::xsd\-::cxx\-::tree\-::traits\\*
+$<$ \hyperlink{classsphere__t_a351152e9b83bac409a627037b99a209b}{mean\-V\-S\-\_\-type}, char,\-::xsd\-::cxx\-::tree\-::schema\-\_\-type\-::decimal $>$ \hyperlink{classsphere__t_a1ff4a5faedc4d9d2b8f4063516997840}{mean\-V\-S\-\_\-traits}
+\item 
+typedef \-::\hyperlink{namespacexml__schema_acfa24ac68e1a188e7f44c36f7a158bf4}{xml\-\_\-schema\-::int\-\_\-} \hyperlink{classsphere__t_a750fe86f76f8c344ccb25e7dc73c2655}{par\-Type\-S\-\_\-type}
+\item 
+typedef \\*
+\-::xsd\-::cxx\-::tree\-::traits\\*
+$<$ \hyperlink{classsphere__t_a750fe86f76f8c344ccb25e7dc73c2655}{par\-Type\-S\-\_\-type}, char $>$ \hyperlink{classsphere__t_a29b1815b71844784d4fe00e4f5838d17}{par\-Type\-S\-\_\-traits}
+\item 
+typedef \-::\hyperlink{namespacexml__schema_acfa24ac68e1a188e7f44c36f7a158bf4}{xml\-\_\-schema\-::int\-\_\-} \hyperlink{classsphere__t_a81d467c00ec72dc7b9907b521744696d}{radiussph\-\_\-type}
+\item 
+typedef \\*
+\-::xsd\-::cxx\-::tree\-::traits\\*
+$<$ \hyperlink{classsphere__t_a81d467c00ec72dc7b9907b521744696d}{radiussph\-\_\-type}, char $>$ \hyperlink{classsphere__t_a75765172215aea8033266e27d5b0af1c}{radiussph\-\_\-traits}
+\item 
+typedef \-::\hyperlink{namespacexml__schema_a69bfaf24f63a8c18ebd8e21db6b343df}{xml\-\_\-schema\-::decimal} \hyperlink{classsphere__t_a9e61f3d5ab269b28a198f4b47519ac3f}{epsilon\-\_\-type}
+\item 
+typedef \\*
+\-::xsd\-::cxx\-::tree\-::traits\\*
+$<$ \hyperlink{classsphere__t_a9e61f3d5ab269b28a198f4b47519ac3f}{epsilon\-\_\-type}, char,\-::xsd\-::cxx\-::tree\-::schema\-\_\-type\-::decimal $>$ \hyperlink{classsphere__t_aaec867e294b5dc835b6b7b23bd6f03cb}{epsilon\-\_\-traits}
+\item 
+typedef \-::\hyperlink{namespacexml__schema_a69bfaf24f63a8c18ebd8e21db6b343df}{xml\-\_\-schema\-::decimal} \hyperlink{classsphere__t_a20806454a1e5e7f7fb50b22a49aef704}{sigma\-\_\-type}
+\item 
+typedef \\*
+\-::xsd\-::cxx\-::tree\-::traits\\*
+$<$ \hyperlink{classsphere__t_a20806454a1e5e7f7fb50b22a49aef704}{sigma\-\_\-type}, char,\-::xsd\-::cxx\-::tree\-::schema\-\_\-type\-::decimal $>$ \hyperlink{classsphere__t_a29db24a7516c6147929d3632d105d976}{sigma\-\_\-traits}
+\item 
+typedef \-::\hyperlink{classcenterPos__t}{center\-Pos\-\_\-t} \hyperlink{classsphere__t_a2786a8606da5d1dfbb50a237d6834daf}{center\-Pos\-\_\-type}
+\item 
+typedef \\*
+\-::xsd\-::cxx\-::tree\-::traits\\*
+$<$ \hyperlink{classsphere__t_a2786a8606da5d1dfbb50a237d6834daf}{center\-Pos\-\_\-type}, char $>$ \hyperlink{classsphere__t_a8519b138a55654520cb9314bbb472cfd}{center\-Pos\-\_\-traits}
+\item 
+typedef \-::\hyperlink{classstartVel__t}{start\-Vel\-\_\-t} \hyperlink{classsphere__t_a0235d82d12e4f91c5656e8ae64da4ca6}{start\-Vel\-\_\-type}
+\item 
+typedef \\*
+\-::xsd\-::cxx\-::tree\-::traits\\*
+$<$ \hyperlink{classsphere__t_a0235d82d12e4f91c5656e8ae64da4ca6}{start\-Vel\-\_\-type}, char $>$ \hyperlink{classsphere__t_a919a3fc37e88e6c692251a11409658c0}{start\-Vel\-\_\-traits}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classsphere__t_a82740a9c5aa0437d973ee3e3caad09ea}{mesh\-Width\-S\-\_\-type} \& \hyperlink{classsphere__t_a9efdb161d54810e89ef2a010ed1376f4}{mesh\-Width\-S} () const 
+\item 
+\hyperlink{classsphere__t_a82740a9c5aa0437d973ee3e3caad09ea}{mesh\-Width\-S\-\_\-type} \& \hyperlink{classsphere__t_a9741af55612da53eee6b11a1fec1cb16}{mesh\-Width\-S} ()
+\item 
+void \hyperlink{classsphere__t_ae821ba92b7006cd377cac571a048e970}{mesh\-Width\-S} (const \hyperlink{classsphere__t_a82740a9c5aa0437d973ee3e3caad09ea}{mesh\-Width\-S\-\_\-type} \&x)
+\item 
+const \hyperlink{classsphere__t_a317ddc20b1a4fa225c55721bf12c67b2}{mass\-S\-\_\-type} \& \hyperlink{classsphere__t_ad1d8b8b0a1ac734212813443f1e087a0}{mass\-S} () const 
+\item 
+\hyperlink{classsphere__t_a317ddc20b1a4fa225c55721bf12c67b2}{mass\-S\-\_\-type} \& \hyperlink{classsphere__t_a8bb8b56feb0945ced66851fd3af21ad1}{mass\-S} ()
+\item 
+void \hyperlink{classsphere__t_a4e110b3ef5cec4e6d7155bb7c3baf374}{mass\-S} (const \hyperlink{classsphere__t_a317ddc20b1a4fa225c55721bf12c67b2}{mass\-S\-\_\-type} \&x)
+\item 
+const \hyperlink{classsphere__t_a351152e9b83bac409a627037b99a209b}{mean\-V\-S\-\_\-type} \& \hyperlink{classsphere__t_af033b8cf25e864785286a1ccba31d5e0}{mean\-V\-S} () const 
+\item 
+\hyperlink{classsphere__t_a351152e9b83bac409a627037b99a209b}{mean\-V\-S\-\_\-type} \& \hyperlink{classsphere__t_ac7f3a00d769319887393d0aefc126345}{mean\-V\-S} ()
+\item 
+void \hyperlink{classsphere__t_a98b3b69c7b1ade7fbd80b45111700905}{mean\-V\-S} (const \hyperlink{classsphere__t_a351152e9b83bac409a627037b99a209b}{mean\-V\-S\-\_\-type} \&x)
+\item 
+const \hyperlink{classsphere__t_a750fe86f76f8c344ccb25e7dc73c2655}{par\-Type\-S\-\_\-type} \& \hyperlink{classsphere__t_a19629575da8610678cb7ffcee3ab1ad7}{par\-Type\-S} () const 
+\item 
+\hyperlink{classsphere__t_a750fe86f76f8c344ccb25e7dc73c2655}{par\-Type\-S\-\_\-type} \& \hyperlink{classsphere__t_a361536ba34787a6e2b028edb1b63e0e4}{par\-Type\-S} ()
+\item 
+void \hyperlink{classsphere__t_a8765edb9b0dc648ed0b38859e60fde66}{par\-Type\-S} (const \hyperlink{classsphere__t_a750fe86f76f8c344ccb25e7dc73c2655}{par\-Type\-S\-\_\-type} \&x)
+\item 
+const \hyperlink{classsphere__t_a81d467c00ec72dc7b9907b521744696d}{radiussph\-\_\-type} \& \hyperlink{classsphere__t_a8f57ae37d54babd88f05b886178628f8}{radiussph} () const 
+\item 
+\hyperlink{classsphere__t_a81d467c00ec72dc7b9907b521744696d}{radiussph\-\_\-type} \& \hyperlink{classsphere__t_aa33faed17d4adafd437fd3715293feff}{radiussph} ()
+\item 
+void \hyperlink{classsphere__t_ac667ce6d45620cb4d91b3897406c6bd3}{radiussph} (const \hyperlink{classsphere__t_a81d467c00ec72dc7b9907b521744696d}{radiussph\-\_\-type} \&x)
+\item 
+const \hyperlink{classsphere__t_a9e61f3d5ab269b28a198f4b47519ac3f}{epsilon\-\_\-type} \& \hyperlink{classsphere__t_a0a1e28d5e9c18dacd8240d8464c34e3e}{epsilon} () const 
+\item 
+\hyperlink{classsphere__t_a9e61f3d5ab269b28a198f4b47519ac3f}{epsilon\-\_\-type} \& \hyperlink{classsphere__t_ad2e3248ad556064a4f1df72448d55844}{epsilon} ()
+\item 
+void \hyperlink{classsphere__t_ab15625125997f476a32ae6b52bb8a8b3}{epsilon} (const \hyperlink{classsphere__t_a9e61f3d5ab269b28a198f4b47519ac3f}{epsilon\-\_\-type} \&x)
+\item 
+const \hyperlink{classsphere__t_a20806454a1e5e7f7fb50b22a49aef704}{sigma\-\_\-type} \& \hyperlink{classsphere__t_a51e149a9cf8c45e5cb49745839ade1c0}{sigma} () const 
+\item 
+\hyperlink{classsphere__t_a20806454a1e5e7f7fb50b22a49aef704}{sigma\-\_\-type} \& \hyperlink{classsphere__t_ad4e40b95e0a4aab8c3b46f67d66b87d0}{sigma} ()
+\item 
+void \hyperlink{classsphere__t_ac417ed1e21f39cfa1674cc6cd1eb4154}{sigma} (const \hyperlink{classsphere__t_a20806454a1e5e7f7fb50b22a49aef704}{sigma\-\_\-type} \&x)
+\item 
+const \hyperlink{classsphere__t_a2786a8606da5d1dfbb50a237d6834daf}{center\-Pos\-\_\-type} \& \hyperlink{classsphere__t_a35cfedf2ff4ba6c05afd6bdea5637ef7}{center\-Pos} () const 
+\item 
+\hyperlink{classsphere__t_a2786a8606da5d1dfbb50a237d6834daf}{center\-Pos\-\_\-type} \& \hyperlink{classsphere__t_a507022c73db22f7b6b40e72d981876db}{center\-Pos} ()
+\item 
+void \hyperlink{classsphere__t_a7e0811ee3fc01b1f56a5ff5d2befe2ed}{center\-Pos} (const \hyperlink{classsphere__t_a2786a8606da5d1dfbb50a237d6834daf}{center\-Pos\-\_\-type} \&x)
+\item 
+void \hyperlink{classsphere__t_af5325adce34c03d4129b68a157d84ff5}{center\-Pos} (\-::std\-::auto\-\_\-ptr$<$ \hyperlink{classsphere__t_a2786a8606da5d1dfbb50a237d6834daf}{center\-Pos\-\_\-type} $>$ p)
+\item 
+const \hyperlink{classsphere__t_a0235d82d12e4f91c5656e8ae64da4ca6}{start\-Vel\-\_\-type} \& \hyperlink{classsphere__t_a515c45cb578f2098d9b72a72d228177c}{start\-Vel} () const 
+\item 
+\hyperlink{classsphere__t_a0235d82d12e4f91c5656e8ae64da4ca6}{start\-Vel\-\_\-type} \& \hyperlink{classsphere__t_a9a05fb6903f3e692a147ed2f96e5366f}{start\-Vel} ()
+\item 
+void \hyperlink{classsphere__t_af90d096a5f304d0498b49a75db827344}{start\-Vel} (const \hyperlink{classsphere__t_a0235d82d12e4f91c5656e8ae64da4ca6}{start\-Vel\-\_\-type} \&x)
+\item 
+void \hyperlink{classsphere__t_a373f8ac14a2862eb64c17e89ac7c408d}{start\-Vel} (\-::std\-::auto\-\_\-ptr$<$ \hyperlink{classsphere__t_a0235d82d12e4f91c5656e8ae64da4ca6}{start\-Vel\-\_\-type} $>$ p)
+\item 
+\hyperlink{classsphere__t_a69bf9cbbe2c853fff09e9581ea99846e}{sphere\-\_\-t} (const \hyperlink{classsphere__t_a82740a9c5aa0437d973ee3e3caad09ea}{mesh\-Width\-S\-\_\-type} \&, const \hyperlink{classsphere__t_a317ddc20b1a4fa225c55721bf12c67b2}{mass\-S\-\_\-type} \&, const \hyperlink{classsphere__t_a351152e9b83bac409a627037b99a209b}{mean\-V\-S\-\_\-type} \&, const \hyperlink{classsphere__t_a750fe86f76f8c344ccb25e7dc73c2655}{par\-Type\-S\-\_\-type} \&, const \hyperlink{classsphere__t_a81d467c00ec72dc7b9907b521744696d}{radiussph\-\_\-type} \&, const \hyperlink{classsphere__t_a9e61f3d5ab269b28a198f4b47519ac3f}{epsilon\-\_\-type} \&, const \hyperlink{classsphere__t_a20806454a1e5e7f7fb50b22a49aef704}{sigma\-\_\-type} \&, const \hyperlink{classsphere__t_a2786a8606da5d1dfbb50a237d6834daf}{center\-Pos\-\_\-type} \&, const \hyperlink{classsphere__t_a0235d82d12e4f91c5656e8ae64da4ca6}{start\-Vel\-\_\-type} \&)
+\item 
+\hyperlink{classsphere__t_aef6946f51adfefdbd01c0e5787b8e9b1}{sphere\-\_\-t} (const \hyperlink{classsphere__t_a82740a9c5aa0437d973ee3e3caad09ea}{mesh\-Width\-S\-\_\-type} \&, const \hyperlink{classsphere__t_a317ddc20b1a4fa225c55721bf12c67b2}{mass\-S\-\_\-type} \&, const \hyperlink{classsphere__t_a351152e9b83bac409a627037b99a209b}{mean\-V\-S\-\_\-type} \&, const \hyperlink{classsphere__t_a750fe86f76f8c344ccb25e7dc73c2655}{par\-Type\-S\-\_\-type} \&, const \hyperlink{classsphere__t_a81d467c00ec72dc7b9907b521744696d}{radiussph\-\_\-type} \&, const \hyperlink{classsphere__t_a9e61f3d5ab269b28a198f4b47519ac3f}{epsilon\-\_\-type} \&, const \hyperlink{classsphere__t_a20806454a1e5e7f7fb50b22a49aef704}{sigma\-\_\-type} \&,\-::std\-::auto\-\_\-ptr$<$ \hyperlink{classsphere__t_a2786a8606da5d1dfbb50a237d6834daf}{center\-Pos\-\_\-type} $>$ \&,\-::std\-::auto\-\_\-ptr$<$ \hyperlink{classsphere__t_a0235d82d12e4f91c5656e8ae64da4ca6}{start\-Vel\-\_\-type} $>$ \&)
+\item 
+\hyperlink{classsphere__t_a9fcc000c87c32145765cd136e4f19e9a}{sphere\-\_\-t} (const \-::xercesc\-::\-D\-O\-M\-Element \&e,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0,\-::\hyperlink{namespacexml__schema_ada9aa30dc722e93ee2ed7243085402a5}{xml\-\_\-schema\-::container} $\ast$c=0)
+\item 
+\hyperlink{classsphere__t_a7a07c901e904b7662c37e609e6a505d2}{sphere\-\_\-t} (const \hyperlink{classsphere__t}{sphere\-\_\-t} \&x,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0,\-::\hyperlink{namespacexml__schema_ada9aa30dc722e93ee2ed7243085402a5}{xml\-\_\-schema\-::container} $\ast$c=0)
+\item 
+virtual \hyperlink{classsphere__t}{sphere\-\_\-t} $\ast$ \hyperlink{classsphere__t_af9cd6acbc366d507146512038a054d3f}{\-\_\-clone} (\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0,\-::\hyperlink{namespacexml__schema_ada9aa30dc722e93ee2ed7243085402a5}{xml\-\_\-schema\-::container} $\ast$c=0) const 
+\item 
+virtual \hyperlink{classsphere__t_a857c5c67e4649983f9d3228131262d0e}{$\sim$sphere\-\_\-t} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classsphere__t_a8a9b83d8906f45ca3ee33b11e54543b5}{parse} (\-::xsd\-::cxx\-::xml\-::dom\-::parser$<$ char $>$ \&,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\-::xsd\-::cxx\-::tree\-::one\\*
+$<$ \hyperlink{classsphere__t_a82740a9c5aa0437d973ee3e3caad09ea}{mesh\-Width\-S\-\_\-type} $>$ \hyperlink{classsphere__t_a66cbf0de688f330019fca6841df8ff8d}{mesh\-Width\-S\-\_\-}
+\item 
+\-::xsd\-::cxx\-::tree\-::one$<$ \hyperlink{classsphere__t_a317ddc20b1a4fa225c55721bf12c67b2}{mass\-S\-\_\-type} $>$ \hyperlink{classsphere__t_a155c503f91068e98cac6e50e162fd8e8}{mass\-S\-\_\-}
+\item 
+\-::xsd\-::cxx\-::tree\-::one\\*
+$<$ \hyperlink{classsphere__t_a351152e9b83bac409a627037b99a209b}{mean\-V\-S\-\_\-type} $>$ \hyperlink{classsphere__t_ae69c65c02185ee644621ec5f19050092}{mean\-V\-S\-\_\-}
+\item 
+\-::xsd\-::cxx\-::tree\-::one\\*
+$<$ \hyperlink{classsphere__t_a750fe86f76f8c344ccb25e7dc73c2655}{par\-Type\-S\-\_\-type} $>$ \hyperlink{classsphere__t_aad0691c4e88842ee6d7cbc9bdb747653}{par\-Type\-S\-\_\-}
+\item 
+\-::xsd\-::cxx\-::tree\-::one\\*
+$<$ \hyperlink{classsphere__t_a81d467c00ec72dc7b9907b521744696d}{radiussph\-\_\-type} $>$ \hyperlink{classsphere__t_a69b68e91265646581453df0608c78eb3}{radiussph\-\_\-}
+\item 
+\-::xsd\-::cxx\-::tree\-::one\\*
+$<$ \hyperlink{classsphere__t_a9e61f3d5ab269b28a198f4b47519ac3f}{epsilon\-\_\-type} $>$ \hyperlink{classsphere__t_afe66a61532491a5d947d917b89c94a44}{epsilon\-\_\-}
+\item 
+\-::xsd\-::cxx\-::tree\-::one$<$ \hyperlink{classsphere__t_a20806454a1e5e7f7fb50b22a49aef704}{sigma\-\_\-type} $>$ \hyperlink{classsphere__t_ab29451e11196d4689c16efd239a3b65d}{sigma\-\_\-}
+\item 
+\-::xsd\-::cxx\-::tree\-::one\\*
+$<$ \hyperlink{classsphere__t_a2786a8606da5d1dfbb50a237d6834daf}{center\-Pos\-\_\-type} $>$ \hyperlink{classsphere__t_a0737ba2a8523d266f64b084f3efa9a48}{center\-Pos\-\_\-}
+\item 
+\-::xsd\-::cxx\-::tree\-::one\\*
+$<$ \hyperlink{classsphere__t_a0235d82d12e4f91c5656e8ae64da4ca6}{start\-Vel\-\_\-type} $>$ \hyperlink{classsphere__t_a891193e6c93432b62517c06b5c1f7872}{start\-Vel\-\_\-}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classsphere__t_a8519b138a55654520cb9314bbb472cfd}{\index{sphere\-\_\-t@{sphere\-\_\-t}!center\-Pos\-\_\-traits@{center\-Pos\-\_\-traits}}
+\index{center\-Pos\-\_\-traits@{center\-Pos\-\_\-traits}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{center\-Pos\-\_\-traits}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::xsd\-::cxx\-::tree\-::traits$<$ {\bf center\-Pos\-\_\-type}, char $>$ {\bf sphere\-\_\-t\-::center\-Pos\-\_\-traits}}}\label{classsphere__t_a8519b138a55654520cb9314bbb472cfd}
+\hypertarget{classsphere__t_a2786a8606da5d1dfbb50a237d6834daf}{\index{sphere\-\_\-t@{sphere\-\_\-t}!center\-Pos\-\_\-type@{center\-Pos\-\_\-type}}
+\index{center\-Pos\-\_\-type@{center\-Pos\-\_\-type}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{center\-Pos\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::{\bf center\-Pos\-\_\-t} {\bf sphere\-\_\-t\-::center\-Pos\-\_\-type}}}\label{classsphere__t_a2786a8606da5d1dfbb50a237d6834daf}
+\hypertarget{classsphere__t_aaec867e294b5dc835b6b7b23bd6f03cb}{\index{sphere\-\_\-t@{sphere\-\_\-t}!epsilon\-\_\-traits@{epsilon\-\_\-traits}}
+\index{epsilon\-\_\-traits@{epsilon\-\_\-traits}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{epsilon\-\_\-traits}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::xsd\-::cxx\-::tree\-::traits$<$ {\bf epsilon\-\_\-type}, char, \-::xsd\-::cxx\-::tree\-::schema\-\_\-type\-::decimal $>$ {\bf sphere\-\_\-t\-::epsilon\-\_\-traits}}}\label{classsphere__t_aaec867e294b5dc835b6b7b23bd6f03cb}
+\hypertarget{classsphere__t_a9e61f3d5ab269b28a198f4b47519ac3f}{\index{sphere\-\_\-t@{sphere\-\_\-t}!epsilon\-\_\-type@{epsilon\-\_\-type}}
+\index{epsilon\-\_\-type@{epsilon\-\_\-type}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{epsilon\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::{\bf xml\-\_\-schema\-::decimal} {\bf sphere\-\_\-t\-::epsilon\-\_\-type}}}\label{classsphere__t_a9e61f3d5ab269b28a198f4b47519ac3f}
+\hypertarget{classsphere__t_a7cab3fa5c1e9b5a04581b0262c9f5e5d}{\index{sphere\-\_\-t@{sphere\-\_\-t}!mass\-S\-\_\-traits@{mass\-S\-\_\-traits}}
+\index{mass\-S\-\_\-traits@{mass\-S\-\_\-traits}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{mass\-S\-\_\-traits}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::xsd\-::cxx\-::tree\-::traits$<$ {\bf mass\-S\-\_\-type}, char, \-::xsd\-::cxx\-::tree\-::schema\-\_\-type\-::decimal $>$ {\bf sphere\-\_\-t\-::mass\-S\-\_\-traits}}}\label{classsphere__t_a7cab3fa5c1e9b5a04581b0262c9f5e5d}
+\hypertarget{classsphere__t_a317ddc20b1a4fa225c55721bf12c67b2}{\index{sphere\-\_\-t@{sphere\-\_\-t}!mass\-S\-\_\-type@{mass\-S\-\_\-type}}
+\index{mass\-S\-\_\-type@{mass\-S\-\_\-type}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{mass\-S\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::{\bf xml\-\_\-schema\-::decimal} {\bf sphere\-\_\-t\-::mass\-S\-\_\-type}}}\label{classsphere__t_a317ddc20b1a4fa225c55721bf12c67b2}
+\hypertarget{classsphere__t_a1ff4a5faedc4d9d2b8f4063516997840}{\index{sphere\-\_\-t@{sphere\-\_\-t}!mean\-V\-S\-\_\-traits@{mean\-V\-S\-\_\-traits}}
+\index{mean\-V\-S\-\_\-traits@{mean\-V\-S\-\_\-traits}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{mean\-V\-S\-\_\-traits}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::xsd\-::cxx\-::tree\-::traits$<$ {\bf mean\-V\-S\-\_\-type}, char, \-::xsd\-::cxx\-::tree\-::schema\-\_\-type\-::decimal $>$ {\bf sphere\-\_\-t\-::mean\-V\-S\-\_\-traits}}}\label{classsphere__t_a1ff4a5faedc4d9d2b8f4063516997840}
+\hypertarget{classsphere__t_a351152e9b83bac409a627037b99a209b}{\index{sphere\-\_\-t@{sphere\-\_\-t}!mean\-V\-S\-\_\-type@{mean\-V\-S\-\_\-type}}
+\index{mean\-V\-S\-\_\-type@{mean\-V\-S\-\_\-type}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{mean\-V\-S\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::{\bf xml\-\_\-schema\-::decimal} {\bf sphere\-\_\-t\-::mean\-V\-S\-\_\-type}}}\label{classsphere__t_a351152e9b83bac409a627037b99a209b}
+\hypertarget{classsphere__t_a2efcf8f1a1ebfa301c88d3ffa429d1cd}{\index{sphere\-\_\-t@{sphere\-\_\-t}!mesh\-Width\-S\-\_\-traits@{mesh\-Width\-S\-\_\-traits}}
+\index{mesh\-Width\-S\-\_\-traits@{mesh\-Width\-S\-\_\-traits}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{mesh\-Width\-S\-\_\-traits}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::xsd\-::cxx\-::tree\-::traits$<$ {\bf mesh\-Width\-S\-\_\-type}, char, \-::xsd\-::cxx\-::tree\-::schema\-\_\-type\-::decimal $>$ {\bf sphere\-\_\-t\-::mesh\-Width\-S\-\_\-traits}}}\label{classsphere__t_a2efcf8f1a1ebfa301c88d3ffa429d1cd}
+\hypertarget{classsphere__t_a82740a9c5aa0437d973ee3e3caad09ea}{\index{sphere\-\_\-t@{sphere\-\_\-t}!mesh\-Width\-S\-\_\-type@{mesh\-Width\-S\-\_\-type}}
+\index{mesh\-Width\-S\-\_\-type@{mesh\-Width\-S\-\_\-type}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{mesh\-Width\-S\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::{\bf xml\-\_\-schema\-::decimal} {\bf sphere\-\_\-t\-::mesh\-Width\-S\-\_\-type}}}\label{classsphere__t_a82740a9c5aa0437d973ee3e3caad09ea}
+\hypertarget{classsphere__t_a29b1815b71844784d4fe00e4f5838d17}{\index{sphere\-\_\-t@{sphere\-\_\-t}!par\-Type\-S\-\_\-traits@{par\-Type\-S\-\_\-traits}}
+\index{par\-Type\-S\-\_\-traits@{par\-Type\-S\-\_\-traits}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{par\-Type\-S\-\_\-traits}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::xsd\-::cxx\-::tree\-::traits$<$ {\bf par\-Type\-S\-\_\-type}, char $>$ {\bf sphere\-\_\-t\-::par\-Type\-S\-\_\-traits}}}\label{classsphere__t_a29b1815b71844784d4fe00e4f5838d17}
+\hypertarget{classsphere__t_a750fe86f76f8c344ccb25e7dc73c2655}{\index{sphere\-\_\-t@{sphere\-\_\-t}!par\-Type\-S\-\_\-type@{par\-Type\-S\-\_\-type}}
+\index{par\-Type\-S\-\_\-type@{par\-Type\-S\-\_\-type}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{par\-Type\-S\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::{\bf xml\-\_\-schema\-::int\-\_\-} {\bf sphere\-\_\-t\-::par\-Type\-S\-\_\-type}}}\label{classsphere__t_a750fe86f76f8c344ccb25e7dc73c2655}
+\hypertarget{classsphere__t_a75765172215aea8033266e27d5b0af1c}{\index{sphere\-\_\-t@{sphere\-\_\-t}!radiussph\-\_\-traits@{radiussph\-\_\-traits}}
+\index{radiussph\-\_\-traits@{radiussph\-\_\-traits}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{radiussph\-\_\-traits}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::xsd\-::cxx\-::tree\-::traits$<$ {\bf radiussph\-\_\-type}, char $>$ {\bf sphere\-\_\-t\-::radiussph\-\_\-traits}}}\label{classsphere__t_a75765172215aea8033266e27d5b0af1c}
+\hypertarget{classsphere__t_a81d467c00ec72dc7b9907b521744696d}{\index{sphere\-\_\-t@{sphere\-\_\-t}!radiussph\-\_\-type@{radiussph\-\_\-type}}
+\index{radiussph\-\_\-type@{radiussph\-\_\-type}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{radiussph\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::{\bf xml\-\_\-schema\-::int\-\_\-} {\bf sphere\-\_\-t\-::radiussph\-\_\-type}}}\label{classsphere__t_a81d467c00ec72dc7b9907b521744696d}
+\hypertarget{classsphere__t_a29db24a7516c6147929d3632d105d976}{\index{sphere\-\_\-t@{sphere\-\_\-t}!sigma\-\_\-traits@{sigma\-\_\-traits}}
+\index{sigma\-\_\-traits@{sigma\-\_\-traits}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{sigma\-\_\-traits}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::xsd\-::cxx\-::tree\-::traits$<$ {\bf sigma\-\_\-type}, char, \-::xsd\-::cxx\-::tree\-::schema\-\_\-type\-::decimal $>$ {\bf sphere\-\_\-t\-::sigma\-\_\-traits}}}\label{classsphere__t_a29db24a7516c6147929d3632d105d976}
+\hypertarget{classsphere__t_a20806454a1e5e7f7fb50b22a49aef704}{\index{sphere\-\_\-t@{sphere\-\_\-t}!sigma\-\_\-type@{sigma\-\_\-type}}
+\index{sigma\-\_\-type@{sigma\-\_\-type}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{sigma\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::{\bf xml\-\_\-schema\-::decimal} {\bf sphere\-\_\-t\-::sigma\-\_\-type}}}\label{classsphere__t_a20806454a1e5e7f7fb50b22a49aef704}
+\hypertarget{classsphere__t_a919a3fc37e88e6c692251a11409658c0}{\index{sphere\-\_\-t@{sphere\-\_\-t}!start\-Vel\-\_\-traits@{start\-Vel\-\_\-traits}}
+\index{start\-Vel\-\_\-traits@{start\-Vel\-\_\-traits}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{start\-Vel\-\_\-traits}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::xsd\-::cxx\-::tree\-::traits$<$ {\bf start\-Vel\-\_\-type}, char $>$ {\bf sphere\-\_\-t\-::start\-Vel\-\_\-traits}}}\label{classsphere__t_a919a3fc37e88e6c692251a11409658c0}
+\hypertarget{classsphere__t_a0235d82d12e4f91c5656e8ae64da4ca6}{\index{sphere\-\_\-t@{sphere\-\_\-t}!start\-Vel\-\_\-type@{start\-Vel\-\_\-type}}
+\index{start\-Vel\-\_\-type@{start\-Vel\-\_\-type}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{start\-Vel\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef \-::{\bf start\-Vel\-\_\-t} {\bf sphere\-\_\-t\-::start\-Vel\-\_\-type}}}\label{classsphere__t_a0235d82d12e4f91c5656e8ae64da4ca6}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsphere__t_a69bf9cbbe2c853fff09e9581ea99846e}{\index{sphere\-\_\-t@{sphere\-\_\-t}!sphere\-\_\-t@{sphere\-\_\-t}}
+\index{sphere\-\_\-t@{sphere\-\_\-t}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{sphere\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}sphere\-\_\-t\-::sphere\-\_\-t (
+\begin{DoxyParamCaption}
+\item[{const {\bf mesh\-Width\-S\-\_\-type} \&}]{mesh\-Width\-S, }
+\item[{const {\bf mass\-S\-\_\-type} \&}]{mass\-S, }
+\item[{const {\bf mean\-V\-S\-\_\-type} \&}]{mean\-V\-S, }
+\item[{const {\bf par\-Type\-S\-\_\-type} \&}]{par\-Type\-S, }
+\item[{const {\bf radiussph\-\_\-type} \&}]{radiussph, }
+\item[{const {\bf epsilon\-\_\-type} \&}]{epsilon, }
+\item[{const {\bf sigma\-\_\-type} \&}]{sigma, }
+\item[{const {\bf center\-Pos\-\_\-type} \&}]{center\-Pos, }
+\item[{const {\bf start\-Vel\-\_\-type} \&}]{start\-Vel}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_a69bf9cbbe2c853fff09e9581ea99846e}
+\hypertarget{classsphere__t_aef6946f51adfefdbd01c0e5787b8e9b1}{\index{sphere\-\_\-t@{sphere\-\_\-t}!sphere\-\_\-t@{sphere\-\_\-t}}
+\index{sphere\-\_\-t@{sphere\-\_\-t}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{sphere\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}sphere\-\_\-t\-::sphere\-\_\-t (
+\begin{DoxyParamCaption}
+\item[{const {\bf mesh\-Width\-S\-\_\-type} \&}]{mesh\-Width\-S, }
+\item[{const {\bf mass\-S\-\_\-type} \&}]{mass\-S, }
+\item[{const {\bf mean\-V\-S\-\_\-type} \&}]{mean\-V\-S, }
+\item[{const {\bf par\-Type\-S\-\_\-type} \&}]{par\-Type\-S, }
+\item[{const {\bf radiussph\-\_\-type} \&}]{radiussph, }
+\item[{const {\bf epsilon\-\_\-type} \&}]{epsilon, }
+\item[{const {\bf sigma\-\_\-type} \&}]{sigma, }
+\item[{\-::std\-::auto\-\_\-ptr$<$ {\bf center\-Pos\-\_\-type} $>$ \&}]{center\-Pos, }
+\item[{\-::std\-::auto\-\_\-ptr$<$ {\bf start\-Vel\-\_\-type} $>$ \&}]{start\-Vel}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_aef6946f51adfefdbd01c0e5787b8e9b1}
+\hypertarget{classsphere__t_a9fcc000c87c32145765cd136e4f19e9a}{\index{sphere\-\_\-t@{sphere\-\_\-t}!sphere\-\_\-t@{sphere\-\_\-t}}
+\index{sphere\-\_\-t@{sphere\-\_\-t}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{sphere\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}sphere\-\_\-t\-::sphere\-\_\-t (
+\begin{DoxyParamCaption}
+\item[{const \-::xercesc\-::\-D\-O\-M\-Element \&}]{e, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{\-::{\bf xml\-\_\-schema\-::container} $\ast$}]{c = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_a9fcc000c87c32145765cd136e4f19e9a}
+\hypertarget{classsphere__t_a7a07c901e904b7662c37e609e6a505d2}{\index{sphere\-\_\-t@{sphere\-\_\-t}!sphere\-\_\-t@{sphere\-\_\-t}}
+\index{sphere\-\_\-t@{sphere\-\_\-t}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{sphere\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}sphere\-\_\-t\-::sphere\-\_\-t (
+\begin{DoxyParamCaption}
+\item[{const {\bf sphere\-\_\-t} \&}]{x, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{\-::{\bf xml\-\_\-schema\-::container} $\ast$}]{c = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_a7a07c901e904b7662c37e609e6a505d2}
+\hypertarget{classsphere__t_a857c5c67e4649983f9d3228131262d0e}{\index{sphere\-\_\-t@{sphere\-\_\-t}!$\sim$sphere\-\_\-t@{$\sim$sphere\-\_\-t}}
+\index{$\sim$sphere\-\_\-t@{$\sim$sphere\-\_\-t}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{$\sim$sphere\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}sphere\-\_\-t\-::$\sim$sphere\-\_\-t (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classsphere__t_a857c5c67e4649983f9d3228131262d0e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsphere__t_af9cd6acbc366d507146512038a054d3f}{\index{sphere\-\_\-t@{sphere\-\_\-t}!\-\_\-clone@{\-\_\-clone}}
+\index{\-\_\-clone@{\-\_\-clone}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{\-\_\-clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sphere\-\_\-t} $\ast$ sphere\-\_\-t\-::\-\_\-clone (
+\begin{DoxyParamCaption}
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{\-::{\bf xml\-\_\-schema\-::container} $\ast$}]{c = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classsphere__t_af9cd6acbc366d507146512038a054d3f}
+\hypertarget{classsphere__t_a35cfedf2ff4ba6c05afd6bdea5637ef7}{\index{sphere\-\_\-t@{sphere\-\_\-t}!center\-Pos@{center\-Pos}}
+\index{center\-Pos@{center\-Pos}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{center\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf sphere\-\_\-t\-::center\-Pos\-\_\-type} \& sphere\-\_\-t\-::center\-Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classsphere__t_a35cfedf2ff4ba6c05afd6bdea5637ef7}
+\hypertarget{classsphere__t_a507022c73db22f7b6b40e72d981876db}{\index{sphere\-\_\-t@{sphere\-\_\-t}!center\-Pos@{center\-Pos}}
+\index{center\-Pos@{center\-Pos}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{center\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sphere\-\_\-t\-::center\-Pos\-\_\-type} \& sphere\-\_\-t\-::center\-Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_a507022c73db22f7b6b40e72d981876db}
+\hypertarget{classsphere__t_a7e0811ee3fc01b1f56a5ff5d2befe2ed}{\index{sphere\-\_\-t@{sphere\-\_\-t}!center\-Pos@{center\-Pos}}
+\index{center\-Pos@{center\-Pos}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{center\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}void sphere\-\_\-t\-::center\-Pos (
+\begin{DoxyParamCaption}
+\item[{const {\bf center\-Pos\-\_\-type} \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_a7e0811ee3fc01b1f56a5ff5d2befe2ed}
+\hypertarget{classsphere__t_af5325adce34c03d4129b68a157d84ff5}{\index{sphere\-\_\-t@{sphere\-\_\-t}!center\-Pos@{center\-Pos}}
+\index{center\-Pos@{center\-Pos}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{center\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}void sphere\-\_\-t\-::center\-Pos (
+\begin{DoxyParamCaption}
+\item[{\-::std\-::auto\-\_\-ptr$<$ {\bf center\-Pos\-\_\-type} $>$}]{p}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_af5325adce34c03d4129b68a157d84ff5}
+\hypertarget{classsphere__t_a0a1e28d5e9c18dacd8240d8464c34e3e}{\index{sphere\-\_\-t@{sphere\-\_\-t}!epsilon@{epsilon}}
+\index{epsilon@{epsilon}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{epsilon}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf sphere\-\_\-t\-::epsilon\-\_\-type} \& sphere\-\_\-t\-::epsilon (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classsphere__t_a0a1e28d5e9c18dacd8240d8464c34e3e}
+\hypertarget{classsphere__t_ad2e3248ad556064a4f1df72448d55844}{\index{sphere\-\_\-t@{sphere\-\_\-t}!epsilon@{epsilon}}
+\index{epsilon@{epsilon}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{epsilon}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sphere\-\_\-t\-::epsilon\-\_\-type} \& sphere\-\_\-t\-::epsilon (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_ad2e3248ad556064a4f1df72448d55844}
+\hypertarget{classsphere__t_ab15625125997f476a32ae6b52bb8a8b3}{\index{sphere\-\_\-t@{sphere\-\_\-t}!epsilon@{epsilon}}
+\index{epsilon@{epsilon}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{epsilon}]{\setlength{\rightskip}{0pt plus 5cm}void sphere\-\_\-t\-::epsilon (
+\begin{DoxyParamCaption}
+\item[{const {\bf epsilon\-\_\-type} \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_ab15625125997f476a32ae6b52bb8a8b3}
+\hypertarget{classsphere__t_ad1d8b8b0a1ac734212813443f1e087a0}{\index{sphere\-\_\-t@{sphere\-\_\-t}!mass\-S@{mass\-S}}
+\index{mass\-S@{mass\-S}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{mass\-S}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf sphere\-\_\-t\-::mass\-S\-\_\-type} \& sphere\-\_\-t\-::mass\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classsphere__t_ad1d8b8b0a1ac734212813443f1e087a0}
+\hypertarget{classsphere__t_a8bb8b56feb0945ced66851fd3af21ad1}{\index{sphere\-\_\-t@{sphere\-\_\-t}!mass\-S@{mass\-S}}
+\index{mass\-S@{mass\-S}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{mass\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sphere\-\_\-t\-::mass\-S\-\_\-type} \& sphere\-\_\-t\-::mass\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_a8bb8b56feb0945ced66851fd3af21ad1}
+\hypertarget{classsphere__t_a4e110b3ef5cec4e6d7155bb7c3baf374}{\index{sphere\-\_\-t@{sphere\-\_\-t}!mass\-S@{mass\-S}}
+\index{mass\-S@{mass\-S}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{mass\-S}]{\setlength{\rightskip}{0pt plus 5cm}void sphere\-\_\-t\-::mass\-S (
+\begin{DoxyParamCaption}
+\item[{const {\bf mass\-S\-\_\-type} \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_a4e110b3ef5cec4e6d7155bb7c3baf374}
+\hypertarget{classsphere__t_af033b8cf25e864785286a1ccba31d5e0}{\index{sphere\-\_\-t@{sphere\-\_\-t}!mean\-V\-S@{mean\-V\-S}}
+\index{mean\-V\-S@{mean\-V\-S}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{mean\-V\-S}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf sphere\-\_\-t\-::mean\-V\-S\-\_\-type} \& sphere\-\_\-t\-::mean\-V\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classsphere__t_af033b8cf25e864785286a1ccba31d5e0}
+\hypertarget{classsphere__t_ac7f3a00d769319887393d0aefc126345}{\index{sphere\-\_\-t@{sphere\-\_\-t}!mean\-V\-S@{mean\-V\-S}}
+\index{mean\-V\-S@{mean\-V\-S}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{mean\-V\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sphere\-\_\-t\-::mean\-V\-S\-\_\-type} \& sphere\-\_\-t\-::mean\-V\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_ac7f3a00d769319887393d0aefc126345}
+\hypertarget{classsphere__t_a98b3b69c7b1ade7fbd80b45111700905}{\index{sphere\-\_\-t@{sphere\-\_\-t}!mean\-V\-S@{mean\-V\-S}}
+\index{mean\-V\-S@{mean\-V\-S}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{mean\-V\-S}]{\setlength{\rightskip}{0pt plus 5cm}void sphere\-\_\-t\-::mean\-V\-S (
+\begin{DoxyParamCaption}
+\item[{const {\bf mean\-V\-S\-\_\-type} \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_a98b3b69c7b1ade7fbd80b45111700905}
+\hypertarget{classsphere__t_a9efdb161d54810e89ef2a010ed1376f4}{\index{sphere\-\_\-t@{sphere\-\_\-t}!mesh\-Width\-S@{mesh\-Width\-S}}
+\index{mesh\-Width\-S@{mesh\-Width\-S}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{mesh\-Width\-S}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf sphere\-\_\-t\-::mesh\-Width\-S\-\_\-type} \& sphere\-\_\-t\-::mesh\-Width\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classsphere__t_a9efdb161d54810e89ef2a010ed1376f4}
+\hypertarget{classsphere__t_a9741af55612da53eee6b11a1fec1cb16}{\index{sphere\-\_\-t@{sphere\-\_\-t}!mesh\-Width\-S@{mesh\-Width\-S}}
+\index{mesh\-Width\-S@{mesh\-Width\-S}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{mesh\-Width\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sphere\-\_\-t\-::mesh\-Width\-S\-\_\-type} \& sphere\-\_\-t\-::mesh\-Width\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_a9741af55612da53eee6b11a1fec1cb16}
+\hypertarget{classsphere__t_ae821ba92b7006cd377cac571a048e970}{\index{sphere\-\_\-t@{sphere\-\_\-t}!mesh\-Width\-S@{mesh\-Width\-S}}
+\index{mesh\-Width\-S@{mesh\-Width\-S}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{mesh\-Width\-S}]{\setlength{\rightskip}{0pt plus 5cm}void sphere\-\_\-t\-::mesh\-Width\-S (
+\begin{DoxyParamCaption}
+\item[{const {\bf mesh\-Width\-S\-\_\-type} \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_ae821ba92b7006cd377cac571a048e970}
+\hypertarget{classsphere__t_a8a9b83d8906f45ca3ee33b11e54543b5}{\index{sphere\-\_\-t@{sphere\-\_\-t}!parse@{parse}}
+\index{parse@{parse}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}void sphere\-\_\-t\-::parse (
+\begin{DoxyParamCaption}
+\item[{\-::xsd\-::cxx\-::xml\-::dom\-::parser$<$ char $>$ \&}]{p, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classsphere__t_a8a9b83d8906f45ca3ee33b11e54543b5}
+\hypertarget{classsphere__t_a19629575da8610678cb7ffcee3ab1ad7}{\index{sphere\-\_\-t@{sphere\-\_\-t}!par\-Type\-S@{par\-Type\-S}}
+\index{par\-Type\-S@{par\-Type\-S}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{par\-Type\-S}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf sphere\-\_\-t\-::par\-Type\-S\-\_\-type} \& sphere\-\_\-t\-::par\-Type\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classsphere__t_a19629575da8610678cb7ffcee3ab1ad7}
+\hypertarget{classsphere__t_a361536ba34787a6e2b028edb1b63e0e4}{\index{sphere\-\_\-t@{sphere\-\_\-t}!par\-Type\-S@{par\-Type\-S}}
+\index{par\-Type\-S@{par\-Type\-S}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{par\-Type\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sphere\-\_\-t\-::par\-Type\-S\-\_\-type} \& sphere\-\_\-t\-::par\-Type\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_a361536ba34787a6e2b028edb1b63e0e4}
+\hypertarget{classsphere__t_a8765edb9b0dc648ed0b38859e60fde66}{\index{sphere\-\_\-t@{sphere\-\_\-t}!par\-Type\-S@{par\-Type\-S}}
+\index{par\-Type\-S@{par\-Type\-S}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{par\-Type\-S}]{\setlength{\rightskip}{0pt plus 5cm}void sphere\-\_\-t\-::par\-Type\-S (
+\begin{DoxyParamCaption}
+\item[{const {\bf par\-Type\-S\-\_\-type} \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_a8765edb9b0dc648ed0b38859e60fde66}
+\hypertarget{classsphere__t_a8f57ae37d54babd88f05b886178628f8}{\index{sphere\-\_\-t@{sphere\-\_\-t}!radiussph@{radiussph}}
+\index{radiussph@{radiussph}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{radiussph}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf sphere\-\_\-t\-::radiussph\-\_\-type} \& sphere\-\_\-t\-::radiussph (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classsphere__t_a8f57ae37d54babd88f05b886178628f8}
+\hypertarget{classsphere__t_aa33faed17d4adafd437fd3715293feff}{\index{sphere\-\_\-t@{sphere\-\_\-t}!radiussph@{radiussph}}
+\index{radiussph@{radiussph}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{radiussph}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sphere\-\_\-t\-::radiussph\-\_\-type} \& sphere\-\_\-t\-::radiussph (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_aa33faed17d4adafd437fd3715293feff}
+\hypertarget{classsphere__t_ac667ce6d45620cb4d91b3897406c6bd3}{\index{sphere\-\_\-t@{sphere\-\_\-t}!radiussph@{radiussph}}
+\index{radiussph@{radiussph}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{radiussph}]{\setlength{\rightskip}{0pt plus 5cm}void sphere\-\_\-t\-::radiussph (
+\begin{DoxyParamCaption}
+\item[{const {\bf radiussph\-\_\-type} \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_ac667ce6d45620cb4d91b3897406c6bd3}
+\hypertarget{classsphere__t_a51e149a9cf8c45e5cb49745839ade1c0}{\index{sphere\-\_\-t@{sphere\-\_\-t}!sigma@{sigma}}
+\index{sigma@{sigma}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{sigma}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf sphere\-\_\-t\-::sigma\-\_\-type} \& sphere\-\_\-t\-::sigma (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classsphere__t_a51e149a9cf8c45e5cb49745839ade1c0}
+\hypertarget{classsphere__t_ad4e40b95e0a4aab8c3b46f67d66b87d0}{\index{sphere\-\_\-t@{sphere\-\_\-t}!sigma@{sigma}}
+\index{sigma@{sigma}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{sigma}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sphere\-\_\-t\-::sigma\-\_\-type} \& sphere\-\_\-t\-::sigma (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_ad4e40b95e0a4aab8c3b46f67d66b87d0}
+\hypertarget{classsphere__t_ac417ed1e21f39cfa1674cc6cd1eb4154}{\index{sphere\-\_\-t@{sphere\-\_\-t}!sigma@{sigma}}
+\index{sigma@{sigma}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{sigma}]{\setlength{\rightskip}{0pt plus 5cm}void sphere\-\_\-t\-::sigma (
+\begin{DoxyParamCaption}
+\item[{const {\bf sigma\-\_\-type} \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_ac417ed1e21f39cfa1674cc6cd1eb4154}
+\hypertarget{classsphere__t_a515c45cb578f2098d9b72a72d228177c}{\index{sphere\-\_\-t@{sphere\-\_\-t}!start\-Vel@{start\-Vel}}
+\index{start\-Vel@{start\-Vel}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{start\-Vel}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf sphere\-\_\-t\-::start\-Vel\-\_\-type} \& sphere\-\_\-t\-::start\-Vel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classsphere__t_a515c45cb578f2098d9b72a72d228177c}
+\hypertarget{classsphere__t_a9a05fb6903f3e692a147ed2f96e5366f}{\index{sphere\-\_\-t@{sphere\-\_\-t}!start\-Vel@{start\-Vel}}
+\index{start\-Vel@{start\-Vel}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{start\-Vel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sphere\-\_\-t\-::start\-Vel\-\_\-type} \& sphere\-\_\-t\-::start\-Vel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_a9a05fb6903f3e692a147ed2f96e5366f}
+\hypertarget{classsphere__t_af90d096a5f304d0498b49a75db827344}{\index{sphere\-\_\-t@{sphere\-\_\-t}!start\-Vel@{start\-Vel}}
+\index{start\-Vel@{start\-Vel}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{start\-Vel}]{\setlength{\rightskip}{0pt plus 5cm}void sphere\-\_\-t\-::start\-Vel (
+\begin{DoxyParamCaption}
+\item[{const {\bf start\-Vel\-\_\-type} \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_af90d096a5f304d0498b49a75db827344}
+\hypertarget{classsphere__t_a373f8ac14a2862eb64c17e89ac7c408d}{\index{sphere\-\_\-t@{sphere\-\_\-t}!start\-Vel@{start\-Vel}}
+\index{start\-Vel@{start\-Vel}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{start\-Vel}]{\setlength{\rightskip}{0pt plus 5cm}void sphere\-\_\-t\-::start\-Vel (
+\begin{DoxyParamCaption}
+\item[{\-::std\-::auto\-\_\-ptr$<$ {\bf start\-Vel\-\_\-type} $>$}]{p}
+\end{DoxyParamCaption}
+)}}\label{classsphere__t_a373f8ac14a2862eb64c17e89ac7c408d}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsphere__t_a0737ba2a8523d266f64b084f3efa9a48}{\index{sphere\-\_\-t@{sphere\-\_\-t}!center\-Pos\-\_\-@{center\-Pos\-\_\-}}
+\index{center\-Pos\-\_\-@{center\-Pos\-\_\-}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{center\-Pos\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\-::xsd\-::cxx\-::tree\-::one$<$ {\bf center\-Pos\-\_\-type} $>$ sphere\-\_\-t\-::center\-Pos\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classsphere__t_a0737ba2a8523d266f64b084f3efa9a48}
+\hypertarget{classsphere__t_afe66a61532491a5d947d917b89c94a44}{\index{sphere\-\_\-t@{sphere\-\_\-t}!epsilon\-\_\-@{epsilon\-\_\-}}
+\index{epsilon\-\_\-@{epsilon\-\_\-}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{epsilon\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\-::xsd\-::cxx\-::tree\-::one$<$ {\bf epsilon\-\_\-type} $>$ sphere\-\_\-t\-::epsilon\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classsphere__t_afe66a61532491a5d947d917b89c94a44}
+\hypertarget{classsphere__t_a155c503f91068e98cac6e50e162fd8e8}{\index{sphere\-\_\-t@{sphere\-\_\-t}!mass\-S\-\_\-@{mass\-S\-\_\-}}
+\index{mass\-S\-\_\-@{mass\-S\-\_\-}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{mass\-S\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\-::xsd\-::cxx\-::tree\-::one$<$ {\bf mass\-S\-\_\-type} $>$ sphere\-\_\-t\-::mass\-S\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classsphere__t_a155c503f91068e98cac6e50e162fd8e8}
+\hypertarget{classsphere__t_ae69c65c02185ee644621ec5f19050092}{\index{sphere\-\_\-t@{sphere\-\_\-t}!mean\-V\-S\-\_\-@{mean\-V\-S\-\_\-}}
+\index{mean\-V\-S\-\_\-@{mean\-V\-S\-\_\-}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{mean\-V\-S\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\-::xsd\-::cxx\-::tree\-::one$<$ {\bf mean\-V\-S\-\_\-type} $>$ sphere\-\_\-t\-::mean\-V\-S\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classsphere__t_ae69c65c02185ee644621ec5f19050092}
+\hypertarget{classsphere__t_a66cbf0de688f330019fca6841df8ff8d}{\index{sphere\-\_\-t@{sphere\-\_\-t}!mesh\-Width\-S\-\_\-@{mesh\-Width\-S\-\_\-}}
+\index{mesh\-Width\-S\-\_\-@{mesh\-Width\-S\-\_\-}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{mesh\-Width\-S\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\-::xsd\-::cxx\-::tree\-::one$<$ {\bf mesh\-Width\-S\-\_\-type} $>$ sphere\-\_\-t\-::mesh\-Width\-S\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classsphere__t_a66cbf0de688f330019fca6841df8ff8d}
+\hypertarget{classsphere__t_aad0691c4e88842ee6d7cbc9bdb747653}{\index{sphere\-\_\-t@{sphere\-\_\-t}!par\-Type\-S\-\_\-@{par\-Type\-S\-\_\-}}
+\index{par\-Type\-S\-\_\-@{par\-Type\-S\-\_\-}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{par\-Type\-S\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\-::xsd\-::cxx\-::tree\-::one$<$ {\bf par\-Type\-S\-\_\-type} $>$ sphere\-\_\-t\-::par\-Type\-S\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classsphere__t_aad0691c4e88842ee6d7cbc9bdb747653}
+\hypertarget{classsphere__t_a69b68e91265646581453df0608c78eb3}{\index{sphere\-\_\-t@{sphere\-\_\-t}!radiussph\-\_\-@{radiussph\-\_\-}}
+\index{radiussph\-\_\-@{radiussph\-\_\-}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{radiussph\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\-::xsd\-::cxx\-::tree\-::one$<$ {\bf radiussph\-\_\-type} $>$ sphere\-\_\-t\-::radiussph\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classsphere__t_a69b68e91265646581453df0608c78eb3}
+\hypertarget{classsphere__t_ab29451e11196d4689c16efd239a3b65d}{\index{sphere\-\_\-t@{sphere\-\_\-t}!sigma\-\_\-@{sigma\-\_\-}}
+\index{sigma\-\_\-@{sigma\-\_\-}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{sigma\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\-::xsd\-::cxx\-::tree\-::one$<$ {\bf sigma\-\_\-type} $>$ sphere\-\_\-t\-::sigma\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classsphere__t_ab29451e11196d4689c16efd239a3b65d}
+\hypertarget{classsphere__t_a891193e6c93432b62517c06b5c1f7872}{\index{sphere\-\_\-t@{sphere\-\_\-t}!start\-Vel\-\_\-@{start\-Vel\-\_\-}}
+\index{start\-Vel\-\_\-@{start\-Vel\-\_\-}!sphere_t@{sphere\-\_\-t}}
+\subsubsection[{start\-Vel\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\-::xsd\-::cxx\-::tree\-::one$<$ {\bf start\-Vel\-\_\-type} $>$ sphere\-\_\-t\-::start\-Vel\-\_\-\hspace{0.3cm}{\ttfamily [protected]}}}\label{classsphere__t_a891193e6c93432b62517c06b5c1f7872}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/utils/\hyperlink{InputSpheres_8h}{Input\-Spheres.\-h}\item 
+src/utils/\hyperlink{InputSpheres_8cpp}{Input\-Spheres.\-cpp}\end{DoxyCompactItemize}

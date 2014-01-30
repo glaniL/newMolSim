@@ -1,0 +1,270 @@
+\hypertarget{classThermostat}{\section{Thermostat Class Reference}
+\label{classThermostat}\index{Thermostat@{Thermostat}}
+}
+
+
+{\ttfamily \#include $<$Thermostat.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classThermostat_a67cfc54f1cff43f4cd92c58e3be01919}{Thermostat} ()
+\item 
+\hyperlink{classThermostat_a363b4ca8da84980f9f8765acdc07e80d}{Thermostat} (const std\-::string filename)
+\item 
+virtual \hyperlink{classThermostat_a287977ba29071ae8c927d68e556c3098}{$\sim$\-Thermostat} ()
+\item 
+\hyperlink{classThermostat_a2151c3d615d12cd4f4d54a4e4f857142}{Thermostat} (double \hyperlink{classThermostat_a663a14e3a4b7bf439c92fbcd0ebac7a3}{T\-\_\-init}, double \hyperlink{classThermostat_a63c42ca7dee6ed5237d8be9e9c3f1228}{T\-\_\-target}, double \hyperlink{classThermostat_a1628e1ae6669caacbb02da75423cc35c}{delta\-\_\-\-T}, int \hyperlink{classThermostat_a25a5e29fbae46ffb4152655b3ba062cf}{n\-\_\-thermo}, int \hyperlink{classThermostat_a9a2715e81ed11171e530e2d22a682244}{n\-\_\-delta}, bool \hyperlink{classThermostat_a86ae25ddde5ab2ecd7d70a50c8a72823}{brownian\-\_\-flag}, bool \hyperlink{classThermostat_ae383f11c6ba111f1f14b470a17655d04}{enabled})
+\item 
+double \hyperlink{classThermostat_aa9f9d0b9ca412ff73124a8fef0882740}{get\-E\-Kin} (std\-::list$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ \&par\-List)
+\item 
+double \hyperlink{classThermostat_aa0e58f2c8b189f31c949d9cd1870aa6f}{get\-Mean\-V} (std\-::list$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ \&par\-List, int dim, double \hyperlink{MolSim_8cpp_aba71f400e3a017e824e2a70435a75542}{mass})
+\item 
+void \hyperlink{classThermostat_a2a3f40b013805848e2092d8e2579e100}{set\-Thermo} (std\-::list$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ \&par\-List, int dim, double temperature)
+\item 
+double \& \hyperlink{classThermostat_a7f5f9fb551b0a5f3dd183cd4f0cec3fa}{get\-T\-\_\-init} ()
+\item 
+double \& \hyperlink{classThermostat_a83b2ed651c6ef97fdb306791c056e790}{get\-T\-\_\-target} ()
+\item 
+double \& \hyperlink{classThermostat_a4dfa1bf0c8250109f621ca67dc4b9d21}{get\-Delta\-\_\-\-T} ()
+\item 
+int \& \hyperlink{classThermostat_ac88fdcd49a14f5c28fd2433274c1ee94}{getn\-\_\-thermo} ()
+\item 
+int \& \hyperlink{classThermostat_a4874b207620e187886359077e5928df8}{getn\-\_\-delta} ()
+\item 
+bool \& \hyperlink{classThermostat_a959655befa411badcfff9919c0fc9417}{get\-Brownian\-\_\-flag} ()
+\item 
+bool \& \hyperlink{classThermostat_a5a270ca35680c0f15cee0438e7e2c096}{get\-Enabled} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classThermostat_ae383f11c6ba111f1f14b470a17655d04}{enabled}
+\item 
+double \hyperlink{classThermostat_a663a14e3a4b7bf439c92fbcd0ebac7a3}{T\-\_\-init}
+\item 
+double \hyperlink{classThermostat_a63c42ca7dee6ed5237d8be9e9c3f1228}{T\-\_\-target}
+\item 
+double \hyperlink{classThermostat_a1628e1ae6669caacbb02da75423cc35c}{delta\-\_\-\-T}
+\item 
+int \hyperlink{classThermostat_a25a5e29fbae46ffb4152655b3ba062cf}{n\-\_\-thermo}
+\item 
+int \hyperlink{classThermostat_a9a2715e81ed11171e530e2d22a682244}{n\-\_\-delta}
+\item 
+bool \hyperlink{classThermostat_a86ae25ddde5ab2ecd7d70a50c8a72823}{brownian\-\_\-flag}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classThermostat_a67cfc54f1cff43f4cd92c58e3be01919}{\index{Thermostat@{Thermostat}!Thermostat@{Thermostat}}
+\index{Thermostat@{Thermostat}!Thermostat@{Thermostat}}
+\subsubsection[{Thermostat}]{\setlength{\rightskip}{0pt plus 5cm}Thermostat\-::\-Thermostat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classThermostat_a67cfc54f1cff43f4cd92c58e3be01919}
+Default constructor. \hypertarget{classThermostat_a363b4ca8da84980f9f8765acdc07e80d}{\index{Thermostat@{Thermostat}!Thermostat@{Thermostat}}
+\index{Thermostat@{Thermostat}!Thermostat@{Thermostat}}
+\subsubsection[{Thermostat}]{\setlength{\rightskip}{0pt plus 5cm}Thermostat\-::\-Thermostat (
+\begin{DoxyParamCaption}
+\item[{const std\-::string}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classThermostat_a363b4ca8da84980f9f8765acdc07e80d}
+Main constructor, which will read information from filename and extract all needed information for thermostat. \hypertarget{classThermostat_a287977ba29071ae8c927d68e556c3098}{\index{Thermostat@{Thermostat}!$\sim$\-Thermostat@{$\sim$\-Thermostat}}
+\index{$\sim$\-Thermostat@{$\sim$\-Thermostat}!Thermostat@{Thermostat}}
+\subsubsection[{$\sim$\-Thermostat}]{\setlength{\rightskip}{0pt plus 5cm}Thermostat\-::$\sim$\-Thermostat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classThermostat_a287977ba29071ae8c927d68e556c3098}
+\hypertarget{classThermostat_a2151c3d615d12cd4f4d54a4e4f857142}{\index{Thermostat@{Thermostat}!Thermostat@{Thermostat}}
+\index{Thermostat@{Thermostat}!Thermostat@{Thermostat}}
+\subsubsection[{Thermostat}]{\setlength{\rightskip}{0pt plus 5cm}Thermostat\-::\-Thermostat (
+\begin{DoxyParamCaption}
+\item[{double}]{T\-\_\-init, }
+\item[{double}]{T\-\_\-target, }
+\item[{double}]{delta\-\_\-\-T, }
+\item[{int}]{n\-\_\-thermo, }
+\item[{int}]{n\-\_\-delta, }
+\item[{bool}]{brownian\-\_\-flag, }
+\item[{bool}]{enabled}
+\end{DoxyParamCaption}
+)}}\label{classThermostat_a2151c3d615d12cd4f4d54a4e4f857142}
+Secondary constructor, which will initialize a thermostat with given parameters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em T\-\_\-init} & init temperature \\
+\hline
+\mbox{\tt in}  & {\em T\-\_\-target} & target temperature \\
+\hline
+\mbox{\tt in}  & {\em delta\-\_\-\-T} & temperature difference \\
+\hline
+\mbox{\tt in}  & {\em n\-\_\-thermo} & timesteps, after which thermostat will be applied \\
+\hline
+\mbox{\tt in}  & {\em n\-\_\-delta} & timesteps, after which temperature will be updated \\
+\hline
+\mbox{\tt in}  & {\em brownian\-\_\-flag} & option for Brownian Motion \\
+\hline
+\mbox{\tt in}  & {\em enabled} & option for switching thermostat on/off \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classThermostat_a959655befa411badcfff9919c0fc9417}{\index{Thermostat@{Thermostat}!get\-Brownian\-\_\-flag@{get\-Brownian\-\_\-flag}}
+\index{get\-Brownian\-\_\-flag@{get\-Brownian\-\_\-flag}!Thermostat@{Thermostat}}
+\subsubsection[{get\-Brownian\-\_\-flag}]{\setlength{\rightskip}{0pt plus 5cm}bool \& Thermostat\-::get\-Brownian\-\_\-flag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classThermostat_a959655befa411badcfff9919c0fc9417}
+\begin{DoxyReturn}{Returns}
+option for Brownian Motion. 
+\end{DoxyReturn}
+\hypertarget{classThermostat_a4dfa1bf0c8250109f621ca67dc4b9d21}{\index{Thermostat@{Thermostat}!get\-Delta\-\_\-\-T@{get\-Delta\-\_\-\-T}}
+\index{get\-Delta\-\_\-\-T@{get\-Delta\-\_\-\-T}!Thermostat@{Thermostat}}
+\subsubsection[{get\-Delta\-\_\-\-T}]{\setlength{\rightskip}{0pt plus 5cm}double \& Thermostat\-::get\-Delta\-\_\-\-T (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classThermostat_a4dfa1bf0c8250109f621ca67dc4b9d21}
+\begin{DoxyReturn}{Returns}
+temperature difference, which will be added every n\-\_\-delta timesteps. 
+\end{DoxyReturn}
+\hypertarget{classThermostat_aa9f9d0b9ca412ff73124a8fef0882740}{\index{Thermostat@{Thermostat}!get\-E\-Kin@{get\-E\-Kin}}
+\index{get\-E\-Kin@{get\-E\-Kin}!Thermostat@{Thermostat}}
+\subsubsection[{get\-E\-Kin}]{\setlength{\rightskip}{0pt plus 5cm}double Thermostat\-::get\-E\-Kin (
+\begin{DoxyParamCaption}
+\item[{std\-::list$<$ {\bf Particle} $\ast$ $>$ \&}]{par\-List}
+\end{DoxyParamCaption}
+)}}\label{classThermostat_aa9f9d0b9ca412ff73124a8fef0882740}
+\begin{DoxyReturn}{Returns}
+kinetic energy of the system.
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em par\-List} & a list of pointers of particles \\
+\hline
+\end{DoxyParams}
+\hypertarget{classThermostat_a5a270ca35680c0f15cee0438e7e2c096}{\index{Thermostat@{Thermostat}!get\-Enabled@{get\-Enabled}}
+\index{get\-Enabled@{get\-Enabled}!Thermostat@{Thermostat}}
+\subsubsection[{get\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool \& Thermostat\-::get\-Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classThermostat_a5a270ca35680c0f15cee0438e7e2c096}
+\begin{DoxyReturn}{Returns}
+option for switching thermostat on/off. 
+\end{DoxyReturn}
+\hypertarget{classThermostat_aa0e58f2c8b189f31c949d9cd1870aa6f}{\index{Thermostat@{Thermostat}!get\-Mean\-V@{get\-Mean\-V}}
+\index{get\-Mean\-V@{get\-Mean\-V}!Thermostat@{Thermostat}}
+\subsubsection[{get\-Mean\-V}]{\setlength{\rightskip}{0pt plus 5cm}double Thermostat\-::get\-Mean\-V (
+\begin{DoxyParamCaption}
+\item[{std\-::list$<$ {\bf Particle} $\ast$ $>$ \&}]{par\-List, }
+\item[{int}]{dim, }
+\item[{double}]{mass}
+\end{DoxyParamCaption}
+)}}\label{classThermostat_aa0e58f2c8b189f31c949d9cd1870aa6f}
+\begin{DoxyReturn}{Returns}
+mean velocity of the system for Brownian Motion.
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em par\-List} & a list of pointers of particles \\
+\hline
+\mbox{\tt in}  & {\em dim} & number of dimensions (2 or 3) \\
+\hline
+\mbox{\tt in}  & {\em mass} & mass of each particle in the system \\
+\hline
+\end{DoxyParams}
+\hypertarget{classThermostat_a4874b207620e187886359077e5928df8}{\index{Thermostat@{Thermostat}!getn\-\_\-delta@{getn\-\_\-delta}}
+\index{getn\-\_\-delta@{getn\-\_\-delta}!Thermostat@{Thermostat}}
+\subsubsection[{getn\-\_\-delta}]{\setlength{\rightskip}{0pt plus 5cm}int \& Thermostat\-::getn\-\_\-delta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classThermostat_a4874b207620e187886359077e5928df8}
+\begin{DoxyReturn}{Returns}
+timesteps, after which the temperature will be updated. 
+\end{DoxyReturn}
+\hypertarget{classThermostat_ac88fdcd49a14f5c28fd2433274c1ee94}{\index{Thermostat@{Thermostat}!getn\-\_\-thermo@{getn\-\_\-thermo}}
+\index{getn\-\_\-thermo@{getn\-\_\-thermo}!Thermostat@{Thermostat}}
+\subsubsection[{getn\-\_\-thermo}]{\setlength{\rightskip}{0pt plus 5cm}int \& Thermostat\-::getn\-\_\-thermo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classThermostat_ac88fdcd49a14f5c28fd2433274c1ee94}
+\begin{DoxyReturn}{Returns}
+timesteps, after which thermostat will be applied. 
+\end{DoxyReturn}
+\hypertarget{classThermostat_a7f5f9fb551b0a5f3dd183cd4f0cec3fa}{\index{Thermostat@{Thermostat}!get\-T\-\_\-init@{get\-T\-\_\-init}}
+\index{get\-T\-\_\-init@{get\-T\-\_\-init}!Thermostat@{Thermostat}}
+\subsubsection[{get\-T\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}double \& Thermostat\-::get\-T\-\_\-init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classThermostat_a7f5f9fb551b0a5f3dd183cd4f0cec3fa}
+\begin{DoxyReturn}{Returns}
+init temperature of the system. 
+\end{DoxyReturn}
+\hypertarget{classThermostat_a83b2ed651c6ef97fdb306791c056e790}{\index{Thermostat@{Thermostat}!get\-T\-\_\-target@{get\-T\-\_\-target}}
+\index{get\-T\-\_\-target@{get\-T\-\_\-target}!Thermostat@{Thermostat}}
+\subsubsection[{get\-T\-\_\-target}]{\setlength{\rightskip}{0pt plus 5cm}double \& Thermostat\-::get\-T\-\_\-target (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classThermostat_a83b2ed651c6ef97fdb306791c056e790}
+\begin{DoxyReturn}{Returns}
+target temperature of the system. 
+\end{DoxyReturn}
+\hypertarget{classThermostat_a2a3f40b013805848e2092d8e2579e100}{\index{Thermostat@{Thermostat}!set\-Thermo@{set\-Thermo}}
+\index{set\-Thermo@{set\-Thermo}!Thermostat@{Thermostat}}
+\subsubsection[{set\-Thermo}]{\setlength{\rightskip}{0pt plus 5cm}void Thermostat\-::set\-Thermo (
+\begin{DoxyParamCaption}
+\item[{std\-::list$<$ {\bf Particle} $\ast$ $>$ \&}]{par\-List, }
+\item[{int}]{dim, }
+\item[{double}]{temperature}
+\end{DoxyParamCaption}
+)}}\label{classThermostat_a2a3f40b013805848e2092d8e2579e100}
+Setter.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em par\-List} & a list of pointers of particles \\
+\hline
+\mbox{\tt in}  & {\em dim} & number of dimensions (2 or 3) \\
+\hline
+\mbox{\tt in}  & {\em temperature} & desired temperature, which will be reached after the thermostat was set. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classThermostat_a86ae25ddde5ab2ecd7d70a50c8a72823}{\index{Thermostat@{Thermostat}!brownian\-\_\-flag@{brownian\-\_\-flag}}
+\index{brownian\-\_\-flag@{brownian\-\_\-flag}!Thermostat@{Thermostat}}
+\subsubsection[{brownian\-\_\-flag}]{\setlength{\rightskip}{0pt plus 5cm}bool Thermostat\-::brownian\-\_\-flag\hspace{0.3cm}{\ttfamily [private]}}}\label{classThermostat_a86ae25ddde5ab2ecd7d70a50c8a72823}
+True if Brownian Motion is needed, false if not. \hypertarget{classThermostat_a1628e1ae6669caacbb02da75423cc35c}{\index{Thermostat@{Thermostat}!delta\-\_\-\-T@{delta\-\_\-\-T}}
+\index{delta\-\_\-\-T@{delta\-\_\-\-T}!Thermostat@{Thermostat}}
+\subsubsection[{delta\-\_\-\-T}]{\setlength{\rightskip}{0pt plus 5cm}double Thermostat\-::delta\-\_\-\-T\hspace{0.3cm}{\ttfamily [private]}}}\label{classThermostat_a1628e1ae6669caacbb02da75423cc35c}
+Temperature difference between two nearest n\-\_\-delta timesteps. \hypertarget{classThermostat_ae383f11c6ba111f1f14b470a17655d04}{\index{Thermostat@{Thermostat}!enabled@{enabled}}
+\index{enabled@{enabled}!Thermostat@{Thermostat}}
+\subsubsection[{enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool Thermostat\-::enabled\hspace{0.3cm}{\ttfamily [private]}}}\label{classThermostat_ae383f11c6ba111f1f14b470a17655d04}
+True if thermostat is switched on, false if switched off. \hypertarget{classThermostat_a9a2715e81ed11171e530e2d22a682244}{\index{Thermostat@{Thermostat}!n\-\_\-delta@{n\-\_\-delta}}
+\index{n\-\_\-delta@{n\-\_\-delta}!Thermostat@{Thermostat}}
+\subsubsection[{n\-\_\-delta}]{\setlength{\rightskip}{0pt plus 5cm}int Thermostat\-::n\-\_\-delta\hspace{0.3cm}{\ttfamily [private]}}}\label{classThermostat_a9a2715e81ed11171e530e2d22a682244}
+Timesteps, after which the temperature will be updated. \hypertarget{classThermostat_a25a5e29fbae46ffb4152655b3ba062cf}{\index{Thermostat@{Thermostat}!n\-\_\-thermo@{n\-\_\-thermo}}
+\index{n\-\_\-thermo@{n\-\_\-thermo}!Thermostat@{Thermostat}}
+\subsubsection[{n\-\_\-thermo}]{\setlength{\rightskip}{0pt plus 5cm}int Thermostat\-::n\-\_\-thermo\hspace{0.3cm}{\ttfamily [private]}}}\label{classThermostat_a25a5e29fbae46ffb4152655b3ba062cf}
+Timesteps, after which the thermostat will be applied. \hypertarget{classThermostat_a663a14e3a4b7bf439c92fbcd0ebac7a3}{\index{Thermostat@{Thermostat}!T\-\_\-init@{T\-\_\-init}}
+\index{T\-\_\-init@{T\-\_\-init}!Thermostat@{Thermostat}}
+\subsubsection[{T\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}double Thermostat\-::\-T\-\_\-init\hspace{0.3cm}{\ttfamily [private]}}}\label{classThermostat_a663a14e3a4b7bf439c92fbcd0ebac7a3}
+Init temperature of thermostat. \hypertarget{classThermostat_a63c42ca7dee6ed5237d8be9e9c3f1228}{\index{Thermostat@{Thermostat}!T\-\_\-target@{T\-\_\-target}}
+\index{T\-\_\-target@{T\-\_\-target}!Thermostat@{Thermostat}}
+\subsubsection[{T\-\_\-target}]{\setlength{\rightskip}{0pt plus 5cm}double Thermostat\-::\-T\-\_\-target\hspace{0.3cm}{\ttfamily [private]}}}\label{classThermostat_a63c42ca7dee6ed5237d8be9e9c3f1228}
+Target temperature of thermostat. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/utils/\hyperlink{Thermostat_8h}{Thermostat.\-h}\item 
+src/utils/\hyperlink{Thermostat_8cpp}{Thermostat.\-cpp}\end{DoxyCompactItemize}

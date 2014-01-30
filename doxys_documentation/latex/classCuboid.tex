@@ -1,0 +1,402 @@
+\hypertarget{classCuboid}{\section{Cuboid Class Reference}
+\label{classCuboid}\index{Cuboid@{Cuboid}}
+}
+
+
+This is a class representing a 3\-D cuboid of particles.  
+
+
+
+
+{\ttfamily \#include $<$Cuboid.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCuboid_a1abf60e93d024b7a01ee5b1a48f1f08a}{Cuboid} ()
+\item 
+\hyperlink{classCuboid_a0ae721afc53bc9c3cb0656a51ce78e8c}{Cuboid} (int height, int width, int \hyperlink{MolSim_8cpp_acb5ba97551079e0b072c62c21d784ac5}{depth}, double distance, double \hyperlink{MolSim_8cpp_aba71f400e3a017e824e2a70435a75542}{mass}, \hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ ori, \hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ start\-Velocity, double mean\-Velocity, int \hyperlink{classCuboid_acd3e5d96f6da99b24468ee9673f9daba}{par\-Type}, double \hyperlink{classCuboid_a3925eb122d69d5938939945a961dc96f}{E\-P\-S\-I\-L\-O\-N}, double \hyperlink{classCuboid_a88c7ddda07e9eb992c8b549ca1f6e827}{S\-I\-G\-M\-A})
+\item 
+\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \& \hyperlink{classCuboid_af02d6e6f4f887e73eab49b2e98d67f9f}{get\-Origin} ()
+\item 
+\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \& \hyperlink{classCuboid_afa1a2f414ad4203d0496779e04cd8cc0}{get\-Start\-V} ()
+\item 
+std\-::list$<$ \hyperlink{classParticle}{Particle} $>$ \& \hyperlink{classCuboid_ace34581c34e11d770268c653734ebbbf}{get\-Cuboid} ()
+\item 
+int \hyperlink{classCuboid_a9e2f0ed2b9f4e94623d36f0080c39c60}{get\-Height} ()
+\item 
+void \hyperlink{classCuboid_a7f18edc87842eb994ba5c4553cf1dfd5}{set\-Height} (double new\-H)
+\item 
+int \hyperlink{classCuboid_ac339d2ee336e723374b4ac60a008f5a4}{get\-Width} ()
+\item 
+void \hyperlink{classCuboid_a05ebb7b92f2cf7d99470e0ee37565204}{set\-Width} (double new\-W)
+\item 
+int \hyperlink{classCuboid_a8a48fe6647e1b6aaefdcdc919d1d60ca}{get\-Depth} ()
+\item 
+void \hyperlink{classCuboid_ab4a1117474dde7ca1bc7abb17efc60d0}{set\-Depth} (double new\-D)
+\item 
+double \hyperlink{classCuboid_acce74194a5322bc75176c0b0268dc99e}{get\-Distance} ()
+\item 
+void \hyperlink{classCuboid_a0118ee212ed9445762e4b66bd049ab29}{set\-Distance} (double new\-D)
+\item 
+double \hyperlink{classCuboid_a800f78fae7fd092724dc959cfa409894}{get\-Mass} ()
+\item 
+void \hyperlink{classCuboid_a289a3115396705a7fa2caa8bd873f20d}{set\-Mass} (double new\-M)
+\item 
+double \hyperlink{classCuboid_ab462bd1cd2a16a29f05b2dd677b600f4}{get\-Mean\-V} ()
+\item 
+void \hyperlink{classCuboid_a078822ffa44af0b079ed075ad087df26}{set\-Mean\-V} (double new\-V)
+\item 
+int \hyperlink{classCuboid_a2a324c6cb87afa82b9b933cd3b6bd2cf}{get\-Size} ()
+\item 
+int \& \hyperlink{classCuboid_ae089a8e4c5ff713c95876d9216e71f92}{get\-Type} ()
+\item 
+double \& \hyperlink{classCuboid_a3d13a5c0849de7c64ce0076a6f65b995}{get\-Epsilon} ()
+\item 
+double \& \hyperlink{classCuboid_a4b896bf3579b2b436df51c8f99b75b34}{get\-Sigma} ()
+\item 
+virtual \hyperlink{classCuboid_aba010c63b64540741c25b5e89b7fabbb}{$\sim$\-Cuboid} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \hyperlink{classCuboid_ab9fea399762342f5636ea69038606ba1}{origin}
+\item 
+std\-::list$<$ \hyperlink{classParticle}{Particle} $>$ \hyperlink{classCuboid_a46268af723f395a1cb00533cc8dab6c8}{cub}
+\item 
+int \hyperlink{classCuboid_a774275af1874294d9d12772eaa7d417a}{c\-Height}
+\item 
+int \hyperlink{classCuboid_a256b9679e10b33f8e280034a6a7de6e8}{c\-Width}
+\item 
+int \hyperlink{classCuboid_a9f6823cdaa2bbb8df9ea1a8709a3319c}{c\-Depth}
+\item 
+double \hyperlink{classCuboid_ad5d539f1c69b321fbbe2dcceef65faba}{h}
+\item 
+double \hyperlink{classCuboid_a98975bdfb1bd4bbb327167d07d1ffdd4}{m}
+\item 
+\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \hyperlink{classCuboid_a7a95bfb80c884e9f96642c9f7043e9e1}{start\-V}
+\item 
+double \hyperlink{classCuboid_ab6bb8eb2a87d77e67acea088f6a8ba88}{mean\-V}
+\item 
+int \hyperlink{classCuboid_acd3e5d96f6da99b24468ee9673f9daba}{par\-Type}
+\item 
+double \hyperlink{classCuboid_a3925eb122d69d5938939945a961dc96f}{E\-P\-S\-I\-L\-O\-N}
+\item 
+double \hyperlink{classCuboid_a88c7ddda07e9eb992c8b549ca1f6e827}{S\-I\-G\-M\-A}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a class representing a 3\-D cuboid of particles. 
+
+One cuboid can save a 3\-D set of particles, which are located next to each other. There is no isolated particle in one cuboid. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCuboid_a1abf60e93d024b7a01ee5b1a48f1f08a}{\index{Cuboid@{Cuboid}!Cuboid@{Cuboid}}
+\index{Cuboid@{Cuboid}!Cuboid@{Cuboid}}
+\subsubsection[{Cuboid}]{\setlength{\rightskip}{0pt plus 5cm}Cuboid\-::\-Cuboid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCuboid_a1abf60e93d024b7a01ee5b1a48f1f08a}
+Default constructor. \hypertarget{classCuboid_a0ae721afc53bc9c3cb0656a51ce78e8c}{\index{Cuboid@{Cuboid}!Cuboid@{Cuboid}}
+\index{Cuboid@{Cuboid}!Cuboid@{Cuboid}}
+\subsubsection[{Cuboid}]{\setlength{\rightskip}{0pt plus 5cm}Cuboid\-::\-Cuboid (
+\begin{DoxyParamCaption}
+\item[{int}]{height, }
+\item[{int}]{width, }
+\item[{int}]{depth, }
+\item[{double}]{distance, }
+\item[{double}]{mass, }
+\item[{{\bf utils\-::\-Vector}$<$ double, 3 $>$}]{ori, }
+\item[{{\bf utils\-::\-Vector}$<$ double, 3 $>$}]{start\-Velocity, }
+\item[{double}]{mean\-Velocity, }
+\item[{int}]{par\-Type, }
+\item[{double}]{E\-P\-S\-I\-L\-O\-N, }
+\item[{double}]{S\-I\-G\-M\-A}
+\end{DoxyParamCaption}
+)}}\label{classCuboid_a0ae721afc53bc9c3cb0656a51ce78e8c}
+/brief The main constructor.
+
+Constructs a new cuboid with all information needed. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em height} & \hyperlink{classCuboid}{Cuboid}'s height in particles. \\
+\hline
+\mbox{\tt in}  & {\em width} & \hyperlink{classCuboid}{Cuboid}'s width in particles. \\
+\hline
+\mbox{\tt in}  & {\em depth} & \hyperlink{classCuboid}{Cuboid}'s depth in particles. \\
+\hline
+\mbox{\tt in}  & {\em distance} & \hyperlink{classCuboid}{Cuboid}'s mesh width. \\
+\hline
+\mbox{\tt in}  & {\em mass} & Mass of each particle in cuboid. \\
+\hline
+\mbox{\tt in}  & {\em ori} & \hyperlink{classCuboid}{Cuboid}'s lower left corner's 3\-D coordinate. \\
+\hline
+\mbox{\tt in}  & {\em start\-Velocity} & Velocity at the beginning of each particle in cuboid. \\
+\hline
+\mbox{\tt in}  & {\em mean\-Velocity} & Mean velocity (aka. brownian factor) of each partcile in cuboid. \\
+\hline
+\mbox{\tt in}  & {\em par\-Type} & \hyperlink{classParticle}{Particle} type of cuboid. \\
+\hline
+\mbox{\tt in}  & {\em E\-P\-S\-I\-L\-O\-N} & For Lennard Jones Force. \\
+\hline
+\mbox{\tt in}  & {\em S\-I\-G\-M\-A} & For Lennard Jones Force. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classCuboid_aba010c63b64540741c25b5e89b7fabbb}{\index{Cuboid@{Cuboid}!$\sim$\-Cuboid@{$\sim$\-Cuboid}}
+\index{$\sim$\-Cuboid@{$\sim$\-Cuboid}!Cuboid@{Cuboid}}
+\subsubsection[{$\sim$\-Cuboid}]{\setlength{\rightskip}{0pt plus 5cm}Cuboid\-::$\sim$\-Cuboid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCuboid_aba010c63b64540741c25b5e89b7fabbb}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCuboid_ace34581c34e11d770268c653734ebbbf}{\index{Cuboid@{Cuboid}!get\-Cuboid@{get\-Cuboid}}
+\index{get\-Cuboid@{get\-Cuboid}!Cuboid@{Cuboid}}
+\subsubsection[{get\-Cuboid}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<$ {\bf Particle} $>$ \& Cuboid\-::get\-Cuboid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCuboid_ace34581c34e11d770268c653734ebbbf}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCuboid}{Cuboid}'s list of particles. 
+\end{DoxyReturn}
+\hypertarget{classCuboid_a8a48fe6647e1b6aaefdcdc919d1d60ca}{\index{Cuboid@{Cuboid}!get\-Depth@{get\-Depth}}
+\index{get\-Depth@{get\-Depth}!Cuboid@{Cuboid}}
+\subsubsection[{get\-Depth}]{\setlength{\rightskip}{0pt plus 5cm}int Cuboid\-::get\-Depth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCuboid_a8a48fe6647e1b6aaefdcdc919d1d60ca}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCuboid}{Cuboid}'s depth in particles. 
+\end{DoxyReturn}
+\hypertarget{classCuboid_acce74194a5322bc75176c0b0268dc99e}{\index{Cuboid@{Cuboid}!get\-Distance@{get\-Distance}}
+\index{get\-Distance@{get\-Distance}!Cuboid@{Cuboid}}
+\subsubsection[{get\-Distance}]{\setlength{\rightskip}{0pt plus 5cm}double Cuboid\-::get\-Distance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCuboid_acce74194a5322bc75176c0b0268dc99e}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCuboid}{Cuboid}'s mesh width between every 2 particles. 
+\end{DoxyReturn}
+\hypertarget{classCuboid_a3d13a5c0849de7c64ce0076a6f65b995}{\index{Cuboid@{Cuboid}!get\-Epsilon@{get\-Epsilon}}
+\index{get\-Epsilon@{get\-Epsilon}!Cuboid@{Cuboid}}
+\subsubsection[{get\-Epsilon}]{\setlength{\rightskip}{0pt plus 5cm}double \& Cuboid\-::get\-Epsilon (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCuboid_a3d13a5c0849de7c64ce0076a6f65b995}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCuboid}{Cuboid}'s epsilon for Lennard Jones Force. 
+\end{DoxyReturn}
+\hypertarget{classCuboid_a9e2f0ed2b9f4e94623d36f0080c39c60}{\index{Cuboid@{Cuboid}!get\-Height@{get\-Height}}
+\index{get\-Height@{get\-Height}!Cuboid@{Cuboid}}
+\subsubsection[{get\-Height}]{\setlength{\rightskip}{0pt plus 5cm}int Cuboid\-::get\-Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCuboid_a9e2f0ed2b9f4e94623d36f0080c39c60}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCuboid}{Cuboid}'s height in particles. 
+\end{DoxyReturn}
+\hypertarget{classCuboid_a800f78fae7fd092724dc959cfa409894}{\index{Cuboid@{Cuboid}!get\-Mass@{get\-Mass}}
+\index{get\-Mass@{get\-Mass}!Cuboid@{Cuboid}}
+\subsubsection[{get\-Mass}]{\setlength{\rightskip}{0pt plus 5cm}double Cuboid\-::get\-Mass (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCuboid_a800f78fae7fd092724dc959cfa409894}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCuboid}{Cuboid}'s mas of every particle. 
+\end{DoxyReturn}
+\hypertarget{classCuboid_ab462bd1cd2a16a29f05b2dd677b600f4}{\index{Cuboid@{Cuboid}!get\-Mean\-V@{get\-Mean\-V}}
+\index{get\-Mean\-V@{get\-Mean\-V}!Cuboid@{Cuboid}}
+\subsubsection[{get\-Mean\-V}]{\setlength{\rightskip}{0pt plus 5cm}double Cuboid\-::get\-Mean\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCuboid_ab462bd1cd2a16a29f05b2dd677b600f4}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCuboid}{Cuboid}'s mean velocity of every particle. 
+\end{DoxyReturn}
+\hypertarget{classCuboid_af02d6e6f4f887e73eab49b2e98d67f9f}{\index{Cuboid@{Cuboid}!get\-Origin@{get\-Origin}}
+\index{get\-Origin@{get\-Origin}!Cuboid@{Cuboid}}
+\subsubsection[{get\-Origin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-Vector}$<$ double, 3 $>$ \& Cuboid\-::get\-Origin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCuboid_af02d6e6f4f887e73eab49b2e98d67f9f}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCuboid}{Cuboid}'s lower left corner's location. 
+\end{DoxyReturn}
+\hypertarget{classCuboid_a4b896bf3579b2b436df51c8f99b75b34}{\index{Cuboid@{Cuboid}!get\-Sigma@{get\-Sigma}}
+\index{get\-Sigma@{get\-Sigma}!Cuboid@{Cuboid}}
+\subsubsection[{get\-Sigma}]{\setlength{\rightskip}{0pt plus 5cm}double \& Cuboid\-::get\-Sigma (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCuboid_a4b896bf3579b2b436df51c8f99b75b34}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCuboid}{Cuboid}'s sigma for Lennard Jones Force. 
+\end{DoxyReturn}
+\hypertarget{classCuboid_a2a324c6cb87afa82b9b933cd3b6bd2cf}{\index{Cuboid@{Cuboid}!get\-Size@{get\-Size}}
+\index{get\-Size@{get\-Size}!Cuboid@{Cuboid}}
+\subsubsection[{get\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int Cuboid\-::get\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCuboid_a2a324c6cb87afa82b9b933cd3b6bd2cf}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCuboid}{Cuboid}'s size in particles. 
+\end{DoxyReturn}
+\hypertarget{classCuboid_afa1a2f414ad4203d0496779e04cd8cc0}{\index{Cuboid@{Cuboid}!get\-Start\-V@{get\-Start\-V}}
+\index{get\-Start\-V@{get\-Start\-V}!Cuboid@{Cuboid}}
+\subsubsection[{get\-Start\-V}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-Vector}$<$ double, 3 $>$ \& Cuboid\-::get\-Start\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCuboid_afa1a2f414ad4203d0496779e04cd8cc0}
+\begin{DoxyReturn}{Returns}
+Velocity at the beginning of each particle in cuboid. 
+\end{DoxyReturn}
+\hypertarget{classCuboid_ae089a8e4c5ff713c95876d9216e71f92}{\index{Cuboid@{Cuboid}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!Cuboid@{Cuboid}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int \& Cuboid\-::get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCuboid_ae089a8e4c5ff713c95876d9216e71f92}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCuboid}{Cuboid}'s particle type. 
+\end{DoxyReturn}
+\hypertarget{classCuboid_ac339d2ee336e723374b4ac60a008f5a4}{\index{Cuboid@{Cuboid}!get\-Width@{get\-Width}}
+\index{get\-Width@{get\-Width}!Cuboid@{Cuboid}}
+\subsubsection[{get\-Width}]{\setlength{\rightskip}{0pt plus 5cm}int Cuboid\-::get\-Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCuboid_ac339d2ee336e723374b4ac60a008f5a4}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCuboid}{Cuboid}'s width in particles. 
+\end{DoxyReturn}
+\hypertarget{classCuboid_ab4a1117474dde7ca1bc7abb17efc60d0}{\index{Cuboid@{Cuboid}!set\-Depth@{set\-Depth}}
+\index{set\-Depth@{set\-Depth}!Cuboid@{Cuboid}}
+\subsubsection[{set\-Depth}]{\setlength{\rightskip}{0pt plus 5cm}void Cuboid\-::set\-Depth (
+\begin{DoxyParamCaption}
+\item[{double}]{new\-D}
+\end{DoxyParamCaption}
+)}}\label{classCuboid_ab4a1117474dde7ca1bc7abb17efc60d0}
+Setter for depth. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\-D} & The new value of width to be set. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classCuboid_a0118ee212ed9445762e4b66bd049ab29}{\index{Cuboid@{Cuboid}!set\-Distance@{set\-Distance}}
+\index{set\-Distance@{set\-Distance}!Cuboid@{Cuboid}}
+\subsubsection[{set\-Distance}]{\setlength{\rightskip}{0pt plus 5cm}void Cuboid\-::set\-Distance (
+\begin{DoxyParamCaption}
+\item[{double}]{new\-D}
+\end{DoxyParamCaption}
+)}}\label{classCuboid_a0118ee212ed9445762e4b66bd049ab29}
+Setter for mesh width between every 2 particles. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\-D} & The new value of mesh width to be set. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classCuboid_a7f18edc87842eb994ba5c4553cf1dfd5}{\index{Cuboid@{Cuboid}!set\-Height@{set\-Height}}
+\index{set\-Height@{set\-Height}!Cuboid@{Cuboid}}
+\subsubsection[{set\-Height}]{\setlength{\rightskip}{0pt plus 5cm}void Cuboid\-::set\-Height (
+\begin{DoxyParamCaption}
+\item[{double}]{new\-H}
+\end{DoxyParamCaption}
+)}}\label{classCuboid_a7f18edc87842eb994ba5c4553cf1dfd5}
+Setter for height. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\-H} & The new value of height to be set. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classCuboid_a289a3115396705a7fa2caa8bd873f20d}{\index{Cuboid@{Cuboid}!set\-Mass@{set\-Mass}}
+\index{set\-Mass@{set\-Mass}!Cuboid@{Cuboid}}
+\subsubsection[{set\-Mass}]{\setlength{\rightskip}{0pt plus 5cm}void Cuboid\-::set\-Mass (
+\begin{DoxyParamCaption}
+\item[{double}]{new\-M}
+\end{DoxyParamCaption}
+)}}\label{classCuboid_a289a3115396705a7fa2caa8bd873f20d}
+Setter for mass every particle. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\-M} & The new value of mass to be set. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classCuboid_a078822ffa44af0b079ed075ad087df26}{\index{Cuboid@{Cuboid}!set\-Mean\-V@{set\-Mean\-V}}
+\index{set\-Mean\-V@{set\-Mean\-V}!Cuboid@{Cuboid}}
+\subsubsection[{set\-Mean\-V}]{\setlength{\rightskip}{0pt plus 5cm}void Cuboid\-::set\-Mean\-V (
+\begin{DoxyParamCaption}
+\item[{double}]{new\-V}
+\end{DoxyParamCaption}
+)}}\label{classCuboid_a078822ffa44af0b079ed075ad087df26}
+Setter for mean velocity of every particle. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\-V} & The new value of mean velocity to be set. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classCuboid_a05ebb7b92f2cf7d99470e0ee37565204}{\index{Cuboid@{Cuboid}!set\-Width@{set\-Width}}
+\index{set\-Width@{set\-Width}!Cuboid@{Cuboid}}
+\subsubsection[{set\-Width}]{\setlength{\rightskip}{0pt plus 5cm}void Cuboid\-::set\-Width (
+\begin{DoxyParamCaption}
+\item[{double}]{new\-W}
+\end{DoxyParamCaption}
+)}}\label{classCuboid_a05ebb7b92f2cf7d99470e0ee37565204}
+Setter for width. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\-W} & The new value of width to be set. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCuboid_a9f6823cdaa2bbb8df9ea1a8709a3319c}{\index{Cuboid@{Cuboid}!c\-Depth@{c\-Depth}}
+\index{c\-Depth@{c\-Depth}!Cuboid@{Cuboid}}
+\subsubsection[{c\-Depth}]{\setlength{\rightskip}{0pt plus 5cm}int Cuboid\-::c\-Depth\hspace{0.3cm}{\ttfamily [private]}}}\label{classCuboid_a9f6823cdaa2bbb8df9ea1a8709a3319c}
+\hyperlink{classCuboid}{Cuboid}'s depth (measured in particles). \hypertarget{classCuboid_a774275af1874294d9d12772eaa7d417a}{\index{Cuboid@{Cuboid}!c\-Height@{c\-Height}}
+\index{c\-Height@{c\-Height}!Cuboid@{Cuboid}}
+\subsubsection[{c\-Height}]{\setlength{\rightskip}{0pt plus 5cm}int Cuboid\-::c\-Height\hspace{0.3cm}{\ttfamily [private]}}}\label{classCuboid_a774275af1874294d9d12772eaa7d417a}
+\hyperlink{classCuboid}{Cuboid}'s height (measured in particles). \hypertarget{classCuboid_a46268af723f395a1cb00533cc8dab6c8}{\index{Cuboid@{Cuboid}!cub@{cub}}
+\index{cub@{cub}!Cuboid@{Cuboid}}
+\subsubsection[{cub}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Particle}$>$ Cuboid\-::cub\hspace{0.3cm}{\ttfamily [private]}}}\label{classCuboid_a46268af723f395a1cb00533cc8dab6c8}
+The particles of a cuboid are saved in one single list. \hypertarget{classCuboid_a256b9679e10b33f8e280034a6a7de6e8}{\index{Cuboid@{Cuboid}!c\-Width@{c\-Width}}
+\index{c\-Width@{c\-Width}!Cuboid@{Cuboid}}
+\subsubsection[{c\-Width}]{\setlength{\rightskip}{0pt plus 5cm}int Cuboid\-::c\-Width\hspace{0.3cm}{\ttfamily [private]}}}\label{classCuboid_a256b9679e10b33f8e280034a6a7de6e8}
+\hyperlink{classCuboid}{Cuboid}'s width (measured in particles). \hypertarget{classCuboid_a3925eb122d69d5938939945a961dc96f}{\index{Cuboid@{Cuboid}!E\-P\-S\-I\-L\-O\-N@{E\-P\-S\-I\-L\-O\-N}}
+\index{E\-P\-S\-I\-L\-O\-N@{E\-P\-S\-I\-L\-O\-N}!Cuboid@{Cuboid}}
+\subsubsection[{E\-P\-S\-I\-L\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}double Cuboid\-::\-E\-P\-S\-I\-L\-O\-N\hspace{0.3cm}{\ttfamily [private]}}}\label{classCuboid_a3925eb122d69d5938939945a961dc96f}
+For Lennard Jones Force. \hypertarget{classCuboid_ad5d539f1c69b321fbbe2dcceef65faba}{\index{Cuboid@{Cuboid}!h@{h}}
+\index{h@{h}!Cuboid@{Cuboid}}
+\subsubsection[{h}]{\setlength{\rightskip}{0pt plus 5cm}double Cuboid\-::h\hspace{0.3cm}{\ttfamily [private]}}}\label{classCuboid_ad5d539f1c69b321fbbe2dcceef65faba}
+The mesh width between every 2 particles. \hypertarget{classCuboid_a98975bdfb1bd4bbb327167d07d1ffdd4}{\index{Cuboid@{Cuboid}!m@{m}}
+\index{m@{m}!Cuboid@{Cuboid}}
+\subsubsection[{m}]{\setlength{\rightskip}{0pt plus 5cm}double Cuboid\-::m\hspace{0.3cm}{\ttfamily [private]}}}\label{classCuboid_a98975bdfb1bd4bbb327167d07d1ffdd4}
+The mass of each particle in cuboid. \hypertarget{classCuboid_ab6bb8eb2a87d77e67acea088f6a8ba88}{\index{Cuboid@{Cuboid}!mean\-V@{mean\-V}}
+\index{mean\-V@{mean\-V}!Cuboid@{Cuboid}}
+\subsubsection[{mean\-V}]{\setlength{\rightskip}{0pt plus 5cm}double Cuboid\-::mean\-V\hspace{0.3cm}{\ttfamily [private]}}}\label{classCuboid_ab6bb8eb2a87d77e67acea088f6a8ba88}
+The mean velocity (aka. brownian factor) of each particle. \hypertarget{classCuboid_ab9fea399762342f5636ea69038606ba1}{\index{Cuboid@{Cuboid}!origin@{origin}}
+\index{origin@{origin}!Cuboid@{Cuboid}}
+\subsubsection[{origin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-Vector}$<$double, 3$>$ Cuboid\-::origin\hspace{0.3cm}{\ttfamily [private]}}}\label{classCuboid_ab9fea399762342f5636ea69038606ba1}
+A 3\-D vector indicating the location of the lower left corner of a cuboid. \hypertarget{classCuboid_acd3e5d96f6da99b24468ee9673f9daba}{\index{Cuboid@{Cuboid}!par\-Type@{par\-Type}}
+\index{par\-Type@{par\-Type}!Cuboid@{Cuboid}}
+\subsubsection[{par\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int Cuboid\-::par\-Type\hspace{0.3cm}{\ttfamily [private]}}}\label{classCuboid_acd3e5d96f6da99b24468ee9673f9daba}
+\hypertarget{classCuboid_a88c7ddda07e9eb992c8b549ca1f6e827}{\index{Cuboid@{Cuboid}!S\-I\-G\-M\-A@{S\-I\-G\-M\-A}}
+\index{S\-I\-G\-M\-A@{S\-I\-G\-M\-A}!Cuboid@{Cuboid}}
+\subsubsection[{S\-I\-G\-M\-A}]{\setlength{\rightskip}{0pt plus 5cm}double Cuboid\-::\-S\-I\-G\-M\-A\hspace{0.3cm}{\ttfamily [private]}}}\label{classCuboid_a88c7ddda07e9eb992c8b549ca1f6e827}
+For Lennard Jones Force. \hypertarget{classCuboid_a7a95bfb80c884e9f96642c9f7043e9e1}{\index{Cuboid@{Cuboid}!start\-V@{start\-V}}
+\index{start\-V@{start\-V}!Cuboid@{Cuboid}}
+\subsubsection[{start\-V}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-Vector}$<$double, 3$>$ Cuboid\-::start\-V\hspace{0.3cm}{\ttfamily [private]}}}\label{classCuboid_a7a95bfb80c884e9f96642c9f7043e9e1}
+The velocity at the beginning of each particle. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{Cuboid_8h}{Cuboid.\-h}\item 
+src/\hyperlink{Cuboid_8cpp}{Cuboid.\-cpp}\end{DoxyCompactItemize}

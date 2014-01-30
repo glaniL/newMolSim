@@ -1,0 +1,247 @@
+\hypertarget{InputCuboids_8h}{\section{src/utils/\-Input\-Cuboids.h File Reference}
+\label{InputCuboids_8h}\index{src/utils/\-Input\-Cuboids.\-h@{src/utils/\-Input\-Cuboids.\-h}}
+}
+{\ttfamily \#include $<$xsd/cxx/config.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/pre.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/xml/char-\/utf8.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/exceptions.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/elements.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/types.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/xml/error-\/handler.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/xml/dom/auto-\/ptr.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/byte.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/unsigned-\/byte.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/short.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/unsigned-\/short.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/int.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/unsigned-\/int.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/long.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/unsigned-\/long.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/boolean.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/float.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/double.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/parsing/decimal.\-hxx$>$}\\*
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include $<$limits$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/containers.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/tree/list.\-hxx$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/xml/dom/parsing-\/header.\-hxx$>$}\\*
+{\ttfamily \#include $<$iosfwd$>$}\\*
+{\ttfamily \#include $<$xercesc/sax/\-Input\-Source.\-hpp$>$}\\*
+{\ttfamily \#include $<$xercesc/dom/\-D\-O\-M\-Document.\-hpp$>$}\\*
+{\ttfamily \#include $<$xercesc/dom/\-D\-O\-M\-Error\-Handler.\-hpp$>$}\\*
+{\ttfamily \#include $<$xsd/cxx/post.\-hxx$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classori__t}{ori\-\_\-t}
+\item 
+class \hyperlink{classstartV__t}{start\-V\-\_\-t}
+\item 
+class \hyperlink{classsize3D__t}{size3\-D\-\_\-t}
+\item 
+class \hyperlink{classcuboid__t}{cuboid\-\_\-t}
+\item 
+class \hyperlink{classcuboids__t}{cuboids\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespacexml__schema}{xml\-\_\-schema}
+\begin{DoxyCompactList}\small\item\em C++ namespace for the http\-://www.w3.\-org/2001/\-X\-M\-L\-Schema schema namespace. \end{DoxyCompactList}\item 
+namespace \hyperlink{namespacexml__schema_1_1dom}{xml\-\_\-schema\-::dom}
+\begin{DoxyCompactList}\small\item\em D\-O\-M interaction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{InputCuboids_8h_aee0a950eb1ff2461391d858c0cd254b7}{X\-S\-D\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}
+\item 
+\#define \hyperlink{InputCuboids_8h_acef724a52414642ad3c9b7209702daf5}{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}
+\item 
+\#define \hyperlink{InputCuboids_8h_ab727c6f10de580ac0bb8f7395fa68895}{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-T\-R\-E\-E\-\_\-\-N\-O\-D\-E\-\_\-\-K\-E\-Y\-\_\-\-\_\-\-X\-M\-L\-\_\-\-S\-C\-H\-E\-M\-A}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classcuboids__t}{cuboids\-\_\-t} $>$ \hyperlink{InputCuboids_8h_ab28a44b9a5a1a6fbd6950b74d0be794d}{cuboids} (const \-::std\-::string \&uri,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classcuboids__t}{cuboids\-\_\-t} $>$ \hyperlink{InputCuboids_8h_a1ffbe2a250e9f00e6b5e31b77f42fa53}{cuboids} (const \-::std\-::string \&uri,\-::\hyperlink{namespacexml__schema_a0a5d9528e9175cedf199984a8bb64d62}{xml\-\_\-schema\-::error\-\_\-handler} \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classcuboids__t}{cuboids\-\_\-t} $>$ \hyperlink{InputCuboids_8h_a46d36be525850fd94771ec181b3b8742}{cuboids} (const \-::std\-::string \&uri,\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classcuboids__t}{cuboids\-\_\-t} $>$ \hyperlink{InputCuboids_8h_a37c9b56a3c275abab84234e44fde804e}{cuboids} (\-::std\-::istream \&is,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classcuboids__t}{cuboids\-\_\-t} $>$ \hyperlink{InputCuboids_8h_a3c01f5e2c3470f9d621c6039355eaf63}{cuboids} (\-::std\-::istream \&is,\-::\hyperlink{namespacexml__schema_a0a5d9528e9175cedf199984a8bb64d62}{xml\-\_\-schema\-::error\-\_\-handler} \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classcuboids__t}{cuboids\-\_\-t} $>$ \hyperlink{InputCuboids_8h_a53d192ef57e389d54fa44a0bc4d48779}{cuboids} (\-::std\-::istream \&is,\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classcuboids__t}{cuboids\-\_\-t} $>$ \hyperlink{InputCuboids_8h_a91a7840e4324546afa6520ce10ae0061}{cuboids} (\-::std\-::istream \&is, const \-::std\-::string \&id,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classcuboids__t}{cuboids\-\_\-t} $>$ \hyperlink{InputCuboids_8h_a317c93827e3647d99835a9a7bac44094}{cuboids} (\-::std\-::istream \&is, const \-::std\-::string \&id,\-::\hyperlink{namespacexml__schema_a0a5d9528e9175cedf199984a8bb64d62}{xml\-\_\-schema\-::error\-\_\-handler} \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classcuboids__t}{cuboids\-\_\-t} $>$ \hyperlink{InputCuboids_8h_a86efb212029f7ca801600fe17339acd1}{cuboids} (\-::std\-::istream \&is, const \-::std\-::string \&id,\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classcuboids__t}{cuboids\-\_\-t} $>$ \hyperlink{InputCuboids_8h_acd085491db0ed0ee1ba0d2a39a922410}{cuboids} (\-::xercesc\-::\-Input\-Source \&is,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classcuboids__t}{cuboids\-\_\-t} $>$ \hyperlink{InputCuboids_8h_aa494a770241477b5603d4ebf4fcf4d2c}{cuboids} (\-::xercesc\-::\-Input\-Source \&is,\-::\hyperlink{namespacexml__schema_a0a5d9528e9175cedf199984a8bb64d62}{xml\-\_\-schema\-::error\-\_\-handler} \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classcuboids__t}{cuboids\-\_\-t} $>$ \hyperlink{InputCuboids_8h_aa7973df84338f56353efad1827c45568}{cuboids} (\-::xercesc\-::\-Input\-Source \&is,\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&eh,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classcuboids__t}{cuboids\-\_\-t} $>$ \hyperlink{InputCuboids_8h_a436629e2288a4246ac38aff4fa765921}{cuboids} (const \-::xercesc\-::\-D\-O\-M\-Document \&d,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\item 
+\-::std\-::auto\-\_\-ptr$<$ \-::\hyperlink{classcuboids__t}{cuboids\-\_\-t} $>$ \hyperlink{InputCuboids_8h_a6fbb69a9e0ce5b917daeba332607a1d9}{cuboids} (\-::xml\-\_\-schema\-::dom\-::auto\-\_\-ptr$<$ \-::xercesc\-::\-D\-O\-M\-Document $>$ \&d,\-::\hyperlink{namespacexml__schema_a0612287d030cb2732d31a45b258fdc87}{xml\-\_\-schema\-::flags} f=0, const \-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties} \&p=\-::\hyperlink{namespacexml__schema_a1a8ebac679580b41baebd62c7d641c1d}{xml\-\_\-schema\-::properties}())
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{InputCuboids_8h_ab727c6f10de580ac0bb8f7395fa68895}{\index{Input\-Cuboids.\-h@{Input\-Cuboids.\-h}!X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-T\-R\-E\-E\-\_\-\-N\-O\-D\-E\-\_\-\-K\-E\-Y\-\_\-\-\_\-\-X\-M\-L\-\_\-\-S\-C\-H\-E\-M\-A@{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-T\-R\-E\-E\-\_\-\-N\-O\-D\-E\-\_\-\-K\-E\-Y\-\_\-\-\_\-\-X\-M\-L\-\_\-\-S\-C\-H\-E\-M\-A}}
+\index{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-T\-R\-E\-E\-\_\-\-N\-O\-D\-E\-\_\-\-K\-E\-Y\-\_\-\-\_\-\-X\-M\-L\-\_\-\-S\-C\-H\-E\-M\-A@{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-T\-R\-E\-E\-\_\-\-N\-O\-D\-E\-\_\-\-K\-E\-Y\-\_\-\-\_\-\-X\-M\-L\-\_\-\-S\-C\-H\-E\-M\-A}!InputCuboids.h@{Input\-Cuboids.\-h}}
+\subsubsection[{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-T\-R\-E\-E\-\_\-\-N\-O\-D\-E\-\_\-\-K\-E\-Y\-\_\-\-\_\-\-X\-M\-L\-\_\-\-S\-C\-H\-E\-M\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-T\-R\-E\-E\-\_\-\-N\-O\-D\-E\-\_\-\-K\-E\-Y\-\_\-\-\_\-\-X\-M\-L\-\_\-\-S\-C\-H\-E\-M\-A}}\label{InputCuboids_8h_ab727c6f10de580ac0bb8f7395fa68895}
+\hypertarget{InputCuboids_8h_acef724a52414642ad3c9b7209702daf5}{\index{Input\-Cuboids.\-h@{Input\-Cuboids.\-h}!X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R@{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}}
+\index{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R@{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}!InputCuboids.h@{Input\-Cuboids.\-h}}
+\subsubsection[{X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-S\-D\-\_\-\-C\-X\-X\-\_\-\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}}\label{InputCuboids_8h_acef724a52414642ad3c9b7209702daf5}
+\hypertarget{InputCuboids_8h_aee0a950eb1ff2461391d858c0cd254b7}{\index{Input\-Cuboids.\-h@{Input\-Cuboids.\-h}!X\-S\-D\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R@{X\-S\-D\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}}
+\index{X\-S\-D\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R@{X\-S\-D\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}!InputCuboids.h@{Input\-Cuboids.\-h}}
+\subsubsection[{X\-S\-D\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-S\-D\-\_\-\-U\-S\-E\-\_\-\-C\-H\-A\-R}}\label{InputCuboids_8h_aee0a950eb1ff2461391d858c0cd254b7}
+
+
+\subsection{Function Documentation}
+\hypertarget{InputCuboids_8h_ab28a44b9a5a1a6fbd6950b74d0be794d}{\index{Input\-Cuboids.\-h@{Input\-Cuboids.\-h}!cuboids@{cuboids}}
+\index{cuboids@{cuboids}!InputCuboids.h@{Input\-Cuboids.\-h}}
+\subsubsection[{cuboids}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf cuboids\-\_\-t} $>$ cuboids (
+\begin{DoxyParamCaption}
+\item[{const \-::std\-::string \&}]{uri, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputCuboids_8h_ab28a44b9a5a1a6fbd6950b74d0be794d}
+\hypertarget{InputCuboids_8h_a1ffbe2a250e9f00e6b5e31b77f42fa53}{\index{Input\-Cuboids.\-h@{Input\-Cuboids.\-h}!cuboids@{cuboids}}
+\index{cuboids@{cuboids}!InputCuboids.h@{Input\-Cuboids.\-h}}
+\subsubsection[{cuboids}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf cuboids\-\_\-t} $>$ cuboids (
+\begin{DoxyParamCaption}
+\item[{const \-::std\-::string \&}]{uri, }
+\item[{\-::{\bf xml\-\_\-schema\-::error\-\_\-handler} \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputCuboids_8h_a1ffbe2a250e9f00e6b5e31b77f42fa53}
+\hypertarget{InputCuboids_8h_a46d36be525850fd94771ec181b3b8742}{\index{Input\-Cuboids.\-h@{Input\-Cuboids.\-h}!cuboids@{cuboids}}
+\index{cuboids@{cuboids}!InputCuboids.h@{Input\-Cuboids.\-h}}
+\subsubsection[{cuboids}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf cuboids\-\_\-t} $>$ cuboids (
+\begin{DoxyParamCaption}
+\item[{const \-::std\-::string \&}]{uri, }
+\item[{\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputCuboids_8h_a46d36be525850fd94771ec181b3b8742}
+\hypertarget{InputCuboids_8h_a37c9b56a3c275abab84234e44fde804e}{\index{Input\-Cuboids.\-h@{Input\-Cuboids.\-h}!cuboids@{cuboids}}
+\index{cuboids@{cuboids}!InputCuboids.h@{Input\-Cuboids.\-h}}
+\subsubsection[{cuboids}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf cuboids\-\_\-t} $>$ cuboids (
+\begin{DoxyParamCaption}
+\item[{\-::std\-::istream \&}]{is, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputCuboids_8h_a37c9b56a3c275abab84234e44fde804e}
+\hypertarget{InputCuboids_8h_a3c01f5e2c3470f9d621c6039355eaf63}{\index{Input\-Cuboids.\-h@{Input\-Cuboids.\-h}!cuboids@{cuboids}}
+\index{cuboids@{cuboids}!InputCuboids.h@{Input\-Cuboids.\-h}}
+\subsubsection[{cuboids}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf cuboids\-\_\-t} $>$ cuboids (
+\begin{DoxyParamCaption}
+\item[{\-::std\-::istream \&}]{is, }
+\item[{\-::{\bf xml\-\_\-schema\-::error\-\_\-handler} \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputCuboids_8h_a3c01f5e2c3470f9d621c6039355eaf63}
+\hypertarget{InputCuboids_8h_a53d192ef57e389d54fa44a0bc4d48779}{\index{Input\-Cuboids.\-h@{Input\-Cuboids.\-h}!cuboids@{cuboids}}
+\index{cuboids@{cuboids}!InputCuboids.h@{Input\-Cuboids.\-h}}
+\subsubsection[{cuboids}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf cuboids\-\_\-t} $>$ cuboids (
+\begin{DoxyParamCaption}
+\item[{\-::std\-::istream \&}]{is, }
+\item[{\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputCuboids_8h_a53d192ef57e389d54fa44a0bc4d48779}
+\hypertarget{InputCuboids_8h_a91a7840e4324546afa6520ce10ae0061}{\index{Input\-Cuboids.\-h@{Input\-Cuboids.\-h}!cuboids@{cuboids}}
+\index{cuboids@{cuboids}!InputCuboids.h@{Input\-Cuboids.\-h}}
+\subsubsection[{cuboids}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf cuboids\-\_\-t} $>$ cuboids (
+\begin{DoxyParamCaption}
+\item[{\-::std\-::istream \&}]{is, }
+\item[{const \-::std\-::string \&}]{id, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputCuboids_8h_a91a7840e4324546afa6520ce10ae0061}
+\hypertarget{InputCuboids_8h_a317c93827e3647d99835a9a7bac44094}{\index{Input\-Cuboids.\-h@{Input\-Cuboids.\-h}!cuboids@{cuboids}}
+\index{cuboids@{cuboids}!InputCuboids.h@{Input\-Cuboids.\-h}}
+\subsubsection[{cuboids}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf cuboids\-\_\-t} $>$ cuboids (
+\begin{DoxyParamCaption}
+\item[{\-::std\-::istream \&}]{is, }
+\item[{const \-::std\-::string \&}]{id, }
+\item[{\-::{\bf xml\-\_\-schema\-::error\-\_\-handler} \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputCuboids_8h_a317c93827e3647d99835a9a7bac44094}
+\hypertarget{InputCuboids_8h_a86efb212029f7ca801600fe17339acd1}{\index{Input\-Cuboids.\-h@{Input\-Cuboids.\-h}!cuboids@{cuboids}}
+\index{cuboids@{cuboids}!InputCuboids.h@{Input\-Cuboids.\-h}}
+\subsubsection[{cuboids}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf cuboids\-\_\-t} $>$ cuboids (
+\begin{DoxyParamCaption}
+\item[{\-::std\-::istream \&}]{is, }
+\item[{const \-::std\-::string \&}]{id, }
+\item[{\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputCuboids_8h_a86efb212029f7ca801600fe17339acd1}
+\hypertarget{InputCuboids_8h_acd085491db0ed0ee1ba0d2a39a922410}{\index{Input\-Cuboids.\-h@{Input\-Cuboids.\-h}!cuboids@{cuboids}}
+\index{cuboids@{cuboids}!InputCuboids.h@{Input\-Cuboids.\-h}}
+\subsubsection[{cuboids}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf cuboids\-\_\-t} $>$ cuboids (
+\begin{DoxyParamCaption}
+\item[{\-::xercesc\-::\-Input\-Source \&}]{is, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputCuboids_8h_acd085491db0ed0ee1ba0d2a39a922410}
+\hypertarget{InputCuboids_8h_aa494a770241477b5603d4ebf4fcf4d2c}{\index{Input\-Cuboids.\-h@{Input\-Cuboids.\-h}!cuboids@{cuboids}}
+\index{cuboids@{cuboids}!InputCuboids.h@{Input\-Cuboids.\-h}}
+\subsubsection[{cuboids}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf cuboids\-\_\-t} $>$ cuboids (
+\begin{DoxyParamCaption}
+\item[{\-::xercesc\-::\-Input\-Source \&}]{is, }
+\item[{\-::{\bf xml\-\_\-schema\-::error\-\_\-handler} \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputCuboids_8h_aa494a770241477b5603d4ebf4fcf4d2c}
+\hypertarget{InputCuboids_8h_aa7973df84338f56353efad1827c45568}{\index{Input\-Cuboids.\-h@{Input\-Cuboids.\-h}!cuboids@{cuboids}}
+\index{cuboids@{cuboids}!InputCuboids.h@{Input\-Cuboids.\-h}}
+\subsubsection[{cuboids}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf cuboids\-\_\-t} $>$ cuboids (
+\begin{DoxyParamCaption}
+\item[{\-::xercesc\-::\-Input\-Source \&}]{is, }
+\item[{\-::xercesc\-::\-D\-O\-M\-Error\-Handler \&}]{eh, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputCuboids_8h_aa7973df84338f56353efad1827c45568}
+\hypertarget{InputCuboids_8h_a436629e2288a4246ac38aff4fa765921}{\index{Input\-Cuboids.\-h@{Input\-Cuboids.\-h}!cuboids@{cuboids}}
+\index{cuboids@{cuboids}!InputCuboids.h@{Input\-Cuboids.\-h}}
+\subsubsection[{cuboids}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf cuboids\-\_\-t} $>$ cuboids (
+\begin{DoxyParamCaption}
+\item[{const \-::xercesc\-::\-D\-O\-M\-Document \&}]{d, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputCuboids_8h_a436629e2288a4246ac38aff4fa765921}
+\hypertarget{InputCuboids_8h_a6fbb69a9e0ce5b917daeba332607a1d9}{\index{Input\-Cuboids.\-h@{Input\-Cuboids.\-h}!cuboids@{cuboids}}
+\index{cuboids@{cuboids}!InputCuboids.h@{Input\-Cuboids.\-h}}
+\subsubsection[{cuboids}]{\setlength{\rightskip}{0pt plus 5cm}\-::std\-::auto\-\_\-ptr$<$ \-::{\bf cuboids\-\_\-t} $>$ cuboids (
+\begin{DoxyParamCaption}
+\item[{\-::xml\-\_\-schema\-::dom\-::auto\-\_\-ptr$<$ \-::xercesc\-::\-D\-O\-M\-Document $>$ \&}]{d, }
+\item[{\-::{\bf xml\-\_\-schema\-::flags}}]{f = {\ttfamily 0}, }
+\item[{const \-::{\bf xml\-\_\-schema\-::properties} \&}]{p = {\ttfamily \-:\-:{\bf xml\-\_\-schema\-::properties}()}}
+\end{DoxyParamCaption}
+)}}\label{InputCuboids_8h_a6fbb69a9e0ce5b917daeba332607a1d9}

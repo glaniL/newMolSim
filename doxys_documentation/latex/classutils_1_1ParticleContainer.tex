@@ -1,0 +1,107 @@
+\hypertarget{classutils_1_1ParticleContainer}{\section{utils\-:\-:Particle\-Container Class Reference}
+\label{classutils_1_1ParticleContainer}\index{utils\-::\-Particle\-Container@{utils\-::\-Particle\-Container}}
+}
+
+
+{\ttfamily \#include $<$Particle\-Container.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classutils_1_1ParticleContainer_a76d21bdb5141158cf664d65e2d8b1db7}{Particle\-Container} ()
+\item 
+\hyperlink{classutils_1_1ParticleContainer_a9629a8d31a3aa8c2fe944307c1263b66}{$\sim$\-Particle\-Container} ()
+\item 
+void \hyperlink{classutils_1_1ParticleContainer_abc060d13bb939123fd0bf1631e0562ca}{initialize} (std\-::list$<$ \hyperlink{classParticle}{Particle} $>$ \&particles\-\_\-arg)
+\item 
+\hyperlink{classutils_1_1ParticleIterator}{utils\-::\-Particle\-Iterator} \hyperlink{classutils_1_1ParticleContainer_a54e64306f644d9c1d7ac47694592023f}{begin} ()
+\item 
+\hyperlink{classutils_1_1ParticleIterator}{utils\-::\-Particle\-Iterator} \hyperlink{classutils_1_1ParticleContainer_a9e1b338ace1db41a8f95c69e1bb0817d}{end} ()
+\item 
+std\-::list$<$ \hyperlink{classParticle}{Particle} $>$ \& \hyperlink{classutils_1_1ParticleContainer_ad3ab05ad52512893f4f251f3219bc11d}{get\-List} ()
+\item 
+int \hyperlink{classutils_1_1ParticleContainer_ae67310a062690e380c78625b1f944537}{size} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::list$<$ \hyperlink{classParticle}{Particle} $>$ \hyperlink{classutils_1_1ParticleContainer_a112ab237df50a570431ecce15d151e45}{particles}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classutils_1_1ParticleContainer_a76d21bdb5141158cf664d65e2d8b1db7}{\index{utils\-::\-Particle\-Container@{utils\-::\-Particle\-Container}!Particle\-Container@{Particle\-Container}}
+\index{Particle\-Container@{Particle\-Container}!utils::ParticleContainer@{utils\-::\-Particle\-Container}}
+\subsubsection[{Particle\-Container}]{\setlength{\rightskip}{0pt plus 5cm}Particle\-Container\-::\-Particle\-Container (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleContainer_a76d21bdb5141158cf664d65e2d8b1db7}
+\hypertarget{classutils_1_1ParticleContainer_a9629a8d31a3aa8c2fe944307c1263b66}{\index{utils\-::\-Particle\-Container@{utils\-::\-Particle\-Container}!$\sim$\-Particle\-Container@{$\sim$\-Particle\-Container}}
+\index{$\sim$\-Particle\-Container@{$\sim$\-Particle\-Container}!utils::ParticleContainer@{utils\-::\-Particle\-Container}}
+\subsubsection[{$\sim$\-Particle\-Container}]{\setlength{\rightskip}{0pt plus 5cm}Particle\-Container\-::$\sim$\-Particle\-Container (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleContainer_a9629a8d31a3aa8c2fe944307c1263b66}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classutils_1_1ParticleContainer_a54e64306f644d9c1d7ac47694592023f}{\index{utils\-::\-Particle\-Container@{utils\-::\-Particle\-Container}!begin@{begin}}
+\index{begin@{begin}!utils::ParticleContainer@{utils\-::\-Particle\-Container}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Particle\-Iterator} Particle\-Container\-::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleContainer_a54e64306f644d9c1d7ac47694592023f}
+\begin{DoxyReturn}{Returns}
+the first element of the container 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1ParticleContainer_a9e1b338ace1db41a8f95c69e1bb0817d}{\index{utils\-::\-Particle\-Container@{utils\-::\-Particle\-Container}!end@{end}}
+\index{end@{end}!utils::ParticleContainer@{utils\-::\-Particle\-Container}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Particle\-Iterator} Particle\-Container\-::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleContainer_a9e1b338ace1db41a8f95c69e1bb0817d}
+\begin{DoxyReturn}{Returns}
+the last element of the container 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1ParticleContainer_ad3ab05ad52512893f4f251f3219bc11d}{\index{utils\-::\-Particle\-Container@{utils\-::\-Particle\-Container}!get\-List@{get\-List}}
+\index{get\-List@{get\-List}!utils::ParticleContainer@{utils\-::\-Particle\-Container}}
+\subsubsection[{get\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<$ {\bf Particle} $>$ \& Particle\-Container\-::get\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleContainer_ad3ab05ad52512893f4f251f3219bc11d}
+@ return the particles list \hypertarget{classutils_1_1ParticleContainer_abc060d13bb939123fd0bf1631e0562ca}{\index{utils\-::\-Particle\-Container@{utils\-::\-Particle\-Container}!initialize@{initialize}}
+\index{initialize@{initialize}!utils::ParticleContainer@{utils\-::\-Particle\-Container}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}void Particle\-Container\-::initialize (
+\begin{DoxyParamCaption}
+\item[{std\-::list$<$ {\bf Particle} $>$ \&}]{particles\-\_\-arg}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleContainer_abc060d13bb939123fd0bf1631e0562ca}
+fills the particles list 
+\begin{DoxyParams}{Parameters}
+{\em the} & list \\
+\hline
+\end{DoxyParams}
+\hypertarget{classutils_1_1ParticleContainer_ae67310a062690e380c78625b1f944537}{\index{utils\-::\-Particle\-Container@{utils\-::\-Particle\-Container}!size@{size}}
+\index{size@{size}!utils::ParticleContainer@{utils\-::\-Particle\-Container}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Particle\-Container\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleContainer_ae67310a062690e380c78625b1f944537}
+@ return the size of the size 
+
+\subsection{Member Data Documentation}
+\hypertarget{classutils_1_1ParticleContainer_a112ab237df50a570431ecce15d151e45}{\index{utils\-::\-Particle\-Container@{utils\-::\-Particle\-Container}!particles@{particles}}
+\index{particles@{particles}!utils::ParticleContainer@{utils\-::\-Particle\-Container}}
+\subsubsection[{particles}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Particle}$>$ utils\-::\-Particle\-Container\-::particles\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1ParticleContainer_a112ab237df50a570431ecce15d151e45}
+contains the list of the given particles 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/utils/\hyperlink{ParticleContainer_8h}{Particle\-Container.\-h}\item 
+src/utils/\hyperlink{ParticleContainer_8cpp}{Particle\-Container.\-cpp}\end{DoxyCompactItemize}

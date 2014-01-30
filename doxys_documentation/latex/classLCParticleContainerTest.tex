@@ -1,0 +1,188 @@
+\hypertarget{classLCParticleContainerTest}{\section{L\-C\-Particle\-Container\-Test Class Reference}
+\label{classLCParticleContainerTest}\index{L\-C\-Particle\-Container\-Test@{L\-C\-Particle\-Container\-Test}}
+}
+
+
+{\ttfamily \#include $<$L\-C\-Particle\-Container\-Test.\-h$>$}
+
+Inheritance diagram for L\-C\-Particle\-Container\-Test\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classLCParticleContainerTest}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLCParticleContainerTest_a4380a3e7b13265e7df9c77af7a17ed5e}{L\-C\-Particle\-Container\-Test} ()
+\item 
+virtual \hyperlink{classLCParticleContainerTest_a505ea2563557a170d29b73efebe26e54}{$\sim$\-L\-C\-Particle\-Container\-Test} ()
+\item 
+void \hyperlink{classLCParticleContainerTest_ab6316e2780ff2cc8d3da231786d36e68}{set\-Up} ()
+\item 
+void \hyperlink{classLCParticleContainerTest_af95ad5278871f5d39305fa31def2ddc8}{tear\-Down} ()
+\item 
+void \hyperlink{classLCParticleContainerTest_afd02efdfde88db8256a531384bbbcfba}{test\-Initialize\-Cells} ()
+\item 
+void \hyperlink{classLCParticleContainerTest_a56a27be4affd57f6d765c1cde0f12e8c}{test\-Update\-Cells} ()
+\item 
+void \hyperlink{classLCParticleContainerTest_a334dcf062e2594cca2408c0c2713ef67}{test\-Size} ()
+\item 
+void \hyperlink{classLCParticleContainerTest_a29488b517572e40978e2847a7b48a64b}{test\-Begin\-Outer} ()
+\item 
+void \hyperlink{classLCParticleContainerTest_a46bca7862943f675190519ecb479fb16}{test\-End\-Outer} ()
+\item 
+void \hyperlink{classLCParticleContainerTest_a1a68785ecc6c7904ddd7d57c4184d5a8}{test\-Begin\-Inner} ()
+\item 
+void \hyperlink{classLCParticleContainerTest_a4c8f0fd1aac5a10fa9a6c345b3b7f15b}{test\-End\-Inner} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Test $\ast$ \hyperlink{classLCParticleContainerTest_a38e97f8110510d564b91bdac41d9d9ca}{suite} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classutils_1_1LCParticleContainer}{utils\-::\-L\-C\-Particle\-Container} \hyperlink{classLCParticleContainerTest_aedb4bb8eb12e6079e1509ac1563c4022}{container}
+\item 
+int \hyperlink{classLCParticleContainerTest_a72378a90a56e81786578f90afcd41b39}{width}
+\item 
+int \hyperlink{classLCParticleContainerTest_a4699b4535369eb36b5d711e8b45f1da6}{height}
+\item 
+int \hyperlink{classLCParticleContainerTest_ab58d0d6496deca62a6452851aed96ef5}{depth}
+\item 
+int \hyperlink{classLCParticleContainerTest_a0d6b84232285d9630677586bb999a258}{num\-\_\-of\-\_\-cells}
+\item 
+double \hyperlink{classLCParticleContainerTest_a8489fd1951bb0c38acb2debd9cc5d447}{cutoff\-\_\-radius}
+\item 
+\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \hyperlink{classLCParticleContainerTest_ab6450ef8318882ca6931be58e6ce58aa}{domain\-\_\-size}
+\item 
+std\-::list$<$ \hyperlink{classParticle}{Particle} $>$ \hyperlink{classLCParticleContainerTest_a9b0a10a86578860c76d2da5da0614e22}{particles}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classLCParticleContainerTest_a4380a3e7b13265e7df9c77af7a17ed5e}{\index{L\-C\-Particle\-Container\-Test@{L\-C\-Particle\-Container\-Test}!L\-C\-Particle\-Container\-Test@{L\-C\-Particle\-Container\-Test}}
+\index{L\-C\-Particle\-Container\-Test@{L\-C\-Particle\-Container\-Test}!LCParticleContainerTest@{L\-C\-Particle\-Container\-Test}}
+\subsubsection[{L\-C\-Particle\-Container\-Test}]{\setlength{\rightskip}{0pt plus 5cm}L\-C\-Particle\-Container\-Test\-::\-L\-C\-Particle\-Container\-Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLCParticleContainerTest_a4380a3e7b13265e7df9c77af7a17ed5e}
+\hypertarget{classLCParticleContainerTest_a505ea2563557a170d29b73efebe26e54}{\index{L\-C\-Particle\-Container\-Test@{L\-C\-Particle\-Container\-Test}!$\sim$\-L\-C\-Particle\-Container\-Test@{$\sim$\-L\-C\-Particle\-Container\-Test}}
+\index{$\sim$\-L\-C\-Particle\-Container\-Test@{$\sim$\-L\-C\-Particle\-Container\-Test}!LCParticleContainerTest@{L\-C\-Particle\-Container\-Test}}
+\subsubsection[{$\sim$\-L\-C\-Particle\-Container\-Test}]{\setlength{\rightskip}{0pt plus 5cm}L\-C\-Particle\-Container\-Test\-::$\sim$\-L\-C\-Particle\-Container\-Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classLCParticleContainerTest_a505ea2563557a170d29b73efebe26e54}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classLCParticleContainerTest_ab6316e2780ff2cc8d3da231786d36e68}{\index{L\-C\-Particle\-Container\-Test@{L\-C\-Particle\-Container\-Test}!set\-Up@{set\-Up}}
+\index{set\-Up@{set\-Up}!LCParticleContainerTest@{L\-C\-Particle\-Container\-Test}}
+\subsubsection[{set\-Up}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-Particle\-Container\-Test\-::set\-Up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLCParticleContainerTest_ab6316e2780ff2cc8d3da231786d36e68}
+Set up the test variables(container, particles) \hypertarget{classLCParticleContainerTest_a38e97f8110510d564b91bdac41d9d9ca}{\index{L\-C\-Particle\-Container\-Test@{L\-C\-Particle\-Container\-Test}!suite@{suite}}
+\index{suite@{suite}!LCParticleContainerTest@{L\-C\-Particle\-Container\-Test}}
+\subsubsection[{suite}]{\setlength{\rightskip}{0pt plus 5cm}Cpp\-Unit\-::\-Test $\ast$ L\-C\-Particle\-Container\-Test\-::suite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classLCParticleContainerTest_a38e97f8110510d564b91bdac41d9d9ca}
+\begin{DoxyReturn}{Returns}
+the Test\-Suite for the tested methods of Particle\-Container 
+\end{DoxyReturn}
+\hypertarget{classLCParticleContainerTest_af95ad5278871f5d39305fa31def2ddc8}{\index{L\-C\-Particle\-Container\-Test@{L\-C\-Particle\-Container\-Test}!tear\-Down@{tear\-Down}}
+\index{tear\-Down@{tear\-Down}!LCParticleContainerTest@{L\-C\-Particle\-Container\-Test}}
+\subsubsection[{tear\-Down}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-Particle\-Container\-Test\-::tear\-Down (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLCParticleContainerTest_af95ad5278871f5d39305fa31def2ddc8}
+Tear down the test \hypertarget{classLCParticleContainerTest_a1a68785ecc6c7904ddd7d57c4184d5a8}{\index{L\-C\-Particle\-Container\-Test@{L\-C\-Particle\-Container\-Test}!test\-Begin\-Inner@{test\-Begin\-Inner}}
+\index{test\-Begin\-Inner@{test\-Begin\-Inner}!LCParticleContainerTest@{L\-C\-Particle\-Container\-Test}}
+\subsubsection[{test\-Begin\-Inner}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-Particle\-Container\-Test\-::test\-Begin\-Inner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLCParticleContainerTest_a1a68785ecc6c7904ddd7d57c4184d5a8}
+Check the begin\-Inner() method of the Particle\-Container \hypertarget{classLCParticleContainerTest_a29488b517572e40978e2847a7b48a64b}{\index{L\-C\-Particle\-Container\-Test@{L\-C\-Particle\-Container\-Test}!test\-Begin\-Outer@{test\-Begin\-Outer}}
+\index{test\-Begin\-Outer@{test\-Begin\-Outer}!LCParticleContainerTest@{L\-C\-Particle\-Container\-Test}}
+\subsubsection[{test\-Begin\-Outer}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-Particle\-Container\-Test\-::test\-Begin\-Outer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLCParticleContainerTest_a29488b517572e40978e2847a7b48a64b}
+Check the begin\-Outer() method of the Particle\-Container \hypertarget{classLCParticleContainerTest_a4c8f0fd1aac5a10fa9a6c345b3b7f15b}{\index{L\-C\-Particle\-Container\-Test@{L\-C\-Particle\-Container\-Test}!test\-End\-Inner@{test\-End\-Inner}}
+\index{test\-End\-Inner@{test\-End\-Inner}!LCParticleContainerTest@{L\-C\-Particle\-Container\-Test}}
+\subsubsection[{test\-End\-Inner}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-Particle\-Container\-Test\-::test\-End\-Inner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLCParticleContainerTest_a4c8f0fd1aac5a10fa9a6c345b3b7f15b}
+Check the end\-Inner() method of the Particle\-Container \hypertarget{classLCParticleContainerTest_a46bca7862943f675190519ecb479fb16}{\index{L\-C\-Particle\-Container\-Test@{L\-C\-Particle\-Container\-Test}!test\-End\-Outer@{test\-End\-Outer}}
+\index{test\-End\-Outer@{test\-End\-Outer}!LCParticleContainerTest@{L\-C\-Particle\-Container\-Test}}
+\subsubsection[{test\-End\-Outer}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-Particle\-Container\-Test\-::test\-End\-Outer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLCParticleContainerTest_a46bca7862943f675190519ecb479fb16}
+Check the end\-Outer() method of the Particle\-Container \hypertarget{classLCParticleContainerTest_afd02efdfde88db8256a531384bbbcfba}{\index{L\-C\-Particle\-Container\-Test@{L\-C\-Particle\-Container\-Test}!test\-Initialize\-Cells@{test\-Initialize\-Cells}}
+\index{test\-Initialize\-Cells@{test\-Initialize\-Cells}!LCParticleContainerTest@{L\-C\-Particle\-Container\-Test}}
+\subsubsection[{test\-Initialize\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-Particle\-Container\-Test\-::test\-Initialize\-Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLCParticleContainerTest_afd02efdfde88db8256a531384bbbcfba}
+Check the initialization of the Particle\-Container \hypertarget{classLCParticleContainerTest_a334dcf062e2594cca2408c0c2713ef67}{\index{L\-C\-Particle\-Container\-Test@{L\-C\-Particle\-Container\-Test}!test\-Size@{test\-Size}}
+\index{test\-Size@{test\-Size}!LCParticleContainerTest@{L\-C\-Particle\-Container\-Test}}
+\subsubsection[{test\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-Particle\-Container\-Test\-::test\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLCParticleContainerTest_a334dcf062e2594cca2408c0c2713ef67}
+Check the size() method of the Particle\-Container \hypertarget{classLCParticleContainerTest_a56a27be4affd57f6d765c1cde0f12e8c}{\index{L\-C\-Particle\-Container\-Test@{L\-C\-Particle\-Container\-Test}!test\-Update\-Cells@{test\-Update\-Cells}}
+\index{test\-Update\-Cells@{test\-Update\-Cells}!LCParticleContainerTest@{L\-C\-Particle\-Container\-Test}}
+\subsubsection[{test\-Update\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-Particle\-Container\-Test\-::test\-Update\-Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLCParticleContainerTest_a56a27be4affd57f6d765c1cde0f12e8c}
+Check the update\-Cells() method of the Particle\-Container 
+
+\subsection{Member Data Documentation}
+\hypertarget{classLCParticleContainerTest_aedb4bb8eb12e6079e1509ac1563c4022}{\index{L\-C\-Particle\-Container\-Test@{L\-C\-Particle\-Container\-Test}!container@{container}}
+\index{container@{container}!LCParticleContainerTest@{L\-C\-Particle\-Container\-Test}}
+\subsubsection[{container}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-L\-C\-Particle\-Container} L\-C\-Particle\-Container\-Test\-::container\hspace{0.3cm}{\ttfamily [private]}}}\label{classLCParticleContainerTest_aedb4bb8eb12e6079e1509ac1563c4022}
+The particle container who will be tested \hypertarget{classLCParticleContainerTest_a8489fd1951bb0c38acb2debd9cc5d447}{\index{L\-C\-Particle\-Container\-Test@{L\-C\-Particle\-Container\-Test}!cutoff\-\_\-radius@{cutoff\-\_\-radius}}
+\index{cutoff\-\_\-radius@{cutoff\-\_\-radius}!LCParticleContainerTest@{L\-C\-Particle\-Container\-Test}}
+\subsubsection[{cutoff\-\_\-radius}]{\setlength{\rightskip}{0pt plus 5cm}double L\-C\-Particle\-Container\-Test\-::cutoff\-\_\-radius\hspace{0.3cm}{\ttfamily [private]}}}\label{classLCParticleContainerTest_a8489fd1951bb0c38acb2debd9cc5d447}
+cutoff\-\_\-radius is the cutoff\-\_\-radius from the Lennard-\/\-Lones-\/\-Potential domain\-\_\-size is the side length of the domain \hypertarget{classLCParticleContainerTest_ab58d0d6496deca62a6452851aed96ef5}{\index{L\-C\-Particle\-Container\-Test@{L\-C\-Particle\-Container\-Test}!depth@{depth}}
+\index{depth@{depth}!LCParticleContainerTest@{L\-C\-Particle\-Container\-Test}}
+\subsubsection[{depth}]{\setlength{\rightskip}{0pt plus 5cm}int L\-C\-Particle\-Container\-Test\-::depth\hspace{0.3cm}{\ttfamily [private]}}}\label{classLCParticleContainerTest_ab58d0d6496deca62a6452851aed96ef5}
+\hypertarget{classLCParticleContainerTest_ab6450ef8318882ca6931be58e6ce58aa}{\index{L\-C\-Particle\-Container\-Test@{L\-C\-Particle\-Container\-Test}!domain\-\_\-size@{domain\-\_\-size}}
+\index{domain\-\_\-size@{domain\-\_\-size}!LCParticleContainerTest@{L\-C\-Particle\-Container\-Test}}
+\subsubsection[{domain\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-Vector}$<$double, 3$>$ L\-C\-Particle\-Container\-Test\-::domain\-\_\-size\hspace{0.3cm}{\ttfamily [private]}}}\label{classLCParticleContainerTest_ab6450ef8318882ca6931be58e6ce58aa}
+\hypertarget{classLCParticleContainerTest_a4699b4535369eb36b5d711e8b45f1da6}{\index{L\-C\-Particle\-Container\-Test@{L\-C\-Particle\-Container\-Test}!height@{height}}
+\index{height@{height}!LCParticleContainerTest@{L\-C\-Particle\-Container\-Test}}
+\subsubsection[{height}]{\setlength{\rightskip}{0pt plus 5cm}int L\-C\-Particle\-Container\-Test\-::height\hspace{0.3cm}{\ttfamily [private]}}}\label{classLCParticleContainerTest_a4699b4535369eb36b5d711e8b45f1da6}
+\hypertarget{classLCParticleContainerTest_a0d6b84232285d9630677586bb999a258}{\index{L\-C\-Particle\-Container\-Test@{L\-C\-Particle\-Container\-Test}!num\-\_\-of\-\_\-cells@{num\-\_\-of\-\_\-cells}}
+\index{num\-\_\-of\-\_\-cells@{num\-\_\-of\-\_\-cells}!LCParticleContainerTest@{L\-C\-Particle\-Container\-Test}}
+\subsubsection[{num\-\_\-of\-\_\-cells}]{\setlength{\rightskip}{0pt plus 5cm}int L\-C\-Particle\-Container\-Test\-::num\-\_\-of\-\_\-cells\hspace{0.3cm}{\ttfamily [private]}}}\label{classLCParticleContainerTest_a0d6b84232285d9630677586bb999a258}
+\hypertarget{classLCParticleContainerTest_a9b0a10a86578860c76d2da5da0614e22}{\index{L\-C\-Particle\-Container\-Test@{L\-C\-Particle\-Container\-Test}!particles@{particles}}
+\index{particles@{particles}!LCParticleContainerTest@{L\-C\-Particle\-Container\-Test}}
+\subsubsection[{particles}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Particle}$>$ L\-C\-Particle\-Container\-Test\-::particles\hspace{0.3cm}{\ttfamily [private]}}}\label{classLCParticleContainerTest_a9b0a10a86578860c76d2da5da0614e22}
+The particle list, which will be used to compare to the container \hypertarget{classLCParticleContainerTest_a72378a90a56e81786578f90afcd41b39}{\index{L\-C\-Particle\-Container\-Test@{L\-C\-Particle\-Container\-Test}!width@{width}}
+\index{width@{width}!LCParticleContainerTest@{L\-C\-Particle\-Container\-Test}}
+\subsubsection[{width}]{\setlength{\rightskip}{0pt plus 5cm}int L\-C\-Particle\-Container\-Test\-::width\hspace{0.3cm}{\ttfamily [private]}}}\label{classLCParticleContainerTest_a72378a90a56e81786578f90afcd41b39}
+width is the number of cells in x direction height is the number of cells in y direction depth is the number of cells in z direction num\-\_\-of\-\_\-cells is the total number of cells, width $\ast$ height $\ast$ depth (in case that depth is larger than 0 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/tests/\hyperlink{LCParticleContainerTest_8h}{L\-C\-Particle\-Container\-Test.\-h}\item 
+src/tests/\hyperlink{LCParticleContainerTest_8cpp}{L\-C\-Particle\-Container\-Test.\-cpp}\end{DoxyCompactItemize}

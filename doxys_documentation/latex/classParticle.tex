@@ -1,0 +1,210 @@
+\hypertarget{classParticle}{\section{Particle Class Reference}
+\label{classParticle}\index{Particle@{Particle}}
+}
+
+
+{\ttfamily \#include $<$Particle.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classParticle_a866812d3dfb9c539e5e24593e596a8c9}{Particle} (int \hyperlink{classtype}{type}=0)
+\item 
+\hyperlink{classParticle_a24b04cb7c6f7ea4242d25c410f44ae56}{Particle} (const \hyperlink{classParticle}{Particle} \&other)
+\item 
+\hyperlink{classParticle_ab1cd2d4c36a52cb9ea5755340aceafe0}{Particle} (\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ x\-\_\-arg, \hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ v\-\_\-arg, double m\-\_\-arg, int \hyperlink{classtype}{type})
+\item 
+virtual \hyperlink{classParticle_ad030d0fe7b88cf81744b127c99244ff4}{$\sim$\-Particle} ()
+\item 
+\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \& \hyperlink{classParticle_ab7ade5dc156dfa0234aa0323564e46ed}{get\-X} ()
+\item 
+\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \& \hyperlink{classParticle_acd84c445e2bd5f5280a00e76cfe73fe0}{get\-F} ()
+\item 
+\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \& \hyperlink{classParticle_a1204435fc08c697b0fea230616d1bbdf}{get\-Old\-F} ()
+\item 
+\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \& \hyperlink{classParticle_aaf3ecbc6e1e31b259fe239461ba13dbd}{get\-V} ()
+\item 
+\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \hyperlink{classParticle_aab82b05d8e3be6f085430e0b8b957eaa}{get\-Temp\-F} ()
+\item 
+double \& \hyperlink{classParticle_a88ac76c41c96b8df6de3e0bc14edbbc8}{get\-M} ()
+\item 
+int \& \hyperlink{classParticle_abf02d7c78c7d9c1944a066816f9a7139}{get\-Type} ()
+\item 
+bool \hyperlink{classParticle_a5034babb77618a56e00927d8891afabe}{operator==} (\hyperlink{classParticle}{Particle} \&other)
+\item 
+std\-::string \hyperlink{classParticle_a07d071a0f91f8ce7413201a6db3afe7b}{to\-String} ()
+\item 
+void \hyperlink{classParticle_ae86d7fda94283bde380ea261333d8ac6}{set\-F} (\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ new\-F)
+\item 
+void \hyperlink{classParticle_ad467aec6031c428df7670ba5c7af9e28}{delete\-Temp\-F} ()
+\item 
+void \hyperlink{classParticle_ac7b9564f3f7ef87940216f9021cb5f61}{update\-Temp\-F} (\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ new\-F)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \hyperlink{classParticle_a3789900d6fe19a75d3a82cd5e9622c4c}{x}
+\item 
+\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \hyperlink{classParticle_ac3669e50d83d8608d522965b9acd1d8b}{v}
+\item 
+\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \hyperlink{classParticle_ad9aa3e171ea950b2cff1b4825e67845b}{f}
+\item 
+\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \hyperlink{classParticle_aef8faa875660fc5da7392d577af9d419}{temp\-\_\-f}
+\item 
+\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \hyperlink{classParticle_ad9281e33474f23f7261f28848affc4a4}{old\-\_\-f}
+\item 
+double \hyperlink{classParticle_aedcc7e1bc53b0e2b1a4a07c9a1b47563}{m}
+\item 
+int \hyperlink{classParticle_a2b73dd42bcd56ba2e7ffeb0a5515a866}{type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classParticle_a866812d3dfb9c539e5e24593e596a8c9}{\index{Particle@{Particle}!Particle@{Particle}}
+\index{Particle@{Particle}!Particle@{Particle}}
+\subsubsection[{Particle}]{\setlength{\rightskip}{0pt plus 5cm}Particle\-::\-Particle (
+\begin{DoxyParamCaption}
+\item[{int}]{type = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classParticle_a866812d3dfb9c539e5e24593e596a8c9}
+\hypertarget{classParticle_a24b04cb7c6f7ea4242d25c410f44ae56}{\index{Particle@{Particle}!Particle@{Particle}}
+\index{Particle@{Particle}!Particle@{Particle}}
+\subsubsection[{Particle}]{\setlength{\rightskip}{0pt plus 5cm}Particle\-::\-Particle (
+\begin{DoxyParamCaption}
+\item[{const {\bf Particle} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{classParticle_a24b04cb7c6f7ea4242d25c410f44ae56}
+\hypertarget{classParticle_ab1cd2d4c36a52cb9ea5755340aceafe0}{\index{Particle@{Particle}!Particle@{Particle}}
+\index{Particle@{Particle}!Particle@{Particle}}
+\subsubsection[{Particle}]{\setlength{\rightskip}{0pt plus 5cm}Particle\-::\-Particle (
+\begin{DoxyParamCaption}
+\item[{{\bf utils\-::\-Vector}$<$ double, 3 $>$}]{x\-\_\-arg, }
+\item[{{\bf utils\-::\-Vector}$<$ double, 3 $>$}]{v\-\_\-arg, }
+\item[{double}]{m\-\_\-arg, }
+\item[{int}]{type}
+\end{DoxyParamCaption}
+)}}\label{classParticle_ab1cd2d4c36a52cb9ea5755340aceafe0}
+\hypertarget{classParticle_ad030d0fe7b88cf81744b127c99244ff4}{\index{Particle@{Particle}!$\sim$\-Particle@{$\sim$\-Particle}}
+\index{$\sim$\-Particle@{$\sim$\-Particle}!Particle@{Particle}}
+\subsubsection[{$\sim$\-Particle}]{\setlength{\rightskip}{0pt plus 5cm}Particle\-::$\sim$\-Particle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classParticle_ad030d0fe7b88cf81744b127c99244ff4}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classParticle_ad467aec6031c428df7670ba5c7af9e28}{\index{Particle@{Particle}!delete\-Temp\-F@{delete\-Temp\-F}}
+\index{delete\-Temp\-F@{delete\-Temp\-F}!Particle@{Particle}}
+\subsubsection[{delete\-Temp\-F}]{\setlength{\rightskip}{0pt plus 5cm}void Particle\-::delete\-Temp\-F (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParticle_ad467aec6031c428df7670ba5c7af9e28}
+\hypertarget{classParticle_acd84c445e2bd5f5280a00e76cfe73fe0}{\index{Particle@{Particle}!get\-F@{get\-F}}
+\index{get\-F@{get\-F}!Particle@{Particle}}
+\subsubsection[{get\-F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-Vector}$<$ double, 3 $>$ \& Particle\-::get\-F (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParticle_acd84c445e2bd5f5280a00e76cfe73fe0}
+\hypertarget{classParticle_a88ac76c41c96b8df6de3e0bc14edbbc8}{\index{Particle@{Particle}!get\-M@{get\-M}}
+\index{get\-M@{get\-M}!Particle@{Particle}}
+\subsubsection[{get\-M}]{\setlength{\rightskip}{0pt plus 5cm}double \& Particle\-::get\-M (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParticle_a88ac76c41c96b8df6de3e0bc14edbbc8}
+\hypertarget{classParticle_a1204435fc08c697b0fea230616d1bbdf}{\index{Particle@{Particle}!get\-Old\-F@{get\-Old\-F}}
+\index{get\-Old\-F@{get\-Old\-F}!Particle@{Particle}}
+\subsubsection[{get\-Old\-F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-Vector}$<$ double, 3 $>$ \& Particle\-::get\-Old\-F (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParticle_a1204435fc08c697b0fea230616d1bbdf}
+\hypertarget{classParticle_aab82b05d8e3be6f085430e0b8b957eaa}{\index{Particle@{Particle}!get\-Temp\-F@{get\-Temp\-F}}
+\index{get\-Temp\-F@{get\-Temp\-F}!Particle@{Particle}}
+\subsubsection[{get\-Temp\-F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-Vector}$<$ double, 3 $>$ Particle\-::get\-Temp\-F (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParticle_aab82b05d8e3be6f085430e0b8b957eaa}
+\hypertarget{classParticle_abf02d7c78c7d9c1944a066816f9a7139}{\index{Particle@{Particle}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!Particle@{Particle}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int \& Particle\-::get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParticle_abf02d7c78c7d9c1944a066816f9a7139}
+\hypertarget{classParticle_aaf3ecbc6e1e31b259fe239461ba13dbd}{\index{Particle@{Particle}!get\-V@{get\-V}}
+\index{get\-V@{get\-V}!Particle@{Particle}}
+\subsubsection[{get\-V}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-Vector}$<$ double, 3 $>$ \& Particle\-::get\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParticle_aaf3ecbc6e1e31b259fe239461ba13dbd}
+\hypertarget{classParticle_ab7ade5dc156dfa0234aa0323564e46ed}{\index{Particle@{Particle}!get\-X@{get\-X}}
+\index{get\-X@{get\-X}!Particle@{Particle}}
+\subsubsection[{get\-X}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-Vector}$<$ double, 3 $>$ \& Particle\-::get\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParticle_ab7ade5dc156dfa0234aa0323564e46ed}
+\hypertarget{classParticle_a5034babb77618a56e00927d8891afabe}{\index{Particle@{Particle}!operator==@{operator==}}
+\index{operator==@{operator==}!Particle@{Particle}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Particle\-::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Particle} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{classParticle_a5034babb77618a56e00927d8891afabe}
+\hypertarget{classParticle_ae86d7fda94283bde380ea261333d8ac6}{\index{Particle@{Particle}!set\-F@{set\-F}}
+\index{set\-F@{set\-F}!Particle@{Particle}}
+\subsubsection[{set\-F}]{\setlength{\rightskip}{0pt plus 5cm}void Particle\-::set\-F (
+\begin{DoxyParamCaption}
+\item[{{\bf utils\-::\-Vector}$<$ double, 3 $>$}]{new\-F}
+\end{DoxyParamCaption}
+)}}\label{classParticle_ae86d7fda94283bde380ea261333d8ac6}
+\hypertarget{classParticle_a07d071a0f91f8ce7413201a6db3afe7b}{\index{Particle@{Particle}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!Particle@{Particle}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Particle\-::to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParticle_a07d071a0f91f8ce7413201a6db3afe7b}
+\hypertarget{classParticle_ac7b9564f3f7ef87940216f9021cb5f61}{\index{Particle@{Particle}!update\-Temp\-F@{update\-Temp\-F}}
+\index{update\-Temp\-F@{update\-Temp\-F}!Particle@{Particle}}
+\subsubsection[{update\-Temp\-F}]{\setlength{\rightskip}{0pt plus 5cm}void Particle\-::update\-Temp\-F (
+\begin{DoxyParamCaption}
+\item[{{\bf utils\-::\-Vector}$<$ double, 3 $>$}]{new\-F}
+\end{DoxyParamCaption}
+)}}\label{classParticle_ac7b9564f3f7ef87940216f9021cb5f61}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classParticle_ad9aa3e171ea950b2cff1b4825e67845b}{\index{Particle@{Particle}!f@{f}}
+\index{f@{f}!Particle@{Particle}}
+\subsubsection[{f}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-Vector}$<$double, 3$>$ Particle\-::f\hspace{0.3cm}{\ttfamily [private]}}}\label{classParticle_ad9aa3e171ea950b2cff1b4825e67845b}
+the force effective on this particle \hypertarget{classParticle_aedcc7e1bc53b0e2b1a4a07c9a1b47563}{\index{Particle@{Particle}!m@{m}}
+\index{m@{m}!Particle@{Particle}}
+\subsubsection[{m}]{\setlength{\rightskip}{0pt plus 5cm}double Particle\-::m\hspace{0.3cm}{\ttfamily [private]}}}\label{classParticle_aedcc7e1bc53b0e2b1a4a07c9a1b47563}
+the mass of this particle \hypertarget{classParticle_ad9281e33474f23f7261f28848affc4a4}{\index{Particle@{Particle}!old\-\_\-f@{old\-\_\-f}}
+\index{old\-\_\-f@{old\-\_\-f}!Particle@{Particle}}
+\subsubsection[{old\-\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-Vector}$<$double, 3$>$ Particle\-::old\-\_\-f\hspace{0.3cm}{\ttfamily [private]}}}\label{classParticle_ad9281e33474f23f7261f28848affc4a4}
+the force which W\-A\-S effective on this particle \hypertarget{classParticle_aef8faa875660fc5da7392d577af9d419}{\index{Particle@{Particle}!temp\-\_\-f@{temp\-\_\-f}}
+\index{temp\-\_\-f@{temp\-\_\-f}!Particle@{Particle}}
+\subsubsection[{temp\-\_\-f}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-Vector}$<$double, 3$>$ Particle\-::temp\-\_\-f\hspace{0.3cm}{\ttfamily [private]}}}\label{classParticle_aef8faa875660fc5da7392d577af9d419}
+\hypertarget{classParticle_a2b73dd42bcd56ba2e7ffeb0a5515a866}{\index{Particle@{Particle}!type@{type}}
+\index{type@{type}!Particle@{Particle}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}int Particle\-::type\hspace{0.3cm}{\ttfamily [private]}}}\label{classParticle_a2b73dd42bcd56ba2e7ffeb0a5515a866}
+type of the particle. Use it for whatever you want (e.\-g. to seperate molecules belonging to different bodies, matters, and so on) \hypertarget{classParticle_ac3669e50d83d8608d522965b9acd1d8b}{\index{Particle@{Particle}!v@{v}}
+\index{v@{v}!Particle@{Particle}}
+\subsubsection[{v}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-Vector}$<$double, 3$>$ Particle\-::v\hspace{0.3cm}{\ttfamily [private]}}}\label{classParticle_ac3669e50d83d8608d522965b9acd1d8b}
+the velocity of the particle \hypertarget{classParticle_a3789900d6fe19a75d3a82cd5e9622c4c}{\index{Particle@{Particle}!x@{x}}
+\index{x@{x}!Particle@{Particle}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-Vector}$<$double, 3$>$ Particle\-::x\hspace{0.3cm}{\ttfamily [private]}}}\label{classParticle_a3789900d6fe19a75d3a82cd5e9622c4c}
+the position of the particle 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{Particle_8h}{Particle.\-h}\item 
+src/\hyperlink{Particle_8cpp}{Particle.\-cpp}\end{DoxyCompactItemize}

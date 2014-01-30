@@ -1,0 +1,1025 @@
+\hypertarget{classutils_1_1LCParticleContainer}{\section{utils\-:\-:L\-C\-Particle\-Container Class Reference}
+\label{classutils_1_1LCParticleContainer}\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}}
+}
+
+
+{\ttfamily \#include $<$L\-C\-Particle\-Container.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classutils_1_1LCParticleContainer_add8756a136a83f0e0fa0f7fd36815f60}{L\-C\-Particle\-Container} ()
+\item 
+virtual \hyperlink{classutils_1_1LCParticleContainer_a35dfa4284f12c4c5816d98159aeef290}{$\sim$\-L\-C\-Particle\-Container} ()
+\item 
+void \hyperlink{classutils_1_1LCParticleContainer_a231b598290b2de8e23cd0088b615ee55}{initialize} (std\-::list$<$ \hyperlink{classParticle}{Particle} $>$ \&particles\-\_\-arg, \hyperlink{classutils_1_1Vector}{Vector}$<$ double, 3 $>$ domain\-\_\-size\-\_\-arg, double cutoff\-\_\-radius\-\_\-arg)
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_ad7336fb3a0f3c7e2b2ee386d6cfd1492}{begin\-Outer} ()
+\item 
+\hyperlink{classutils_1_1LCInnerParticleIterator}{L\-C\-Inner\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_aa0b5f32b138d37acd081b11a175f41dc}{begin\-Inner} (\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} it)
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a2b0f9462d24e0fd53e5de15b15025d5e}{end\-Outer} ()
+\item 
+void \hyperlink{classutils_1_1LCParticleContainer_aad76a2af7f28d1f7b45df77a58b3f495}{update\-Cells} ()
+\item 
+void \hyperlink{classutils_1_1LCParticleContainer_afe1d2d7862829f48d9050c6402850fc7}{initialize\-Cells} ()
+\item 
+std\-::list$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ \& \hyperlink{classutils_1_1LCParticleContainer_a50aaac556c08452c7116377e7a104ae1}{get\-List} ()
+\item 
+void \hyperlink{classutils_1_1LCParticleContainer_ad395a84a4a3cb2c2f5a9f646d68945ef}{initialize\-Halo\-Cells} ()
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \& \hyperlink{classutils_1_1LCParticleContainer_a766d5e02899c5725fdc5a21e83147927}{get\-Left\-Halo\-Cells} ()
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \& \hyperlink{classutils_1_1LCParticleContainer_ad74010f4150519e1a66b82773797c78d}{get\-Right\-Halo\-Cells} ()
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \& \hyperlink{classutils_1_1LCParticleContainer_a5b2cadcc109630a0dbf42c94f57d96db}{get\-Bottom\-Halo\-Cells} ()
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \& \hyperlink{classutils_1_1LCParticleContainer_adc53efc88b1d11386968a98b58397add}{get\-Top\-Halo\-Cells} ()
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \& \hyperlink{classutils_1_1LCParticleContainer_a8e9274cb869e4c5623381f6508f16db1}{get\-Front\-Halo\-Cells} ()
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \& \hyperlink{classutils_1_1LCParticleContainer_ad27215bf92d491180333062982e361a8}{get\-Back\-Halo\-Cells} ()
+\item 
+void \hyperlink{classutils_1_1LCParticleContainer_ae9b7301ab73920e1ff41e4f8ed7198c3}{initialize\-Boundary\-Cells} ()
+\item 
+void \hyperlink{classutils_1_1LCParticleContainer_af9141d3030bfcb0fa8e3483ccb53f6e0}{initialize\-Begin\-Outer} ()
+\item 
+void \hyperlink{classutils_1_1LCParticleContainer_a237632124e4c0c2c6449d0de4a0c33d0}{initialize\-End\-Outer} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_aca6588d8158b0a65b493db9b575de8f8}{begin\-Left\-Boundary} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_ac81ec31d9b9d943fcaa12b6f5180346a}{begin\-Right\-Boundary} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_ae37f1773ead38d2e360433c42d0e8212}{begin\-Bottom\-Boundary} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_ad1f146863fba5392055214dda9674458}{begin\-Top\-Boundary} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_ac65bb09975dd42fe1ca612b69c0c0ab2}{begin\-Front\-Boundary} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a01246c970ac1fd9fd304e49ccb2e961f}{begin\-Back\-Boundary} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a3b10115b6b8af604c09b1cf5f56d9abc}{end\-Left\-Boundary} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a6a4a2f5ebee204235fd319ff2d3f3ee0}{end\-Right\-Boundary} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_ab90ef3504dfef56070dec3ac44bd1d44}{end\-Bottom\-Boundary} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a378eaf969d141deafb421a72affb792b}{end\-Top\-Boundary} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a2007d2ff431dcff0ded21167b1bbc52f}{end\-Front\-Boundary} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a9a18d047b8b2afc2a106a75d62e281ce}{end\-Back\-Boundary} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a119b1919b4063cf864ecbf46a2111142}{begin\-Left\-Halo} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a91a8d704c891692b4af407548d49b9c4}{begin\-Right\-Halo} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a5681ea605b7b2ba53fa66065194d7aa6}{begin\-Bottom\-Halo} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_ac258ad2ce42d744eff4d948fb9888520}{begin\-Top\-Halo} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a2ad90be6c7717b814064c504740623f1}{begin\-Front\-Halo} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_ad6a8a4312ac89b99524b4017e518ba84}{begin\-Back\-Halo} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_ac44a08003d1fcdea6b089d245de78d64}{end\-Left\-Halo} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a0108a103015ee21dbd8682454650098c}{end\-Right\-Halo} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_ab900cb9d20ae43baef0fe1cd3ffb6a67}{end\-Bottom\-Halo} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_ad9ccef38db978acd55673923f3803215}{end\-Top\-Halo} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a894e07f4f80815f3bbc0334314d770db}{end\-Front\-Halo} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_af2c9e4698e71a312bfee46c997bb2069}{end\-Back\-Halo} ()
+\item 
+\hyperlink{classutils_1_1LCInnerParticleIterator}{L\-C\-Inner\-Particle\-Iterator} \& \hyperlink{classutils_1_1LCParticleContainer_a52b237920b3ba34ca9440dc65f7f0b8e}{end\-Inner} (int i)
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \& \hyperlink{classutils_1_1LCParticleContainer_aaccfac2aa0fe6a72bd323f28b9cf6c8e}{get\-Left\-Boundary\-Cells} ()
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \& \hyperlink{classutils_1_1LCParticleContainer_af43e89aff6045632b40382cc43fe8707}{get\-Right\-Boundary\-Cells} ()
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \& \hyperlink{classutils_1_1LCParticleContainer_a6168dbdbcb34d8a1d5c8076ab689dc68}{get\-Bottom\-Boundary\-Cells} ()
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \& \hyperlink{classutils_1_1LCParticleContainer_acd0f8fa70852ca80b880cf8b2dac8a0a}{get\-Top\-Boundary\-Cells} ()
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \& \hyperlink{classutils_1_1LCParticleContainer_aa214fd4e05dc3aada8325a8c799bf56d}{get\-Front\-Boundary\-Cells} ()
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \& \hyperlink{classutils_1_1LCParticleContainer_a737313d452e0e326099723773d03c3a9}{get\-Back\-Boundary\-Cells} ()
+\item 
+\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \& \hyperlink{classutils_1_1LCParticleContainer_a3a440e308844c2b2b5b7f7d04c9062a5}{get\-Domain\-Size} ()
+\item 
+int \& \hyperlink{classutils_1_1LCParticleContainer_a28a86a23c70dbd794bcc19359177b2ed}{get\-Width} ()
+\item 
+int \& \hyperlink{classutils_1_1LCParticleContainer_afce22370e53fd52c7b8da464c0db8860}{get\-Height} ()
+\item 
+int \& \hyperlink{classutils_1_1LCParticleContainer_a3555fee1f288caced21710ad170b0ffa}{get\-Depth} ()
+\item 
+int \hyperlink{classutils_1_1LCParticleContainer_a92d4c5b7c34d6f0d1cd18013799905b7}{size} ()
+\item 
+void \hyperlink{classutils_1_1LCParticleContainer_ae83b3c01db08dd91958f0b4ffa37d5a2}{initialize\-End\-Inner} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classutils_1_1LCParticleContainer_a92ff40c48019c2f351edbbbd48453d15}{check\-Right} (int i)
+\item 
+bool \hyperlink{classutils_1_1LCParticleContainer_a074834f260290bde46dec2d1eece32a7}{check\-Left} (int i)
+\item 
+bool \hyperlink{classutils_1_1LCParticleContainer_a6921ef2bf21059fe1c95d8e828025c6f}{check\-Top} (int i)
+\item 
+bool \hyperlink{classutils_1_1LCParticleContainer_a942e57fc18c290dbe32ec81e88209669}{check\-Back} (int i)
+\item 
+bool \hyperlink{classutils_1_1LCParticleContainer_a0ed1dabac97f625e5560d1199af57677}{check\-Front} (int i)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::list$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ \hyperlink{classutils_1_1LCParticleContainer_a4cf8fa8ce772044b98fadb8897cbc890}{particles}
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \hyperlink{classutils_1_1LCParticleContainer_a58bb20ad90c455f1400c35379784a0ae}{cells}
+\item 
+\hyperlink{classutils_1_1Vector}{utils\-::\-Vector}$<$ double, 3 $>$ \hyperlink{classutils_1_1LCParticleContainer_a6d8c9f033d0045ba9cd4353f2c009486}{domain\-\_\-size}
+\item 
+double \hyperlink{classutils_1_1LCParticleContainer_a47cf29a8a8830ccce0f04f84f20ce740}{cutoff\-\_\-radius}
+\item 
+int \hyperlink{classutils_1_1LCParticleContainer_a8f0d10a0d6fb422670bc587238ef6662}{width}
+\item 
+int \hyperlink{classutils_1_1LCParticleContainer_a4f1ca4e9e040fc64a5e17a60673dd669}{height}
+\item 
+int \hyperlink{classutils_1_1LCParticleContainer_a486b4cb6c669b107a5cbc76a0a115aa8}{depth}
+\item 
+int \hyperlink{classutils_1_1LCParticleContainer_aaa76d8cdecdb35e4d115f483c328aa3c}{num\-\_\-of\-\_\-cells}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a419381c67176cc0ad6618a0a882c414e}{begin\-Domain}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_ae5d7cfe4f3104c61a40f8c032e6f4ddc}{end\-Domain}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_ac6bc51afbdf2105ecf561d2bacf67e58}{begin\-Of\-Left\-Boundary}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a2b0575ab2aa95d5a62327d1f64209cf8}{begin\-Of\-Right\-Boundary}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_ac93b3e1a838df7d83632505c98762490}{begin\-Of\-Bottom\-Boundary}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a8a597b99eedeecacce4e5a087c942d55}{begin\-Of\-Top\-Boundary}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a7d0831bee8c4edd058773b42c8912aac}{begin\-Of\-Front\-Boundary}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_ae6b2f4b3b425de35c0008170717c0106}{begin\-Of\-Back\-Boundary}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a7883c250b606f1d1189fd9d3c20d98b0}{begin\-Of\-Left\-Halo}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_ac7b8beaf3c7c6db2928f7efc8a2355b3}{begin\-Of\-Right\-Halo}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_ad1a972864a0b4a7d7e80fef6cb40bfcf}{begin\-Of\-Bottom\-Halo}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a0647df4a480715cf6cdd95f400114a3e}{begin\-Of\-Top\-Halo}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_ac9f32db592c1aefdc11ec9ceaaa7810e}{begin\-Of\-Front\-Halo}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_ad4ea11d0c0bc9a1013d51e403299c0e4}{begin\-Of\-Back\-Halo}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a3d2942e316e92997c4b4eac72dcf4605}{end\-Of\-Left\-Boundary}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_ae069cdc78719a350f2174f3f5d461144}{end\-Of\-Right\-Boundary}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a0d03390f7f466d6c4b7fcf17ad9e3bf2}{end\-Of\-Bottom\-Boundary}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a9aa07f3bba36c2c40f9b3c21bd6faddd}{end\-Of\-Top\-Boundary}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a517ee61378d57e081be50de7f7feade8}{end\-Of\-Front\-Boundary}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a7c3ffe4e29090f2e9c15404d862a7c00}{end\-Of\-Back\-Boundary}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a86ea17dc08f3a1ff1a20b85c8b39f800}{end\-Of\-Left\-Halo}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_aebb9ebf1fd5285b71814f76fc3b5b1da}{end\-Of\-Right\-Halo}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a7ce450071fe63f6beddb5b0e7a28c1a7}{end\-Of\-Bottom\-Halo}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a67adece44e79bc57ac15202d03420d32}{end\-Of\-Top\-Halo}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_a39d3733293da9c8b9b1b7bbcbfb072fa}{end\-Of\-Front\-Halo}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \hyperlink{classutils_1_1LCParticleContainer_ad6ea327b4bf6998984247ae23fbf7f4e}{end\-Of\-Back\-Halo}
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \hyperlink{classutils_1_1LCParticleContainer_a07197daadd51dcbb52f767e2dad0f68f}{left\-Halo\-Cells}
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \hyperlink{classutils_1_1LCParticleContainer_a564e78ce48736ad36753ce33935adfb6}{right\-Halo\-Cells}
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \hyperlink{classutils_1_1LCParticleContainer_a7735296727ed8c14d4f6ff99c065bced}{bottom\-Halo\-Cells}
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \hyperlink{classutils_1_1LCParticleContainer_a6b94126cff371182cc606c68a71e0044}{top\-Halo\-Cells}
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \hyperlink{classutils_1_1LCParticleContainer_a242688f7a6578b42ee85c5c309a08a05}{front\-Halo\-Cells}
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \hyperlink{classutils_1_1LCParticleContainer_a0a2c5e53ceca2200e6d18ef4ea738232}{back\-Halo\-Cells}
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \hyperlink{classutils_1_1LCParticleContainer_a9ade06cd7e76d57770ad62900200a63b}{left\-Boundary\-Cells}
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \hyperlink{classutils_1_1LCParticleContainer_a9ddcb12f783f403327f9c45c7fc7b69f}{right\-Boundary\-Cells}
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \hyperlink{classutils_1_1LCParticleContainer_a2d7ae0438fdc4fb9f014c8465775c8d1}{bottom\-Boundary\-Cells}
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \hyperlink{classutils_1_1LCParticleContainer_af4c6176f13f695f7f368630a05a4775e}{top\-Boundary\-Cells}
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \hyperlink{classutils_1_1LCParticleContainer_a6c6872b4da1be4e1a5d7a5be7d9c15e1}{front\-Boundary\-Cells}
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ \hyperlink{classutils_1_1LCParticleContainer_aa1d24a4021ccf410d2a54edb8f8c38d6}{back\-Boundary\-Cells}
+\item 
+std\-::vector\\*
+$<$ \hyperlink{classutils_1_1LCInnerParticleIterator}{L\-C\-Inner\-Particle\-Iterator} $>$ \hyperlink{classutils_1_1LCParticleContainer_ade99764026a9b58da86c8513d8f22121}{end\-Of\-Inners}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classutils_1_1LCParticleContainer_add8756a136a83f0e0fa0f7fd36815f60}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!L\-C\-Particle\-Container@{L\-C\-Particle\-Container}}
+\index{L\-C\-Particle\-Container@{L\-C\-Particle\-Container}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{L\-C\-Particle\-Container}]{\setlength{\rightskip}{0pt plus 5cm}utils\-::\-L\-C\-Particle\-Container\-::\-L\-C\-Particle\-Container (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_add8756a136a83f0e0fa0f7fd36815f60}
+\hypertarget{classutils_1_1LCParticleContainer_a35dfa4284f12c4c5816d98159aeef290}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!$\sim$\-L\-C\-Particle\-Container@{$\sim$\-L\-C\-Particle\-Container}}
+\index{$\sim$\-L\-C\-Particle\-Container@{$\sim$\-L\-C\-Particle\-Container}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{$\sim$\-L\-C\-Particle\-Container}]{\setlength{\rightskip}{0pt plus 5cm}utils\-::\-L\-C\-Particle\-Container\-::$\sim$\-L\-C\-Particle\-Container (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classutils_1_1LCParticleContainer_a35dfa4284f12c4c5816d98159aeef290}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classutils_1_1LCParticleContainer_a01246c970ac1fd9fd304e49ccb2e961f}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Back\-Boundary@{begin\-Back\-Boundary}}
+\index{begin\-Back\-Boundary@{begin\-Back\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Back\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Back\-Boundary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a01246c970ac1fd9fd304e49ccb2e961f}
+\begin{DoxyReturn}{Returns}
+the begin\-Of\-Back\-Boundary 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_ad6a8a4312ac89b99524b4017e518ba84}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Back\-Halo@{begin\-Back\-Halo}}
+\index{begin\-Back\-Halo@{begin\-Back\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Back\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Back\-Halo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_ad6a8a4312ac89b99524b4017e518ba84}
+\begin{DoxyReturn}{Returns}
+the begin\-Of\-Back\-Halo 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_ae37f1773ead38d2e360433c42d0e8212}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Bottom\-Boundary@{begin\-Bottom\-Boundary}}
+\index{begin\-Bottom\-Boundary@{begin\-Bottom\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Bottom\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Bottom\-Boundary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_ae37f1773ead38d2e360433c42d0e8212}
+\begin{DoxyReturn}{Returns}
+the begin\-Of\-Bottom\-Boundary 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_a5681ea605b7b2ba53fa66065194d7aa6}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Bottom\-Halo@{begin\-Bottom\-Halo}}
+\index{begin\-Bottom\-Halo@{begin\-Bottom\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Bottom\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Bottom\-Halo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a5681ea605b7b2ba53fa66065194d7aa6}
+\begin{DoxyReturn}{Returns}
+the begin\-Of\-Bottom\-Halo 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_ac65bb09975dd42fe1ca612b69c0c0ab2}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Front\-Boundary@{begin\-Front\-Boundary}}
+\index{begin\-Front\-Boundary@{begin\-Front\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Front\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Front\-Boundary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_ac65bb09975dd42fe1ca612b69c0c0ab2}
+\begin{DoxyReturn}{Returns}
+the begin\-Of\-Front\-Boundary 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_a2ad90be6c7717b814064c504740623f1}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Front\-Halo@{begin\-Front\-Halo}}
+\index{begin\-Front\-Halo@{begin\-Front\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Front\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Front\-Halo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a2ad90be6c7717b814064c504740623f1}
+\begin{DoxyReturn}{Returns}
+the begin\-Of\-Front\-Halo 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_aa0b5f32b138d37acd081b11a175f41dc}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Inner@{begin\-Inner}}
+\index{begin\-Inner@{begin\-Inner}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Inner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Inner\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Inner (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-C\-Outer\-Particle\-Iterator}}]{it}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_aa0b5f32b138d37acd081b11a175f41dc}
+\begin{DoxyReturn}{Returns}
+the first element of the neighboring particles 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em the} & outer particle iterator \\
+\hline
+\end{DoxyParams}
+\hypertarget{classutils_1_1LCParticleContainer_aca6588d8158b0a65b493db9b575de8f8}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Left\-Boundary@{begin\-Left\-Boundary}}
+\index{begin\-Left\-Boundary@{begin\-Left\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Left\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Left\-Boundary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_aca6588d8158b0a65b493db9b575de8f8}
+\begin{DoxyReturn}{Returns}
+the begin\-Of\-Left\-Boundary 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_a119b1919b4063cf864ecbf46a2111142}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Left\-Halo@{begin\-Left\-Halo}}
+\index{begin\-Left\-Halo@{begin\-Left\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Left\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Left\-Halo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a119b1919b4063cf864ecbf46a2111142}
+\begin{DoxyReturn}{Returns}
+the begin\-Of\-Left\-Halo 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_ad7336fb3a0f3c7e2b2ee386d6cfd1492}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Outer@{begin\-Outer}}
+\index{begin\-Outer@{begin\-Outer}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Outer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Outer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_ad7336fb3a0f3c7e2b2ee386d6cfd1492}
+\begin{DoxyReturn}{Returns}
+the first element of the container 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_ac81ec31d9b9d943fcaa12b6f5180346a}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Right\-Boundary@{begin\-Right\-Boundary}}
+\index{begin\-Right\-Boundary@{begin\-Right\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Right\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Right\-Boundary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_ac81ec31d9b9d943fcaa12b6f5180346a}
+\begin{DoxyReturn}{Returns}
+the begin\-Of\-Right\-Boundary 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_a91a8d704c891692b4af407548d49b9c4}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Right\-Halo@{begin\-Right\-Halo}}
+\index{begin\-Right\-Halo@{begin\-Right\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Right\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Right\-Halo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a91a8d704c891692b4af407548d49b9c4}
+\begin{DoxyReturn}{Returns}
+the begin\-Of\-Right\-Halo 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_ad1f146863fba5392055214dda9674458}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Top\-Boundary@{begin\-Top\-Boundary}}
+\index{begin\-Top\-Boundary@{begin\-Top\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Top\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Top\-Boundary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_ad1f146863fba5392055214dda9674458}
+\begin{DoxyReturn}{Returns}
+the begin\-Of\-Top\-Boundary 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_ac258ad2ce42d744eff4d948fb9888520}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Top\-Halo@{begin\-Top\-Halo}}
+\index{begin\-Top\-Halo@{begin\-Top\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Top\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Top\-Halo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_ac258ad2ce42d744eff4d948fb9888520}
+\begin{DoxyReturn}{Returns}
+the begin\-Of\-Top\-Halo 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_a942e57fc18c290dbe32ec81e88209669}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!check\-Back@{check\-Back}}
+\index{check\-Back@{check\-Back}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{check\-Back}]{\setlength{\rightskip}{0pt plus 5cm}bool utils\-::\-L\-C\-Particle\-Container\-::check\-Back (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a942e57fc18c290dbe32ec81e88209669}
+checks whether the iterator is in the rear boundary 
+\begin{DoxyParams}{Parameters}
+{\em the} & index \\
+\hline
+\end{DoxyParams}
+\hypertarget{classutils_1_1LCParticleContainer_a0ed1dabac97f625e5560d1199af57677}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!check\-Front@{check\-Front}}
+\index{check\-Front@{check\-Front}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{check\-Front}]{\setlength{\rightskip}{0pt plus 5cm}bool utils\-::\-L\-C\-Particle\-Container\-::check\-Front (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a0ed1dabac97f625e5560d1199af57677}
+checks whether the iterator is in the front boundary 
+\begin{DoxyParams}{Parameters}
+{\em the} & index \\
+\hline
+\end{DoxyParams}
+\hypertarget{classutils_1_1LCParticleContainer_a074834f260290bde46dec2d1eece32a7}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!check\-Left@{check\-Left}}
+\index{check\-Left@{check\-Left}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{check\-Left}]{\setlength{\rightskip}{0pt plus 5cm}bool utils\-::\-L\-C\-Particle\-Container\-::check\-Left (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a074834f260290bde46dec2d1eece32a7}
+checks whether the iterator is in the left boundary 
+\begin{DoxyParams}{Parameters}
+{\em the} & index \\
+\hline
+\end{DoxyParams}
+\hypertarget{classutils_1_1LCParticleContainer_a92ff40c48019c2f351edbbbd48453d15}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!check\-Right@{check\-Right}}
+\index{check\-Right@{check\-Right}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{check\-Right}]{\setlength{\rightskip}{0pt plus 5cm}bool utils\-::\-L\-C\-Particle\-Container\-::check\-Right (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a92ff40c48019c2f351edbbbd48453d15}
+checks whether the iterator is in the right boundary 
+\begin{DoxyParams}{Parameters}
+{\em the} & index \\
+\hline
+\end{DoxyParams}
+\hypertarget{classutils_1_1LCParticleContainer_a6921ef2bf21059fe1c95d8e828025c6f}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!check\-Top@{check\-Top}}
+\index{check\-Top@{check\-Top}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{check\-Top}]{\setlength{\rightskip}{0pt plus 5cm}bool utils\-::\-L\-C\-Particle\-Container\-::check\-Top (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a6921ef2bf21059fe1c95d8e828025c6f}
+checks whether the iterator is in the top boundary 
+\begin{DoxyParams}{Parameters}
+{\em the} & index \\
+\hline
+\end{DoxyParams}
+\hypertarget{classutils_1_1LCParticleContainer_a9a18d047b8b2afc2a106a75d62e281ce}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Back\-Boundary@{end\-Back\-Boundary}}
+\index{end\-Back\-Boundary@{end\-Back\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Back\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Back\-Boundary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a9a18d047b8b2afc2a106a75d62e281ce}
+\begin{DoxyReturn}{Returns}
+end\-Of\-Back\-Boundary 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_af2c9e4698e71a312bfee46c997bb2069}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Back\-Halo@{end\-Back\-Halo}}
+\index{end\-Back\-Halo@{end\-Back\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Back\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Back\-Halo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_af2c9e4698e71a312bfee46c997bb2069}
+\begin{DoxyReturn}{Returns}
+the end\-Of\-Back\-Halo 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_ab90ef3504dfef56070dec3ac44bd1d44}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Bottom\-Boundary@{end\-Bottom\-Boundary}}
+\index{end\-Bottom\-Boundary@{end\-Bottom\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Bottom\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Bottom\-Boundary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_ab90ef3504dfef56070dec3ac44bd1d44}
+\begin{DoxyReturn}{Returns}
+end\-Of\-Bottom\-Boundary 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_ab900cb9d20ae43baef0fe1cd3ffb6a67}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Bottom\-Halo@{end\-Bottom\-Halo}}
+\index{end\-Bottom\-Halo@{end\-Bottom\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Bottom\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Bottom\-Halo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_ab900cb9d20ae43baef0fe1cd3ffb6a67}
+\begin{DoxyReturn}{Returns}
+the end\-Of\-Bottom\-Halo 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_a2007d2ff431dcff0ded21167b1bbc52f}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Front\-Boundary@{end\-Front\-Boundary}}
+\index{end\-Front\-Boundary@{end\-Front\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Front\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Front\-Boundary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a2007d2ff431dcff0ded21167b1bbc52f}
+\begin{DoxyReturn}{Returns}
+end\-Of\-Front\-Boundary 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_a894e07f4f80815f3bbc0334314d770db}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Front\-Halo@{end\-Front\-Halo}}
+\index{end\-Front\-Halo@{end\-Front\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Front\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Front\-Halo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a894e07f4f80815f3bbc0334314d770db}
+\begin{DoxyReturn}{Returns}
+the end\-Of\-Front\-Halo 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_a52b237920b3ba34ca9440dc65f7f0b8e}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Inner@{end\-Inner}}
+\index{end\-Inner@{end\-Inner}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Inner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Inner\-Particle\-Iterator} \& utils\-::\-L\-C\-Particle\-Container\-::end\-Inner (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a52b237920b3ba34ca9440dc65f7f0b8e}
+\begin{DoxyReturn}{Returns}
+the end\-Of\-Inners\mbox{[}i\mbox{]} 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em the} & index of the outer iterator \\
+\hline
+\end{DoxyParams}
+\hypertarget{classutils_1_1LCParticleContainer_a3b10115b6b8af604c09b1cf5f56d9abc}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Left\-Boundary@{end\-Left\-Boundary}}
+\index{end\-Left\-Boundary@{end\-Left\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Left\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Left\-Boundary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a3b10115b6b8af604c09b1cf5f56d9abc}
+\begin{DoxyReturn}{Returns}
+end\-Of\-Left\-Boundary 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_ac44a08003d1fcdea6b089d245de78d64}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Left\-Halo@{end\-Left\-Halo}}
+\index{end\-Left\-Halo@{end\-Left\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Left\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Left\-Halo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_ac44a08003d1fcdea6b089d245de78d64}
+\begin{DoxyReturn}{Returns}
+the end\-Of\-Left\-Halo 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_a2b0f9462d24e0fd53e5de15b15025d5e}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Outer@{end\-Outer}}
+\index{end\-Outer@{end\-Outer}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Outer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Outer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a2b0f9462d24e0fd53e5de15b15025d5e}
+\begin{DoxyReturn}{Returns}
+the last element of the container 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_a6a4a2f5ebee204235fd319ff2d3f3ee0}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Right\-Boundary@{end\-Right\-Boundary}}
+\index{end\-Right\-Boundary@{end\-Right\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Right\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Right\-Boundary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a6a4a2f5ebee204235fd319ff2d3f3ee0}
+\begin{DoxyReturn}{Returns}
+the end\-Of\-Right\-Boundary 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_a0108a103015ee21dbd8682454650098c}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Right\-Halo@{end\-Right\-Halo}}
+\index{end\-Right\-Halo@{end\-Right\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Right\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Right\-Halo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a0108a103015ee21dbd8682454650098c}
+\begin{DoxyReturn}{Returns}
+the end\-Of\-Right\-Halo 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_a378eaf969d141deafb421a72affb792b}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Top\-Boundary@{end\-Top\-Boundary}}
+\index{end\-Top\-Boundary@{end\-Top\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Top\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Top\-Boundary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a378eaf969d141deafb421a72affb792b}
+\begin{DoxyReturn}{Returns}
+end\-Of\-Top\-Boundary 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_ad9ccef38db978acd55673923f3803215}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Top\-Halo@{end\-Top\-Halo}}
+\index{end\-Top\-Halo@{end\-Top\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Top\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Top\-Halo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_ad9ccef38db978acd55673923f3803215}
+\begin{DoxyReturn}{Returns}
+the end\-Of\-Top\-Halo 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_a737313d452e0e326099723773d03c3a9}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!get\-Back\-Boundary\-Cells@{get\-Back\-Boundary\-Cells}}
+\index{get\-Back\-Boundary\-Cells@{get\-Back\-Boundary\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{get\-Back\-Boundary\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ std\-::list$<$ {\bf Particle} $\ast$ $>$ $\ast$ $>$ \& utils\-::\-L\-C\-Particle\-Container\-::get\-Back\-Boundary\-Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a737313d452e0e326099723773d03c3a9}
+\begin{DoxyReturn}{Returns}
+the back\-Boundary\-Cells 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_ad27215bf92d491180333062982e361a8}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!get\-Back\-Halo\-Cells@{get\-Back\-Halo\-Cells}}
+\index{get\-Back\-Halo\-Cells@{get\-Back\-Halo\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{get\-Back\-Halo\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ std\-::list$<$ {\bf Particle} $\ast$ $>$ $\ast$ $>$ \& utils\-::\-L\-C\-Particle\-Container\-::get\-Back\-Halo\-Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_ad27215bf92d491180333062982e361a8}
+\begin{DoxyReturn}{Returns}
+the back\-Halo\-Cells 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_a6168dbdbcb34d8a1d5c8076ab689dc68}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!get\-Bottom\-Boundary\-Cells@{get\-Bottom\-Boundary\-Cells}}
+\index{get\-Bottom\-Boundary\-Cells@{get\-Bottom\-Boundary\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{get\-Bottom\-Boundary\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ std\-::list$<$ {\bf Particle} $\ast$ $>$ $\ast$ $>$ \& utils\-::\-L\-C\-Particle\-Container\-::get\-Bottom\-Boundary\-Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a6168dbdbcb34d8a1d5c8076ab689dc68}
+\begin{DoxyReturn}{Returns}
+the bottom\-Boundary\-Cells 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_a5b2cadcc109630a0dbf42c94f57d96db}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!get\-Bottom\-Halo\-Cells@{get\-Bottom\-Halo\-Cells}}
+\index{get\-Bottom\-Halo\-Cells@{get\-Bottom\-Halo\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{get\-Bottom\-Halo\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ std\-::list$<$ {\bf Particle} $\ast$ $>$ $\ast$ $>$ \& utils\-::\-L\-C\-Particle\-Container\-::get\-Bottom\-Halo\-Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a5b2cadcc109630a0dbf42c94f57d96db}
+\begin{DoxyReturn}{Returns}
+the bottom\-Halo\-Cells 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_a3555fee1f288caced21710ad170b0ffa}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!get\-Depth@{get\-Depth}}
+\index{get\-Depth@{get\-Depth}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{get\-Depth}]{\setlength{\rightskip}{0pt plus 5cm}int \& utils\-::\-L\-C\-Particle\-Container\-::get\-Depth (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a3555fee1f288caced21710ad170b0ffa}
+\begin{DoxyReturn}{Returns}
+the depth 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_a3a440e308844c2b2b5b7f7d04c9062a5}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!get\-Domain\-Size@{get\-Domain\-Size}}
+\index{get\-Domain\-Size@{get\-Domain\-Size}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{get\-Domain\-Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-Vector}$<$ double, 3 $>$ \& utils\-::\-L\-C\-Particle\-Container\-::get\-Domain\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a3a440e308844c2b2b5b7f7d04c9062a5}
+\begin{DoxyReturn}{Returns}
+the domain sizes 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_aa214fd4e05dc3aada8325a8c799bf56d}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!get\-Front\-Boundary\-Cells@{get\-Front\-Boundary\-Cells}}
+\index{get\-Front\-Boundary\-Cells@{get\-Front\-Boundary\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{get\-Front\-Boundary\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ std\-::list$<$ {\bf Particle} $\ast$ $>$ $\ast$ $>$ \& utils\-::\-L\-C\-Particle\-Container\-::get\-Front\-Boundary\-Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_aa214fd4e05dc3aada8325a8c799bf56d}
+\begin{DoxyReturn}{Returns}
+the front\-Boundary\-Cells 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_a8e9274cb869e4c5623381f6508f16db1}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!get\-Front\-Halo\-Cells@{get\-Front\-Halo\-Cells}}
+\index{get\-Front\-Halo\-Cells@{get\-Front\-Halo\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{get\-Front\-Halo\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ std\-::list$<$ {\bf Particle} $\ast$ $>$ $\ast$ $>$ \& utils\-::\-L\-C\-Particle\-Container\-::get\-Front\-Halo\-Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a8e9274cb869e4c5623381f6508f16db1}
+\begin{DoxyReturn}{Returns}
+the front\-Halo\-Cells 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_afce22370e53fd52c7b8da464c0db8860}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!get\-Height@{get\-Height}}
+\index{get\-Height@{get\-Height}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{get\-Height}]{\setlength{\rightskip}{0pt plus 5cm}int \& utils\-::\-L\-C\-Particle\-Container\-::get\-Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_afce22370e53fd52c7b8da464c0db8860}
+\begin{DoxyReturn}{Returns}
+the height 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_aaccfac2aa0fe6a72bd323f28b9cf6c8e}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!get\-Left\-Boundary\-Cells@{get\-Left\-Boundary\-Cells}}
+\index{get\-Left\-Boundary\-Cells@{get\-Left\-Boundary\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{get\-Left\-Boundary\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ std\-::list$<$ {\bf Particle} $\ast$ $>$ $\ast$ $>$ \& utils\-::\-L\-C\-Particle\-Container\-::get\-Left\-Boundary\-Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_aaccfac2aa0fe6a72bd323f28b9cf6c8e}
+\begin{DoxyReturn}{Returns}
+the left\-Boundary\-Cells 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_a766d5e02899c5725fdc5a21e83147927}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!get\-Left\-Halo\-Cells@{get\-Left\-Halo\-Cells}}
+\index{get\-Left\-Halo\-Cells@{get\-Left\-Halo\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{get\-Left\-Halo\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ std\-::list$<$ {\bf Particle} $\ast$ $>$ $\ast$ $>$ \& utils\-::\-L\-C\-Particle\-Container\-::get\-Left\-Halo\-Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a766d5e02899c5725fdc5a21e83147927}
+\begin{DoxyReturn}{Returns}
+the left\-Halo\-Cells 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_a50aaac556c08452c7116377e7a104ae1}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!get\-List@{get\-List}}
+\index{get\-List@{get\-List}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{get\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<$ {\bf Particle} $\ast$ $>$ \& utils\-::\-L\-C\-Particle\-Container\-::get\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a50aaac556c08452c7116377e7a104ae1}
+\begin{DoxyReturn}{Returns}
+the particles list 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_af43e89aff6045632b40382cc43fe8707}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!get\-Right\-Boundary\-Cells@{get\-Right\-Boundary\-Cells}}
+\index{get\-Right\-Boundary\-Cells@{get\-Right\-Boundary\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{get\-Right\-Boundary\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ std\-::list$<$ {\bf Particle} $\ast$ $>$ $\ast$ $>$ \& utils\-::\-L\-C\-Particle\-Container\-::get\-Right\-Boundary\-Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_af43e89aff6045632b40382cc43fe8707}
+\begin{DoxyReturn}{Returns}
+the right\-Boundary\-Cells 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_ad74010f4150519e1a66b82773797c78d}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!get\-Right\-Halo\-Cells@{get\-Right\-Halo\-Cells}}
+\index{get\-Right\-Halo\-Cells@{get\-Right\-Halo\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{get\-Right\-Halo\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ std\-::list$<$ {\bf Particle} $\ast$ $>$ $\ast$ $>$ \& utils\-::\-L\-C\-Particle\-Container\-::get\-Right\-Halo\-Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_ad74010f4150519e1a66b82773797c78d}
+\begin{DoxyReturn}{Returns}
+the right\-Halo\-Cells 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_acd0f8fa70852ca80b880cf8b2dac8a0a}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!get\-Top\-Boundary\-Cells@{get\-Top\-Boundary\-Cells}}
+\index{get\-Top\-Boundary\-Cells@{get\-Top\-Boundary\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{get\-Top\-Boundary\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ std\-::list$<$ {\bf Particle} $\ast$ $>$ $\ast$ $>$ \& utils\-::\-L\-C\-Particle\-Container\-::get\-Top\-Boundary\-Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_acd0f8fa70852ca80b880cf8b2dac8a0a}
+\begin{DoxyReturn}{Returns}
+the top\-Boundary\-Cells 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_adc53efc88b1d11386968a98b58397add}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!get\-Top\-Halo\-Cells@{get\-Top\-Halo\-Cells}}
+\index{get\-Top\-Halo\-Cells@{get\-Top\-Halo\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{get\-Top\-Halo\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ std\-::list$<$ {\bf Particle} $\ast$ $>$ $\ast$ $>$ \& utils\-::\-L\-C\-Particle\-Container\-::get\-Top\-Halo\-Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_adc53efc88b1d11386968a98b58397add}
+\begin{DoxyReturn}{Returns}
+the top\-Halo\-Cells 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_a28a86a23c70dbd794bcc19359177b2ed}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!get\-Width@{get\-Width}}
+\index{get\-Width@{get\-Width}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{get\-Width}]{\setlength{\rightskip}{0pt plus 5cm}int \& utils\-::\-L\-C\-Particle\-Container\-::get\-Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a28a86a23c70dbd794bcc19359177b2ed}
+\begin{DoxyReturn}{Returns}
+the width 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_a231b598290b2de8e23cd0088b615ee55}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!initialize@{initialize}}
+\index{initialize@{initialize}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}void utils\-::\-L\-C\-Particle\-Container\-::initialize (
+\begin{DoxyParamCaption}
+\item[{std\-::list$<$ {\bf Particle} $>$ \&}]{particles\-\_\-arg, }
+\item[{{\bf Vector}$<$ double, 3 $>$}]{domain\-\_\-size\-\_\-arg, }
+\item[{double}]{cutoff\-\_\-radius\-\_\-arg}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a231b598290b2de8e23cd0088b615ee55}
+fills the particles list 
+\begin{DoxyParams}{Parameters}
+{\em particles\-\_\-arg} & the list containing the particles \\
+\hline
+{\em domain\-\_\-size\-\_\-arg} & the domain size \\
+\hline
+{\em cutoff\-\_\-radius\-\_\-arg} & the cutoff\-\_\-radius \\
+\hline
+\end{DoxyParams}
+\hypertarget{classutils_1_1LCParticleContainer_af9141d3030bfcb0fa8e3483ccb53f6e0}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!initialize\-Begin\-Outer@{initialize\-Begin\-Outer}}
+\index{initialize\-Begin\-Outer@{initialize\-Begin\-Outer}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{initialize\-Begin\-Outer}]{\setlength{\rightskip}{0pt plus 5cm}void utils\-::\-L\-C\-Particle\-Container\-::initialize\-Begin\-Outer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_af9141d3030bfcb0fa8e3483ccb53f6e0}
+initializes the first particle for the domain and all boundaries \hypertarget{classutils_1_1LCParticleContainer_ae9b7301ab73920e1ff41e4f8ed7198c3}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!initialize\-Boundary\-Cells@{initialize\-Boundary\-Cells}}
+\index{initialize\-Boundary\-Cells@{initialize\-Boundary\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{initialize\-Boundary\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}void utils\-::\-L\-C\-Particle\-Container\-::initialize\-Boundary\-Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_ae9b7301ab73920e1ff41e4f8ed7198c3}
+initializes the cells in each boundary \hypertarget{classutils_1_1LCParticleContainer_afe1d2d7862829f48d9050c6402850fc7}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!initialize\-Cells@{initialize\-Cells}}
+\index{initialize\-Cells@{initialize\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{initialize\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}void utils\-::\-L\-C\-Particle\-Container\-::initialize\-Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_afe1d2d7862829f48d9050c6402850fc7}
+Initializes the cells \hypertarget{classutils_1_1LCParticleContainer_ae83b3c01db08dd91958f0b4ffa37d5a2}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!initialize\-End\-Inner@{initialize\-End\-Inner}}
+\index{initialize\-End\-Inner@{initialize\-End\-Inner}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{initialize\-End\-Inner}]{\setlength{\rightskip}{0pt plus 5cm}void utils\-::\-L\-C\-Particle\-Container\-::initialize\-End\-Inner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_ae83b3c01db08dd91958f0b4ffa37d5a2}
+initalizes the ends for the inner iterators \hypertarget{classutils_1_1LCParticleContainer_a237632124e4c0c2c6449d0de4a0c33d0}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!initialize\-End\-Outer@{initialize\-End\-Outer}}
+\index{initialize\-End\-Outer@{initialize\-End\-Outer}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{initialize\-End\-Outer}]{\setlength{\rightskip}{0pt plus 5cm}void utils\-::\-L\-C\-Particle\-Container\-::initialize\-End\-Outer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a237632124e4c0c2c6449d0de4a0c33d0}
+$\ast$initializes the last particle for the domain and all boundaries \hypertarget{classutils_1_1LCParticleContainer_ad395a84a4a3cb2c2f5a9f646d68945ef}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!initialize\-Halo\-Cells@{initialize\-Halo\-Cells}}
+\index{initialize\-Halo\-Cells@{initialize\-Halo\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{initialize\-Halo\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}void utils\-::\-L\-C\-Particle\-Container\-::initialize\-Halo\-Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_ad395a84a4a3cb2c2f5a9f646d68945ef}
+initializes the halo cells around the domain \hypertarget{classutils_1_1LCParticleContainer_a92d4c5b7c34d6f0d1cd18013799905b7}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!size@{size}}
+\index{size@{size}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int utils\-::\-L\-C\-Particle\-Container\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_a92d4c5b7c34d6f0d1cd18013799905b7}
+\begin{DoxyReturn}{Returns}
+number of particles within the domain 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCParticleContainer_aad76a2af7f28d1f7b45df77a58b3f495}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!update\-Cells@{update\-Cells}}
+\index{update\-Cells@{update\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{update\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}void utils\-::\-L\-C\-Particle\-Container\-::update\-Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCParticleContainer_aad76a2af7f28d1f7b45df77a58b3f495}
+updates the list of cells (also used to initialize) 
+
+\subsection{Member Data Documentation}
+\hypertarget{classutils_1_1LCParticleContainer_aa1d24a4021ccf410d2a54edb8f8c38d6}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!back\-Boundary\-Cells@{back\-Boundary\-Cells}}
+\index{back\-Boundary\-Cells@{back\-Boundary\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{back\-Boundary\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::list$<${\bf Particle} $\ast$$>$ $\ast$$>$ utils\-::\-L\-C\-Particle\-Container\-::back\-Boundary\-Cells\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_aa1d24a4021ccf410d2a54edb8f8c38d6}
+the particles in the rear boundary cells \hypertarget{classutils_1_1LCParticleContainer_a0a2c5e53ceca2200e6d18ef4ea738232}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!back\-Halo\-Cells@{back\-Halo\-Cells}}
+\index{back\-Halo\-Cells@{back\-Halo\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{back\-Halo\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::list$<${\bf Particle} $\ast$$>$ $\ast$$>$ utils\-::\-L\-C\-Particle\-Container\-::back\-Halo\-Cells\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a0a2c5e53ceca2200e6d18ef4ea738232}
+the particles from the rear halo cells \hypertarget{classutils_1_1LCParticleContainer_a419381c67176cc0ad6618a0a882c414e}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Domain@{begin\-Domain}}
+\index{begin\-Domain@{begin\-Domain}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Domain}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Domain\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a419381c67176cc0ad6618a0a882c414e}
+the first particle of the domain \hypertarget{classutils_1_1LCParticleContainer_ae6b2f4b3b425de35c0008170717c0106}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Of\-Back\-Boundary@{begin\-Of\-Back\-Boundary}}
+\index{begin\-Of\-Back\-Boundary@{begin\-Of\-Back\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Of\-Back\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Of\-Back\-Boundary\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_ae6b2f4b3b425de35c0008170717c0106}
+the first particle of the rear boundary cells \hypertarget{classutils_1_1LCParticleContainer_ad4ea11d0c0bc9a1013d51e403299c0e4}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Of\-Back\-Halo@{begin\-Of\-Back\-Halo}}
+\index{begin\-Of\-Back\-Halo@{begin\-Of\-Back\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Of\-Back\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Of\-Back\-Halo\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_ad4ea11d0c0bc9a1013d51e403299c0e4}
+the first particle of the rear halo cells \hypertarget{classutils_1_1LCParticleContainer_ac93b3e1a838df7d83632505c98762490}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Of\-Bottom\-Boundary@{begin\-Of\-Bottom\-Boundary}}
+\index{begin\-Of\-Bottom\-Boundary@{begin\-Of\-Bottom\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Of\-Bottom\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Of\-Bottom\-Boundary\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_ac93b3e1a838df7d83632505c98762490}
+the first particle of the bottom boundary cells \hypertarget{classutils_1_1LCParticleContainer_ad1a972864a0b4a7d7e80fef6cb40bfcf}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Of\-Bottom\-Halo@{begin\-Of\-Bottom\-Halo}}
+\index{begin\-Of\-Bottom\-Halo@{begin\-Of\-Bottom\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Of\-Bottom\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Of\-Bottom\-Halo\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_ad1a972864a0b4a7d7e80fef6cb40bfcf}
+the first particle of the bottom halo cells \hypertarget{classutils_1_1LCParticleContainer_a7d0831bee8c4edd058773b42c8912aac}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Of\-Front\-Boundary@{begin\-Of\-Front\-Boundary}}
+\index{begin\-Of\-Front\-Boundary@{begin\-Of\-Front\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Of\-Front\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Of\-Front\-Boundary\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a7d0831bee8c4edd058773b42c8912aac}
+the first particle of the front boundary cells \hypertarget{classutils_1_1LCParticleContainer_ac9f32db592c1aefdc11ec9ceaaa7810e}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Of\-Front\-Halo@{begin\-Of\-Front\-Halo}}
+\index{begin\-Of\-Front\-Halo@{begin\-Of\-Front\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Of\-Front\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Of\-Front\-Halo\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_ac9f32db592c1aefdc11ec9ceaaa7810e}
+the first particle of the front halo cells \hypertarget{classutils_1_1LCParticleContainer_ac6bc51afbdf2105ecf561d2bacf67e58}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Of\-Left\-Boundary@{begin\-Of\-Left\-Boundary}}
+\index{begin\-Of\-Left\-Boundary@{begin\-Of\-Left\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Of\-Left\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Of\-Left\-Boundary\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_ac6bc51afbdf2105ecf561d2bacf67e58}
+the first particle of the right boundary cells \hypertarget{classutils_1_1LCParticleContainer_a7883c250b606f1d1189fd9d3c20d98b0}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Of\-Left\-Halo@{begin\-Of\-Left\-Halo}}
+\index{begin\-Of\-Left\-Halo@{begin\-Of\-Left\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Of\-Left\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Of\-Left\-Halo\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a7883c250b606f1d1189fd9d3c20d98b0}
+the first particle of the left halo cells \hypertarget{classutils_1_1LCParticleContainer_a2b0575ab2aa95d5a62327d1f64209cf8}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Of\-Right\-Boundary@{begin\-Of\-Right\-Boundary}}
+\index{begin\-Of\-Right\-Boundary@{begin\-Of\-Right\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Of\-Right\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Of\-Right\-Boundary\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a2b0575ab2aa95d5a62327d1f64209cf8}
+the first particle of the right boundary cells \hypertarget{classutils_1_1LCParticleContainer_ac7b8beaf3c7c6db2928f7efc8a2355b3}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Of\-Right\-Halo@{begin\-Of\-Right\-Halo}}
+\index{begin\-Of\-Right\-Halo@{begin\-Of\-Right\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Of\-Right\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Of\-Right\-Halo\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_ac7b8beaf3c7c6db2928f7efc8a2355b3}
+the first particle of the right halo cells \hypertarget{classutils_1_1LCParticleContainer_a8a597b99eedeecacce4e5a087c942d55}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Of\-Top\-Boundary@{begin\-Of\-Top\-Boundary}}
+\index{begin\-Of\-Top\-Boundary@{begin\-Of\-Top\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Of\-Top\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Of\-Top\-Boundary\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a8a597b99eedeecacce4e5a087c942d55}
+the first particle of the top boundary cells \hypertarget{classutils_1_1LCParticleContainer_a0647df4a480715cf6cdd95f400114a3e}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!begin\-Of\-Top\-Halo@{begin\-Of\-Top\-Halo}}
+\index{begin\-Of\-Top\-Halo@{begin\-Of\-Top\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{begin\-Of\-Top\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::begin\-Of\-Top\-Halo\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a0647df4a480715cf6cdd95f400114a3e}
+the first particle of the top halo cells \hypertarget{classutils_1_1LCParticleContainer_a2d7ae0438fdc4fb9f014c8465775c8d1}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!bottom\-Boundary\-Cells@{bottom\-Boundary\-Cells}}
+\index{bottom\-Boundary\-Cells@{bottom\-Boundary\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{bottom\-Boundary\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::list$<${\bf Particle} $\ast$$>$ $\ast$$>$ utils\-::\-L\-C\-Particle\-Container\-::bottom\-Boundary\-Cells\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a2d7ae0438fdc4fb9f014c8465775c8d1}
+the particles in the bottom boundary cells \hypertarget{classutils_1_1LCParticleContainer_a7735296727ed8c14d4f6ff99c065bced}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!bottom\-Halo\-Cells@{bottom\-Halo\-Cells}}
+\index{bottom\-Halo\-Cells@{bottom\-Halo\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{bottom\-Halo\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::list$<${\bf Particle} $\ast$$>$ $\ast$$>$ utils\-::\-L\-C\-Particle\-Container\-::bottom\-Halo\-Cells\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a7735296727ed8c14d4f6ff99c065bced}
+the particles from the bottom halo cells \hypertarget{classutils_1_1LCParticleContainer_a58bb20ad90c455f1400c35379784a0ae}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!cells@{cells}}
+\index{cells@{cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::list$<${\bf Particle} $\ast$$>$ $\ast$$>$ utils\-::\-L\-C\-Particle\-Container\-::cells\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a58bb20ad90c455f1400c35379784a0ae}
+contains the vector of cells of the given particles \hypertarget{classutils_1_1LCParticleContainer_a47cf29a8a8830ccce0f04f84f20ce740}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!cutoff\-\_\-radius@{cutoff\-\_\-radius}}
+\index{cutoff\-\_\-radius@{cutoff\-\_\-radius}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{cutoff\-\_\-radius}]{\setlength{\rightskip}{0pt plus 5cm}double utils\-::\-L\-C\-Particle\-Container\-::cutoff\-\_\-radius\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a47cf29a8a8830ccce0f04f84f20ce740}
+length of the edges (3\-D or 2\-D) of the cells \hypertarget{classutils_1_1LCParticleContainer_a486b4cb6c669b107a5cbc76a0a115aa8}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!depth@{depth}}
+\index{depth@{depth}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{depth}]{\setlength{\rightskip}{0pt plus 5cm}int utils\-::\-L\-C\-Particle\-Container\-::depth\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a486b4cb6c669b107a5cbc76a0a115aa8}
+number of cells in the \char`\"{}z-\/axis\char`\"{} = domain\-\_\-size\mbox{[}2\mbox{]} / cutoff\-\_\-radius (rounded down) \hypertarget{classutils_1_1LCParticleContainer_a6d8c9f033d0045ba9cd4353f2c009486}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!domain\-\_\-size@{domain\-\_\-size}}
+\index{domain\-\_\-size@{domain\-\_\-size}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{domain\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf utils\-::\-Vector}$<$double, 3$>$ utils\-::\-L\-C\-Particle\-Container\-::domain\-\_\-size\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a6d8c9f033d0045ba9cd4353f2c009486}
+contains the size of the domain. domain\-\_\-size\mbox{[}0\mbox{]} -\/ valid region of the \char`\"{}x-\/axis\char`\"{} domain\-\_\-size\mbox{[}1\mbox{]} -\/ valid region of the \char`\"{}y-\/axis\char`\"{} domain\-\_\-size\mbox{[}2\mbox{]} -\/ valid region of the \char`\"{}z-\/axis\char`\"{} \hypertarget{classutils_1_1LCParticleContainer_ae5d7cfe4f3104c61a40f8c032e6f4ddc}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Domain@{end\-Domain}}
+\index{end\-Domain@{end\-Domain}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Domain}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Domain\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_ae5d7cfe4f3104c61a40f8c032e6f4ddc}
+the last particle of the domain \hypertarget{classutils_1_1LCParticleContainer_a7c3ffe4e29090f2e9c15404d862a7c00}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Of\-Back\-Boundary@{end\-Of\-Back\-Boundary}}
+\index{end\-Of\-Back\-Boundary@{end\-Of\-Back\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Of\-Back\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Of\-Back\-Boundary\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a7c3ffe4e29090f2e9c15404d862a7c00}
+the last particle of the rear boundary cells \hypertarget{classutils_1_1LCParticleContainer_ad6ea327b4bf6998984247ae23fbf7f4e}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Of\-Back\-Halo@{end\-Of\-Back\-Halo}}
+\index{end\-Of\-Back\-Halo@{end\-Of\-Back\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Of\-Back\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Of\-Back\-Halo\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_ad6ea327b4bf6998984247ae23fbf7f4e}
+the last particle of the back halo cells \hypertarget{classutils_1_1LCParticleContainer_a0d03390f7f466d6c4b7fcf17ad9e3bf2}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Of\-Bottom\-Boundary@{end\-Of\-Bottom\-Boundary}}
+\index{end\-Of\-Bottom\-Boundary@{end\-Of\-Bottom\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Of\-Bottom\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Of\-Bottom\-Boundary\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a0d03390f7f466d6c4b7fcf17ad9e3bf2}
+the last particle of the bottom boundary cells \hypertarget{classutils_1_1LCParticleContainer_a7ce450071fe63f6beddb5b0e7a28c1a7}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Of\-Bottom\-Halo@{end\-Of\-Bottom\-Halo}}
+\index{end\-Of\-Bottom\-Halo@{end\-Of\-Bottom\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Of\-Bottom\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Of\-Bottom\-Halo\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a7ce450071fe63f6beddb5b0e7a28c1a7}
+the last particle of the bottom halo cells \hypertarget{classutils_1_1LCParticleContainer_a517ee61378d57e081be50de7f7feade8}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Of\-Front\-Boundary@{end\-Of\-Front\-Boundary}}
+\index{end\-Of\-Front\-Boundary@{end\-Of\-Front\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Of\-Front\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Of\-Front\-Boundary\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a517ee61378d57e081be50de7f7feade8}
+the last particle of the front boundary cells \hypertarget{classutils_1_1LCParticleContainer_a39d3733293da9c8b9b1b7bbcbfb072fa}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Of\-Front\-Halo@{end\-Of\-Front\-Halo}}
+\index{end\-Of\-Front\-Halo@{end\-Of\-Front\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Of\-Front\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Of\-Front\-Halo\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a39d3733293da9c8b9b1b7bbcbfb072fa}
+the last particle of the front halo cells \hypertarget{classutils_1_1LCParticleContainer_ade99764026a9b58da86c8513d8f22121}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Of\-Inners@{end\-Of\-Inners}}
+\index{end\-Of\-Inners@{end\-Of\-Inners}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Of\-Inners}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf L\-C\-Inner\-Particle\-Iterator}$>$ utils\-::\-L\-C\-Particle\-Container\-::end\-Of\-Inners\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_ade99764026a9b58da86c8513d8f22121}
+the ends of the inner iterators \hypertarget{classutils_1_1LCParticleContainer_a3d2942e316e92997c4b4eac72dcf4605}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Of\-Left\-Boundary@{end\-Of\-Left\-Boundary}}
+\index{end\-Of\-Left\-Boundary@{end\-Of\-Left\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Of\-Left\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Of\-Left\-Boundary\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a3d2942e316e92997c4b4eac72dcf4605}
+the last particle of the left boundary cells \hypertarget{classutils_1_1LCParticleContainer_a86ea17dc08f3a1ff1a20b85c8b39f800}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Of\-Left\-Halo@{end\-Of\-Left\-Halo}}
+\index{end\-Of\-Left\-Halo@{end\-Of\-Left\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Of\-Left\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Of\-Left\-Halo\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a86ea17dc08f3a1ff1a20b85c8b39f800}
+the last particle of the left halo cells \hypertarget{classutils_1_1LCParticleContainer_ae069cdc78719a350f2174f3f5d461144}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Of\-Right\-Boundary@{end\-Of\-Right\-Boundary}}
+\index{end\-Of\-Right\-Boundary@{end\-Of\-Right\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Of\-Right\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Of\-Right\-Boundary\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_ae069cdc78719a350f2174f3f5d461144}
+the last particle of the right boundary cells \hypertarget{classutils_1_1LCParticleContainer_aebb9ebf1fd5285b71814f76fc3b5b1da}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Of\-Right\-Halo@{end\-Of\-Right\-Halo}}
+\index{end\-Of\-Right\-Halo@{end\-Of\-Right\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Of\-Right\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Of\-Right\-Halo\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_aebb9ebf1fd5285b71814f76fc3b5b1da}
+the last particle of the right halo cells \hypertarget{classutils_1_1LCParticleContainer_a9aa07f3bba36c2c40f9b3c21bd6faddd}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Of\-Top\-Boundary@{end\-Of\-Top\-Boundary}}
+\index{end\-Of\-Top\-Boundary@{end\-Of\-Top\-Boundary}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Of\-Top\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Of\-Top\-Boundary\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a9aa07f3bba36c2c40f9b3c21bd6faddd}
+the last particle of the top boundary cells \hypertarget{classutils_1_1LCParticleContainer_a67adece44e79bc57ac15202d03420d32}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!end\-Of\-Top\-Halo@{end\-Of\-Top\-Halo}}
+\index{end\-Of\-Top\-Halo@{end\-Of\-Top\-Halo}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{end\-Of\-Top\-Halo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} utils\-::\-L\-C\-Particle\-Container\-::end\-Of\-Top\-Halo\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a67adece44e79bc57ac15202d03420d32}
+the last particle of the top halo cells \hypertarget{classutils_1_1LCParticleContainer_a6c6872b4da1be4e1a5d7a5be7d9c15e1}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!front\-Boundary\-Cells@{front\-Boundary\-Cells}}
+\index{front\-Boundary\-Cells@{front\-Boundary\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{front\-Boundary\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::list$<${\bf Particle} $\ast$$>$ $\ast$$>$ utils\-::\-L\-C\-Particle\-Container\-::front\-Boundary\-Cells\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a6c6872b4da1be4e1a5d7a5be7d9c15e1}
+the particles in the front boundary cells \hypertarget{classutils_1_1LCParticleContainer_a242688f7a6578b42ee85c5c309a08a05}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!front\-Halo\-Cells@{front\-Halo\-Cells}}
+\index{front\-Halo\-Cells@{front\-Halo\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{front\-Halo\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::list$<${\bf Particle} $\ast$$>$ $\ast$$>$ utils\-::\-L\-C\-Particle\-Container\-::front\-Halo\-Cells\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a242688f7a6578b42ee85c5c309a08a05}
+the particles from the front halo cells \hypertarget{classutils_1_1LCParticleContainer_a4f1ca4e9e040fc64a5e17a60673dd669}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!height@{height}}
+\index{height@{height}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{height}]{\setlength{\rightskip}{0pt plus 5cm}int utils\-::\-L\-C\-Particle\-Container\-::height\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a4f1ca4e9e040fc64a5e17a60673dd669}
+number of cells in the \char`\"{}y-\/axis\char`\"{} = domain\-\_\-size\mbox{[}1\mbox{]} / cutoff\-\_\-radius (rounded down) \hypertarget{classutils_1_1LCParticleContainer_a9ade06cd7e76d57770ad62900200a63b}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!left\-Boundary\-Cells@{left\-Boundary\-Cells}}
+\index{left\-Boundary\-Cells@{left\-Boundary\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{left\-Boundary\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::list$<${\bf Particle} $\ast$$>$ $\ast$$>$ utils\-::\-L\-C\-Particle\-Container\-::left\-Boundary\-Cells\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a9ade06cd7e76d57770ad62900200a63b}
+the particles in the left boundary cells \hypertarget{classutils_1_1LCParticleContainer_a07197daadd51dcbb52f767e2dad0f68f}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!left\-Halo\-Cells@{left\-Halo\-Cells}}
+\index{left\-Halo\-Cells@{left\-Halo\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{left\-Halo\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::list$<${\bf Particle} $\ast$$>$ $\ast$$>$ utils\-::\-L\-C\-Particle\-Container\-::left\-Halo\-Cells\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a07197daadd51dcbb52f767e2dad0f68f}
+the particles from the left halo cells \hypertarget{classutils_1_1LCParticleContainer_aaa76d8cdecdb35e4d115f483c328aa3c}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!num\-\_\-of\-\_\-cells@{num\-\_\-of\-\_\-cells}}
+\index{num\-\_\-of\-\_\-cells@{num\-\_\-of\-\_\-cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{num\-\_\-of\-\_\-cells}]{\setlength{\rightskip}{0pt plus 5cm}int utils\-::\-L\-C\-Particle\-Container\-::num\-\_\-of\-\_\-cells\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_aaa76d8cdecdb35e4d115f483c328aa3c}
+number of cells = width $\ast$ height $\ast$ depth (in 3\-D) or width $\ast$ height (in 2\-D) \hypertarget{classutils_1_1LCParticleContainer_a4cf8fa8ce772044b98fadb8897cbc890}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!particles@{particles}}
+\index{particles@{particles}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{particles}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Particle} $\ast$$>$ utils\-::\-L\-C\-Particle\-Container\-::particles\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a4cf8fa8ce772044b98fadb8897cbc890}
+contains the list of the given particles \hypertarget{classutils_1_1LCParticleContainer_a9ddcb12f783f403327f9c45c7fc7b69f}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!right\-Boundary\-Cells@{right\-Boundary\-Cells}}
+\index{right\-Boundary\-Cells@{right\-Boundary\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{right\-Boundary\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::list$<${\bf Particle} $\ast$$>$ $\ast$$>$ utils\-::\-L\-C\-Particle\-Container\-::right\-Boundary\-Cells\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a9ddcb12f783f403327f9c45c7fc7b69f}
+the particles in the right boundary cells \hypertarget{classutils_1_1LCParticleContainer_a564e78ce48736ad36753ce33935adfb6}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!right\-Halo\-Cells@{right\-Halo\-Cells}}
+\index{right\-Halo\-Cells@{right\-Halo\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{right\-Halo\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::list$<${\bf Particle} $\ast$$>$ $\ast$$>$ utils\-::\-L\-C\-Particle\-Container\-::right\-Halo\-Cells\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a564e78ce48736ad36753ce33935adfb6}
+the particles from the right halo cells \hypertarget{classutils_1_1LCParticleContainer_af4c6176f13f695f7f368630a05a4775e}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!top\-Boundary\-Cells@{top\-Boundary\-Cells}}
+\index{top\-Boundary\-Cells@{top\-Boundary\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{top\-Boundary\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::list$<${\bf Particle} $\ast$$>$ $\ast$$>$ utils\-::\-L\-C\-Particle\-Container\-::top\-Boundary\-Cells\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_af4c6176f13f695f7f368630a05a4775e}
+the particles in the top boundary cells \hypertarget{classutils_1_1LCParticleContainer_a6b94126cff371182cc606c68a71e0044}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!top\-Halo\-Cells@{top\-Halo\-Cells}}
+\index{top\-Halo\-Cells@{top\-Halo\-Cells}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{top\-Halo\-Cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::list$<${\bf Particle} $\ast$$>$ $\ast$$>$ utils\-::\-L\-C\-Particle\-Container\-::top\-Halo\-Cells\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a6b94126cff371182cc606c68a71e0044}
+the particles from the top halo cells \hypertarget{classutils_1_1LCParticleContainer_a8f0d10a0d6fb422670bc587238ef6662}{\index{utils\-::\-L\-C\-Particle\-Container@{utils\-::\-L\-C\-Particle\-Container}!width@{width}}
+\index{width@{width}!utils::LCParticleContainer@{utils\-::\-L\-C\-Particle\-Container}}
+\subsubsection[{width}]{\setlength{\rightskip}{0pt plus 5cm}int utils\-::\-L\-C\-Particle\-Container\-::width\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCParticleContainer_a8f0d10a0d6fb422670bc587238ef6662}
+number of cells in the \char`\"{}x-\/axis\char`\"{} = domain\-\_\-size\mbox{[}0\mbox{]} / cutoff\-\_\-radius (rounded down) 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/utils/\hyperlink{LCParticleContainer_8h}{L\-C\-Particle\-Container.\-h}\item 
+src/utils/\hyperlink{LCParticleContainer_8cpp}{L\-C\-Particle\-Container.\-cpp}\end{DoxyCompactItemize}

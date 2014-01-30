@@ -1,0 +1,125 @@
+\hypertarget{classutils_1_1BoundaryHandler}{\section{utils\-:\-:Boundary\-Handler Class Reference}
+\label{classutils_1_1BoundaryHandler}\index{utils\-::\-Boundary\-Handler@{utils\-::\-Boundary\-Handler}}
+}
+
+
+{\ttfamily \#include $<$Boundary\-Handler.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classutils_1_1BoundaryHandler_aecff16bfef1e12ef1a251d7b44915493}{Boundary\-Handler} (std\-::vector$<$ int $>$ boundary\-\_\-type\-\_\-arg, \hyperlink{classutils_1_1LCParticleContainer}{L\-C\-Particle\-Container} \&container\-\_\-arg, double h\-\_\-arg, void($\ast$\hyperlink{classutils_1_1BoundaryHandler_ade349a546fc40f1eb2cc3753ac3536b9}{calculate})(\hyperlink{classParticle}{Particle} \&, \hyperlink{classParticle}{Particle} \&))
+\item 
+virtual \hyperlink{classutils_1_1BoundaryHandler_a8c795e94a9f951670a62d108f5ba02fa}{$\sim$\-Boundary\-Handler} ()
+\item 
+void \hyperlink{classutils_1_1BoundaryHandler_ae63925911b31b9877847c6e8d737cfc9}{apply\-Outflow} ()
+\item 
+void \hyperlink{classutils_1_1BoundaryHandler_afea9ba491aca8a3510fe20d3cab60649}{apply\-Periodic\-Moving} ()
+\item 
+void \hyperlink{classutils_1_1BoundaryHandler_a4ad00db701882fcec1fcb275c18f849f}{apply\-Periodic} ()
+\item 
+void \hyperlink{classutils_1_1BoundaryHandler_a7877146046a67f24d71a63e645ecdd6e}{apply\-Reflecting} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ int $>$ \hyperlink{classutils_1_1BoundaryHandler_a8b4bd74821356f9607a38bb5496ac0d7}{boundary\-\_\-type}
+\item 
+\hyperlink{classutils_1_1Vector}{Vector}$<$ double, 3 $>$ \& \hyperlink{classutils_1_1BoundaryHandler_aa8e0deffc1f066d33470a90ff04ec451}{domain\-\_\-size}
+\item 
+int \& \hyperlink{classutils_1_1BoundaryHandler_ad3fceed36277f905d4bc159614831f2a}{width}
+\item 
+int \& \hyperlink{classutils_1_1BoundaryHandler_a84cbe858f08cb4bafd4af86af5610567}{height}
+\item 
+int \& \hyperlink{classutils_1_1BoundaryHandler_a0d89c9f37fd21c12dea330cdd52ea79b}{depth}
+\item 
+\hyperlink{classutils_1_1LCParticleContainer}{L\-C\-Particle\-Container} \& \hyperlink{classutils_1_1BoundaryHandler_a6c7c960f3bc85563c81e420b295e983a}{container}
+\item 
+double \hyperlink{classutils_1_1BoundaryHandler_a14bda6e1d4f8514626a170cd105f8e61}{h}
+\item 
+void($\ast$ \hyperlink{classutils_1_1BoundaryHandler_ade349a546fc40f1eb2cc3753ac3536b9}{calculate} )(\hyperlink{classParticle}{Particle} \&, \hyperlink{classParticle}{Particle} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classutils_1_1BoundaryHandler_aecff16bfef1e12ef1a251d7b44915493}{\index{utils\-::\-Boundary\-Handler@{utils\-::\-Boundary\-Handler}!Boundary\-Handler@{Boundary\-Handler}}
+\index{Boundary\-Handler@{Boundary\-Handler}!utils::BoundaryHandler@{utils\-::\-Boundary\-Handler}}
+\subsubsection[{Boundary\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}utils\-::\-Boundary\-Handler\-::\-Boundary\-Handler (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ int $>$}]{boundary\-\_\-type\-\_\-arg, }
+\item[{{\bf L\-C\-Particle\-Container} \&}]{container\-\_\-arg, }
+\item[{double}]{h\-\_\-arg, }
+\item[{void($\ast$)({\bf Particle} \&, {\bf Particle} \&)}]{calculate}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1BoundaryHandler_aecff16bfef1e12ef1a251d7b44915493}
+\hypertarget{classutils_1_1BoundaryHandler_a8c795e94a9f951670a62d108f5ba02fa}{\index{utils\-::\-Boundary\-Handler@{utils\-::\-Boundary\-Handler}!$\sim$\-Boundary\-Handler@{$\sim$\-Boundary\-Handler}}
+\index{$\sim$\-Boundary\-Handler@{$\sim$\-Boundary\-Handler}!utils::BoundaryHandler@{utils\-::\-Boundary\-Handler}}
+\subsubsection[{$\sim$\-Boundary\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}utils\-::\-Boundary\-Handler\-::$\sim$\-Boundary\-Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classutils_1_1BoundaryHandler_a8c795e94a9f951670a62d108f5ba02fa}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classutils_1_1BoundaryHandler_ae63925911b31b9877847c6e8d737cfc9}{\index{utils\-::\-Boundary\-Handler@{utils\-::\-Boundary\-Handler}!apply\-Outflow@{apply\-Outflow}}
+\index{apply\-Outflow@{apply\-Outflow}!utils::BoundaryHandler@{utils\-::\-Boundary\-Handler}}
+\subsubsection[{apply\-Outflow}]{\setlength{\rightskip}{0pt plus 5cm}void utils\-::\-Boundary\-Handler\-::apply\-Outflow (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1BoundaryHandler_ae63925911b31b9877847c6e8d737cfc9}
+applies the outflow boundary condition on particles \hypertarget{classutils_1_1BoundaryHandler_a4ad00db701882fcec1fcb275c18f849f}{\index{utils\-::\-Boundary\-Handler@{utils\-::\-Boundary\-Handler}!apply\-Periodic@{apply\-Periodic}}
+\index{apply\-Periodic@{apply\-Periodic}!utils::BoundaryHandler@{utils\-::\-Boundary\-Handler}}
+\subsubsection[{apply\-Periodic}]{\setlength{\rightskip}{0pt plus 5cm}void utils\-::\-Boundary\-Handler\-::apply\-Periodic (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1BoundaryHandler_a4ad00db701882fcec1fcb275c18f849f}
+applies the periodic boundary condition on particles \hypertarget{classutils_1_1BoundaryHandler_afea9ba491aca8a3510fe20d3cab60649}{\index{utils\-::\-Boundary\-Handler@{utils\-::\-Boundary\-Handler}!apply\-Periodic\-Moving@{apply\-Periodic\-Moving}}
+\index{apply\-Periodic\-Moving@{apply\-Periodic\-Moving}!utils::BoundaryHandler@{utils\-::\-Boundary\-Handler}}
+\subsubsection[{apply\-Periodic\-Moving}]{\setlength{\rightskip}{0pt plus 5cm}void utils\-::\-Boundary\-Handler\-::apply\-Periodic\-Moving (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1BoundaryHandler_afea9ba491aca8a3510fe20d3cab60649}
+moves the particles that flew out of the domain \hypertarget{classutils_1_1BoundaryHandler_a7877146046a67f24d71a63e645ecdd6e}{\index{utils\-::\-Boundary\-Handler@{utils\-::\-Boundary\-Handler}!apply\-Reflecting@{apply\-Reflecting}}
+\index{apply\-Reflecting@{apply\-Reflecting}!utils::BoundaryHandler@{utils\-::\-Boundary\-Handler}}
+\subsubsection[{apply\-Reflecting}]{\setlength{\rightskip}{0pt plus 5cm}void utils\-::\-Boundary\-Handler\-::apply\-Reflecting (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1BoundaryHandler_a7877146046a67f24d71a63e645ecdd6e}
+applies the reflecting boundary condition on particles 
+
+\subsection{Member Data Documentation}
+\hypertarget{classutils_1_1BoundaryHandler_a8b4bd74821356f9607a38bb5496ac0d7}{\index{utils\-::\-Boundary\-Handler@{utils\-::\-Boundary\-Handler}!boundary\-\_\-type@{boundary\-\_\-type}}
+\index{boundary\-\_\-type@{boundary\-\_\-type}!utils::BoundaryHandler@{utils\-::\-Boundary\-Handler}}
+\subsubsection[{boundary\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ utils\-::\-Boundary\-Handler\-::boundary\-\_\-type\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1BoundaryHandler_a8b4bd74821356f9607a38bb5496ac0d7}
+saves the boundary condition of each boundary 1 -\/ outflow 2 -\/ reflecting boundary 3 -\/ periodic boundary \hypertarget{classutils_1_1BoundaryHandler_ade349a546fc40f1eb2cc3753ac3536b9}{\index{utils\-::\-Boundary\-Handler@{utils\-::\-Boundary\-Handler}!calculate@{calculate}}
+\index{calculate@{calculate}!utils::BoundaryHandler@{utils\-::\-Boundary\-Handler}}
+\subsubsection[{calculate}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ utils\-::\-Boundary\-Handler\-::calculate)({\bf Particle} \&, {\bf Particle} \&)\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1BoundaryHandler_ade349a546fc40f1eb2cc3753ac3536b9}
+the compute\-Force borrowed from \hyperlink{MolSim_8cpp}{Mol\-Sim.\-cpp} \hypertarget{classutils_1_1BoundaryHandler_a6c7c960f3bc85563c81e420b295e983a}{\index{utils\-::\-Boundary\-Handler@{utils\-::\-Boundary\-Handler}!container@{container}}
+\index{container@{container}!utils::BoundaryHandler@{utils\-::\-Boundary\-Handler}}
+\subsubsection[{container}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Particle\-Container}\& utils\-::\-Boundary\-Handler\-::container\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1BoundaryHandler_a6c7c960f3bc85563c81e420b295e983a}
+the container with the particles \hypertarget{classutils_1_1BoundaryHandler_a0d89c9f37fd21c12dea330cdd52ea79b}{\index{utils\-::\-Boundary\-Handler@{utils\-::\-Boundary\-Handler}!depth@{depth}}
+\index{depth@{depth}!utils::BoundaryHandler@{utils\-::\-Boundary\-Handler}}
+\subsubsection[{depth}]{\setlength{\rightskip}{0pt plus 5cm}int\& utils\-::\-Boundary\-Handler\-::depth\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1BoundaryHandler_a0d89c9f37fd21c12dea330cdd52ea79b}
+the number of cells in z direction \hypertarget{classutils_1_1BoundaryHandler_aa8e0deffc1f066d33470a90ff04ec451}{\index{utils\-::\-Boundary\-Handler@{utils\-::\-Boundary\-Handler}!domain\-\_\-size@{domain\-\_\-size}}
+\index{domain\-\_\-size@{domain\-\_\-size}!utils::BoundaryHandler@{utils\-::\-Boundary\-Handler}}
+\subsubsection[{domain\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector}$<$double, 3$>$\& utils\-::\-Boundary\-Handler\-::domain\-\_\-size\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1BoundaryHandler_aa8e0deffc1f066d33470a90ff04ec451}
+the size of the domain \mbox{[}0\mbox{]} -\/ length of the domain in x direction \mbox{[}1\mbox{]} -\/ length of the domain in y direction \mbox{[}2\mbox{]} -\/ length of the domain in z direction \hypertarget{classutils_1_1BoundaryHandler_a14bda6e1d4f8514626a170cd105f8e61}{\index{utils\-::\-Boundary\-Handler@{utils\-::\-Boundary\-Handler}!h@{h}}
+\index{h@{h}!utils::BoundaryHandler@{utils\-::\-Boundary\-Handler}}
+\subsubsection[{h}]{\setlength{\rightskip}{0pt plus 5cm}double utils\-::\-Boundary\-Handler\-::h\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1BoundaryHandler_a14bda6e1d4f8514626a170cd105f8e61}
+the distance to the boundary where the reflecting boundary condition engages \hypertarget{classutils_1_1BoundaryHandler_a84cbe858f08cb4bafd4af86af5610567}{\index{utils\-::\-Boundary\-Handler@{utils\-::\-Boundary\-Handler}!height@{height}}
+\index{height@{height}!utils::BoundaryHandler@{utils\-::\-Boundary\-Handler}}
+\subsubsection[{height}]{\setlength{\rightskip}{0pt plus 5cm}int\& utils\-::\-Boundary\-Handler\-::height\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1BoundaryHandler_a84cbe858f08cb4bafd4af86af5610567}
+the number of cells in y direction \hypertarget{classutils_1_1BoundaryHandler_ad3fceed36277f905d4bc159614831f2a}{\index{utils\-::\-Boundary\-Handler@{utils\-::\-Boundary\-Handler}!width@{width}}
+\index{width@{width}!utils::BoundaryHandler@{utils\-::\-Boundary\-Handler}}
+\subsubsection[{width}]{\setlength{\rightskip}{0pt plus 5cm}int\& utils\-::\-Boundary\-Handler\-::width\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1BoundaryHandler_ad3fceed36277f905d4bc159614831f2a}
+the number of cells in x direction 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/utils/\hyperlink{BoundaryHandler_8h}{Boundary\-Handler.\-h}\item 
+src/utils/\hyperlink{BoundaryHandler_8cpp}{Boundary\-Handler.\-cpp}\end{DoxyCompactItemize}

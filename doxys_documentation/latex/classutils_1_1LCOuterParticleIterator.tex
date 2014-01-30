@@ -1,0 +1,153 @@
+\hypertarget{classutils_1_1LCOuterParticleIterator}{\section{utils\-:\-:L\-C\-Outer\-Particle\-Iterator Class Reference}
+\label{classutils_1_1LCOuterParticleIterator}\index{utils\-::\-L\-C\-Outer\-Particle\-Iterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}}
+}
+
+
+{\ttfamily \#include $<$L\-C\-Outer\-Particle\-Iterator.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator_a9ac0d0f665d39b1cd9ffd3e9f07e5155}{L\-C\-Outer\-Particle\-Iterator} ()
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator_ab399d6d6b97cb09e53217d9654ae9a64}{L\-C\-Outer\-Particle\-Iterator} (int cell\-\_\-size\-\_\-arg, std\-::vector$<$ std\-::list$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ $\ast$cells\-\_\-arg, std\-::list$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$\-::\hyperlink{classutils_1_1LCOuterParticleIterator_ab01cb9c518e6f5e97b4b99b8a1af88e5}{iterator} iterator\-\_\-arg, int index\-\_\-arg)
+\item 
+virtual \hyperlink{classutils_1_1LCOuterParticleIterator_a3a66099197abb8723e1bd546cdbdafb5}{$\sim$\-L\-C\-Outer\-Particle\-Iterator} ()
+\item 
+\hyperlink{classParticle}{Particle} \& \hyperlink{classutils_1_1LCOuterParticleIterator_acaf99d121ac0d78370bbc479a7c6448d}{operator$\ast$} () const 
+\item 
+void \hyperlink{classutils_1_1LCOuterParticleIterator_a8257913f53e484b3e544882a53571d05}{operator++} ()
+\item 
+int \hyperlink{classutils_1_1LCOuterParticleIterator_a31776769fce3238c1d76a442000f2b23}{get\-Cell\-Number} ()
+\item 
+std\-::list$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$\-::\hyperlink{classutils_1_1LCOuterParticleIterator_ab01cb9c518e6f5e97b4b99b8a1af88e5}{iterator} \hyperlink{classutils_1_1LCOuterParticleIterator_add4758ecb5c0da6b60d0105b7b497b80}{get\-Iterator} ()
+\item 
+bool \hyperlink{classutils_1_1LCOuterParticleIterator_a8ca9661e34d7a0750544b6bc211c87be}{operator!=} (const \hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} b)
+\item 
+\hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \& \hyperlink{classutils_1_1LCOuterParticleIterator_afcaf7fb20f9711329a011af367bec64c}{operator=} (const \hyperlink{classutils_1_1LCOuterParticleIterator}{L\-C\-Outer\-Particle\-Iterator} \&cpy)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ std\-::list\\*
+$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$ $\ast$ $>$ $\ast$ \hyperlink{classutils_1_1LCOuterParticleIterator_a2a9cde56a9eab6ba0dad00cfad74ff01}{cells}
+\item 
+int \hyperlink{classutils_1_1LCOuterParticleIterator_aa4df9b61c19d57586aa8a24433df3bb9}{cell\-\_\-size}
+\item 
+int \hyperlink{classutils_1_1LCOuterParticleIterator_a54059f42735afc424f37d05cb5a40a98}{index}
+\item 
+std\-::list$<$ \hyperlink{classParticle}{Particle} $\ast$ $>$\-::iterator \hyperlink{classutils_1_1LCOuterParticleIterator_ab01cb9c518e6f5e97b4b99b8a1af88e5}{iterator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classutils_1_1LCOuterParticleIterator_a9ac0d0f665d39b1cd9ffd3e9f07e5155}{\index{utils\-::\-L\-C\-Outer\-Particle\-Iterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}!L\-C\-Outer\-Particle\-Iterator@{L\-C\-Outer\-Particle\-Iterator}}
+\index{L\-C\-Outer\-Particle\-Iterator@{L\-C\-Outer\-Particle\-Iterator}!utils::LCOuterParticleIterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}}
+\subsubsection[{L\-C\-Outer\-Particle\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}utils\-::\-L\-C\-Outer\-Particle\-Iterator\-::\-L\-C\-Outer\-Particle\-Iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCOuterParticleIterator_a9ac0d0f665d39b1cd9ffd3e9f07e5155}
+\hypertarget{classutils_1_1LCOuterParticleIterator_ab399d6d6b97cb09e53217d9654ae9a64}{\index{utils\-::\-L\-C\-Outer\-Particle\-Iterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}!L\-C\-Outer\-Particle\-Iterator@{L\-C\-Outer\-Particle\-Iterator}}
+\index{L\-C\-Outer\-Particle\-Iterator@{L\-C\-Outer\-Particle\-Iterator}!utils::LCOuterParticleIterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}}
+\subsubsection[{L\-C\-Outer\-Particle\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}utils\-::\-L\-C\-Outer\-Particle\-Iterator\-::\-L\-C\-Outer\-Particle\-Iterator (
+\begin{DoxyParamCaption}
+\item[{int}]{cell\-\_\-size\-\_\-arg, }
+\item[{std\-::vector$<$ std\-::list$<$ {\bf Particle} $\ast$ $>$ $\ast$ $>$ $\ast$}]{cells\-\_\-arg, }
+\item[{std\-::list$<$ {\bf Particle} $\ast$ $>$\-::{\bf iterator}}]{iterator\-\_\-arg, }
+\item[{int}]{index\-\_\-arg}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCOuterParticleIterator_ab399d6d6b97cb09e53217d9654ae9a64}
+\hypertarget{classutils_1_1LCOuterParticleIterator_a3a66099197abb8723e1bd546cdbdafb5}{\index{utils\-::\-L\-C\-Outer\-Particle\-Iterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}!$\sim$\-L\-C\-Outer\-Particle\-Iterator@{$\sim$\-L\-C\-Outer\-Particle\-Iterator}}
+\index{$\sim$\-L\-C\-Outer\-Particle\-Iterator@{$\sim$\-L\-C\-Outer\-Particle\-Iterator}!utils::LCOuterParticleIterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}}
+\subsubsection[{$\sim$\-L\-C\-Outer\-Particle\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}utils\-::\-L\-C\-Outer\-Particle\-Iterator\-::$\sim$\-L\-C\-Outer\-Particle\-Iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classutils_1_1LCOuterParticleIterator_a3a66099197abb8723e1bd546cdbdafb5}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classutils_1_1LCOuterParticleIterator_a31776769fce3238c1d76a442000f2b23}{\index{utils\-::\-L\-C\-Outer\-Particle\-Iterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}!get\-Cell\-Number@{get\-Cell\-Number}}
+\index{get\-Cell\-Number@{get\-Cell\-Number}!utils::LCOuterParticleIterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}}
+\subsubsection[{get\-Cell\-Number}]{\setlength{\rightskip}{0pt plus 5cm}int utils\-::\-L\-C\-Outer\-Particle\-Iterator\-::get\-Cell\-Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCOuterParticleIterator_a31776769fce3238c1d76a442000f2b23}
+\begin{DoxyReturn}{Returns}
+the cell number of the outer iterator 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCOuterParticleIterator_add4758ecb5c0da6b60d0105b7b497b80}{\index{utils\-::\-L\-C\-Outer\-Particle\-Iterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}!get\-Iterator@{get\-Iterator}}
+\index{get\-Iterator@{get\-Iterator}!utils::LCOuterParticleIterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}}
+\subsubsection[{get\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<$ {\bf Particle} $\ast$ $>$\-::{\bf iterator} utils\-::\-L\-C\-Outer\-Particle\-Iterator\-::get\-Iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCOuterParticleIterator_add4758ecb5c0da6b60d0105b7b497b80}
+\begin{DoxyReturn}{Returns}
+the iterator 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCOuterParticleIterator_a8ca9661e34d7a0750544b6bc211c87be}{\index{utils\-::\-L\-C\-Outer\-Particle\-Iterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!utils::LCOuterParticleIterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool utils\-::\-L\-C\-Outer\-Particle\-Iterator\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf L\-C\-Outer\-Particle\-Iterator}}]{b}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCOuterParticleIterator_a8ca9661e34d7a0750544b6bc211c87be}
+checks on inequality 
+\begin{DoxyParams}{Parameters}
+{\em b} & the Iterator to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns true, if the two iterators don't match 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCOuterParticleIterator_acaf99d121ac0d78370bbc479a7c6448d}{\index{utils\-::\-L\-C\-Outer\-Particle\-Iterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!utils::LCOuterParticleIterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Particle} \& utils\-::\-L\-C\-Outer\-Particle\-Iterator\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classutils_1_1LCOuterParticleIterator_acaf99d121ac0d78370bbc479a7c6448d}
+\begin{DoxyReturn}{Returns}
+returns the reference to the momentary particle 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1LCOuterParticleIterator_a8257913f53e484b3e544882a53571d05}{\index{utils\-::\-L\-C\-Outer\-Particle\-Iterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!utils::LCOuterParticleIterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}}
+\subsubsection[{operator++}]{\setlength{\rightskip}{0pt plus 5cm}void utils\-::\-L\-C\-Outer\-Particle\-Iterator\-::operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCOuterParticleIterator_a8257913f53e484b3e544882a53571d05}
+iterates to the next element \hypertarget{classutils_1_1LCOuterParticleIterator_afcaf7fb20f9711329a011af367bec64c}{\index{utils\-::\-L\-C\-Outer\-Particle\-Iterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}!operator=@{operator=}}
+\index{operator=@{operator=}!utils::LCOuterParticleIterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-Outer\-Particle\-Iterator} \& utils\-::\-L\-C\-Outer\-Particle\-Iterator\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf L\-C\-Outer\-Particle\-Iterator} \&}]{cpy}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1LCOuterParticleIterator_afcaf7fb20f9711329a011af367bec64c}
+\begin{DoxyReturn}{Returns}
+assigns an outer iterator with the attributes of cpy 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classutils_1_1LCOuterParticleIterator_aa4df9b61c19d57586aa8a24433df3bb9}{\index{utils\-::\-L\-C\-Outer\-Particle\-Iterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}!cell\-\_\-size@{cell\-\_\-size}}
+\index{cell\-\_\-size@{cell\-\_\-size}!utils::LCOuterParticleIterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}}
+\subsubsection[{cell\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}int utils\-::\-L\-C\-Outer\-Particle\-Iterator\-::cell\-\_\-size\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCOuterParticleIterator_aa4df9b61c19d57586aa8a24433df3bb9}
+the total number of cells \hypertarget{classutils_1_1LCOuterParticleIterator_a2a9cde56a9eab6ba0dad00cfad74ff01}{\index{utils\-::\-L\-C\-Outer\-Particle\-Iterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}!cells@{cells}}
+\index{cells@{cells}!utils::LCOuterParticleIterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}}
+\subsubsection[{cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::list$<${\bf Particle} $\ast$$>$ $\ast$$>$$\ast$ utils\-::\-L\-C\-Outer\-Particle\-Iterator\-::cells\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCOuterParticleIterator_a2a9cde56a9eab6ba0dad00cfad74ff01}
+the cells of the domain \hypertarget{classutils_1_1LCOuterParticleIterator_a54059f42735afc424f37d05cb5a40a98}{\index{utils\-::\-L\-C\-Outer\-Particle\-Iterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}!index@{index}}
+\index{index@{index}!utils::LCOuterParticleIterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}}
+\subsubsection[{index}]{\setlength{\rightskip}{0pt plus 5cm}int utils\-::\-L\-C\-Outer\-Particle\-Iterator\-::index\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCOuterParticleIterator_a54059f42735afc424f37d05cb5a40a98}
+the cell number of the outer iterator \hypertarget{classutils_1_1LCOuterParticleIterator_ab01cb9c518e6f5e97b4b99b8a1af88e5}{\index{utils\-::\-L\-C\-Outer\-Particle\-Iterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}!iterator@{iterator}}
+\index{iterator@{iterator}!utils::LCOuterParticleIterator@{utils\-::\-L\-C\-Outer\-Particle\-Iterator}}
+\subsubsection[{iterator}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Particle} $\ast$$>$\-::iterator utils\-::\-L\-C\-Outer\-Particle\-Iterator\-::iterator\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1LCOuterParticleIterator_ab01cb9c518e6f5e97b4b99b8a1af88e5}
+the iterator 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/utils/\hyperlink{LCOuterParticleIterator_8h}{L\-C\-Outer\-Particle\-Iterator.\-h}\item 
+src/utils/\hyperlink{LCOuterParticleIterator_8cpp}{L\-C\-Outer\-Particle\-Iterator.\-cpp}\end{DoxyCompactItemize}

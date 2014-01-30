@@ -1,0 +1,98 @@
+\hypertarget{classutils_1_1ParticleIterator}{\section{utils\-:\-:Particle\-Iterator Class Reference}
+\label{classutils_1_1ParticleIterator}\index{utils\-::\-Particle\-Iterator@{utils\-::\-Particle\-Iterator}}
+}
+
+
+{\ttfamily \#include $<$Particle\-Iterator.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classutils_1_1ParticleIterator_a85f9b149311eccc93a879f9b464df53d}{Particle\-Iterator} ()
+\item 
+\hyperlink{classutils_1_1ParticleIterator_a428eeba8c1da0b9a3ff2357188e3b021}{Particle\-Iterator} (std\-::list$<$ \hyperlink{classParticle}{Particle} $>$\-::\hyperlink{classutils_1_1ParticleIterator_a2e8cdcdcf26e9a8e18e8f524d43531fc}{iterator} iterator\-\_\-arg)
+\item 
+virtual \hyperlink{classutils_1_1ParticleIterator_aef1f2f8efd52a310ab74a8ee36b20f69}{$\sim$\-Particle\-Iterator} ()
+\item 
+\hyperlink{classParticle}{Particle} \& \hyperlink{classutils_1_1ParticleIterator_a4e6db61f5439f9ce191e8c15a58c073e}{operator$\ast$} () const 
+\item 
+void \hyperlink{classutils_1_1ParticleIterator_a9cc01509552913bcffc4b7b6f3d3ddcd}{operator++} ()
+\item 
+bool \hyperlink{classutils_1_1ParticleIterator_a04170160a43b10cb35a4affd1e44c76a}{operator!=} (const \hyperlink{classutils_1_1ParticleIterator}{Particle\-Iterator} b)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::list$<$ \hyperlink{classParticle}{Particle} $>$\-::iterator \hyperlink{classutils_1_1ParticleIterator_a2e8cdcdcf26e9a8e18e8f524d43531fc}{iterator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classutils_1_1ParticleIterator_a85f9b149311eccc93a879f9b464df53d}{\index{utils\-::\-Particle\-Iterator@{utils\-::\-Particle\-Iterator}!Particle\-Iterator@{Particle\-Iterator}}
+\index{Particle\-Iterator@{Particle\-Iterator}!utils::ParticleIterator@{utils\-::\-Particle\-Iterator}}
+\subsubsection[{Particle\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}Particle\-Iterator\-::\-Particle\-Iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleIterator_a85f9b149311eccc93a879f9b464df53d}
+\hypertarget{classutils_1_1ParticleIterator_a428eeba8c1da0b9a3ff2357188e3b021}{\index{utils\-::\-Particle\-Iterator@{utils\-::\-Particle\-Iterator}!Particle\-Iterator@{Particle\-Iterator}}
+\index{Particle\-Iterator@{Particle\-Iterator}!utils::ParticleIterator@{utils\-::\-Particle\-Iterator}}
+\subsubsection[{Particle\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}Particle\-Iterator\-::\-Particle\-Iterator (
+\begin{DoxyParamCaption}
+\item[{std\-::list$<$ {\bf Particle} $>$\-::{\bf iterator}}]{iterator\-\_\-arg}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleIterator_a428eeba8c1da0b9a3ff2357188e3b021}
+assigns the iterator to an iterator \hypertarget{classutils_1_1ParticleIterator_aef1f2f8efd52a310ab74a8ee36b20f69}{\index{utils\-::\-Particle\-Iterator@{utils\-::\-Particle\-Iterator}!$\sim$\-Particle\-Iterator@{$\sim$\-Particle\-Iterator}}
+\index{$\sim$\-Particle\-Iterator@{$\sim$\-Particle\-Iterator}!utils::ParticleIterator@{utils\-::\-Particle\-Iterator}}
+\subsubsection[{$\sim$\-Particle\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}Particle\-Iterator\-::$\sim$\-Particle\-Iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classutils_1_1ParticleIterator_aef1f2f8efd52a310ab74a8ee36b20f69}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classutils_1_1ParticleIterator_a04170160a43b10cb35a4affd1e44c76a}{\index{utils\-::\-Particle\-Iterator@{utils\-::\-Particle\-Iterator}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!utils::ParticleIterator@{utils\-::\-Particle\-Iterator}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Particle\-Iterator\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Particle\-Iterator}}]{b}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleIterator_a04170160a43b10cb35a4affd1e44c76a}
+checks on inequality 
+\begin{DoxyParams}{Parameters}
+{\em b} & the Iterator to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns true, if the two iterators don't match 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1ParticleIterator_a4e6db61f5439f9ce191e8c15a58c073e}{\index{utils\-::\-Particle\-Iterator@{utils\-::\-Particle\-Iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!utils::ParticleIterator@{utils\-::\-Particle\-Iterator}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Particle} \& Particle\-Iterator\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classutils_1_1ParticleIterator_a4e6db61f5439f9ce191e8c15a58c073e}
+\begin{DoxyReturn}{Returns}
+returns the reference to the momentary particle 
+\end{DoxyReturn}
+\hypertarget{classutils_1_1ParticleIterator_a9cc01509552913bcffc4b7b6f3d3ddcd}{\index{utils\-::\-Particle\-Iterator@{utils\-::\-Particle\-Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!utils::ParticleIterator@{utils\-::\-Particle\-Iterator}}
+\subsubsection[{operator++}]{\setlength{\rightskip}{0pt plus 5cm}void Particle\-Iterator\-::operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classutils_1_1ParticleIterator_a9cc01509552913bcffc4b7b6f3d3ddcd}
+iterates to the next element 
+
+\subsection{Member Data Documentation}
+\hypertarget{classutils_1_1ParticleIterator_a2e8cdcdcf26e9a8e18e8f524d43531fc}{\index{utils\-::\-Particle\-Iterator@{utils\-::\-Particle\-Iterator}!iterator@{iterator}}
+\index{iterator@{iterator}!utils::ParticleIterator@{utils\-::\-Particle\-Iterator}}
+\subsubsection[{iterator}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Particle}$>$\-::iterator utils\-::\-Particle\-Iterator\-::iterator\hspace{0.3cm}{\ttfamily [private]}}}\label{classutils_1_1ParticleIterator_a2e8cdcdcf26e9a8e18e8f524d43531fc}
+the element of the iterator 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/utils/\hyperlink{ParticleIterator_8h}{Particle\-Iterator.\-h}\item 
+src/utils/\hyperlink{ParticleIterator_8cpp}{Particle\-Iterator.\-cpp}\end{DoxyCompactItemize}
